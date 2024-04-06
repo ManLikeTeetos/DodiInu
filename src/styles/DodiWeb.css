@@ -3094,3 +3094,20 @@
 	width: 90rem;
 	box-sizing: border-box;
 }
+.diodi-web-page .dodi-inu-1 {
+	margin: 4px 0;
+	overflow-wrap: break-word;
+	font-family: var(--h-2-bold-font-family, 'Inter');
+	font-weight: var(--h-2-bold-font-weight, 700);
+	font-size: var(--h-2-bold-font-size, 40px);
+	line-height: var(--h-2-bold-line-height, 1.4);
+	color: var(--primary-2-primary-2500, #00CD6A);
+}
+
+.dodi-inu-1-sub1 {
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 1.333;
+	color: var(--secondarysecondary-50, #E6E6E6);
+}
