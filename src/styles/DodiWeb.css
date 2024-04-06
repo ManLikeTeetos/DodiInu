@@ -1,0 +1,3096 @@
+.diodi-web-page .frame-19 {
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.86) 34.42%, rgba(0, 0, 0, 0.86) 100%);
+	position: absolute;
+	left: 0rem;
+	top: 0rem;
+	right: 0rem;
+	bottom: 0rem;
+	height: 100%;
+}
+
+.diodi-web-page .image-31 {
+	background: url('assets/images/Image31.png') 50% / cover no-repeat;
+	margin-right: 3rem;
+	width: 29.4rem;
+	height: 29.4rem;
+}
+
+.diodi-web-page .we-all-gonna-make-it {
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: 1.4;
+	text-transform: uppercase;
+	color: var(--primary-2-primary-2500, #00CD6A);
+}
+
+.diodi-web-page .ptitle {
+	margin: 0 0rem 0.3rem 0rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: flex-start;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .lorem-ipsum-dolor-sit-amet-consectetur-nullam-in-diam-cursus-purus-vitae-lectus-aegestas-arcu-convallis-morbi-leo-quis-velit-dis-faucibus {
+	overflow-wrap: break-word;
+	font-family: var(--h-5-font-family, 'Inter');
+	font-weight: var(--h-5-font-weight, 400);
+	font-size: var(--h-5-font-size, 1.4rem);
+	line-height: var(--h-5-line-height, 1.4);
+	color: rgba(255, 255, 255, 0.72);
+}
+
+.diodi-web-page .psubtitle {
+	margin-bottom: 1.9rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .buy-now {
+	overflow-wrap: break-word;
+	font-family: var(--title-4-bold-font-family, 'Inter');
+	font-weight: var(--title-4-bold-font-weight, 700);
+	font-size: var(--title-4-bold-font-size, 1rem);
+	line-height: var(--title-4-bold-line-height, 1.4);
+	color: #FFFFFF;
+}
+
+.diodi-web-page .link {
+	border-radius: 1.3rem;
+	background: #00CD6A;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 1.8rem 0;
+	width: 17.9rem;
+	height: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .linkmargin {
+	margin-right: 1.8rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 17.9rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .stake-now {
+	overflow-wrap: break-word;
+	font-family: var(--title-4-bold-font-family, 'Inter');
+	font-weight: var(--title-4-bold-font-weight, 700);
+	font-size: var(--title-4-bold-font-size, 1rem);
+	line-height: var(--title-4-bold-line-height, 1.4);
+	color: #FFFFFF;
+}
+
+.diodi-web-page .button {
+	border-radius: 1.3rem;
+	border: 0.3rem solid #00CD6A;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 1.6rem 0;
+	width: 17.9rem;
+	height: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .linkmargin-1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 17.9rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-buttons {
+	margin: 0 0.6rem 0.8rem 0.6rem;
+	display: flex;
+	flex-direction: row;
+	align-self: flex-start;
+	width: 37.6rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .ca-d-6-newx-s-3-spke-eebv-gqax-2-e-4-mi-cjuvj-ah-tukbo-xzlw-km-1 {
+	margin: 0 2.9rem 0 0rem;
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-weight: 600;
+	font-size: 1.5rem;
+	line-height: 1.4;
+	color: var(--primary-2-primary-2500, #00CD6A);
+}
+
+.diodi-web-page .div-column {
+	margin: 5.3rem 0 5.9rem 0;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .frame-104 {
+	position: relative;
+	margin-bottom: 3.8rem;
+	display: flex;
+	flex-direction: row;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .dodi-price {
+	margin-bottom: 0.3rem;
+	display: inline-block;
+	align-self: flex-start;
+	overflow-wrap: break-word;
+	font-family: var(--title-4-bold-caps-font-family, 'Inter');
+	font-weight: var(--title-4-bold-caps-font-weight, 700);
+	font-size: var(--title-4-bold-caps-font-size, 1rem);
+	line-height: var(--title-4-bold-caps-line-height, 1.4);
+	text-transform: var(--title-4-bold-caps-text-transform, uppercase);
+	color: rgba(255, 255, 255, 0.38);
+}
+
+.diodi-web-page .container {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 600;
+	font-size: 2.2rem;
+	line-height: 1.125;
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .ptitle-1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-column-1 {
+	margin-bottom: 0.2rem;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .total-dodi {
+	margin: 0 0.1rem 0rem 0;
+	display: inline-block;
+	overflow-wrap: break-word;
+	font-family: var(--title-4-bold-caps-font-family, 'Inter');
+	font-weight: var(--title-4-bold-caps-font-weight, 700);
+	font-size: var(--title-4-bold-caps-font-size, 1rem);
+	line-height: var(--title-4-bold-caps-line-height, 1.4);
+	text-transform: var(--title-4-bold-caps-text-transform, uppercase);
+	color: rgba(255, 255, 255, 0.38);
+}
+
+.diodi-web-page .dodi {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 600;
+	font-size: 2.2rem;
+	line-height: 1.125;
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.dodi {
+	font-family: 'Rubik';
+	font-weight: 600;
+	font-size: 2.2rem;
+	line-height: 1.333;
+	color: var(--primary-2-primary-2500, #00CD6A);
+}
+
+.diodi-web-page .ptitle-2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-column-2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .dodi-inu-staked {
+	margin-bottom: 0.3rem;
+	display: inline-block;
+	overflow-wrap: break-word;
+	font-family: var(--title-4-bold-caps-font-family, 'Inter');
+	font-weight: var(--title-4-bold-caps-font-weight, 700);
+	font-size: var(--title-4-bold-caps-font-size, 1rem);
+	line-height: var(--title-4-bold-caps-line-height, 1.4);
+	text-transform: var(--title-4-bold-caps-text-transform, uppercase);
+	color: rgba(255, 255, 255, 0.38);
+}
+
+.diodi-web-page .container-1 {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 600;
+	font-size: 2.2rem;
+	line-height: 1.125;
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .ptitle-3 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: flex-start;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-column-3 {
+	margin-bottom: 0.2rem;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-columns {
+	position: relative;
+	margin: 0 1.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 69.1rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .hero-section {
+	background: url('assets/images/WhatsAppImage20240325At21131.jpeg') 50% / cover no-repeat;
+	position: relative;
+	margin-bottom: 2.7rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding: 10.4rem 6.8rem 9.8rem 3.3rem;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .about-dodi {
+	overflow-wrap: break-word;
+	font-family: var(--h-3-bold-font-family, 'Inter');
+	font-weight: var(--h-3-bold-font-weight, 700);
+	font-size: var(--h-3-bold-font-size, 2.1rem);
+	line-height: var(--h-3-bold-line-height, 1.4);
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.about-dodi {
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 2.1rem;
+	line-height: 1.333;
+	color: var(--primary-2-primary-2500, #00CD6A);
+}
+
+.diodi-web-page .ptitle-4 {
+	margin-bottom: 1.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: flex-start;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .mission {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 600;
+	font-size: 1.1rem;
+	line-height: 1.5;
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .link-1 {
+	border-bottom: 0.1rem solid #43B763;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 0.6rem 1.1rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .tab {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .problem {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 600;
+	font-size: 1.1rem;
+	line-height: 1.5;
+	color: rgba(255, 255, 255, 0.72);
+}
+
+.diodi-web-page .link-2 {
+	border-bottom: 0.1rem solid #363636;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 0.6rem 1.2rem 0.6rem 1.1rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .tab-1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .solution {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 600;
+	font-size: 1.1rem;
+	line-height: 1.5;
+	color: rgba(255, 255, 255, 0.72);
+}
+
+.diodi-web-page .link-3 {
+	border-bottom: 0.1rem solid #363636;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 0.6rem 1.1rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .tab-2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .goal {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 600;
+	font-size: 1.1rem;
+	line-height: 1.5;
+	color: rgba(255, 255, 255, 0.72);
+}
+
+.diodi-web-page .link-4 {
+	border-bottom: 0.1rem solid #363636;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 0.6rem 1.2rem 0.6rem 1.1rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .tab-3 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .nav {
+	margin-bottom: 10.5rem;
+	display: flex;
+	flex-direction: row;
+	width: 82rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .whats-app-image-20240402-at-10511 {
+	background: url('assets/images/WhatsAppImage20240402At10511.jpeg') 50% / cover no-repeat;
+	width: 40.8rem;
+	height: 25rem;
+}
+
+.diodi-web-page .ellipse-7 {
+	border-radius: 4.4rem;
+	background: #535357;
+	position: relative;
+	width: 8.8rem;
+	height: 8.8rem;
+}
+
+.diodi-web-page .dog-22 {
+	background: url('assets/images/Dog22.png');
+	position: absolute;
+	left: 0rem;
+	top: 0rem;
+	right: 0rem;
+	bottom: 0rem;
+	height: 100%;
+	width: 100%;
+}
+
+.diodi-web-page .div-column-5 {
+	position: relative;
+	margin-right: 1.2rem;
+	padding: 0.3rem 0.9rem 0 0.9rem;
+	width: 11.6rem;
+	height: 11.3rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .about-us-1 {
+	overflow-wrap: break-word;
+	font-family: var(--title-3-bold-font-family, 'Inter');
+	font-weight: var(--title-3-bold-font-weight, 700);
+	font-size: var(--title-3-bold-font-size, 1.2rem);
+	line-height: var(--title-3-bold-line-height, 1.4);
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .ptitle-5 {
+	margin-bottom: 1.2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: flex-start;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .lorem-ipsum-dolor-sit-amet-consectetur-egestas-tempus-vitae-lorem-urna-luctus-amet-leo-at-commodo-mattis-nisl {
+	overflow-wrap: break-word;
+	font-family: var(--title-2-font-family, 'Inter');
+	font-weight: var(--title-2-font-weight, 400);
+	font-size: var(--title-2-font-size, 1rem);
+	line-height: var(--title-2-line-height, 1.4);
+	color: rgba(255, 255, 255, 0.72);
+}
+
+.diodi-web-page .psubtitle-1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-columnmargin {
+	margin: 0.8rem 0 2.1rem 0;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-column-4 {
+	margin-bottom: 3.7rem;
+	display: flex;
+	flex-direction: row;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .ellipse-71 {
+	border-radius: 4.4rem;
+	background: #535357;
+	position: relative;
+	width: 8.8rem;
+	height: 8.8rem;
+}
+
+.diodi-web-page .dog-221 {
+	background: url('assets/images/Dog22.png');
+	position: absolute;
+	left: 0rem;
+	top: 0rem;
+	right: 0rem;
+	bottom: 0rem;
+	height: 100%;
+}
+
+.diodi-web-page .div-column-7 {
+	position: relative;
+	margin-right: 1.2rem;
+	padding: 0.3rem 0.9rem 0 0.9rem;
+	width: 11.6rem;
+	height: 11.3rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .about-us-2 {
+	overflow-wrap: break-word;
+	font-family: var(--title-3-bold-font-family, 'Inter');
+	font-weight: var(--title-3-bold-font-weight, 700);
+	font-size: var(--title-3-bold-font-size, 1.2rem);
+	line-height: var(--title-3-bold-line-height, 1.4);
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .ptitle-6 {
+	margin-bottom: 1.2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: flex-start;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .lorem-ipsum-dolor-sit-amet-consectetur-egestas-tempus-vitae-lorem-urna-luctus-amet-leo-at-commodo-mattis-nisl-1 {
+	overflow-wrap: break-word;
+	font-family: var(--title-2-font-family, 'Inter');
+	font-weight: var(--title-2-font-weight, 400);
+	font-size: var(--title-2-font-size, 1rem);
+	line-height: var(--title-2-line-height, 1.4);
+	color: rgba(255, 255, 255, 0.72);
+}
+
+.diodi-web-page .psubtitle-2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-columnmargin-1 {
+	margin: 0.8rem 0 2.1rem 0;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-column-6 {
+	margin-bottom: 3.7rem;
+	display: flex;
+	flex-direction: row;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .ellipse-72 {
+	border-radius: 4.4rem;
+	background: #535357;
+	position: relative;
+	width: 8.8rem;
+	height: 8.8rem;
+}
+
+.diodi-web-page .dog-222 {
+	background: url('assets/images/Dog22.png');
+	position: absolute;
+	left: 0rem;
+	top: 0rem;
+	right: 0rem;
+	bottom: 0rem;
+	height: 100%;
+}
+
+.diodi-web-page .div-column-9 {
+	position: relative;
+	margin-right: 1.2rem;
+	padding: 0.3rem 0.9rem 0 0.9rem;
+	width: 11.6rem;
+	height: 11.3rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .about-us-3 {
+	overflow-wrap: break-word;
+	font-family: var(--title-3-bold-font-family, 'Inter');
+	font-weight: var(--title-3-bold-font-weight, 700);
+	font-size: var(--title-3-bold-font-size, 1.2rem);
+	line-height: var(--title-3-bold-line-height, 1.4);
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .ptitle-7 {
+	margin-bottom: 1.2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: flex-start;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .lorem-ipsum-dolor-sit-amet-consectetur-egestas-tempus-vitae-lorem-urna-luctus-amet-leo-at-commodo-mattis-nisl-2 {
+	overflow-wrap: break-word;
+	font-family: var(--title-2-font-family, 'Inter');
+	font-weight: var(--title-2-font-weight, 400);
+	font-size: var(--title-2-font-size, 1rem);
+	line-height: var(--title-2-line-height, 1.4);
+	color: rgba(255, 255, 255, 0.72);
+}
+
+.diodi-web-page .psubtitle-3 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-columnmargin-2 {
+	margin: 0.8rem 0 2.1rem 0;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-column-8 {
+	display: flex;
+	flex-direction: row;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .frame-931 {
+	position: absolute;
+	right: 0rem;
+	bottom: 0rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .frame-93 {
+	position: relative;
+	margin-bottom: 4rem;
+	padding: 8.2rem 0 8rem 0;
+	width: 82.9rem;
+	height: 41.2rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .buy-dodi {
+	overflow-wrap: break-word;
+	font-family: var(--title-4-bold-font-family, 'Inter');
+	font-weight: var(--title-4-bold-font-weight, 700);
+	font-size: var(--title-4-bold-font-size, 1rem);
+	line-height: var(--title-4-bold-line-height, 1.4);
+	color: #FFFFFF;
+}
+
+.diodi-web-page .link-5 {
+	border-radius: 1.3rem;
+	background: #00CD6A;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 1.8rem 0rem 1.8rem 0;
+	width: 17.9rem;
+	height: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-buttons-1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 17.9rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-btabs {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	align-self: flex-start;
+	width: 73.3rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .about-us {
+	margin: 0 4rem 6.5rem 4rem;
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .staking-dodi {
+	overflow-wrap: break-word;
+	font-family: var(--h-3-bold-font-family, 'Inter');
+	font-weight: var(--h-3-bold-font-weight, 700);
+	font-size: var(--h-3-bold-font-size, 2.1rem);
+	line-height: var(--h-3-bold-line-height, 1.4);
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.staking-dodi {
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 2.1rem;
+	line-height: 1.333;
+	color: var(--primary-2-primary-2500, #00CD6A);
+}
+
+.diodi-web-page .ptitle-8 {
+	margin-bottom: 1.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: flex-start;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .how-it-works {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 600;
+	font-size: 1.1rem;
+	line-height: 1.5;
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .link-6 {
+	border-bottom: 0.1rem solid #43B763;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 0.6rem 1.2rem 0.6rem 1.1rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .tab-4 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .rewards {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 600;
+	font-size: 1.1rem;
+	line-height: 1.5;
+	color: rgba(255, 255, 255, 0.72);
+}
+
+.diodi-web-page .link-7 {
+	border-bottom: 0.1rem solid #363636;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 0.6rem 1.2rem 0.6rem 1.1rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .tab-5 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .nav-1 {
+	margin-bottom: 2.3rem;
+	display: flex;
+	flex-direction: row;
+	width: 82rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .ellipse-73 {
+	border-radius: 4.4rem;
+	background: #535357;
+	position: relative;
+	width: 8.8rem;
+	height: 8.8rem;
+}
+
+.diodi-web-page .dog-223 {
+	background: url('assets/images/Dog22.png');
+	position: absolute;
+	left: 0rem;
+	top: 0rem;
+	right: 0rem;
+	bottom: 0rem;
+	height: 100%;
+}
+
+.diodi-web-page .div-column-11 {
+	position: relative;
+	margin-right: 1.2rem;
+	padding: 0.3rem 0.9rem 0 0.9rem;
+	width: 11.6rem;
+	height: 11.3rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .about-us-5 {
+	overflow-wrap: break-word;
+	font-family: var(--title-3-bold-font-family, 'Inter');
+	font-weight: var(--title-3-bold-font-weight, 700);
+	font-size: var(--title-3-bold-font-size, 1.2rem);
+	line-height: var(--title-3-bold-line-height, 1.4);
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .ptitle-9 {
+	margin-bottom: 1.2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: flex-start;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .lorem-ipsum-dolor-sit-amet-consectetur-egestas-tempus-vitae-lorem-urna-luctus-amet-leo-at-commodo-mattis-nisl-3 {
+	overflow-wrap: break-word;
+	font-family: var(--title-2-font-family, 'Inter');
+	font-weight: var(--title-2-font-weight, 400);
+	font-size: var(--title-2-font-size, 1rem);
+	line-height: var(--title-2-line-height, 1.4);
+	color: rgba(255, 255, 255, 0.72);
+}
+
+.diodi-web-page .psubtitle-4 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-columnmargin-3 {
+	margin: 0.8rem 0 2.1rem 0;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-column-10 {
+	margin-bottom: 3.7rem;
+	display: flex;
+	flex-direction: row;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .ellipse-74 {
+	border-radius: 4.4rem;
+	background: #535357;
+	position: relative;
+	width: 8.8rem;
+	height: 8.8rem;
+}
+
+.diodi-web-page .dog-224 {
+	background: url('assets/images/Dog22.png');
+	position: absolute;
+	left: 0rem;
+	top: 0rem;
+	right: 0rem;
+	bottom: 0rem;
+	height: 100%;
+}
+
+.diodi-web-page .div-column-13 {
+	position: relative;
+	margin-right: 1.2rem;
+	padding: 0.3rem 0.9rem 0 0.9rem;
+	width: 11.6rem;
+	height: 11.3rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .about-us-6 {
+	overflow-wrap: break-word;
+	font-family: var(--title-3-bold-font-family, 'Inter');
+	font-weight: var(--title-3-bold-font-weight, 700);
+	font-size: var(--title-3-bold-font-size, 1.2rem);
+	line-height: var(--title-3-bold-line-height, 1.4);
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .ptitle-10 {
+	margin-bottom: 1.2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: flex-start;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .lorem-ipsum-dolor-sit-amet-consectetur-egestas-tempus-vitae-lorem-urna-luctus-amet-leo-at-commodo-mattis-nisl-4 {
+	overflow-wrap: break-word;
+	font-family: var(--title-2-font-family, 'Inter');
+	font-weight: var(--title-2-font-weight, 400);
+	font-size: var(--title-2-font-size, 1rem);
+	line-height: var(--title-2-line-height, 1.4);
+	color: rgba(255, 255, 255, 0.72);
+}
+
+.diodi-web-page .psubtitle-5 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-columnmargin-4 {
+	margin: 0.8rem 0 2.1rem 0;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-columns-1 {
+	margin-bottom: 3.7rem;
+	display: flex;
+	flex-direction: row;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .ellipse-75 {
+	border-radius: 4.4rem;
+	background: #535357;
+	position: relative;
+	width: 8.8rem;
+	height: 8.8rem;
+}
+
+.diodi-web-page .dog-225 {
+	background: url('assets/images/Dog22.png');
+	position: absolute;
+	left: 0rem;
+	top: 0rem;
+	right: 0rem;
+	bottom: 0rem;
+	height: 100%;
+}
+
+.diodi-web-page .div-column-15 {
+	position: relative;
+	margin-right: 1.2rem;
+	padding: 0.3rem 0.9rem 0 0.9rem;
+	width: 11.6rem;
+	height: 11.3rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .about-us-7 {
+	overflow-wrap: break-word;
+	font-family: var(--title-3-bold-font-family, 'Inter');
+	font-weight: var(--title-3-bold-font-weight, 700);
+	font-size: var(--title-3-bold-font-size, 1.2rem);
+	line-height: var(--title-3-bold-line-height, 1.4);
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .ptitle-11 {
+	margin-bottom: 1.2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: flex-start;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .lorem-ipsum-dolor-sit-amet-consectetur-egestas-tempus-vitae-lorem-urna-luctus-amet-leo-at-commodo-mattis-nisl-5 {
+	overflow-wrap: break-word;
+	font-family: var(--title-2-font-family, 'Inter');
+	font-weight: var(--title-2-font-weight, 400);
+	font-size: var(--title-2-font-size, 1rem);
+	line-height: var(--title-2-line-height, 1.4);
+	color: rgba(255, 255, 255, 0.72);
+}
+
+.diodi-web-page .psubtitle-6 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-columnmargin-5 {
+	margin: 0.8rem 0 2.1rem 0;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-column-14 {
+	display: flex;
+	flex-direction: row;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-column-12 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .frame-92 {
+	margin-right: 1.6rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .whats-app-image-20240402-at-10512 {
+	background: url('assets/images/WhatsAppImage20240402At10512.png') 50% / cover no-repeat;
+	margin: 8.2rem 0 8rem 0;
+	width: 40.8rem;
+	height: 25rem;
+}
+
+.diodi-web-page .frame-932 {
+	margin-bottom: 4rem;
+	display: flex;
+	flex-direction: row;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .buy-dodi-1 {
+	overflow-wrap: break-word;
+	font-family: var(--title-4-bold-font-family, 'Inter');
+	font-weight: var(--title-4-bold-font-weight, 700);
+	font-size: var(--title-4-bold-font-size, 1rem);
+	line-height: var(--title-4-bold-line-height, 1.4);
+	color: #FFFFFF;
+}
+
+.diodi-web-page .link-8 {
+	border-radius: 1.3rem;
+	background: #00CD6A;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 1.8rem 0rem 1.8rem 0;
+	width: 17.9rem;
+	height: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-buttons-2 {
+	margin-right: 45rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 17.9rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-btabs-1 {
+	margin: 0 0.5rem 0 0.8rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .about-us-4 {
+	margin: 0 4rem 3.8rem 4rem;
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .tokenomics-1 {
+	overflow-wrap: break-word;
+	font-family: var(--h-3-bold-font-family, 'Inter');
+	font-weight: var(--h-3-bold-font-weight, 700);
+	font-size: var(--h-3-bold-font-size, 2.1rem);
+	line-height: var(--h-3-bold-line-height, 1.4);
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .ptitle-12 {
+	margin-bottom: 1.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: flex-start;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .lorem-ipsum-dolor-sit-amet-consectetur-nullam-in-diam-cursus-purus-vitae-lectus-aegestas-arcu-convallis-morbi-leo-quis-velit-dis-ut-faucibus-senectus-enim-quam-ac-bibendum-porttitor-mattis-eget {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 400;
+	font-size: 0.9rem;
+	line-height: 1.25;
+	color: rgba(255, 255, 255, 0.72);
+}
+
+.diodi-web-page .psubtitle-7 {
+	margin-bottom: 1.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: flex-start;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .total-supply {
+	margin-right: 1.4rem;
+	overflow-wrap: break-word;
+	font-family: var(--h-3-bold-font-family, 'Inter');
+	font-weight: var(--h-3-bold-font-weight, 700);
+	font-size: var(--h-3-bold-font-size, 2.1rem);
+	line-height: var(--h-3-bold-line-height, 1.4);
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .container-2 {
+	overflow-wrap: break-word;
+	font-family: var(--h-3-bold-font-family, 'Inter');
+	font-weight: var(--h-3-bold-font-weight, 700);
+	font-size: var(--h-3-bold-font-size, 2.1rem);
+	line-height: var(--h-3-bold-line-height, 1.4);
+	color: var(--primary-2-primary-2500, #00CD6A);
+}
+
+.diodi-web-page .ptitle-13 {
+	margin-bottom: 2.1rem;
+	display: flex;
+	flex-direction: row;
+	align-self: flex-start;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .container-1 {
+	width: 22.6rem;
+	height: 22.6rem;
+}
+
+.diodi-web-page .container {
+	margin-right: 11.8rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 22.6rem;
+	height: 22.6rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .container-11 {
+	width: 1.3rem;
+	height: 1.3rem;
+}
+
+.diodi-web-page .check-circle {
+	margin: 0.2rem 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 1.3rem;
+	height: 1.3rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .tax-on-all-transactions {
+	overflow-wrap: break-word;
+	font-family: var(--title-3-bold-font-family, 'Inter');
+	font-weight: var(--title-3-bold-font-weight, 700);
+	font-size: var(--title-3-bold-font-size, 1.2rem);
+	line-height: var(--title-3-bold-line-height, 1.4);
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.tax-on-all-transactions-sub1 {
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 1.2rem;
+	line-height: 1.333;
+	color: var(--primary-2-primary-2500, #00CD6A);
+}
+
+.diodi-web-page .frame-106 {
+	margin-bottom: 2.1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 18.8rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .container-13 {
+	width: 1.3rem;
+	height: 1.3rem;
+}
+
+.diodi-web-page .check-circle-1 {
+	margin: 0.2rem 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 1.3rem;
+	height: 1.3rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .tax-rewarded-to-stakers {
+	overflow-wrap: break-word;
+	font-family: var(--title-3-bold-font-family, 'Inter');
+	font-weight: var(--title-3-bold-font-weight, 700);
+	font-size: var(--title-3-bold-font-size, 1.2rem);
+	line-height: var(--title-3-bold-line-height, 1.4);
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .frame-108 {
+	margin: 0 1.2rem 2.1rem 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 17.6rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .container-9 {
+	width: 1.3rem;
+	height: 1.3rem;
+}
+
+.diodi-web-page .check-circle-2 {
+	margin: 0.2rem 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 1.3rem;
+	height: 1.3rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .liquidity-burnt {
+	overflow-wrap: break-word;
+	font-family: var(--title-3-bold-font-family, 'Inter');
+	font-weight: var(--title-3-bold-font-weight, 700);
+	font-size: var(--title-3-bold-font-size, 1.2rem);
+	line-height: var(--title-3-bold-line-height, 1.4);
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .frame-109 {
+	margin-bottom: 2.1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-self: flex-start;
+	width: 11.8rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .container-6 {
+	width: 1.3rem;
+	height: 1.3rem;
+}
+
+.diodi-web-page .check-circle-3 {
+	margin: 0.2rem 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 1.3rem;
+	height: 1.3rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .contract-renounced {
+	overflow-wrap: break-word;
+	font-family: var(--title-3-bold-font-family, 'Inter');
+	font-weight: var(--title-3-bold-font-weight, 700);
+	font-size: var(--title-3-bold-font-size, 1.2rem);
+	line-height: var(--title-3-bold-line-height, 1.4);
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .frame-110 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-self: flex-start;
+	width: 15.2rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .frame-921 {
+	margin: 1.7rem 0 7.9rem 0;
+	display: flex;
+	flex-direction: column;
+	width: 18.8rem;
+	height: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-btabs-2 {
+	margin-left: 10.5rem;
+	display: flex;
+	flex-direction: row;
+	align-self: center;
+	width: 53.2rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .tokenomics {
+	background: url('assets/images/Tokenomics.jpeg') 140.92%;
+	margin-bottom: 4rem;
+	display: flex;
+	flex-direction: column;
+	padding: 3rem 0 5.9rem 4rem;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .dodi-wordwide {
+	overflow-wrap: break-word;
+	font-family: var(--h-3-boldbold-font-family, 'Inter');
+	font-weight: var(--h-3-boldbold-font-weight, 700);
+	font-size: var(--h-3-boldbold-font-size, 2rem);
+	line-height: var(--h-3-boldbold-line-height, 1.4);
+	color: var(--primary-2-primary-2500, #00CD6A);
+}
+
+.dodi-wordwide {
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 2rem;
+	line-height: 1.333;
+	color: var(--secondarysecondary-50, #E6E6E6);
+}
+
+.diodi-web-page .div-content {
+	margin-bottom: 1.9rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: flex-start;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .vector-8 {
+	margin-right: 0.2rem;
+	width: 0.5rem;
+	height: 1rem;
+}
+
+.diodi-web-page .vector-9 {
+	width: 0.5rem;
+	height: 1rem;
+}
+
+.diodi-web-page .chevrons-left {
+	border-radius: 6.3rem;
+	background: rgba(176, 240, 209, 0.3);
+	margin: 8.1rem 0;
+	display: flex;
+	flex-direction: row;
+	padding: 0.7rem 0.6rem;
+	width: 2.5rem;
+	height: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .whats-app-image-20240403-at-1108 {
+	background: url('assets/images/WhatsAppImage20240403At1108.jpeg') 50% / cover no-repeat;
+	margin-right: 5.2rem;
+	width: 18.8rem;
+	height: 18.8rem;
+}
+
+.diodi-web-page .whats-app-image-20240403-at-1105 {
+	background: url('assets/images/WhatsAppImage20240403At1105.jpeg') 50% / cover no-repeat;
+	margin-right: 5.2rem;
+	width: 18.8rem;
+	height: 18.8rem;
+}
+
+.diodi-web-page .whats-app-image-20240403-at-1106 {
+	background: url('assets/images/WhatsAppImage20240403At1106.jpeg') 50% / cover no-repeat;
+	width: 18.8rem;
+	height: 18.8rem;
+}
+
+.diodi-web-page .frame-136 {
+	display: flex;
+	flex-direction: row;
+	width: 66.6rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .vector-11 {
+	margin-right: 0.2rem;
+	width: 0.5rem;
+	height: 1rem;
+}
+
+.diodi-web-page .vector-10 {
+	width: 0.5rem;
+	height: 1rem;
+}
+
+.diodi-web-page .chevrons-left-1 {
+	border-radius: 6.3rem;
+	background: rgba(176, 240, 209, 0.3);
+	margin: 8.1rem 0;
+	display: flex;
+	flex-direction: row;
+	padding: 0.7rem 0.6rem;
+	width: 2.5rem;
+	height: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .frame-135 {
+	margin: 0 0 1.9rem 0.4rem;
+	display: flex;
+	flex-direction: row;
+	column-gap: 5.6rem;
+	width: 82.8rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .rectangle-951 {
+	border-radius: 3.5rem;
+	background: var(--primary-2-primary-2500, #00CD6A);
+	margin-right: 0.2rem;
+	width: 0.8rem;
+	height: 0.3rem;
+}
+
+.diodi-web-page .rectangle-949 {
+	opacity: 0.3;
+	border-radius: 3.5rem;
+	background: #199A8E;
+	margin-right: 0.2rem;
+	width: 0.8rem;
+	height: 0.3rem;
+}
+
+.diodi-web-page .rectangle-952 {
+	opacity: 0.3;
+	border-radius: 3.5rem;
+	background: #199A8E;
+	width: 0.8rem;
+	height: 0.3rem;
+}
+
+.diodi-web-page .slider {
+	margin-left: 0.4rem;
+	display: flex;
+	flex-direction: row;
+	align-self: center;
+	width: 2.7rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .we-all-gonna-make-it-1 {
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-style: italic;
+	font-weight: 900;
+	font-size: 3rem;
+	line-height: 1.4;
+	text-transform: uppercase;
+	color: var(--primary-2-primary-2500, #00CD6A);
+}
+
+.we-all-gonna-make-it-1-sub1 {
+	font-family: 'Inter';
+	font-style: italic;
+	font-weight: 900;
+	font-size: 3rem;
+	line-height: 1.333;
+	text-transform: uppercase;
+	color: var(--secondarysecondary-50, #E6E6E6);
+}
+
+.diodi-web-page .frame-134 {
+	background: var(--secondarysecondary-500, #000000);
+	position: absolute;
+	left: 0rem;
+	right: 0rem;
+	bottom: 0rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-right: 0rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .most-popular {
+	position: relative;
+	margin-bottom: 6.1rem;
+	display: flex;
+	flex-direction: column;
+	padding: 0 3.6rem 6.1rem 3.3rem;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .road-map {
+	overflow-wrap: break-word;
+	font-family: var(--h-3-bold-font-family, 'Inter');
+	font-weight: var(--h-3-bold-font-weight, 700);
+	font-size: var(--h-3-bold-font-size, 2.1rem);
+	line-height: var(--h-3-bold-line-height, 1.4);
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .ptitle-14 {
+	margin-bottom: 1.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: flex-start;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .lorem-ipsum-dolor-sit-amet-consectetur-nullam-in-diam-cursus-purus-vitae-lectus-aegestas-arcu-convallis-morbi-leo-quis-velit-dis-ut-faucibus-senectus-enim-quam-ac-bibendum-porttitor-mattis-eget-1 {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 400;
+	font-size: 0.9rem;
+	line-height: 1.25;
+	color: rgba(255, 255, 255, 0.72);
+}
+
+.diodi-web-page .psubtitle-8 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .frame-131 {
+	margin-bottom: 5.3rem;
+	display: flex;
+	flex-direction: column;
+	align-self: flex-start;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .vector-4 {
+	width: 5.3rem;
+	height: 6.7rem;
+}
+
+.diodi-web-page .frame-129 {
+	position: absolute;
+	top: 0rem;
+	right: 8.7rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 5.3rem;
+	height: 6.7rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .jan-20-th-20242 {
+	margin: 0 0.1rem 0.3rem 1.1rem;
+	display: inline-block;
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-weight: 800;
+	font-size: 0.8rem;
+	line-height: 1.4;
+	color: #FFFFFF;
+}
+
+.diodi-web-page .lorem-ipsum-dolor-sit-amet-consectetur-2 {
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-weight: 400;
+	font-size: 0.8rem;
+	line-height: 1.4;
+	color: #FFFFFF;
+}
+
+.diodi-web-page .frame-1291 {
+	position: relative;
+	margin: 0 5.3rem 0.8rem 5.3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: flex-end;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .frame-116 {
+	border-radius: 0.6rem;
+	background: var(--primary-2-primary-2100, #B0F0D1);
+	position: relative;
+	margin-bottom: 0.4rem;
+	width: 79rem;
+	height: 0.3rem;
+}
+
+.diodi-web-page .vector-1 {
+	width: 5.6rem;
+	height: 4.9rem;
+}
+
+.diodi-web-page .frame-126 {
+	margin: 0.3rem 0 0.2rem 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 5.6rem;
+	height: 4.9rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .vector-3 {
+	width: 8rem;
+	height: 5.4rem;
+}
+
+.diodi-web-page .frame-127 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 8rem;
+	height: 5.4rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .container-8 {
+	margin: 0 0.7rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-self: flex-start;
+	width: 48.8rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .ellipse-9 {
+	border-radius: 0.7rem;
+	background: #04321E;
+	position: absolute;
+	left: 5.6rem;
+	bottom: 5.2rem;
+	width: 1.4rem;
+	height: 1.4rem;
+}
+
+.diodi-web-page .ellipse-17 {
+	border-radius: 1.1rem;
+	background: #04321E;
+	position: absolute;
+	left: 28.9rem;
+	bottom: 4.8rem;
+	width: 2.2rem;
+	height: 2.2rem;
+}
+
+.diodi-web-page .ellipse-12 {
+	border-radius: 0.4rem;
+	background: #04321E;
+	position: absolute;
+	left: 23.9rem;
+	bottom: 5.5rem;
+	width: 0.8rem;
+	height: 0.8rem;
+}
+
+.diodi-web-page .ellipse-14 {
+	border-radius: 0.4rem;
+	background: #04321E;
+	position: absolute;
+	left: 37.3rem;
+	bottom: 5.5rem;
+	width: 0.8rem;
+	height: 0.8rem;
+}
+
+.diodi-web-page .ellipse-15 {
+	border-radius: 0.4rem;
+	background: #04321E;
+	position: absolute;
+	right: 28.9rem;
+	bottom: 5.5rem;
+	width: 0.8rem;
+	height: 0.8rem;
+}
+
+.diodi-web-page .ellipse-16 {
+	border-radius: 0.4rem;
+	background: #04321E;
+	position: absolute;
+	right: 8.2rem;
+	bottom: 5.5rem;
+	width: 0.8rem;
+	height: 0.8rem;
+}
+
+.diodi-web-page .jan-20-th-20243 {
+	margin: 0 0.1rem 0.3rem 1.1rem;
+	display: inline-block;
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-weight: 800;
+	font-size: 0.8rem;
+	line-height: 1.4;
+	color: #FFFFFF;
+}
+
+.diodi-web-page .lorem-ipsum-dolor-sit-amet-consectetur-3 {
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-weight: 400;
+	font-size: 0.8rem;
+	line-height: 1.4;
+	color: #FFFFFF;
+}
+
+.diodi-web-page .frame-122 {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .vector-2 {
+	position: absolute;
+	left: 0rem;
+	top: 0rem;
+	width: 5rem;
+	height: 5.2rem;
+}
+
+.diodi-web-page .frame-128 {
+	position: absolute;
+	left: 25rem;
+	top: 0.8rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 0.8rem 0 0 1.1rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .frame-118 {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding-top: 1.7rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .jan-20-th-2024 {
+	margin: 0 0.1rem 0.3rem 1.1rem;
+	display: inline-block;
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-weight: 800;
+	font-size: 0.8rem;
+	line-height: 1.4;
+	color: #FFFFFF;
+}
+
+.diodi-web-page .lorem-ipsum-dolor-sit-amet-consectetur {
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-weight: 400;
+	font-size: 0.8rem;
+	line-height: 1.4;
+	color: #FFFFFF;
+}
+
+.diodi-web-page .frame-1261 {
+	position: absolute;
+	left: 1.9rem;
+	bottom: 0rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .jan-20-th-20241 {
+	margin: 0 0.1rem 0.3rem 1.1rem;
+	display: inline-block;
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-weight: 800;
+	font-size: 0.8rem;
+	line-height: 1.4;
+	color: #FFFFFF;
+}
+
+.diodi-web-page .lorem-ipsum-dolor-sit-amet-consectetur-1 {
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-weight: 400;
+	font-size: 0.8rem;
+	line-height: 1.4;
+	color: #FFFFFF;
+}
+
+.diodi-web-page .frame-1271 {
+	position: absolute;
+	right: 29.1rem;
+	bottom: 0rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .frame-130 {
+	position: relative;
+	margin-left: 0.1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-bottom: 0.6rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .roadmap {
+	background: url('assets/images/Roadmap.jpeg') 50% / cover no-repeat;
+	margin-bottom: 3rem;
+	display: flex;
+	flex-direction: column;
+	padding: 3.1rem 6.4rem 2rem 4.6rem;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .dodi-community {
+	overflow-wrap: break-word;
+	font-family: var(--h-3-bold-font-family, 'Inter');
+	font-weight: var(--h-3-bold-font-weight, 700);
+	font-size: var(--h-3-bold-font-size, 2.1rem);
+	line-height: var(--h-3-bold-line-height, 1.4);
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.dodi-community-sub1 {
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 2.1rem;
+	line-height: 1.333;
+	color: var(--primary-2-primary-2500, #00CD6A);
+}
+
+.diodi-web-page .ptitle-15 {
+	margin: 0 3.3rem 3rem 3.3rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: flex-start;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .twitter-png {
+	border-radius: 624.9rem;
+	border: 0.1rem solid #121614;
+	background: url('assets/images/TwitterPng.png'), linear-gradient(#121614, #121614);
+	width: 4rem;
+	height: 4.1rem;
+}
+
+.diodi-web-page .div-column-17 {
+	margin-right: 1.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 4rem;
+	height: 4.1rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .twitter {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 600;
+	font-size: 1.1rem;
+	line-height: 1.125;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .ptitle-16 {
+	margin-bottom: 0.2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: flex-start;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .followers {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 400;
+	font-size: 0.9rem;
+	line-height: 1.25;
+	text-transform: uppercase;
+	color: var(--primary-2-primary-2500, #00CD6A);
+}
+
+.diodi-web-page .psubtitle-9 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-columnmargin-6 {
+	margin: 0.8rem 0;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-card {
+	border-radius: 1rem;
+	background: #1E2220;
+	display: flex;
+	flex-direction: row;
+	padding: 1rem 0 1rem 1rem;
+	width: 19.4rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-column-16 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 19.4rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .telegram-png {
+	border-radius: 624.9rem;
+	border: 0.1rem solid #121614;
+	background: url('assets/images/TelegramPng.png'), linear-gradient(#121614, #121614);
+	width: 4rem;
+	height: 3.9rem;
+}
+
+.diodi-web-page .div-column-19 {
+	margin-right: 1.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 4rem;
+	height: 3.9rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .telegram {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 600;
+	font-size: 1.1rem;
+	line-height: 1.125;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .ptitle-17 {
+	margin-bottom: 0.2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: flex-start;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .members {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 400;
+	font-size: 0.9rem;
+	line-height: 1.25;
+	text-transform: uppercase;
+	color: var(--primary-2-primary-2500, #00CD6A);
+}
+
+.diodi-web-page .psubtitle-10 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-columnmargin-7 {
+	margin: 0.8rem 0 0.6rem 0;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-card-1 {
+	border-radius: 1rem;
+	background: #1E2220;
+	display: flex;
+	flex-direction: row;
+	padding: 1rem 0 1.1rem 1rem;
+	width: 19.4rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-column-18 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 19.4rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .group {
+	width: 1.9rem;
+	height: 1.9rem;
+}
+
+.diodi-web-page .skill-iconsinstagram {
+	position: absolute;
+	right: 1.1rem;
+	bottom: 1.1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 1.9rem;
+	height: 1.9rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-column-21 {
+	border-radius: 2rem;
+	background: #FFFFFF;
+	position: relative;
+	margin-right: 1.5rem;
+	width: 4rem;
+	height: 4rem;
+}
+
+.diodi-web-page .instagram {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 600;
+	font-size: 1.1rem;
+	line-height: 1.125;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .ptitle-18 {
+	margin-bottom: 0.2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .coming-soon {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 400;
+	font-size: 0.9rem;
+	line-height: 1.25;
+	text-transform: uppercase;
+	color: var(--primary-2-primary-2500, #00CD6A);
+}
+
+.diodi-web-page .psubtitle-11 {
+	margin-right: 0.3rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-columnmargin-8 {
+	margin: 0.8rem 0 0.7rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-card-2 {
+	border-radius: 1rem;
+	background: #1E2220;
+	display: flex;
+	flex-direction: row;
+	padding: 1rem 0 1.1rem 1rem;
+	width: 19.4rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-column-20 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 19.4rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-columns-2 {
+	margin-bottom: 3rem;
+	display: flex;
+	flex-direction: row;
+	align-self: center;
+	column-gap: 1.5rem;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .dodi-universe {
+	overflow-wrap: break-word;
+	font-family: var(--h-3-bold-font-family, 'Inter');
+	font-weight: var(--h-3-bold-font-weight, 700);
+	font-size: var(--h-3-bold-font-size, 2.1rem);
+	line-height: var(--h-3-bold-line-height, 1.4);
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.dodi-universe-sub1 {
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 2.1rem;
+	line-height: 1.333;
+	color: var(--primary-2-primary-2500, #00CD6A);
+}
+
+.diodi-web-page .ptitle-19 {
+	margin-bottom: 2.3rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: flex-start;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .clip-path-group {
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.diodi-web-page .jupiter-logo-1 {
+	margin-right: 0.7rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 2.5rem;
+	height: 2.5rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .jupiter {
+	margin: 0.4rem 0;
+	display: inline-block;
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 1.2rem;
+	line-height: 1.4;
+	color: #FFFFFF;
+}
+
+.diodi-web-page .div-column-22 {
+	margin-top: 0.3rem;
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .group-3 {
+	width: 2rem;
+	height: 2.4rem;
+}
+
+.diodi-web-page .frame-100 {
+	margin-right: 0.9rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 2rem;
+	height: 2.4rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .raydium {
+	margin: 0.3rem 0 0.4rem 0;
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 1.2rem;
+	line-height: 1.4;
+	color: #FFFFFF;
+}
+
+.raydium {
+	font-family: 'Inter';
+	font-weight: 400;
+	font-size: 1.2rem;
+	line-height: 1.333;
+}
+
+.diodi-web-page .div-column-23 {
+	margin: 0.4rem 0 0rem 0;
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .vector-26 {
+	width: 1.9rem;
+	height: 2.1rem;
+}
+
+.diodi-web-page .frame-101 {
+	margin-right: 0.9rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 1.9rem;
+	height: 2.1rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .dex-tools {
+	margin: 0.2rem 0;
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 1.2rem;
+	line-height: 1.4;
+	color: #FFFFFF;
+}
+
+.dex-tools {
+	font-family: 'Inter';
+	font-weight: 400;
+	font-size: 1.2rem;
+	line-height: 1.333;
+}
+
+.diodi-web-page .div-column-24 {
+	margin: 0.5rem 0 0.2rem 0;
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .cmc-png {
+	background: url('assets/images/CmcPng.png');
+	width: 11.1rem;
+	height: 2.2rem;
+}
+
+.diodi-web-page .div-column-25 {
+	margin-bottom: 0.6rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 11.1rem;
+	height: 2.2rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .container-10 {
+	margin: 0 0 7.9rem 0.7rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 63.8rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .frame-102 {
+	margin-right: 0.6rem;
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.diodi-web-page .coin-geko {
+	margin: 0.4rem 0;
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 1.2rem;
+	line-height: 1.4;
+	color: #FFFFFF;
+}
+
+.coin-geko {
+	font-family: 'Inter';
+	font-weight: 400;
+	font-size: 1.2rem;
+	line-height: 1.333;
+}
+
+.diodi-web-page .div-column-26 {
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .fill-1 {
+	width: 2.6rem;
+	height: 2.5rem;
+}
+
+.diodi-web-page .idt-jyootra-1 {
+	margin-right: 0.6rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 2.6rem;
+	height: 2.5rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .birdeye {
+	margin: 0.4rem 0;
+	display: inline-block;
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 1.2rem;
+	line-height: 1.4;
+	color: #FFFFFF;
+}
+
+.diodi-web-page .div-column-27 {
+	margin-bottom: 0rem;
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .solana-sol-logo-1 {
+	background: url('assets/images/SolanaSolLogo1.png') 50% / cover no-repeat;
+	margin-right: 0.6rem;
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.diodi-web-page .solana {
+	margin: 0.4rem 0;
+	display: inline-block;
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 1.2rem;
+	line-height: 1.4;
+	color: #FFFFFF;
+}
+
+.diodi-web-page .div-column-28 {
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .dex-screener-seeklogo-1 {
+	margin-right: 0.6rem;
+	width: 2.1rem;
+	height: 2.5rem;
+}
+
+.diodi-web-page .dex-screener {
+	margin: 0.4rem 0;
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 1.2rem;
+	line-height: 1.4;
+	color: #FFFFFF;
+}
+
+.dex-screener {
+	font-family: 'Inter';
+	font-weight: 400;
+	font-size: 1.2rem;
+	line-height: 1.333;
+}
+
+.diodi-web-page .div-column-29 {
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .container-7 {
+	margin-right: 0.4rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 64.1rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-columns-3 {
+	margin-left: 10.1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: center;
+	width: 64.5rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .section {
+	background: url('assets/images/DivUniverseBackground.png');
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding: 3rem 0 2.1rem 3.3rem;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .community {
+	margin-bottom: 3.8rem;
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .logo-diodi-inu-3 {
+	margin-right: 0.5rem;
+	width: 4rem;
+	height: 4rem;
+}
+
+.diodi-web-page .dodi-inu {
+	margin: 0.3rem 0;
+	overflow-wrap: break-word;
+	font-family: var(--h-2-bold-font-family, 'Inter');
+	font-weight: var(--h-2-bold-font-weight, 700);
+	font-size: var(--h-2-bold-font-size, 2.5rem);
+	line-height: var(--h-2-bold-line-height, 1.4);
+	color: var(--primary-2-primary-2500, #00CD6A);
+}
+
+.dodi-inu-sub1 {
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 2.5rem;
+	line-height: 1.333;
+	color: var(--secondarysecondary-50, #E6E6E6);
+}
+
+.diodi-web-page .frame-95 {
+	margin-bottom: 1.1rem;
+	display: flex;
+	flex-direction: row;
+	align-self: flex-start;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .vector-39 {
+	width: 2rem;
+	height: 1.6rem;
+}
+
+.diodi-web-page .linkmargin-2 {
+	margin: 0.3rem 1.1rem 0.3rem 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 2rem;
+	height: 1.6rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .vector-40 {
+	width: 1.7rem;
+	height: 1.4rem;
+}
+
+.diodi-web-page .linkmargin-3 {
+	margin: 0.3rem 1.4rem 0.4rem 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 1.7rem;
+	height: 1.4rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .vector-41 {
+	width: 1.9rem;
+	height: 2.2rem;
+}
+
+.diodi-web-page .linkmargin-4 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 1.9rem;
+	height: 2.2rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-buttons-3 {
+	margin: 0 0.9rem 1.4rem 0.9rem;
+	display: flex;
+	flex-direction: row;
+	align-self: flex-start;
+	width: 8rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .lorem-ipsum-dolor-sit-amet-consectetur-sed-ac-quis-euismod-vivamus-et-vitae-acras-velit-pharetra-bibendum-magnis-mauris-in-luctus-viverra-blandit-mollis {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 400;
+	font-size: 0.9rem;
+	line-height: 1.5;
+	color: rgba(255, 255, 255, 0.72);
+}
+
+.diodi-web-page .p {
+	margin-left: 0.7rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-columnmargin-9 {
+	margin-right: 12.2rem;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .community-1 {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 400;
+	font-size: 0.9rem;
+	line-height: 1.25;
+	color: rgba(255, 255, 255, 0.72);
+}
+
+.diodi-web-page .psubtitle-12 {
+	margin-bottom: 0.9rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .link-xtwitter {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 400;
+	font-size: 0.9rem;
+	line-height: 1.5;
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .item {
+	margin-bottom: 0.2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .link-telegram {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 400;
+	font-size: 0.9rem;
+	line-height: 1.5;
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .item-1 {
+	margin: 0 0.5rem 0.2rem 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .link-telegram-1 {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 400;
+	font-size: 0.9rem;
+	line-height: 1.5;
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .item-2 {
+	margin-right: 0rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .list {
+	margin-right: 0.6rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-columnmargin-11 {
+	margin-bottom: 1.7rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .external {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 400;
+	font-size: 0.9rem;
+	line-height: 1.25;
+	color: rgba(255, 255, 255, 0.72);
+}
+
+.diodi-web-page .psubtitle-13 {
+	margin-bottom: 0.9rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: flex-start;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .link-coin-gecko {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 400;
+	font-size: 0.9rem;
+	line-height: 1.5;
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .item-3 {
+	margin-bottom: 0.2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: flex-start;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .link-coin-market-cap {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 400;
+	font-size: 0.9rem;
+	line-height: 1.5;
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .item-4 {
+	margin-bottom: 0.2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .link-defi-llama {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 400;
+	font-size: 0.9rem;
+	line-height: 1.5;
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .item-5 {
+	margin-bottom: 0.2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: flex-start;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .link-yield-yak-analytics {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 400;
+	font-size: 0.9rem;
+	line-height: 1.5;
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .item-6 {
+	margin-right: 0.7rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .list-1 {
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-columnmargin-12 {
+	margin-right: 6.8rem;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .developers {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 400;
+	font-size: 0.9rem;
+	line-height: 1.25;
+	color: rgba(255, 255, 255, 0.72);
+}
+
+.diodi-web-page .psubtitle-14 {
+	margin: 0 0.9rem 0.9rem 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .link-docs {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 400;
+	font-size: 0.9rem;
+	line-height: 1.5;
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .item-7 {
+	margin-bottom: 0.2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: flex-start;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .link-brand-assets {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 400;
+	font-size: 0.9rem;
+	line-height: 1.5;
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .item-8 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .list-2 {
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-columnmargin-13 {
+	margin: 0 8.1rem 3.4rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .beginners {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 400;
+	font-size: 0.9rem;
+	line-height: 1.25;
+	color: rgba(255, 255, 255, 0.72);
+}
+
+.diodi-web-page .psubtitle-15 {
+	margin-bottom: 0.9rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: flex-start;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .link-intro-to-yy-you-tube {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 400;
+	font-size: 0.9rem;
+	line-height: 1.5;
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .item-9 {
+	margin-bottom: 0.2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .link-what-is-yield-farming {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 400;
+	font-size: 0.9rem;
+	line-height: 1.5;
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .item-10 {
+	margin-bottom: 0.2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: flex-start;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .link-docs-1 {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 400;
+	font-size: 0.9rem;
+	line-height: 1.5;
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.diodi-web-page .item-11 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: flex-start;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .list-3 {
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-column-30 {
+	margin-bottom: 1.7rem;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .container-5 {
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .div-columnmargin-10 {
+	margin: 0.5rem 0 5.3rem 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 51.6rem;
+	height: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .footer {
+	margin: 0 5rem 0 3rem;
+	display: flex;
+	flex-direction: row;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .scroll {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 2.7rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .logo-diodi-inu-31 {
+	margin-right: 0.5rem;
+	width: 4rem;
+	height: 4rem;
+}
+
+.diodi-web-page .dodi-inu-1 {
+	margin: 0.3rem 0;
+	overflow-wrap: break-word;
+	font-family: var(--h-2-bold-font-family, 'Inter');
+	font-weight: var(--h-2-bold-font-weight, 700);
+	font-size: var(--h-2-bold-font-size, 2.5rem);
+	line-height: var(--h-2-bold-line-height, 1.4);
+	color: var(--primary-2-primary-2500, #00CD6A);
+}
+
+.dodi-inu-1-sub1 {
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 2.5rem;
+	line-height: 1.333;
+	color: var(--secondarysecondary-50, #E6E6E6);
+}
+
+.diodi-web-page .frame-94 {
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .home {
+	margin-right: 0.6rem;
+	width: 4.8rem;
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 1.125;
+	color: var(--primary-2-primary-2500, #00CD6A);
+}
+
+.diodi-web-page .staking-1 {
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 1.125;
+	color: var(--secondarysecondary-50, #E6E6E6);
+}
+
+.diodi-web-page .staking {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .white-paper {
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 1.125;
+	color: #FFFFFF;
+}
+
+.diodi-web-page .frame-1 {
+	margin: 1.4rem 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 17.3rem;
+	height: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .buy-dodi-2 {
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-weight: 500;
+	font-size: 1rem;
+	color: #FFFFFF;
+}
+
+.diodi-web-page .frame-951 {
+	border-radius: 1.3rem;
+	background: #00BB60;
+	margin-right: 1.3rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 1.3rem 0rem 1.3rem 0;
+	width: 11.8rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .connect-wallet {
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-weight: 500;
+	font-size: 1rem;
+	color: #FFFFFF;
+}
+
+.diodi-web-page .frame-2 {
+	border-radius: 1.3rem;
+	border: 0.2rem solid #00BB60;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 1.3rem 0rem 1.3rem 0;
+	width: 11.8rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .container-12 {
+	margin: 0.1rem 0;
+	display: flex;
+	flex-direction: row;
+	width: 24.9rem;
+	height: fit-content;
+	box-sizing: border-box;
+}
+
+.diodi-web-page .nav-bar {
+	border-bottom: 0.1rem solid #04321E;
+	background: #000000;
+	position: absolute;
+	left: 0rem;
+	top: 0rem;
+	right: 0rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 1.1rem 4.9rem 1.1rem 3rem;
+	box-sizing: border-box;
+}
+
+.diodi-web-page {
+	background: #000000;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 6.2rem 0 5.9rem 0;
+	width: 90rem;
+	box-sizing: border-box;
+}

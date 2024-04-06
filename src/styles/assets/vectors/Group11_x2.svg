@@ -1,0 +1,32 @@
+<svg width="66" height="76" viewBox="0 0 66 76" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M60.959,27.657L60.959,53.973L31.689,70.869L2.401,53.973L2.401,20.164L31.689,3.251L54.185,16.246L57.58,14.287L31.689,-0.667L-0.994,18.205L-0.994,55.932L31.689,74.804L64.371,55.932L64.371,25.698L60.959,27.657Z" fill="url(#pf_0_171_777)"/>
+<path d="M23.493,53.99L18.596,53.99L18.596,37.567L34.921,37.567C36.465,37.55 37.941,36.926 39.029,35.829C40.116,34.732 40.729,33.251 40.733,31.707C40.741,30.943 40.594,30.185 40.299,29.481C40.004,28.776 39.569,28.139 39.018,27.609C38.486,27.062 37.849,26.628 37.145,26.334C36.441,26.039 35.684,25.89 34.921,25.895L18.596,25.895L18.596,20.899L34.937,20.899C37.798,20.917 40.537,22.061 42.56,24.084C44.583,26.107 45.727,28.846 45.744,31.707C45.762,33.897 45.094,36.037 43.834,37.828C42.675,39.542 41.041,40.881 39.133,41.681C37.243,42.281 35.271,42.578 33.288,42.563L23.493,42.563L23.493,53.99Z" fill="url(#pf_0_171_778)"/>
+<path d="M45.631,53.58L39.917,53.58L35.51,45.891C37.254,45.785 38.974,45.433 40.619,44.847L45.631,53.58Z" fill="url(#pf_0_171_779)"/>
+<path d="M57.547,22.188L60.926,24.065L64.306,22.188L64.306,18.221L60.926,16.262L57.547,18.221L57.547,22.188Z" fill="url(#pf_0_171_780)"/>
+<defs>
+<linearGradient id="pf_0_171_777" x1="64.314" y1="18.226" x2="-4.992" y2="45.941" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C200FB"/>
+<stop offset="0.49" stop-color="#3772FF"/>
+<stop offset="0.49" stop-color="#3773FE"/>
+<stop offset="1" stop-color="#5AC4BE"/>
+</linearGradient>
+<linearGradient id="pf_0_171_778" x1="64.313" y1="18.227" x2="-4.992" y2="45.942" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C200FB"/>
+<stop offset="0.49" stop-color="#3772FF"/>
+<stop offset="0.49" stop-color="#3773FE"/>
+<stop offset="1" stop-color="#5AC4BE"/>
+</linearGradient>
+<linearGradient id="pf_0_171_779" x1="64.315" y1="18.225" x2="-4.991" y2="45.94" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C200FB"/>
+<stop offset="0.49" stop-color="#3772FF"/>
+<stop offset="0.49" stop-color="#3773FE"/>
+<stop offset="1" stop-color="#5AC4BE"/>
+</linearGradient>
+<linearGradient id="pf_0_171_780" x1="64.313" y1="18.225" x2="-4.993" y2="45.94" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C200FB"/>
+<stop offset="0.49" stop-color="#3772FF"/>
+<stop offset="0.49" stop-color="#3773FE"/>
+<stop offset="1" stop-color="#5AC4BE"/>
+</linearGradient>
+</defs>
+</svg>
