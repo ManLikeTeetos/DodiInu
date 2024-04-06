@@ -4,17 +4,23 @@
           display: flex;
           width: 100%;
           flex-direction: column;
-          padding: 80px 64px;
+
         }
         @media (max-width: 991px) {
           .hero {
             max-width: 100%;
-            padding: 0 20px;
           }
         }
 		.hero-bg{
 			background: linear-gradient(180deg, rgba(0, 0, 0, 0.86) 34.42%, rgba(0, 0, 0, 0.86) 100%);
+			padding: 80px 64px;
 		}
+				  @media (max-width: 991px) {
+				  	.hero-bg {
+				  		max-width: 100%;
+				  		padding: 0 20px;
+				  	}
+				  }
         .hero-2 {
           margin-top: 87px;
         }
