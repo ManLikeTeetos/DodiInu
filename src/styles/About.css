@@ -67,6 +67,17 @@
   }
 }
 
+
+.about-columns{
+  position: relative;
+  margin-bottom: 63.4px;
+  padding: 131.4px 0 128px 0;
+  width: 1326.6px;
+  height: 658.6px;
+  display: flex;
+  flex-direction: row;
+}
+
 .about-image-container {
   position: relative;
   margin-top: auto;

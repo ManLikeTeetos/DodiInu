@@ -2,7 +2,7 @@ import "../styles/WebPage.css";
 import "../styles/Hero.css";
 import "../styles/About.css";
 import DodiLogo from '../styles/assets/images/Dodilogo.svg';
-import { Columns, Column, Image } from "@components";
+
 
 const colorStyle = {
 	color: {
@@ -119,10 +119,12 @@ function WebPage(){
 				<div className="about-segment-header">SOLUTION</div>
 				<div className="about-segment-header">GOAL</div>
 			</div>
+			<div className="about-columns">
+
+			</div>
 			<div className="about-buy-button">
 				BUY DODI
 			</div>
-      </div>
 	</>
   )
 }
