@@ -1,8 +1,10 @@
 import "../styles/WebPage.css";
 import "../styles/Hero.css";
 import "../styles/AboutRem.css";
+import "../styles/StakingRem.css";
 import DodiLogo from '../styles/assets/images/Dodilogo.svg';
 import AboutDog from "../styles/assets/images/AboutDog.png";
+import stakingDog from "../styles/assets/images/AboutDog.png";
 
 
 const colorStyle = {
@@ -123,7 +125,8 @@ function WebPage(){
 			</div>
 			<div className="about-columns">
 				<div className="about-image-container">
-					  <div className="about-image"></div>
+					  <div className="about-image">
+					  </div>
 				</div>
 				<div className="about-content-container">
 					<div className="about-content-box">
@@ -200,7 +203,99 @@ function WebPage(){
 			<div className="about-buy-button">
 				BUY DODI
 			</div>
+	   </div>
+
+	   <div className="staking">
+			<div className="staking-title">
+				Staking
+				<span className="green-color">  DODI</span>
+			</div>
+			<div className="staking-segment">
+				<div className="staking-segment-header">HOW IT WORKS</div>
+				<div className="staking-segment-header">REWARDS</div>
+			</div>
+			<div className="staking-columns">
+				<div className="staking-content-container">
+					<div className="staking-content-box">
+						<div className="staking-content-shell">
+							<div className="staking-image-column">
+								  <img
+									  loading="lazy"
+									  src={stakingDog}
+									  //className="img"
+									  alt="staking us"
+								  />
+							</div>
+							  <div className="staking-content-column">
+								<div className="staking-content-subcolumn">
+									<div className="staking-content-title">
+										About Us
+									</div>
+									<div className="staking-content-text">
+										Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
+										lorem urna luctus amet leo at. Commodo mattis nisl.<br />
+									</div>
+									</div>
+							  </div>
+							</div>
+					</div>
+					<div className="staking-content-box">
+						<div className="staking-content-shell">
+							<div className="staking-image-column">
+								  <img
+									  loading="lazy"
+									  src={stakingDog}
+									  //className="img"
+									  alt="staking us"
+								  />
+							</div>
+							<div className="staking-content-column">
+								<div className="staking-content-subcolumn">
+									<div className="staking-content-title">
+										staking Us
+									</div>
+									<div className="staking-content-text">
+										Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
+										lorem urna luctus amet leo at. Commodo mattis nisl.<br />
+									</div>
+									</div>
+								</div>
+							</div>
+							<div className="staking-content-box">
+						<div className="staking-content-shell">
+							<div className="staking-image-column">
+								  <img
+									  loading="lazy"
+									  src={stakingDog}
+									  //className="img"
+									  alt="staking us"
+								  />
+							</div>
+							<div className="staking-content-column">
+								<div className="staking-content-subcolumn">
+									<div className="staking-content-title">
+										About Us
+									</div>
+									<div className="staking-content-text">
+										Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
+										lorem urna luctus amet leo at. Commodo mattis nisl.<br />
+									</div>
+									</div>
+								</div>
+							</div>
+					</div>
+					</div>
+				</div>
+				<div className="staking-image-container">
+					  <div className="staking-image"></div>
+				 </div>
+
+			</div>
+			<div className="staking-buy-button">
+				BUY DODI
+			</div>
 	  </div>
+
 	</div>
   )
 }
