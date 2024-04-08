@@ -2,6 +2,7 @@ import "../styles/WebPage.css";
 import "../styles/Hero.css";
 import "../styles/About.css";
 import DodiLogo from '../styles/assets/images/Dodilogo.svg';
+import { Columns, Column, Image } from "@components";
 
 const colorStyle = {
 	color: {
@@ -118,81 +119,6 @@ function WebPage(){
 				<div className="about-segment-header">SOLUTION</div>
 				<div className="about-segment-header">GOAL</div>
 			</div>
-			<Columns space={38} className="about-image-container">
-				<Column width={50}>
-				<Image
-					image="https://cdn.builder.io/api/v1/image/assets/TEMP/b0da2857ff7fbd57107ca800acfb3c83c022d8bdecd00501014df6120215eb57?placeholderIfAbsent=true"
-					backgroundSize="auto"
-					aspectRatio={0.61}
-					noWebp={false}
-					className="about-image"
-				/>
-				</Column>
-				<Column width={50}>
-				<div className="about-content">
-					<Columns space={10} className="about-content-column">
-						<Column width={30.132450331125828}>
-							<Image
-							image="https://cdn.builder.io/api/v1/image/assets/TEMP/501355013552184d924d09465ac1b8adf31d4fe5d71da25cb1772deb6f6d5e05?placeholderIfAbsent=true"
-							backgroundSize="auto"
-							aspectRatio={1}
-							noWebp={false}
-							className="about-image"
-							/>
-						</Column>
-						<Column width={69.86754966887418}>
-							<div className="about-content-column">
-							<div className="about-content-title">About Us</div>
-							<div className="about-content-text">
-								Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
-								lorem urna luctus amet leo at. Commodo mattis nisl.
-							</div>
-							</div>
-						</Column>
-					</Columns>
-					<Columns space={10} className="about-content-column">
-						<Column width={30.132450331125828}>
-							<Image
-							image="https://cdn.builder.io/api/v1/image/assets/TEMP/501355013552184d924d09465ac1b8adf31d4fe5d71da25cb1772deb6f6d5e05?placeholderIfAbsent=true"
-							backgroundSize="auto"
-							aspectRatio={1}
-							noWebp={false}
-							className="about-image"
-							/>
-						</Column>
-						<Column width={69.86754966887418}>
-							<div className="about-content-column">
-							<div className="about-content-title">About Us</div>
-							<div className="about-content-text">
-								Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
-								lorem urna luctus amet leo at. Commodo mattis nisl.
-							</div>
-							</div>
-						</Column>
-					</Columns>
-					<Columns space={10} className="about-content-column">
-						<Column width={30.132450331125828}>
-							<Image
-							image="https://cdn.builder.io/api/v1/image/assets/TEMP/501355013552184d924d09465ac1b8adf31d4fe5d71da25cb1772deb6f6d5e05?placeholderIfAbsent=true"
-							backgroundSize="auto"
-							aspectRatio={1}
-							noWebp={false}
-							className="about-image"
-							/>
-						</Column>
-						<Column width={69.86754966887418}>
-							<div className="about-content-column">
-							<div className="about-content-title">About Us</div>
-							<div className="about-content-text">
-								Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
-								lorem urna luctus amet leo at. Commodo mattis nisl.
-							</div>
-							</div>
-						</Column>
-					</Columns>
-				</div>
-				</Column>
-			</Columns>
 			<div className="about-buy-button">
 				BUY DODI
 			</div>
