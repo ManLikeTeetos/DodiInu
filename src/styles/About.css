@@ -14,6 +14,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 140%;
+  color: rgba(255, 255, 255, 0.92);
 }
 
 @media (max-width: 991px) {
@@ -30,7 +31,7 @@
   padding-right: 5px;
   gap: 0px;
   font-size: 18px;
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(255, 255, 255, 0.92);
   font-weight: 600;
   white-space: nowrap;
   line-height: 150%;
@@ -49,9 +50,7 @@
   font-style: normal;
   justify-content: center;
   align-items: stretch;
-  border-color: rgba(67, 183, 99, 1);
-  border-style: solid;
-  border-bottom-width: 2px;
+  border-bottom: 2px solid rgba(67, 183, 99, 1);
   display: flex;
   padding-left: 18px;
   padding-right: 18px;
