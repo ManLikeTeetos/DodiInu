@@ -1,0 +1,294 @@
+.about {
+	align-items: stretch;
+	display: flex;
+	/* padding-left: 1rem; */
+	/* 16px converted to rem */
+	padding: 0rem 4rem 0.5rem 4rem;
+	/* padding-bottom: 0.5rem; */
+	/* 8px converted to rem */
+	flex-direction: column;
+}
+
+.about-title {
+	margin-top: 3rem;
+	/* 48px converted to rem */
+	margin-bottom: 1.5rem;
+	/* 24px converted to rem */
+	font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+	font-size: 2.0625rem;
+	/* 33px converted to rem */
+	font-style: normal;
+	font-weight: 700;
+	line-height: 140%;
+	color: rgba(255, 255, 255, 0.92);
+}
+
+@media (max-width: 991px) {
+
+	/* 991px converted to rem */
+	.about-title {
+		max-width: 100%;
+	}
+}
+
+.about-segment {
+	justify-content: flex-end;
+	align-items: stretch;
+	display: flex;
+	padding-left: 5rem;
+	/* 80px converted to rem */
+	padding-right: 0.3125rem;
+	/* 5px converted to rem */
+	gap: 0rem;
+	/* 0px converted to rem */
+	font-size: 1.125rem;
+	/* 18px converted to rem */
+	color: rgba(255, 255, 255, 0.92);
+	font-weight: 600;
+	white-space: nowrap;
+	line-height: 150%;
+}
+
+@media (max-width: 991px) {
+
+	/* 991px converted to rem */
+	.about-segment {
+		flex-wrap: wrap;
+		padding-left: 1.25rem;
+		/* 20px converted to rem */
+		white-space: initial;
+	}
+}
+
+.about-segment-header {
+	font-family: Rubik, -apple-system, Roboto, Helvetica, sans-serif;
+	font-style: normal;
+	justify-content: center;
+	align-items: stretch;
+	border-bottom: 0.125rem solid rgba(67, 183, 99, 1);
+	/* 2px converted to rem */
+	display: flex;
+	padding-left: 1.125rem;
+	/* 18px converted to rem */
+	padding-right: 1.125rem;
+	/* 18px converted to rem */
+	padding-top: 0.5625rem;
+	/* 9px converted to rem */
+	padding-bottom: 0.6875rem;
+	/* 11px converted to rem */
+	flex-direction: column;
+	color: rgba(255, 255, 255, 0.92);
+}
+
+@media (max-width: 991px) {
+
+	/* 991px converted to rem */
+	.about-segment-header {
+		white-space: initial;
+	}
+}
+
+.about-columns {
+	position: relative;
+	margin-bottom: 3.9625rem;
+	/* 63.4px converted to rem */
+	height: 41.1625rem;
+	/* 658.6px converted to rem */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.about-image {
+	background: url('assets/images/WhatsAppImage20240402At10511.jpeg') 50% / cover no-repeat;
+	width: 40.75rem;
+	/* 652px converted to rem */
+	height: 24.95rem;
+	/* 399.2px converted to rem */
+}
+
+.about-image-container {
+	position: relative;
+	margin-top: auto;
+	margin-bottom: auto;
+	align-self: stretch;
+	padding-right: 3rem;
+	/* 48px converted to rem */
+}
+
+.about-content-container {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	align-items: stretch;
+}
+
+@media (max-width: 991px) {
+
+	/* 991px converted to rem */
+	.about-content-container {
+		max-width: 100%;
+		margin-top: 2.5rem;
+		/* 40px converted to rem */
+	}
+}
+
+.about-content-box {
+	padding: 0.8125rem 0;
+	/* 13px converted to rem */
+}
+
+@media (max-width: 991px) {
+
+	/* 991px converted to rem */
+	.about-content-box {
+		max-width: 100%;
+	}
+}
+
+.about-content {
+	align-items: stretch;
+	display: flex;
+	flex-direction: column;
+}
+
+.about-content-shell {
+	/* gap: 1.25rem; */
+	/* 20px converted to rem */
+	display: flex;
+}
+
+.about-image-column {
+	padding-left: 0.75rem;
+	/* 12px converted to rem */
+	padding-top: 0.75rem;
+	/* 12px converted to rem */
+	padding-bottom: 0.75rem;
+	/* 12px converted to rem */
+	flex-direction: column;
+}
+
+.about-content-column {
+	display: flex;
+	flex-direction: column;
+	line-height: normal;
+	width: 100%;
+	/* 70px converted to rem */
+	margin-left: 1.25rem;
+	/* 20px converted to rem */
+}
+
+@media (max-width: 991px) {
+
+	/* 991px converted to rem */
+	.about-content-column {
+		width: 100%;
+	}
+}
+
+.about-content-subcolumn {
+	/* padding-left: 0.75rem; */
+	/* 12px converted to rem */
+	padding-top: 0.75rem;
+	/* 12px converted to rem */
+	padding-bottom: 0.75rem;
+	/* 12px converted to rem */
+	flex-direction: column;
+}
+
+@media (max-width: 991px) {
+
+	/* 991px converted to rem */
+	.about-content-subcolumn {
+		max-width: 100%;
+		margin-top: 1.5625rem;
+		/* 25px converted to rem */
+	}
+}
+
+.about-content-title {
+	color: rgba(255, 255, 255, 0.92);
+	font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+	font-size: 1.1875rem;
+	/* 19px converted to rem */
+	font-style: normal;
+	font-weight: 700;
+	line-height: 140%;
+}
+
+.about-content-text {
+	color: rgba(255, 255, 255, 0.72);
+	font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+	font-size: 1rem;
+	/* 16px converted to rem */
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.375rem;
+	/* 22px converted to rem */
+	margin-top: 0.5rem;
+	/* 8px converted to rem */
+}
+
+.about-buy-button {
+	font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+	font-style: normal;
+	justify-content: center;
+	align-items: center;
+	align-self: flex-end;
+	border-radius: 1.25rem;
+	/* 20px converted to rem */
+	background-color: #00CD6A;
+	display: flex;
+	margin-top: 3rem;
+	/* 48px converted to rem */
+	margin-right: 9.625rem;
+	/* 154px converted to rem */
+	margin-bottom: 3.5rem;
+	/* 56px converted to rem */
+	width: 17.9375rem;
+	/* 287px converted to rem */
+	max-width: 100%;
+	padding-left: 3.75rem;
+	/* 60px converted to rem */
+	padding-right: 3.75rem;
+	/* 60px converted to rem */
+	padding-top: 1.5625rem;
+	/* 25px converted to rem */
+	padding-bottom: 1.5625rem;
+	/* 25px converted to rem */
+	font-size: 1rem;
+	/* 16px converted to rem */
+	color: #FFF;
+	font-weight: 700;
+	text-align: center;
+	line-height: 140%;
+}
+
+@media (max-width: 991px) {
+
+	/* 991px converted to rem */
+	.about-image {
+		margin-top: 1.5rem;
+		/* 24px converted to rem */
+	}
+
+	.about-content-column {
+		display: flex;
+		flex-direction: column;
+		line-height: normal;
+		width: 1.875rem;
+		/* 30px converted to rem */
+		margin-left: 0;
+	}
+
+	.about-buy-button {
+		margin-right: 0.625rem;
+		/* 10px converted to rem */
+		padding-left: 1.25rem;
+		/* 20px converted to rem */
+		padding-right: 1.25rem;
+		/* 20px converted to rem */
+		margin-top: 2.5rem;
+		/* 40px converted to rem */
+	}
+}

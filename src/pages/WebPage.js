@@ -1,7 +1,8 @@
 import "../styles/WebPage.css";
 import "../styles/Hero.css";
-import "../styles/About.css";
+import "../styles/AboutRem.css";
 import DodiLogo from '../styles/assets/images/Dodilogo.svg';
+import AboutDog from "../styles/assets/images/AboutDog.png";
 
 
 const colorStyle = {
@@ -62,6 +63,7 @@ function WebPage(){
 							loading="lazy"
 							srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/9bb00a4511cf83fa6cf152d47e994ad38d361bae3c743814d4a8bec0ae1d971d?apiKey=659ef7699bbb4e3e91dbdeecd0d69f59&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/9bb00a4511cf83fa6cf152d47e994ad38d361bae3c743814d4a8bec0ae1d971d?apiKey=659ef7699bbb4e3e91dbdeecd0d69f59&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/9bb00a4511cf83fa6cf152d47e994ad38d361bae3c743814d4a8bec0ae1d971d?apiKey=659ef7699bbb4e3e91dbdeecd0d69f59&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/9bb00a4511cf83fa6cf152d47e994ad38d361bae3c743814d4a8bec0ae1d971d?apiKey=659ef7699bbb4e3e91dbdeecd0d69f59&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/9bb00a4511cf83fa6cf152d47e994ad38d361bae3c743814d4a8bec0ae1d971d?apiKey=659ef7699bbb4e3e91dbdeecd0d69f59&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/9bb00a4511cf83fa6cf152d47e994ad38d361bae3c743814d4a8bec0ae1d971d?apiKey=659ef7699bbb4e3e91dbdeecd0d69f59&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/9bb00a4511cf83fa6cf152d47e994ad38d361bae3c743814d4a8bec0ae1d971d?apiKey=659ef7699bbb4e3e91dbdeecd0d69f59&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/9bb00a4511cf83fa6cf152d47e994ad38d361bae3c743814d4a8bec0ae1d971d?apiKey=659ef7699bbb4e3e91dbdeecd0d69f59&"
 							className="img-hero"
+							alt="hero"
 						/>
 					</div>
 					<div className="column-hero-2">
@@ -110,7 +112,7 @@ function WebPage(){
 	  </div>
 	  <div className="about">
 			<div className="about-title">
-				About 
+				About
 				<span className="green-color">  DODI</span>
 			</div>
 			<div className="about-segment">
@@ -120,17 +122,85 @@ function WebPage(){
 				<div className="about-segment-header">GOAL</div>
 			</div>
 			<div className="about-columns">
-				<div>
-
+				<div className="about-image-container">
+					  <div className="about-image"></div>
 				</div>
-				<div>
-
+				<div className="about-content-container">
+					<div className="about-content-box">
+						<div className="about-content-shell">
+							<div className="about-image-column">
+								  <img
+									  loading="lazy"
+									  src={AboutDog}
+									  //className="img"
+									  alt="about us"
+								  />
+							</div>
+							  <div className="about-content-column">
+								<div className="about-content-subcolumn">
+									<div className="about-content-title">
+										About Us
+									</div>
+									<div className="about-content-text">
+										Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
+										lorem urna luctus amet leo at. Commodo mattis nisl.  <br />
+									</div>
+									</div>
+								</div>
+							</div>
+					</div>
+					<div className="about-content-box">
+						<div className="about-content-shell">
+							<div className="about-image-column">
+								  <img
+									  loading="lazy"
+									  src={AboutDog}
+									  //className="img"
+									  alt="about us"
+								  />
+							</div>
+							<div className="about-content-column">
+								<div className="about-content-subcolumn">
+									<div className="about-content-title">
+										About Us
+									</div>
+									<div className="about-content-text">
+										Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
+										lorem urna luctus amet leo at. Commodo mattis nisl.  <br />
+									</div>
+									</div>
+								</div>
+							</div>
+							<div className="about-content-box">
+						<div className="about-content-shell">
+							<div className="about-image-column">
+								  <img
+									  loading="lazy"
+									  src={AboutDog}
+									  //className="img"
+									  alt="about us"
+								  />
+							</div>
+							<div className="about-content-column">
+								<div className="about-content-subcolumn">
+									<div className="about-content-title">
+										About Us
+									</div>
+									<div className="about-content-text">
+										Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
+										lorem urna luctus amet leo at. Commodo mattis nisl.  <br />
+									</div>
+									</div>
+								</div>
+							</div>
+					</div>
+					</div>
 				</div>
 			</div>
 			<div className="about-buy-button">
 				BUY DODI
 			</div>
-	  </div>	
+	  </div>
 	</div>
   )
 }

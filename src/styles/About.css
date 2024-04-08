@@ -1,8 +1,8 @@
 .about {
   align-items: stretch;
   display: flex;
-  padding-left: 16px;
-  padding-bottom: 8px;
+  padding: 0rem 4rem 0.5rem 4rem;
+  /* padding-bottom: 8px; */
   flex-direction: column;
 }
 
@@ -70,24 +70,24 @@
 .about-columns{
   position: relative;
   margin-bottom: 63.4px;
-  padding: 131.4px 0 128px 0;
-  width: 1326.6px;
+  /* width: 1326.6px; */
   height: 658.6px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-/* .about-image {
+.about-image {
   background: url('assets/images/WhatsAppImage20240402At10511.jpeg') 50% / cover no-repeat;
   width: 652px;
   height: 399.2px;
-} */
+}
 
 .about-image-container {
   position: relative;
   margin-top: auto;
   margin-bottom: auto;
   align-self: stretch;
+  padding-right: 48px;
 }
 
 /* .about-image {
@@ -97,21 +97,79 @@
   max-width: 100%;
 } */
 
+.about-content-container {
+	/* padding-top: 13px;
+	padding-bottom: 13px; */
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	align-items: stretch;
+}
+@media (max-width: 991px) {
+	.about-content-container {
+		max-width: 100%;
+		margin-top: 40px;
+	}
+}
+
+.about-content-box {
+	padding: 13px 0;
+}
+@media (max-width: 991px) {
+	.about-content-box {
+		max-width: 100%;
+	}
+}
+
 .about-content {
   align-items: stretch;
   display: flex;
   flex-direction: column;
 }
 
-.about-content-column {
+.about-content-shell {
+	gap: 20px;
+	display: flex;
+}
+
+.about-image-column {
   padding-left: 12px;
   padding-top: 12px;
   padding-bottom: 12px;
   flex-direction: column;
+  /* width: 182px;
+  height: 182px; */
+}
+
+
+.about-content-column {
+	display: flex;
+	flex-direction: column;
+	line-height: normal;
+	width: 70%;
+	margin-left: 20px;
+}
+@media (max-width: 991px) {
+	.about-content-column {
+		width: 100%;
+	}
+}
+
+.about-content-subcolumn {
+	padding-left: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	flex-direction: column;
+}
+@media (max-width: 991px) {
+	.about-content-subcolumn {
+		max-width: 100%;
+		margin-top: 25px;
+	}
 }
 
 .about-content-title {
-  color: rgba(255, 255, 255, 0.about-92);
+  color: rgba(255, 255, 255, 0.92);
   font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
   font-size: 19px;
   font-style: normal;
@@ -120,7 +178,7 @@
 }
 
 .about-content-text {
-  color: rgba(255, 255, 255, 0.about-72);
+  color: rgba(255, 255, 255, 0.72);
   font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -160,9 +218,14 @@
   }
 
   .about-content-column {
-    max-width: 100%;
+    /* max-width: 100%;
     margin-top: 25px;
-    padding-left: 0px;
+    padding-left: 0px; */
+	display: flex;
+	flex-direction: column;
+	line-height: normal;
+	width: 30%;
+	margin-left: 0px;
   }
 
   .about-buy-button {
