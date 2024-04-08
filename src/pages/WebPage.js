@@ -22,8 +22,8 @@ const colorStyleHero = {
 
 function WebPage(){
   return(
-	<>
-	  <div className="div">
+	<div className="div">
+	  <div>
 		  <div className="div-2">
 			  <div className="column">
 				  <div className="div-3">
@@ -125,8 +125,8 @@ function WebPage(){
 			<div className="about-buy-button">
 				BUY DODI
 			</div>
-		</div>	
-	</>
+	  </div>	
+	</div>
   )
 }
 
