@@ -111,7 +111,7 @@ function WebPage(){
 	  <div className="about">
 			<div className="about-title">
 				About 
-				<span className="green-color">DODI</span>
+				<span className="green-color">  DODI</span>
 			</div>
 			<div className="about-segment">
 				<div className="about-segment-header">MISSION</div>
