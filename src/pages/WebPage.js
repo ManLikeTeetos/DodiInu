@@ -1,6 +1,6 @@
 import "../styles/WebPage.css";
 import "../styles/Hero.css";
-import DodiLogo from '../styles/assets/images/DodiLogo.svg';
+import DodiLogo from '../styles/assets/images/Dodilogo.svg';
 
 const colorStyle = {
 	color: {
