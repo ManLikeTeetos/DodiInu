@@ -120,7 +120,12 @@ function WebPage(){
 				<div className="about-segment-header">GOAL</div>
 			</div>
 			<div className="about-columns">
+				<div>
 
+				</div>
+				<div>
+
+				</div>
 			</div>
 			<div className="about-buy-button">
 				BUY DODI

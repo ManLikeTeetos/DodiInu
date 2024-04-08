@@ -75,7 +75,13 @@
   height: 658.6px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
+/* .about-image {
+  background: url('assets/images/WhatsAppImage20240402At10511.jpeg') 50% / cover no-repeat;
+  width: 652px;
+  height: 399.2px;
+} */
 
 .about-image-container {
   position: relative;
@@ -84,12 +90,12 @@
   align-self: stretch;
 }
 
-.about-image {
+/* .about-image {
   position: relative;
   width: 182px;
   flex-shrink: 0;
   max-width: 100%;
-}
+} */
 
 .about-content {
   align-items: stretch;
