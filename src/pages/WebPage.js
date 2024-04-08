@@ -125,6 +125,7 @@ function WebPage(){
 			<div className="about-buy-button">
 				BUY DODI
 			</div>
+		</div>	
 	</>
   )
 }
