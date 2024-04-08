@@ -1,5 +1,6 @@
 import "../styles/WebPage.css";
 import "../styles/Hero.css";
+import DodiLogo from '../styles/assets/images/DodiLogo.svg';
 
 const colorStyle = {
 	color: {
@@ -26,8 +27,9 @@ function WebPage(){
 				  <div className="div-3">
 					  <img
 						  loading="lazy"
-						  src="https://cdn.builder.io/api/v1/image/assets/TEMP/9d648857ba454b130c067e423325eb8de1eb4af0db555a1e3285e2d249e62d9e?"
+						  src={DodiLogo}
 						  className="img"
+						  alt="Dodi Logo"
 					  />
 					  <div className="div-4">
 						  <span style={{ color: `rgba(${colorStyle.color.r}, ${colorStyle.color.g}, ${colorStyle.color.b}, ${colorStyle.color.a})` }}>DODI </span>INU
