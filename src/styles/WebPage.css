@@ -1,10 +1,14 @@
-.div {
+.body {
 	/* border-color: rgba(4, 50, 30, 1); */
 	background-color: #000;
-	padding: 18px 64px;
+	padding: 0px 64px;
 	/* width: 100%; */
 	/* display: flex; */
 	/* height: 100vh; */
+}
+
+.header {
+	padding: 18px 0px;
 }
 
 @media (max-width: 991px) {
@@ -183,3 +187,7 @@
 		padding: 0 20px;
 	}
 }
+
+.green-color {
+	color: rgba(0, 205, 106, 1); /* Use the calculated RGB value here */
+  }

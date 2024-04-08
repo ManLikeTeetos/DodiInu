@@ -7,7 +7,8 @@
 }
 
 .about-title {
-  color: var(--primary2-primary2-500, #00CD6A);
+  margin-top: 48px;
+  margin-bottom: 24px;
   font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
   font-size: 33px;
   font-style: normal;
@@ -25,7 +26,6 @@
   justify-content: flex-end;
   align-items: stretch;
   display: flex;
-  margin-top: 24px;
   padding-left: 80px;
   padding-right: 5px;
   gap: 0px;

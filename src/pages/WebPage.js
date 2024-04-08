@@ -22,8 +22,8 @@ const colorStyleHero = {
 
 function WebPage(){
   return(
-	<div className="div">
-	  <div>
+	<div className="body">
+	  <div className ="header">
 		  <div className="div-2">
 			  <div className="column">
 				  <div className="div-3">
@@ -111,7 +111,7 @@ function WebPage(){
 	  <div className="about">
 			<div className="about-title">
 				About 
-				<span className="dodi-span">DODI</span>
+				<span className="green-color">DODI</span>
 			</div>
 			<div className="about-segment">
 				<div className="about-segment-header">MISSION</div>
