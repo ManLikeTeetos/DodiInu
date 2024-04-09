@@ -1,0 +1,283 @@
+.token-div {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	align-self: stretch;
+	position: relative;
+	display: flex;
+	min-height: 735px;
+	margin-top: 52px;
+	/* width: 100%; */
+	justify-content: center;
+	padding: 48px;
+	color: rgba(255, 255, 255, 0.92);
+}
+
+@media (max-width: 991px) {
+	.token-div {
+		max-width: 100%;
+		margin-top: 40px;
+		padding: 0 20px;
+	}
+}
+
+.token-bg {
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.86) 34.42%, rgba(0, 0, 0, 0.86) 100%);
+}
+
+.token-img {
+	position: absolute;
+	inset: 0;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.token-div-2 {
+	position: relative;
+	max-width: 1344px;
+	display: flex;
+	flex-direction: column;
+	padding: 0 16px 37px;
+}
+
+@media (max-width: 991px) {
+	.token-div-2 {
+		max-width: 100%;
+	}
+}
+
+.token-div-3 {
+	color: rgba(255, 255, 255, 0.token-92);
+	font: 700 33px/140% Inter, -apple-system, Roboto, Helvetica,
+		sans-serif;
+}
+
+@media (max-width: 991px) {
+	.token-div-3 {
+		max-width: 100%;
+	}
+}
+
+.token-div-4 {
+	max-width: 720px;
+	color: rgba(255, 255, 255, 0.token-72);
+	margin-top: 24px;
+	font: 400 15px/19px Rubik, -apple-system, Roboto, Helvetica,
+		sans-serif;
+}
+
+@media (max-width: 991px) {
+	.token-div-4 {
+		max-width: 100%;
+	}
+}
+
+.token-div-5 {
+	align-self: start;
+	display: flex;
+	margin-top: 24px;
+	gap: 20px;
+	font-size: 33px;
+	font-weight: 700;
+	line-height: 140%;
+	justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+	.token-div-5 {
+		flex-wrap: wrap;
+	}
+}
+
+.token-div-6 {
+	color: rgba(255, 255, 255, 0.92);
+	font-family: Inter, sans-serif;
+}
+
+.token-div-7 {
+	color: var(--primary2-primary2-500, #00cd6a);
+	font-family: Inter, sans-serif;
+}
+
+.token-div-8 {
+	align-items: center;
+	display: flex;
+	margin-top: 24px;
+	justify-content: center;
+	padding: 10px 60px;
+}
+
+@media (max-width: 991px) {
+	.token-div-8 {
+		max-width: 100%;
+		padding: 0 20px;
+	}
+}
+
+.token-div-9 {
+	width: 100%;
+	max-width: 989px;
+}
+
+@media (max-width: 991px) {
+	.token-div-9 {
+		max-width: 100%;
+	}
+}
+
+.token-div-10 {
+	gap: 20px;
+	display: flex;
+}
+
+@media (max-width: 991px) {
+	.token-div-10 {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 0px;
+	}
+}
+
+.token-column {
+	display: flex;
+	flex-direction: column;
+	line-height: normal;
+	width: 50%;
+	margin-left: 0px;
+}
+
+@media (max-width: 991px) {
+	.token-column {
+		width: 100%;
+	}
+}
+
+.token-img-2 {
+	aspect-ratio: 1;
+	object-fit: auto;
+	object-position: center;
+	width: 100%;
+	flex-grow: 1;
+}
+
+@media (max-width: 991px) {
+	.token-img-2 {
+		margin-top: 40px;
+	}
+}
+
+.token-column-2 {
+	display: flex;
+	flex-direction: column;
+	line-height: normal;
+	width: 50%;
+	margin-left: 20px;
+}
+
+@media (max-width: 991px) {
+	.token-column-2 {
+		width: 100%;
+	}
+}
+
+.token-div-11 {
+	align-items: start;
+	display: flex;
+	flex-direction: column;
+	align-self: stretch;
+	font-size: 19px;
+	color: rgba(255, 255, 255, 0.token-92);
+	font-weight: 700;
+	line-height: 140%;
+	margin: auto 0;
+	padding: 15px 80px 80px 12px;
+}
+
+@media (max-width: 991px) {
+	.token-div-11 {
+		max-width: 100%;
+		margin-top: 40px;
+		padding-right: 20px;
+	}
+}
+
+.token-div-12 {
+	display: flex;
+	gap: 20px;
+	justify-content: space-between;
+}
+
+.token-img-3 {
+	aspect-ratio: 1;
+	object-fit: auto;
+	object-position: center;
+	width: 24px;
+	margin: auto 0;
+}
+
+.token-div-13 {
+	font-family: Inter, sans-serif;
+}
+
+.token-div-14 {
+	display: flex;
+	margin-top: 33px;
+	gap: 20px;
+	justify-content: space-between;
+}
+
+.token-img-4 {
+	aspect-ratio: 1;
+	object-fit: auto;
+	object-position: center;
+	width: 24px;
+	margin: auto 0;
+}
+
+.token-div-15 {
+	font-family: Inter, sans-serif;
+}
+
+.token-div-16 {
+	display: flex;
+	margin-top: 33px;
+	gap: 20px;
+	justify-content: space-between;
+}
+
+.token-img-5 {
+	aspect-ratio: 1;
+	object-fit: auto;
+	object-position: center;
+	width: 24px;
+	margin: auto 0;
+}
+
+.token-div-17 {
+	font-family: Inter, sans-serif;
+}
+
+.token-div-18 {
+	display: flex;
+	margin-top: 33px;
+	gap: 20px;
+	justify-content: space-between;
+}
+
+.token-img-6 {
+	aspect-ratio: 1;
+	object-fit: auto;
+	object-position: center;
+	width: 24px;
+	margin: auto 0;
+}
+
+.token-div-19 {
+	font-family: Inter, sans-serif;
+}
+
+.tokencolor {
+	color: rgba(0, 205, 106, 1);
+}
