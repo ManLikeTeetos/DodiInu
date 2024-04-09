@@ -1,16 +1,10 @@
 .about {
 	align-items: stretch;
 	display: flex;
-	/* padding-left: 1rem; */
-	/* 16px converted to rem */
 	padding: 0rem 4rem 0.5rem 4rem;
-	/* padding-bottom: 0.5rem; */
-	/* 8px converted to rem */
 	flex-direction: column;
 }
 @media (max-width: 991px) {
-
-	/* 991px converted to rem */
 	.about{
 		padding: 0rem 0rem 0.5rem 0rem;
 	}
@@ -18,12 +12,9 @@
 
 .about-title {
 	margin-top: 3rem;
-	/* 48px converted to rem */
 	margin-bottom: 1.5rem;
-	/* 24px converted to rem */
 	font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
 	font-size: 2.0625rem;
-	/* 33px converted to rem */
 	font-style: normal;
 	font-weight: 700;
 	line-height: 140%;
@@ -31,8 +22,6 @@
 }
 
 @media (max-width: 991px) {
-
-	/* 991px converted to rem */
 	.about-title {
 		max-width: 100%;
 		margin-left: 1rem;
@@ -44,13 +33,9 @@
 	align-items: stretch;
 	display: flex;
 	padding-left: 5rem;
-	/* 80px converted to rem */
 	padding-right: 0.3125rem;
-	/* 5px converted to rem */
 	gap: 0rem;
-	/* 0px converted to rem */
 	font-size: 1.125rem;
-	/* 18px converted to rem */
 	color: rgba(255, 255, 255, 0.92);
 	font-weight: 600;
 	white-space: nowrap;
@@ -58,8 +43,6 @@
 }
 
 @media (max-width: 991px) {
-
-	/* 991px converted to rem */
 	.about-segment {
 		flex-wrap: wrap;
 		padding-left: 0.10rem;
@@ -83,20 +66,15 @@
 }
 
 @media (max-width: 991px) {
-
-	/* 991px converted to rem */
 	.about-segment-header {
 		white-space: initial;
-
 	}
 }
 
 .about-columns {
 	position: relative;
 	margin-bottom: 3.9625rem;
-	/* 63.4px converted to rem */
 	height: 41.1625rem;
-	/* 658.6px converted to rem */
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -112,13 +90,9 @@
 .about-image {
 	background: url('assets/images/WhatsAppImage20240402At10511.jpeg') 50% / cover no-repeat;
 	width: 40.75rem;
-	/* 652px converted to rem */
 	height: 24.95rem;
-	/* 399.2px converted to rem */
 }
 @media (max-width: 991px) {
-
-	/* 991px converted to rem */
 	.about-image {
 		max-width: 100%;
 	}
@@ -130,11 +104,8 @@
 	margin-bottom: auto;
 	align-self: stretch;
 	padding-right: 3rem;
-	/* 48px converted to rem */
 }
 @media (max-width: 991px) {
-
-	/* 991px converted to rem */
 	.about-image-container {
 		max-width: 100%;
 		padding-right: 0rem;
@@ -149,23 +120,17 @@
 }
 
 @media (max-width: 991px) {
-
-	/* 991px converted to rem */
 	.about-content-container {
 		max-width: 100%;
 		margin-top: 2.5rem;
-		/* 40px converted to rem */
 	}
 }
 
 .about-content-box {
 	padding: 0.8125rem 0;
-	/* 13px converted to rem */
 }
 
 @media (max-width: 991px) {
-
-	/* 991px converted to rem */
 	.about-content-box {
 		max-width: 100%;
 	}
@@ -178,8 +143,6 @@
 }
 
 .about-content-shell {
-	/* gap: 1.25rem; */
-	/* 20px converted to rem */
 	display: flex;
 }
 @media (max-width: 991px) {
@@ -193,11 +156,8 @@
 
 .about-image-column {
 	padding-left: 0.75rem;
-	/* 12px converted to rem */
 	padding-top: 0.75rem;
-	/* 12px converted to rem */
 	padding-bottom: 0.75rem;
-	/* 12px converted to rem */
 	flex-direction: column;
 }
 @media (max-width: 991px) {
@@ -214,18 +174,12 @@
 	flex-direction: column;
 	line-height: normal;
 	width: 100%;
-	/* 70px converted to rem */
 	margin-left: 1.25rem;
-	/* 20px converted to rem */
 }
 
 .about-content-subcolumn {
-	/* padding-left: 0.75rem; */
-	/* 12px converted to rem */
 	padding-top: 0.75rem;
-	/* 12px converted to rem */
 	padding-bottom: 0.75rem;
-	/* 12px converted to rem */
 	flex-direction: column;
 }
 
@@ -269,28 +223,18 @@
 	align-items: center;
 	align-self: flex-end;
 	border-radius: 1.25rem;
-	/* 20px converted to rem */
 	background-color: #00CD6A;
 	display: flex;
 	margin-top: 3rem;
-	/* 48px converted to rem */
 	margin-right: 9.625rem;
-	/* 154px converted to rem */
 	margin-bottom: 3.5rem;
-	/* 56px converted to rem */
 	width: 17.9375rem;
-	/* 287px converted to rem */
 	max-width: 100%;
 	padding-left: 3.75rem;
-	/* 60px converted to rem */
 	padding-right: 3.75rem;
-	/* 60px converted to rem */
 	padding-top: 1.5625rem;
-	/* 25px converted to rem */
 	padding-bottom: 1.5625rem;
-	/* 25px converted to rem */
 	font-size: 1rem;
-	/* 16px converted to rem */
 	color: #FFF;
 	font-weight: 700;
 	text-align: center;
@@ -298,18 +242,14 @@
 }
 
 @media (max-width: 991px) {
-
-	/* 991px converted to rem */
 	.about-image {
 		margin-top: 1.5rem;
-		/* 24px converted to rem */
 	}
 
 	.about-content-column {
 		display: flex;
 		flex-direction: column;
 		line-height: normal;
-		/* 30px converted to rem */
 		margin-left: 0;
 	}
 

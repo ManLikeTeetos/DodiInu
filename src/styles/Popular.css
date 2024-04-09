@@ -1,0 +1,116 @@
+.popular {
+	display: flex;
+	flex-direction: column;
+	height: 668px;
+	/* //padding: 4rem 3.25rem 6.125rem 3.25rem; */
+	color: rgba(255, 255, 255, 0.92);
+}
+
+
+.popular-title {
+	font: 700 32px/140% Inter, -apple-system, Roboto, Helvetica,
+			sans-serif;
+	margin: 4rem 3.25rem 1.875rem 3.25rem;
+}
+
+.popular-slider {
+	margin: 0rem 3.625rem 1.875rem 3.625rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 300px;
+}
+
+.pop-slider-container {
+	margin: 0rem 4.938rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 5.188rem;
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+
+.popular-chevron {
+	display: block;
+}
+
+.pop-slider-image {
+	width: 300px;
+	height: 300px
+}
+
+.pop-slider-indicator {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 43.89px;
+	height: 4px;
+	margin: 0rem auto 1.825rem auto;
+}
+
+.pop-indicator-on {
+	width: 12.63px;
+	background-color: #00cd6a;
+	border-radius: 56px;
+}
+
+.pop-indicator-off {
+	width: 12.63px;
+	background-color: #072e2b;
+	border-radius: 56px;
+}
+
+.pop-headline {
+	font: 700 40px/140% Inter, -apple-system, Roboto, Helvetica,
+			sans-serif;
+	font-style: italic;
+	margin: 0rem auto;
+	text-align: center;
+}
+
+@media (max-width: 991px) {
+	.popular {
+		height: 609px;
+		padding: 1.25rem 0rem 0rem 0rem;
+	}
+	.popular-title {
+		font: 700 32px/140% Inter, -apple-system, Roboto, Helvetica,
+			sans-serif;
+		margin: 0rem 0.5rem 1.875rem 0.5rem;
+	}
+
+	.popular-slider {
+		margin: 0rem 0rem 1.875rem 0rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		height: 300px;
+	}
+
+	.pop-slider-container {
+		margin: 0rem 0rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 1.875rem;
+		overflow-x: hidden;
+		overflow-y: hidden;
+		white-space: normal;
+	}
+
+	.popular-chevron {
+		display: none;
+	}
+
+	.pop-headline {
+		font: 700 40px/140% Inter, -apple-system, Roboto, Helvetica,
+			sans-serif;
+		font-style: italic;
+		margin: 0rem 0.5rem;
+		text-align: center;
+	}
+}
