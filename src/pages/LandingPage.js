@@ -26,14 +26,14 @@ function LandingPage() {
 							  <div className="linkmargin">
 								  <div className="link">
 									  <span className="buy-now">
-										  BUY NOW
+										  BUY $DODI
 									  </span>
 								  </div>
 							  </div>
 							  <div className="linkmargin-1">
 								  <div className="button">
 									  <span className="stake-now">
-										  STAKE NOW
+										  STAKE $DODI
 									  </span>
 								  </div>
 							  </div>
@@ -188,7 +188,7 @@ function LandingPage() {
 					  <div className="div-buttons-1">
 						  <div className="link-5">
 							  <span className="buy-dodi">
-								  BUY DODI
+								  BUY $DODI
 							  </span>
 						  </div>
 					  </div>
@@ -294,7 +294,7 @@ function LandingPage() {
 					  <div className="div-buttons-2">
 						  <div className="link-8">
 							  <span className="buy-dodi-1">
-								  BUY DODI
+								  BUY $DODI
 							  </span>
 						  </div>
 					  </div>
@@ -763,7 +763,7 @@ function LandingPage() {
 			  <div className="container-12">
 				  <div className="frame-951">
 					  <span className="buy-dodi-2">
-						  Buy DODI
+						  BUY $DODI
 					  </span>
 				  </div>
 				  <div className="frame-2">

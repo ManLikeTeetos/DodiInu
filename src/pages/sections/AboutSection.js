@@ -92,7 +92,7 @@ export default function AboutSection(){
 				</div>
 			</div>
 			<div className="about-buy-button">
-				BUY DODI
+				BUY $DODI
 			</div>
 	   </div>
 

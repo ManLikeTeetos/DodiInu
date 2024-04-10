@@ -32,10 +32,10 @@ export default function HeroSection(){
 								<div className="hero-7">
 									<div className="hero-8">
 										<div className="column-hero-3">
-											<div className="hero-9">BUY NOW</div>
+											<div className="hero-9">BUY $DODI</div>
 										</div>
 										<div className="column-hero-4">
-											<div className="hero-10">STAKE NOW</div>
+											<div className="hero-10">STAKE $DODI</div>
 										</div>
 									</div>
 								</div>
@@ -49,7 +49,7 @@ export default function HeroSection(){
 				<div className="hero-12">
 					<div className="hero-13">
 						<div className="hero-14">$DODI Price </div>
-						<div className="hero-15">$0.00000412</div>
+						<div className="hero-15">$0.0000137</div>
 					</div>
 					<div className="hero-16">
 						<div className="hero-17">TOTAL DODI</div>
