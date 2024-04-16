@@ -46,7 +46,7 @@ export default function Navbar(){
 					</div>
 					<div className="column-3">
 						<div className="div-9">
-							<div className="div-10">Buy DODI</div>
+							<div className="div-10">BUY $DODI</div>
 							<div className="div-11">Connect Wallet</div>
 						</div>
 					</div>
@@ -85,7 +85,7 @@ export default function Navbar(){
 							<div className="div-8">White paper</div>
 						</div>
 						<div className="div-9">
-							<div className="div-10">Buy DODI</div>
+							<div className="div-10">BUY $DODI</div>
 							<div className="div-11">Connect Wallet</div>
 						</div>
 					</div>

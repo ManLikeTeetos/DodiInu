@@ -89,7 +89,7 @@ export default function StakingSection(){
 				</div>
 			</div>
 			<div className="staking-buy-button">
-				BUY DODI
+				BUY $DODI
 			</div>
 		</div>
 	)
