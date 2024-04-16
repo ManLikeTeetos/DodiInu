@@ -7,6 +7,7 @@ import Navbar from "./sections/Navbar.js";
 import HeroSection from "./sections/HeroSection.js";
 import TokenSection from "./sections/TokenSection.js";
 import PopularSection from "./sections/PopularSection.js";
+import RoadSection from "./sections/RoadSection.js";
 
 function WebPage(){
   return(
@@ -17,6 +18,7 @@ function WebPage(){
 		<StakingSection/>
 		<TokenSection/>
 		<PopularSection/>
+		<RoadSection/>
 	</div>
   )
 }
