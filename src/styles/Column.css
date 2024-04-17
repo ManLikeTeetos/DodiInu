@@ -1,0 +1,240 @@
+.csection {
+	display:flex;
+	flex-direction: column;
+	height: 703px;
+}
+
+.csection-title {
+	margin: 3rem 3.25rem 2.25rem 3.25rem;
+	font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+	font-size: 2.0625rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 140%;
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.csection-media {
+	margin-bottom: 3rem;
+	display: flex;
+	flex-direction: row;
+	align-self: center;
+	column-gap: 1.5rem;
+	width: fit-content;
+	box-sizing: border-box;
+}
+
+.csection-media-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 19.4rem;
+	box-sizing: border-box;
+}
+
+.csection-media-card {
+	border-radius: 1rem;
+	background: #1E2220;
+	display: flex;
+	flex-direction: row;
+	padding: 1rem 0 1rem 1rem;
+	width: 19.4rem;
+	box-sizing: border-box;
+}
+
+.media-img {
+	margin-right: 1.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 4rem;
+	height: 4.1rem;
+	box-sizing: border-box;
+}
+
+.twitter-png {
+	border-radius: 624.9rem;
+	border: 0.1rem solid #121614;
+	background: url('assets/images/TwitterPng.png'), linear-gradient(#121614, #121614);
+	width: 4rem;
+	height: 4.1rem;
+}
+
+.media-content {
+	margin: 0.8rem 0;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.media-title {
+	margin-bottom: 0.2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-self: flex-start;
+	box-sizing: border-box;
+}
+
+.media-name {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 600;
+	font-size: 1.1rem;
+	line-height: 1.125;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.92);
+}
+
+.media-subtitle {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.followers {
+	overflow-wrap: break-word;
+	font-family: 'Rubik';
+	font-weight: 400;
+	font-size: 0.9rem;
+	line-height: 1.25;
+	text-transform: uppercase;
+	color: var(--primary-2-primary-2500, #00CD6A);
+}
+
+.telegram-png {
+	border-radius: 624.9rem;
+	border: 0.1rem solid #121614;
+	background: url('assets/images/TelegramPng.png'), linear-gradient(#121614, #121614);
+	width: 4rem;
+	height: 3.9rem;
+}
+
+.instagram-png {
+	border-radius: 624.9rem;
+	border: 0.1rem solid #121614;
+	background: url('assets/images/Instagram.png'), linear-gradient(#121614, #121614);
+	width: 4rem;
+	height: 3.9rem;
+}
+
+
+.section {
+	background-image: url('assets/images/DivUniverseBackground.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	padding: 3rem 0 2.9rem 3.3rem;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.csection-title-uni {
+	/* margin: 3rem 3.25rem 2.25rem 3.25rem; */
+	font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+	font-size: 2.0625rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 140%;
+	color: rgba(255, 255, 255, 0.92);
+	margin-bottom: 12px;
+}
+
+.div-columns-4 {
+	/* margin-left: 10.1rem; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: center;
+	width: 64.5rem;
+	box-sizing: border-box;
+}
+
+.container-8-col {
+	margin: 0 0 7.1rem 0.7rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 63.8rem;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+}
+
+.div-column-23 {
+	margin-top: 0.3rem;
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+}
+
+.container-2-col {
+	margin-right: 0.4rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 64.1rem;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+}
+
+.clip-path-group {
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.coin-name {
+	margin-top: 0.4rem;
+	margin-left: 10px;
+	display: inline-block;
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 1.2rem;
+	line-height: 1.4;
+	color: #FFFFFF;
+}
+
+@media (max-width: 991px) {
+
+	.csection {
+			height: auto;
+		}
+
+	.section{
+		height: auto;
+		padding: 0px 8px;
+	}
+	.csection-media {
+		flex-direction: column;
+		height: 373px;
+		gap: 12px;
+	}
+	.div-columns-4 {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.container-8-col {
+		/* flex-direction: column; */
+		margin: 0rem 0.5rem;
+		width: auto;
+
+	}
+
+	.container-2-col {
+			/* flex-direction: column; */
+			margin: 0rem 0.5rem;
+			width: auto;
+	}
+
+	.div-column-23 {
+		flex: none;
+		width: 50%;
+		margin-bottom: 50px;
+	}
+
+
+
+}

@@ -2,7 +2,7 @@
 	background-image: url('assets/images/roadmap.png');
 	height: 516px;
 	color: rgba(255, 255, 255, 0.92);
-	width: 100%;
+	/* width: 100%; */
 	background-size: contain;
 	background-repeat: no-repeat;
 	/* background-position: center;
@@ -20,7 +20,7 @@
 	display: flex;
 	flex-direction: column;
 	height: 127px;
-	margin-bottom: 6.125rem
+	margin-bottom: 89px;
 }
 
 .roadtitle {
@@ -180,7 +180,7 @@
 	background: #04321E;
 	position: absolute;
 	left: 89px;
-	bottom: 83.5px;
+	bottom: 65%;
 	width: 22px;
 	height: 22px;
 }
@@ -190,7 +190,7 @@
 	background: #04321E;
 	position: absolute;
 	left: 462px;
-	bottom: 77.5px;
+	bottom: 62%;
 	width: 35px;
 	height: 35px;
 }
@@ -200,7 +200,7 @@
 	background: #04321E;
 	position: absolute;
 	left: 383px;
-	bottom: 88.5px;
+	bottom: 65%;
 	width: 12px;
 	height: 12px;
 }
@@ -210,7 +210,7 @@
 	background: #04321E;
 	position: absolute;
 	left: 597px;
-	bottom: 88.5px;
+	bottom:65%;
 	width: 12px;
 	height: 12px;
 }
@@ -220,7 +220,7 @@
 	background: #04321E;
 	position: absolute;
 	right: 463px;
-	bottom: 88.5px;
+	bottom:65%;
 	width: 12px;
 	height: 12px;
 }
@@ -230,7 +230,7 @@
 	background: #04321E;
 	position: absolute;
 	right: 131px;
-	bottom: 88.5px;
+	bottom: 65%;
 	width: 12px;
 	height: 12px;
 }
@@ -287,7 +287,7 @@
 		background-image: url('assets/images/roadmapmobile.png');
 		height: 1484px;
 		color: rgba(255, 255, 255, 0.92);
-		background-size: cover;
+		background-size: co;
 		background-repeat: no-repeat;
 		/* background-position: center;
 		position: relative; */
@@ -483,6 +483,7 @@
 					flex-grow: 1;
 					flex-basis: 151px;
 					box-sizing: border-box;
+					width: 50%;
 				}
 
 				.frame-139 {
@@ -552,6 +553,7 @@
 					line-height: 1.4;
 					color: #FFFFFF;
 				}
+
 
 }
 

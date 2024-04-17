@@ -8,6 +8,7 @@ import HeroSection from "./sections/HeroSection.js";
 import TokenSection from "./sections/TokenSection.js";
 import PopularSection from "./sections/PopularSection.js";
 import RoadSection from "./sections/RoadSection.js";
+import ColumnSection from "./sections/ColumnSection.js";
 
 function WebPage(){
   return(
@@ -19,6 +20,7 @@ function WebPage(){
 		<TokenSection/>
 		<PopularSection/>
 		<RoadSection/>
+		<ColumnSection/>
 	</div>
   )
 }
