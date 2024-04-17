@@ -57,7 +57,8 @@
 	border: 0.1rem solid #121614;
 	background: url('assets/images/TwitterPng.png'), linear-gradient(#121614, #121614);
 	width: 4rem;
-	height: 4.1rem;
+	height: 4rem;
+	background-position: center;
 }
 
 .media-content {
@@ -108,7 +109,8 @@
 	border: 0.1rem solid #121614;
 	background: url('assets/images/TelegramPng.png'), linear-gradient(#121614, #121614);
 	width: 4rem;
-	height: 3.9rem;
+		height: 4rem;
+		background-position: center;
 }
 
 .instagram-png {
@@ -116,7 +118,8 @@
 	border: 0.1rem solid #121614;
 	background: url('assets/images/Instagram.png'), linear-gradient(#121614, #121614);
 	width: 4rem;
-	height: 3.9rem;
+		height: 4rem;
+		background-position: center;
 }
 
 
