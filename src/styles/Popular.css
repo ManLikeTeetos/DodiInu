@@ -15,7 +15,7 @@
 
 .popular-slider {
 	margin: 0rem 3.625rem 1.875rem 3.625rem;
-	width: 100%;
+	/* width: ; */
 	/* display: flex; */
 	flex-direction: row;
 	justify-content: space-between;
@@ -136,5 +136,5 @@
 	touch-action: pan-y;
 	-webkit-tap-highlight-color: transparent;
 	align-items: center;
-	width: 90%;
+	width: 100%;
 }
