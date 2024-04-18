@@ -42,7 +42,7 @@ export default function PopularSection() {
 		prevArrow: <CustomPrevArrow onClick={goToPrevSlide} />,
 		beforeChange: (current, next) => setCurrentSlide(next),
 		autoplay: true, // Enable auto-sliding
-		autoplaySpeed: 2000,
+		autoplaySpeed: 4000,
 		responsive: [
 			{
 				breakpoint: 991,
