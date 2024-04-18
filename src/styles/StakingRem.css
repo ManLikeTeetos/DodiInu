@@ -72,13 +72,16 @@
 		white-space: initial;
 	}
 }
+.staking-segment-header.active {
+	border-bottom: 2px solid rgba(67, 183, 99, 1);
+}
 
 .staking-segment-header {
 	font-family: Rubik, -apple-system, Roboto, Helvetica, sans-serif;
 	font-style: normal;
 	justify-content: center;
 	align-items: stretch;
-	border-bottom: 0.125rem solid rgba(67, 183, 99, 1);
+	border-bottom: 0.125rem solid rgba(255, 255, 255, 0.92);
 	/* 2px converted to rem */
 	display: flex;
 	padding-left: 1.125rem;

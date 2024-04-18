@@ -134,7 +134,7 @@ export default function Column(){
 							</div>
 						</div>
 						<div className="div-column-23">
-							<img className="clip-path-group" src={Dexscreener} alt=""Dexscreener/>
+							<img className="clip-path-group" src={Dexscreener} alt="Dexscreener"/>
 							<div className="coin-name">
 								Dex Screener
 							</div>

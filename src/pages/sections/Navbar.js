@@ -79,12 +79,10 @@ export default function Navbar(){
 				{/* Navigation links (conditionally rendered based on showMenu state) */}
 				{showMenu && (
 					<div className="nav-menu">
-						<div className="div-5">
-							<div className="div-6">Home</div>
-							<div className="div-7">Staking</div>
-							<div className="div-8">White paper</div>
-						</div>
-						<div className="div-9">
+						<div className='nav-wrapper'>
+							<div className="nav-text">Home</div>
+							<div className="nav-text">Staking</div>
+							<div className="nav-text">White paper</div>
 							<div className="div-10">BUY $DODI</div>
 							<div className="div-11">Connect Wallet</div>
 						</div>

@@ -37,6 +37,9 @@
   line-height: 150%;
 }
 
+.about-segment-header.active {
+border-bottom: 2px solid rgba(67, 183, 99, 1);}
+
 @media (max-width: 991px) {
   .about-segment {
     flex-wrap: wrap;
@@ -50,7 +53,8 @@
   font-style: normal;
   justify-content: center;
   align-items: stretch;
-  border-bottom: 2px solid rgba(67, 183, 99, 1);
+
+
   display: flex;
   padding-left: 18px;
   padding-right: 18px;
