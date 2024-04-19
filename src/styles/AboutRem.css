@@ -48,9 +48,10 @@
 
 @media (max-width: 991px) {
 	.about-segment {
-		flex-wrap: wrap;
+		/* flex-wrap: wrap; */
 		padding-left: 0.10rem;
 		white-space: initial;
+		font-size: medium;
 	}
 }
 
@@ -70,7 +71,7 @@
 	padding-top: 0.5625rem;
 	padding-bottom: 0.6875rem;
 	flex-direction: column;
-	color: rgba(255, 255, 255, 0.92);
+	color: white;
 }
 
 @media (max-width: 991px) {

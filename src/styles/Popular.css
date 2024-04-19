@@ -115,7 +115,8 @@
 	}
 
 	.popular-chevron {
-		display: none;
+		/* display: none; */
+		margin-right: 10px;
 
 	}
 

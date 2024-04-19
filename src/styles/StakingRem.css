@@ -120,7 +120,7 @@
 @media (max-width: 991px) {
 	.staking-columns {
 		display: flex;
-		flex-direction: column;
+		flex-direction: column-reverse;
 		height: auto;
 	}
 }
