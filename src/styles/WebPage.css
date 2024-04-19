@@ -13,7 +13,7 @@
 .header-desktop {
 	max-width: 1440px;
 	margin: 0 auto;
-	padding: 1.125rem 4rem;
+	padding: 1.125rem 0rem;
 }
 
 .header-mobile {
