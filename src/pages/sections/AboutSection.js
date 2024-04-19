@@ -37,12 +37,12 @@ export default function AboutSection(){
 				>
 					SOLUTION
 				</div>
-				<div
+				{/* <div
 					className={`about-segment-header ${activeTab === 'GOAL' ? 'active' : ''}`}
 					onClick={() => handleTabClick('GOAL')}
 				>
 					GOAL
-				</div>
+				</div> */}
 			</div>
 			<div className="about-columns">
 				{activeTab === 'MISSION' && (
@@ -282,7 +282,7 @@ export default function AboutSection(){
 						</div>
 					</>
 				)}
-				{activeTab === 'GOAL' && (
+				{/* {activeTab === 'GOAL' && (
 					<>
 						<div className="about-image-container">
 							<div className="about-image-goal">
@@ -360,7 +360,7 @@ export default function AboutSection(){
 							</div>
 						</div>
 					</>
-				)}
+				)} */}
 			</div>
 			<div className="about-buy-button">
 				BUY $DODI
