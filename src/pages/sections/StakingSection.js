@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "../../styles/StakingRem.css";
-import StakingDog from "../../styles/assets/images/AboutDog.png";
-import StakingDog2 from "../../styles/assets/images/about_dog2.png";
-import StakingDog3 from "../../styles/assets/images/about_dog3.png";
+import StakingDog from "../../styles/assets/images/staking1.png";
+import StakingDog2 from "../../styles/assets/images/staking2.png";
+import StakingDog3 from "../../styles/assets/images/staking3.png";
 
 
 export default function StakingSection(){

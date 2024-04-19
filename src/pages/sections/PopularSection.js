@@ -13,9 +13,18 @@ import Slider4 from "../../styles/assets/images/WhatsAppImage20240403At1108.jpeg
 import Slider5 from "../../styles/assets/images/WhatsAppImage20240403At1105.jpeg";
 import Slider6 from "../../styles/assets/images/WhatsAppImage20240403At1106.jpeg";
 
+import SliderNew1 from "../../styles/assets/images/slidernew1.jpg";
+import SliderNew2 from "../../styles/assets/images/slidernew2.jpg";
+import SliderNew3 from "../../styles/assets/images/slidernew3.jpg";
+import SliderNew4 from "../../styles/assets/images/slidernew4.jpg";
+import SliderNew5 from "../../styles/assets/images/slidernew5.jpg";
+import SliderNew6 from "../../styles/assets/images/slidernew6.jpg";
+
+
+
 export default function PopularSection() {
 	const [currentSlide, setCurrentSlide] = useState(0);
-	const totalSlides = 6;
+	const totalSlides = 12;
 
 	const goToNextSlide = () => {
 		setCurrentSlide((currentSlide + 1) % totalSlides);
@@ -55,11 +64,17 @@ export default function PopularSection() {
 
 	const images = [
 		Slider1,
+		SliderNew1,
 		Slider2,
+		SliderNew2,
 		Slider3,
+		SliderNew3,
 		Slider4,
+		SliderNew4,
 		Slider5,
+		SliderNew5,
 		Slider6,
+		SliderNew6,
 	];
 
 	return (
