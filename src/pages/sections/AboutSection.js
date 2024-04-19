@@ -317,7 +317,7 @@ export default function AboutSection(){
 									<div className="about-image-column">
 										<img
 											loading="lazy"
-											src={AboutDog}
+											src={AboutDog2}
 											//className="img"
 											alt="about us"
 										/>
@@ -339,7 +339,7 @@ export default function AboutSection(){
 									<div className="about-image-column">
 										<img
 											loading="lazy"
-											src={AboutDog}
+											src={AboutDog3}
 											//className="img"
 											alt="about us"
 										/>
