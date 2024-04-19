@@ -2,8 +2,8 @@
 	background-image: url('assets/images/roadmap.png');
 	height: 516px;
 	color: rgba(255, 255, 255, 0.92);
-	/* width: 100%; */
-	background-size: contain;
+	max-width: 100vw;
+	background-size: cover;
 	background-repeat: no-repeat;
 	/* background-position: center;
 	position: relative; */
@@ -14,6 +14,9 @@
 
 	display: flex;
 	flex-direction: column;
+	/* bigger screen */
+		max-width: 1440px;
+		margin: 0 auto;
 }
 
 .road-content {

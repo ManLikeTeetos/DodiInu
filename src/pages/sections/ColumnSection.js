@@ -1,12 +1,10 @@
 import "../../styles/Column.css";
-import Jupiter from "../../styles/assets/images/jupiter.png";
-import Raydium from "../../styles/assets/vectors/Group11_x2.svg";
 import Dextools from "../../styles/assets/images/Dextools.png"
 import CMC from "../../styles/assets/images/cmc.png.png"
 import CG from "../../styles/assets/images/coingeko.png"
-import Solana from "../../styles/assets/images/solana.png"
+import Pancake from "../../styles/assets/images/pancakeswap.png"
 import Dexscreener from "../../styles/assets/images/dex-screener.png"
-import Bird from "../../styles/assets/images/Birdeye.png"
+import Binance from "../../styles/assets/images/Binance.png"
 
 
 export default function Column(){
@@ -85,60 +83,46 @@ export default function Column(){
 				<div className="div-columns-4">
 					<div className="container-8-col">
 						<div className="div-column-23">
-							<div className="jupiter-logo-1">
-								<img className="clip-path-group" src={Jupiter} alt="Jupiter" />
-							</div>
-							<div className="coin-name">
-								Jupiter
-							</div>
-						</div>
-						<div className="div-column-23">
-							<div className="frame-100">
-								<img className="clip-path-group" src={Raydium} alt="Raydium" />
-							</div>
-							<div className="coin-name">
-								Raydium
-							</div>
-						</div>
-						<div className="div-column-23">
 							<div className="frame-101">
 								<img className="clip-path-group" src={Dextools} alt="Dextools" />
 							</div>
 							<div className="coin-name">
-								Dextools
+								Dex<span className="coin-name-light">Tools</span>
 							</div>
 						</div>
 						<div className="div-column-23">
 							<img className=" " src={CMC} alt="CMC" />
 						</div>
-					</div>
-					<div className="container-2-col">
 						<div className="div-column-23">
 							<img className="clip-path-group" src={CG} alt="CG" />
 							<div className="coin-name">
-								CoinGeko
+								Coin<span className="coin-name-light">Geko</span>
+							</div>
+						</div>
+					</div>
+					<div className="container-2-col">
+						<div className="div-column-23">
+							<img className="clip-path-group" src={Dexscreener} alt="Dexscreener" />
+							<div className="coin-name">
+								Dex<span className="coin-name-light">Screener</span>
 							</div>
 						</div>
 						<div className="div-column-23">
 							<div className="idt-jyootra-1">
-								<img className="clip-path-group" src={Bird} alt="Birdeye" />
+								<img className="clip-path-group" src={Pancake} alt="PancakeSwap" />
 							</div>
 							<div className="coin-name">
-								Birdeye
+								Pancake<span className="coin-name-light">Swap</span>
 							</div>
 						</div>
 						<div className="div-column-23">
-							<img className="clip-path-group" src={Solana} alt="Solana" />
-							<div className="coin-name">
-								Solana
+							<img className="clip-path-group" src={Binance} alt="Binance" />
+							<div className="coin-name-binance">
+								<span>Binance </span>
+								<span className="coin-name-light">Smart Chain</span>
 							</div>
 						</div>
-						<div className="div-column-23">
-							<img className="clip-path-group" src={Dexscreener} alt="Dexscreener"/>
-							<div className="coin-name">
-								Dex Screener
-							</div>
-						</div>
+
 					</div>
 				</div>
 			</div>

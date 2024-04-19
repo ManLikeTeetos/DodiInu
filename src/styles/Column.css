@@ -2,6 +2,9 @@
 	display:flex;
 	flex-direction: column;
 	height: 703px;
+	/* bigger screen */
+		max-width: 1440px;
+		margin: 0 auto;
 }
 
 .csection-title {
@@ -160,7 +163,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 63.8rem;
+	width: 48.8rem;
 	box-sizing: border-box;
 	flex-wrap: wrap;
 }
@@ -177,7 +180,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 64.1rem;
+	width: 48.8rem;
 	box-sizing: border-box;
 	flex-wrap: wrap;
 }
@@ -198,6 +201,25 @@
 	line-height: 1.4;
 	color: #FFFFFF;
 }
+
+.coin-name-binance {
+	margin-top: 0.4rem;
+	margin-left: 10px;
+	display: inline-block;
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 1.2rem;
+	line-height: 1.4;
+	color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+}
+
+.coin-name-light {
+	font-weight: 400;
+}
+
 
 @media (max-width: 991px) {
 

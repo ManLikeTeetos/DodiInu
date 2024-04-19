@@ -1,6 +1,9 @@
 import { useState } from "react";
 import "../../styles/StakingRem.css";
-import stakingDog from "../../styles/assets/images/AboutDog.png";
+import StakingDog from "../../styles/assets/images/AboutDog.png";
+import StakingDog2 from "../../styles/assets/images/about_dog2.png";
+import StakingDog3 from "../../styles/assets/images/about_dog3.png";
+
 
 export default function StakingSection(){
 	const [activeTab, setActiveTab] = useState('HOW IT WORKS'); // State to track active tab
@@ -31,58 +34,14 @@ export default function StakingSection(){
 			</div>
 			<div className="staking-columns">
 				{activeTab === 'HOW IT WORKS' && (
-					<div className="staking-content-container">
-						<div className="staking-content-box">
-							<div className="staking-content-shell">
-								<div className="staking-image-column">
-									<img
-										loading="lazy"
-										src={stakingDog}
-										//className="img"
-										alt="staking us"
-									/>
-								</div>
-								<div className="staking-content-column">
-									<div className="staking-content-subcolumn">
-										<div className="staking-content-title">
-											How it Works
-										</div>
-										<div className="staking-content-text">
-											Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
-											lorem urna luctus amet leo at. Commodo mattis nisl.<br />
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className="staking-content-box">
-							<div className="staking-content-shell">
-								<div className="staking-image-column">
-									<img
-										loading="lazy"
-										src={stakingDog}
-										//className="img"
-										alt="staking us"
-									/>
-								</div>
-								<div className="staking-content-column">
-									<div className="staking-content-subcolumn">
-										<div className="staking-content-title">
-											About Us
-										</div>
-										<div className="staking-content-text">
-											Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
-											lorem urna luctus amet leo at. Commodo mattis nisl.<br />
-										</div>
-									</div>
-								</div>
-							</div>
+					<>
+						<div className="staking-content-container">
 							<div className="staking-content-box">
 								<div className="staking-content-shell">
 									<div className="staking-image-column">
 										<img
 											loading="lazy"
-											src={stakingDog}
+											src={StakingDog}
 											//className="img"
 											alt="staking us"
 										/>
@@ -90,7 +49,7 @@ export default function StakingSection(){
 									<div className="staking-content-column">
 										<div className="staking-content-subcolumn">
 											<div className="staking-content-title">
-												About Us
+												How it Works
 											</div>
 											<div className="staking-content-text">
 												Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
@@ -100,63 +59,68 @@ export default function StakingSection(){
 									</div>
 								</div>
 							</div>
+							<div className="staking-content-box">
+								<div className="staking-content-shell">
+									<div className="staking-image-column">
+										<img
+											loading="lazy"
+											src={StakingDog2}
+											//className="img"
+											alt="staking us"
+										/>
+									</div>
+									<div className="staking-content-column">
+										<div className="staking-content-subcolumn">
+											<div className="staking-content-title">
+												How it Works
+											</div>
+											<div className="staking-content-text">
+												Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
+												lorem urna luctus amet leo at. Commodo mattis nisl.<br />
+											</div>
+										</div>
+									</div>
+								</div>
+								<div className="staking-content-box">
+									<div className="staking-content-shell">
+										<div className="staking-image-column">
+											<img
+												loading="lazy"
+												src={StakingDog3}
+												//className="img"
+												alt="staking us"
+											/>
+										</div>
+										<div className="staking-content-column">
+											<div className="staking-content-subcolumn">
+												<div className="staking-content-title">
+													How it Works
+												</div>
+												<div className="staking-content-text">
+													Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
+													lorem urna luctus amet leo at. Commodo mattis nisl.<br />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
+						<div className="staking-image-container">
+							<div className="staking-image-how"></div>
+						</div>
+					</>
 				)}
 
 				{activeTab === 'REWARDS' && (
-					<div className="staking-content-container">
-						<div className="staking-content-box">
-							<div className="staking-content-shell">
-								<div className="staking-image-column">
-									<img
-										loading="lazy"
-										src={stakingDog}
-										//className="img"
-										alt="staking us"
-									/>
-								</div>
-								<div className="staking-content-column">
-									<div className="staking-content-subcolumn">
-										<div className="staking-content-title">
-											Rewards
-										</div>
-										<div className="staking-content-text">
-											Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
-											lorem urna luctus amet leo at. Commodo mattis nisl.<br />
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className="staking-content-box">
-							<div className="staking-content-shell">
-								<div className="staking-image-column">
-									<img
-										loading="lazy"
-										src={stakingDog}
-										//className="img"
-										alt="staking us"
-									/>
-								</div>
-								<div className="staking-content-column">
-									<div className="staking-content-subcolumn">
-										<div className="staking-content-title">
-											About Us
-										</div>
-										<div className="staking-content-text">
-											Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
-											lorem urna luctus amet leo at. Commodo mattis nisl.<br />
-										</div>
-									</div>
-								</div>
-							</div>
+					<>
+						<div className="staking-content-container">
 							<div className="staking-content-box">
 								<div className="staking-content-shell">
 									<div className="staking-image-column">
 										<img
 											loading="lazy"
-											src={stakingDog}
+											src={StakingDog}
 											//className="img"
 											alt="staking us"
 										/>
@@ -164,7 +128,7 @@ export default function StakingSection(){
 									<div className="staking-content-column">
 										<div className="staking-content-subcolumn">
 											<div className="staking-content-title">
-												About Us
+												Rewards
 											</div>
 											<div className="staking-content-text">
 												Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
@@ -174,14 +138,60 @@ export default function StakingSection(){
 									</div>
 								</div>
 							</div>
+							<div className="staking-content-box">
+								<div className="staking-content-shell">
+									<div className="staking-image-column">
+										<img
+											loading="lazy"
+											src={StakingDog2}
+											//className="img"
+											alt="staking us"
+										/>
+									</div>
+									<div className="staking-content-column">
+										<div className="staking-content-subcolumn">
+											<div className="staking-content-title">
+												Rewards
+											</div>
+											<div className="staking-content-text">
+												Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
+												lorem urna luctus amet leo at. Commodo mattis nisl.<br />
+											</div>
+										</div>
+									</div>
+								</div>
+								<div className="staking-content-box">
+									<div className="staking-content-shell">
+										<div className="staking-image-column">
+											<img
+												loading="lazy"
+												src={StakingDog3}
+												//className="img"
+												alt="staking us"
+											/>
+										</div>
+										<div className="staking-content-column">
+											<div className="staking-content-subcolumn">
+												<div className="staking-content-title">
+													Rewards
+												</div>
+												<div className="staking-content-text">
+													Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
+													lorem urna luctus amet leo at. Commodo mattis nisl.<br />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
+						<div className="staking-image-container">
+							<div className="staking-image-reward"></div>
+						</div>
+					</>
 				)}
 
 
-				<div className="staking-image-container">
-					<div className="staking-image"></div>
-				</div>
 			</div>
 			<div className="staking-buy-button">
 				BUY $DODI

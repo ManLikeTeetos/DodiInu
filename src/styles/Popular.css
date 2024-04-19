@@ -4,6 +4,9 @@
 	height: 668px;
 	/* //padding: 4rem 3.25rem 6.125rem 3.25rem; */
 	color: rgba(255, 255, 255, 0.92);
+	/* bigger screen */
+		max-width: 1440px;
+		margin: 0 auto;
 }
 
 
