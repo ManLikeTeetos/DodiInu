@@ -353,7 +353,11 @@
 
 
 
-@media (max-width: 991px){
+@media (max-width: 1024px){
+.footer {
+
+}
+
 .footer-footer {
 	padding: 2rem 0.7rem;
 	display: flex;
@@ -366,6 +370,8 @@
 		Roboto,
 		Helvetica,
 		sans-serif !important;
+	max-width: 768px;
+	margin: auto;
 }
 
 .footer-div-columnmargin-3 {
@@ -1449,4 +1455,12 @@
 	color: rgba(255, 255, 255, 0.92);
 }
 
+}
+
+@media (min-width: 767px) {
+	.footer-div-columnmargin-4 {
+			display: flex;
+			flex-direction: row;
+			box-sizing: border-box;
+		}
 }

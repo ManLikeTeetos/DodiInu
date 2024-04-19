@@ -221,10 +221,12 @@
 }
 
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 
 	.csection {
 			height: auto;
+			max-width: 768px;
+
 		}
 
 	.section{

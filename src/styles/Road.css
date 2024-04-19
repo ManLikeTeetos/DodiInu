@@ -285,7 +285,7 @@
 }
 
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 	.roadmap {
 		background-image: url('assets/images/roadmapmobile.png');
 		height: 1484px;
@@ -299,7 +299,8 @@
 
 	.inner-road {
 		justify-self: start;
-		margin: 0rem 0.5rem 0rem 0.5rem;
+		margin: auto;
+		max-width: 768px;
 	}
 
 	.road-content {
@@ -334,6 +335,8 @@
 	.road-graph-mobile {
 		display: flex;
 		flex-direction: row;
+		max-width: 414px;
+		margin: auto;
 	}
 
 		.container-12 {

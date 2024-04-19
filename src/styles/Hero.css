@@ -6,7 +6,7 @@
           	flex-direction: column;
 			max-width: 100vw;
         }
-        @media (max-width: 991px) {
+        @media (max-width: 1024px) {
           .hero {
             max-width: 100%;
           }
@@ -17,7 +17,7 @@
 			padding: 80px 64px;
 			/* //width: 100%; */
 		}
-				  @media (max-width: 991px) {
+				  @media (max-width: 1024px) {
 				  	.hero-bg {
 				  		max-width: 100%;
 				  		padding: 0 20px;
@@ -31,17 +31,21 @@
         .hero-2 {
           margin-top: 87px;
         }
-        @media (max-width: 991px) {
+        @media (max-width: 1024px) {
           .hero-2 {
             max-width: 100%;
             margin-top: 40px;
           }
+				  .hero-wrapper {
+				  	max-width: 768px;
+				  	margin: 0 auto;
+				  }
         }
         .hero-3 {
           gap: 20px;
           display: flex;
         }
-        @media (max-width: 991px) {
+        @media (max-width: 1024px) {
           .hero-3 {
             flex-direction: column;
             align-items: stretch;
@@ -55,7 +59,7 @@
           width: 35%;
           margin-left: 0px;
         }
-        @media (max-width: 991px) {
+        @media (max-width: 1024px) {
           .column-hero {
             width: 100%;
           }
@@ -67,7 +71,7 @@
 		  width: 100%;
           margin-top: -1px;
         }
-        @media (max-width: 991px) {
+        @media (max-width: 1024px) {
           .img-hero {
             max-width: 100%;
           }
@@ -79,7 +83,7 @@
           width: 65%;
           margin-left: 20px;
         }
-        @media (max-width: 991px) {
+        @media (max-width: 1024px) {
           .column-hero-2 {
             width: 100%;
 			margin-left: 0px;
@@ -92,7 +96,7 @@
           margin: auto 0;
           padding: 55px 22px 55px 48px;
         }
-        @media (max-width: 991px) {
+        @media (max-width: 1024px) {
           .hero-4 {
             max-width: 100%;
             margin-top: 36px;
@@ -105,7 +109,7 @@
           font: 700 48px/140% Inter, -apple-system, Roboto, Helvetica,
             sans-serif;
         }
-        @media (max-width: 991px) {
+        @media (max-width: 1024px) {
           .hero-5 {
             max-width: 100%;
             font-size: 28px;
@@ -117,7 +121,7 @@
           font: 400 23px/32px Inter, -apple-system, Roboto, Helvetica,
             sans-serif;
         }
-        @media (max-width: 991px) {
+        @media (max-width: 1024px) {
           .hero-6 {
             max-width: 100%;
           }
@@ -128,7 +132,7 @@
           margin-top: 20px;
           padding: 10px 1px;
         }
-        @media (max-width: 991px) {
+        @media (max-width: 1024px) {
           .hero-7 {
             max-width: 100%;
           }
@@ -137,7 +141,7 @@
           gap: 20px;
           display: flex;
         }
-        @media (max-width: 991px) {
+        @media (max-width: 1024px) {
           .hero-8 {
             flex-direction: column;
             align-items: stretch;
@@ -151,7 +155,7 @@
           width: 50%;
           margin-left: 0px;
         }
-        @media (max-width: 991px) {
+        @media (max-width: 1024px) {
           .column-hero-3 {
             width: 100%;
           }
@@ -169,7 +173,7 @@
           font: 700 16px/140% Inter, -apple-system, Roboto, Helvetica,
             sans-serif;
         }
-        @media (max-width: 991px) {
+        @media (max-width: 1024px) {
           .hero-9 {
 			    font-family: Inter, sans-serif;
 				justify-content: center;
@@ -188,7 +192,7 @@
           width: 50%;
           margin-left: 20px;
         }
-        @media (max-width: 991px) {
+        @media (max-width: 1024px) {
           .column-hero-4 {
             width: 100%;
 			margin-left: 0px;
@@ -208,7 +212,7 @@
           font: 700 16px/140% Inter, -apple-system, Roboto, Helvetica,
             sans-serif;
         }
-        @media (max-width: 991px) {
+        @media (max-width: 1024px) {
           .hero-10 {
 			font-family: Inter, sans-serif;
 				justify-content: center;
@@ -226,7 +230,7 @@
           font: 600 24px/140% Inter, -apple-system, Roboto, Helvetica,
             sans-serif;
         }
-        @media (max-width: 991px) {
+        @media (max-width: 1024px) {
           .hero-11 {
             max-width: 100%;
             margin-right: 0rem;
@@ -243,7 +247,7 @@
           margin: 48px 0 34px;
           padding: 0 79px;
         }
-        @media (max-width: 991px) {
+        @media (max-width: 1024px) {
           .hero-12 {
 			display: flex;
 			flex-direction: column;
@@ -258,7 +262,7 @@
           flex-direction: column;
           padding: 12px;
         }
-		@media (max-width: 991px) {
+		@media (max-width: 1024px) {
 			.hero-13 {
 				display: flex;
 				margin-top: 3.063rem;
@@ -285,7 +289,7 @@
           flex-direction: column;
           padding: 12px;
         }
-	       @media (max-width: 991px) {
+	       @media (max-width: 1024px) {
 	       	.hero-16 {
 	       		display: flex;
 	       		flex-direction: column;
@@ -312,7 +316,7 @@
           flex-direction: column;
           padding: 12px;
         }
-		@media (max-width: 991px) {
+		@media (max-width: 1024px) {
 			.hero-19 {
 				display: flex;
 				flex-direction: column;

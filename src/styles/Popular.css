@@ -83,10 +83,11 @@
 	text-align: center;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 	.popular {
 		height: 609px;
 		padding: 1.25rem 0rem 0rem 0rem;
+		max-width: 768px;
 	}
 	.popular-title {
 		font: 700 32px/140% Inter, -apple-system, Roboto, Helvetica,

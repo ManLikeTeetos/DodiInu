@@ -20,7 +20,7 @@
 	display: none;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 	.header-desktop {
 			display: none;
 		}
@@ -28,11 +28,13 @@
 		display: flex;
 		height: auto;
 		flex-direction: column;
+		max-width: 768px;
+		margin: 0 auto;
 	}
 }
 
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 	.div {
 		padding: 0 1.25rem;
 	}
@@ -43,7 +45,7 @@
 	display: flex;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 	.div-2 {
 		flex-direction: row;
 		align-items: center;
@@ -61,7 +63,7 @@
 	margin-left: 0px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 	.column {
 		width: 100%;
 	}
@@ -79,7 +81,7 @@
 	padding-left:27px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 	.div-3 {
 		margin-top: 0px;
 	}
@@ -105,7 +107,7 @@
 	margin-left: 20px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 	.column-2 {
 		/* width: 100%; */
 		display: flex;
@@ -123,7 +125,7 @@
 	margin: auto 0;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 	.div-5 {
 		margin-top: 40px;
 		display: flex;
@@ -146,7 +148,7 @@
 	padding: 2px 0;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 	.div-7 {
 		white-space: initial;
 	}
@@ -165,7 +167,7 @@
 	margin-left: 20px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 	.column-3 {
 		width: 100%;
 	}
@@ -182,7 +184,7 @@
 	margin: auto 0;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 	.div-9 {
 		margin-top: 0px;
 		display: flex;
@@ -193,6 +195,16 @@
 	}
 }
 
+@media (min-width: 1440px) {
+	.div-9 {
+		margin-top: 0px;
+		display: flex;
+		gap: 10px;
+		align-items: center;
+		margin-bottom: 30px;
+		justify-content: flex-end;
+	}
+}
 .div-10 {
 	font-family: Inter, sans-serif;
 	justify-content: center;
@@ -201,7 +213,7 @@
 	padding: 22px 36px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 	.div-10 {
 		padding: 0 20px;
 	}
@@ -217,7 +229,7 @@
 	padding: 18px 36px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 	.nav-wrapper {
 		display: flex;
 		flex-direction: column;

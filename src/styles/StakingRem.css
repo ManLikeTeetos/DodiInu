@@ -8,14 +8,15 @@
 	/* 8px converted to rem */
 	flex-direction: column;
 	/* bigger screen */
-		max-width: 1440px;
+		max-width: 1328px;
 		margin: 0 auto;
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 
-	/* 991px converted to rem */
+	/* 1024px converted to rem */
 	.staking {
 		padding: 0rem 0rem 0.5rem 0rem;
+		max-width: 768px;
 	}
 }
 
@@ -33,9 +34,9 @@
 	color: rgba(255, 255, 255, 0.92);
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 
-	/* 991px converted to rem */
+	/* 1024px converted to rem */
 	.staking-title {
 		max-width: 100%;
 		margin-left: 1rem;
@@ -55,9 +56,9 @@
 	white-space: nowrap;
 	line-height: 150%;
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 
-	/* 991px converted to rem */
+	/* 1024px converted to rem */
 	.staking-segment {
 		flex-wrap: wrap;
 		padding-left: 0.10rem;
@@ -66,9 +67,9 @@
 	}
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 
-	/* 991px converted to rem */
+	/* 1024px converted to rem */
 	.staking-segment {
 		flex-wrap: wrap;
 		padding-left: 1.25rem;
@@ -99,9 +100,9 @@
 	color: white;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 
-	/* 991px converted to rem */
+	/* 1024px converted to rem */
 	.staking-segment-header {
 		white-space: initial;
 	}
@@ -117,7 +118,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 	.staking-columns {
 		display: flex;
 		flex-direction: column-reverse;
@@ -140,9 +141,9 @@
 	height: 24.95rem;
 	/* 399.2px converted to rem */
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 
-	/* 991px converted to rem */
+	/* 1024px converted to rem */
 	.staking-image-how {
 		max-width: 100%;
 	}
@@ -160,9 +161,9 @@
 	padding-left: 3rem;
 	/* 48px converted to rem */
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 
-	/* 991px converted to rem */
+	/* 1024px converted to rem */
 	.staking-image-container {
 		max-width: 100%;
 		padding-right: 0rem;
@@ -178,9 +179,9 @@
 }
 
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 
-	/* 991px converted to rem */
+	/* 1024px converted to rem */
 	.staking-content-container {
 		max-width: 100%;
 		margin-top: 2.5rem;
@@ -193,9 +194,9 @@
 	/* 13px converted to rem */
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 
-	/* 991px converted to rem */
+	/* 1024px converted to rem */
 	.staking-content-box {
 		max-width: 100%;
 	}
@@ -212,9 +213,9 @@
 	/* 20px converted to rem */
 	display: flex;
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 
-	/* 991px converted to rem */
+	/* 1024px converted to rem */
 	.staking-content-shell {
 		flex-direction: column;
 		padding: 0rem 0.5rem;
@@ -230,9 +231,9 @@
 	/* 12px converted to rem */
 	flex-direction: column;
 }
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 
-	/* 991px converted to rem */
+	/* 1024px converted to rem */
 	.staking-image-column {
 		display: flex;
 		align-items: center;
@@ -249,9 +250,9 @@
 	/* 20px converted to rem */
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 
-	/* 991px converted to rem */
+	/* 1024px converted to rem */
 	.staking-content-column {
 		width: 100%;
 	}
@@ -267,9 +268,9 @@
 	flex-direction: column;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 
-	/* 991px converted to rem */
+	/* 1024px converted to rem */
 	.staking-content-subcolumn {
 		max-width: 100%;
 		margin-top: 1.5625rem;
@@ -323,9 +324,9 @@
 	line-height: 140%;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
 
-	/* 991px converted to rem */
+	/* 1024px converted to rem */
 	.staking-image-container {
 			display: flex;
 			margin: auto;
