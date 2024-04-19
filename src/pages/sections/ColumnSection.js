@@ -96,7 +96,7 @@ export default function Column(){
 						<div className="div-column-23">
 							<img className="clip-path-group" src={CG} alt="CG" />
 							<div className="coin-name">
-								Coin<span className="coin-name-light">Geko</span>
+								Coin<span className="coin-name-light">Gecko</span>
 							</div>
 						</div>
 					</div>
