@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import DodiLogo from '../../styles/assets/images/Dodilogo.svg';
 import NavIcon from '../../styles/assets/images/NavbarIcon.png';
 const colorStyle = {
@@ -21,6 +21,13 @@ export default function Navbar(){
 			setShowMenu(!showMenu); // Toggle the menu visibility on click
 		};
 
+	const location = useLocation();
+
+	// Define a function to determine the active class based on the current pathname
+	const getClassName = (path) => {
+		return location.pathname === path ? 'active' : '';
+	};
+
 	return(
 		<>
 			<div className="header-desktop">
@@ -40,8 +47,8 @@ export default function Navbar(){
 					</div>
 					<div className="column-2">
 						<div className="div-5">
-							<Link className="div-6" to="/">Home</Link>
-							<Link className="div-7" to="/staking">Staking</Link>
+							<Link className={`div-6 ${getClassName('/')}`} to="/">Home</Link>
+							<Link className={`div-6 ${getClassName('/staking')}`} to="/staking">Staking</Link>
 							<div className="div-8">White paper</div>
 						</div>
 					</div>
@@ -81,8 +88,8 @@ export default function Navbar(){
 				{showMenu && (
 					<div className="nav-menu">
 						<div className='nav-wrapper'>
-							<div className="nav-text">Home</div>
-							<div className="nav-text">Staking</div>
+							<Link className="nav-text" to="/">Home</Link>
+							<Link className="nav-text" to="/staking">Staking</Link>
 							<div className="nav-text">White paper</div>
 							<div className="div-10">BUY $DODI</div>
 							<div className="div-11">Connect Wallet</div>

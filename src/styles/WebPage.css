@@ -135,9 +135,19 @@
 	}
 }
 
-.div-6 {
+.div-6.active {
 	color: var(--primary2-primary2-500, #00cd6a);
 	font-family: Inter, sans-serif;
+}
+
+.div-6 {
+	font-family: Inter, sans-serif;
+	justify-content: center;
+	color: var(--Secondary-secondary-50, #e6e6e6);
+	white-space: nowrap;
+	text-decoration: none;
+
+
 }
 
 .div-7 {
@@ -249,7 +259,17 @@
 			white-space: nowrap;
 			font-size: 19px;
 			line-height: 140%;
+			text-decoration: none;
+			color: #fff;
+		}
 
+		.nav-text.active {
+			font-family: Inter, sans-serif;
+			justify-content: center;
+			white-space: nowrap;
+			font-size: 19px;
+			line-height: 140%;
+			color: #00cd6a
 		}
 
 
