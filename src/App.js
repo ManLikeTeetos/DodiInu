@@ -1,13 +1,16 @@
+import { BrowserRouter} from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
-import LandingPage from "./pages/WebPage"
+import Routing from "./components/Routes";
 
 
 function App() {
 	return (
-		<div>
-			<LandingPage />
-		</div>
+		<BrowserRouter>
+			<div>
+				<Routing/>
+			</div>
+		</BrowserRouter>
 	);
 }
 

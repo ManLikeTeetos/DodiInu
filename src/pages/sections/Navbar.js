@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import DodiLogo from '../../styles/assets/images/Dodilogo.svg';
 import NavIcon from '../../styles/assets/images/NavbarIcon.png';
 const colorStyle = {
@@ -39,8 +40,8 @@ export default function Navbar(){
 					</div>
 					<div className="column-2">
 						<div className="div-5">
-							<div className="div-6">Home</div>
-							<div className="div-7">Staking</div>
+							<Link className="div-6" to="/">Home</Link>
+							<Link className="div-7" to="/staking">Staking</Link>
 							<div className="div-8">White paper</div>
 						</div>
 					</div>
