@@ -129,7 +129,7 @@ margin-bottom: 8px;
 		width: fit-content;
 		box-sizing: border-box;
 		margin-top: 30px;
-		height: auto;
+		height: 474px;
 }
 
 .stkconnect-col {
@@ -142,6 +142,350 @@ margin-bottom: 8px;
 		box-sizing: border-box;
 		height: 474px;
 }
+
+.stake-header {
+	margin-bottom: 6px;
+		display: flex;
+		flex-direction: row;
+		align-self: flex-start;
+		width: fit-content;
+		box-sizing: border-box;
+}
+
+.stake-title {
+	margin: 16.5px 0;
+		display: inline-block;
+		overflow-wrap: break-word;
+		font-family: 'Inter';
+		font-weight: 700;
+		font-size: 19px;
+		line-height: 1.4;
+		color: #FFFFFF;
+}
+
+.wallet {
+	margin-right: 10px;
+}
+
+
+.stake-inner {
+	display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: fit-content;
+		box-sizing: border-box;
+}
+
+.stake-bio {
+	margin-bottom: 24px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		box-sizing: border-box;
+		padding: 10px 48px;
+		height: 56px;
+}
+
+.stake-bio-text {
+	text-align: center;
+		overflow-wrap: break-word;
+		font-family: var(--body-font-family, 'Inter');
+		font-weight: var(--body-font-weight, 400);
+		font-size: var(--body-font-size, 13px);
+		line-height: var(--body-line-height, 1.4);
+		color: var(--secondarysecondary-100, #B0B0B0);
+}
+
+.stake-card {
+	display: flex;
+		flex-direction: column;
+		width: 100%;
+		box-sizing: border-box;
+}
+
+.stake-inner-card {
+	margin-bottom: 24px;
+		display: flex;
+		flex-direction: column;
+		width: auto;
+		box-sizing: border-box;
+}
+
+.stake-balance {
+	margin-bottom: 20px;
+		box-sizing: border-box;
+		height: 60px
+}
+
+.stake-bal-field {
+	border-radius: 12px;
+		background: #545454;
+		display: flex;
+		flex-direction: column;
+		padding: 6px 0 6px 10px;
+		box-sizing: border-box;
+}
+
+.stake-bal-label {
+	margin-bottom: 6px;
+		display: inline-block;
+		align-self: flex-start;
+		overflow-wrap: break-word;
+		font-family: 'Inter';
+		font-weight: 700;
+		font-size: 11px;
+		line-height: 1.4;
+		color: var(--secondarysecondary-100, #B0B0B0);
+}
+
+.stake-bal-amt {
+	align-self: flex-start;
+		overflow-wrap: break-word;
+		font-family: var(--title-3-bold-font-family, 'Inter');
+		font-weight: var(--title-3-bold-font-weight, 700);
+		font-size: var(--title-3-bold-font-size, 19px);
+		line-height: var(--title-3-bold-line-height, 1.4);
+		color: #B0B0B0;
+}
+
+.stake-amount-field {
+	border-radius: 12px;
+		background: #545454;
+		margin-right: 27px;
+		display: flex;
+		flex-direction: column;
+		padding: 6px 0 6px 10px;
+		width: 127px;
+		box-sizing: border-box;
+}
+
+.stake-tax {
+	margin-bottom: 20px;
+		display: flex;
+		flex-direction: row;
+		width: fit-content;
+		box-sizing: border-box;
+}
+
+.stake-tax-field {
+	border-radius: 12px;
+		background: #545454;
+		display: flex;
+		flex-direction: column;
+		padding: 6px 0 6px 10px;
+		width: 127px;
+		box-sizing: border-box;
+}
+
+.stake-date {
+	display: flex;
+		flex-direction: row;
+		box-sizing: border-box;
+		justify-content: space-between;
+}
+
+.stake-days {
+	border-radius: 8px;
+		background: #171717;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding: 11px 0.7px 11px 0;
+		width: 127px;
+		box-sizing: border-box;
+		height: 40px;
+}
+
+.stake-days-txt {
+	overflow-wrap: break-word;
+		font-family: 'Inter';
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 1.4;
+		color: #FFFFFF;
+}
+
+.stake-btn {
+	border-radius: 12px;
+		border: 1px solid #00CD6A;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding: 18px 0.5px 18px 0;
+		width: 281px;
+		box-sizing: border-box;
+		height: 60px
+}
+
+.stake-btn-txt {
+	overflow-wrap: break-word;
+		font-family: var(--title-4-bold-font-family, 'Inter');
+		font-weight: var(--title-4-bold-font-weight, 700);
+		font-size: var(--title-4-bold-font-size, 16px);
+		line-height: var(--title-4-bold-line-height, 1.4);
+		color: var(--secondarysecondary-200, #8A8A8A);
+}
+
+.stake-acc-btn-div {
+	display: flex;
+		flex-direction: row;
+		width: 281px;
+		box-sizing: border-box;
+		justify-content: space-between;
+}
+
+
+.stake-acc-btn {
+	border-radius: 12px;
+		border: 1px solid #00CD6A;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding: 18px 0.2px 18px 0;
+		width: 127px;
+		box-sizing: border-box;
+}
+
+.stake-time-div {
+	border-radius: 8px;
+		background: #171717;
+		margin: 0 1px 20px 1px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 5px 24.7px 6px 10.5px;
+		width: 279px;
+		box-sizing: border-box;
+		height: 40px;
+}
+
+.stake-red-balance {
+	box-sizing: border-box;
+	height: 60px
+
+}
+
+.stake-time {
+	margin: 6px 0 5px 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		box-sizing: border-box;
+}
+
+.timer {
+	overflow-wrap: break-word;
+		font-family: 'Inter';
+		font-weight: 700;
+		font-size: 13px;
+		line-height: 1.4;
+		color: #FFFFFF;
+}
+
+.stake-count {
+	display: flex;
+		flex-direction: row;
+		box-sizing: border-box;
+}
+
+.stake-count-in {
+	margin-right: 8.3px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		box-sizing: border-box;
+}
+
+.stake-count-txt {
+margin: 0 3.6px 0 3px;
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #00CD6A;
+}
+
+.stake-count-title {
+	overflow-wrap: break-word;
+		font-family: 'Inter';
+		font-weight: 400;
+		font-size: 8px;
+		line-height: 1.4;
+		color: #00CD6A;
+}
+
+.stake-count-divider {
+	margin: 3.5px 8.2px 3.5px 0;
+		display: inline-block;
+		overflow-wrap: break-word;
+		font-family: 'Inter';
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 1.4;
+		color: #00CD6A;
+}
+
+.stake-reward {
+	display: flex;
+		flex-direction: column;
+		align-self: flex-start;
+		width: 100%;
+		box-sizing: border-box;
+}
+
+.stake-reward-title {
+	margin-bottom: 20px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-self: center;
+		box-sizing: border-box;
+		width: 147px;
+		height: 36px;
+		margin-top: 10px;
+}
+
+.stake-reward-txt {
+	text-align: center;
+		overflow-wrap: break-word;
+		font-family: 'Inter';
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 1.4;
+		color: var(--secondarysecondary-1001, #B0B0B0);
+}
+
+.stake-records {
+	margin-bottom: 39px;
+		display: inline-block;
+		align-self: flex-start;
+		overflow-wrap: break-word;
+		font-family: 'Inter';
+		font-weight: 500;
+		font-size: 11px;
+		line-height: 1.4;
+		color: #797979;
+}
+
+.stake-records-div {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-self: center;
+		box-sizing: border-box;
+}
+
+.stake-record-txt {
+	overflow-wrap: break-word;
+		font-family: 'Inter';
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.4;
+		color: #FFFFFF;
+}
+
+
 
 .stkcalc {
 	margin-top: 24px;
