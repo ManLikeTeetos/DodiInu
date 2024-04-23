@@ -107,7 +107,7 @@ export default function StakingSection(){
 							</div>
 						</div>
 						<div className="staking-image-container">
-							<div className="staking-image-reward"></div>
+							<div className="staking-image-how"></div>
 						</div>
 					</>
 				)}
