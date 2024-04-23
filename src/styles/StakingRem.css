@@ -127,7 +127,7 @@
 }
 
 .staking-image-how {
-	background: url('assets/images/stakingbanner.jpg') 50% / contain no-repeat;
+	background: url('assets/images/stakingbanner.jpg') 50% / cover no-repeat;
 	width: 40.75rem;
 	/* 652px converted to rem */
 	height: 24.95rem;
@@ -135,7 +135,7 @@
 }
 
 .staking-image-reward {
-	background: url('assets/images/reward_tab.png') 50% / contain no-repeat;
+	background: url('assets/images/reward_tab.png') 50% / cover no-repeat;
 	width: 40.75rem;
 	/* 652px converted to rem */
 	height: 24.95rem;
