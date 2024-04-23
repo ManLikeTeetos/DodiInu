@@ -57,7 +57,7 @@ export default function TokenSection() {
 										/>
 										<div className="token-div-15">
 											<span className="tokencolor">100% </span>
-											Tax Rewarded to
+											Tax Rewarded to Stakers
 											</div>
 									</div>
 									<div className="token-div-16">
