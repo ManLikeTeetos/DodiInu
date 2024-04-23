@@ -66,10 +66,7 @@ export default function Navbar(){
 						<div className="div-3">
 							<img loading="lazy" src={DodiLogo} className="img" alt="Dodi Logo" />
 							<div className="div-4">
-								<span style={{ color: `rgba(${colorStyle.color.r}, ${colorStyle.color.g}, ${colorStyle.color.b}, ${colorStyle.color.a})` }}>
-									DODI
-								</span>
-								INU
+								<span className="green-color">DODI </span>INU
 							</div>
 						</div>
 					</div>
