@@ -74,6 +74,26 @@ export default function Column(){
 						</div>
 					</div>
 				</div>
+				<div className="csection-media-box">
+					<div className="csection-media-card">
+						<div className="media-img">
+							<div className="youtube-png">
+							</div>
+						</div>
+						<div className="media-content">
+							<div className="media-title">
+								<span className="media-name">
+									Youtube
+								</span>
+							</div>
+							<div className="media-subtitle">
+								<span className="followers">
+									COMING SOON
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<div className="section">

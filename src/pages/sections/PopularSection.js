@@ -20,11 +20,14 @@ import SliderNew4 from "../../styles/assets/images/slidernew4.jpg";
 import SliderNew5 from "../../styles/assets/images/slidernew5.jpg";
 import SliderNew6 from "../../styles/assets/images/slidernew6.jpg";
 
+import SliderNew7 from "../../styles/assets/images/dodimusic.png";
+import SliderNew8 from "../../styles/assets/images/dodicard.png";
+
 
 
 export default function PopularSection() {
 	const [currentSlide, setCurrentSlide] = useState(0);
-	const totalSlides = 12;
+	const totalSlides = 14;
 
 	const goToNextSlide = () => {
 		setCurrentSlide((currentSlide + 1) % totalSlides);
@@ -63,6 +66,8 @@ export default function PopularSection() {
 	};
 
 	const images = [
+		SliderNew7,
+		SliderNew8,
 		Slider1,
 		SliderNew1,
 		Slider2,

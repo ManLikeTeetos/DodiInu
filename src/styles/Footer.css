@@ -1,5 +1,5 @@
 .footer-footer {
-	padding: 2rem 0.7rem;
+	padding: 2rem 64px;
 	display: flex;
 	flex-direction: row;
 	/* justify-content: space-between; */
@@ -32,14 +32,14 @@
 	display: flex;
 	flex-direction: column;
 	box-sizing: border-box;
-	width: 23.75%;
+	width: 32%;
 }
 
 .footer-frame-95 {
 	margin: 0 0 1.1rem 0rem;
 	display: flex;
 	flex-direction: row;
-	width: fit-content;
+	width: auto;
 	box-sizing: border-box;
 }
 
@@ -54,7 +54,7 @@
 	overflow-wrap: break-word;
 	font-family: 'Inter';
 	font-weight: 700;
-	font-size: 1.4rem;
+	font-size: 43px;
 	line-height: 1.4;
 	color: var(--secondarysecondary-50, #E6E6E6);
 }

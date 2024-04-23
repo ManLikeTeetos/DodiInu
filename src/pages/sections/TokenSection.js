@@ -55,7 +55,10 @@ export default function TokenSection() {
 											className="token-img-4"
 											alt="check mark"
 										/>
-										<div className="token-div-15">Tax Rewarded to Stakers</div>
+										<div className="token-div-15">
+											<span className="tokencolor">100% </span>
+											Tax Rewarded to
+											</div>
 									</div>
 									<div className="token-div-16">
 										<img
@@ -64,7 +67,10 @@ export default function TokenSection() {
 											className="token-img-5"
 											alt="check mark"
 										/>
-										<div className="token-div-17">Liquidity Burnt</div>
+										<div className="token-div-17">
+											<span className="tokencolor">100% </span>
+											Liquidity Burnt
+											</div>
 									</div>
 									<div className="token-div-18">
 										<img

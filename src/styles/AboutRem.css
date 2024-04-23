@@ -103,12 +103,12 @@
 	height: 24.95rem;
 }
 .about-image-problem {
-	background: url('assets/images/WhatsAppImage20240402At10511.jpeg') 50% / cover no-repeat;
+	background: url('assets/images/problem.png') 50% / cover no-repeat;
 	width: 40.75rem;
 	height: 24.95rem;
 }
 .about-image-solution {
-	background: url('assets/images/WhatsAppImage20240325At21131.jpeg') 50% / cover no-repeat;
+	background: url('assets/images/solution.png') 50% / cover no-repeat;
 	width: 40.75rem;
 	height: 24.95rem;
 }

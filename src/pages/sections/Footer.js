@@ -12,7 +12,7 @@ export default function Footer(){
 				<div className="footer-frame-95">
 					<img className="footer-logo-diodi-inu-3" src={DodiLogo} alt="Dodi" />
 					<p className="footer-dodi-inu">
-						<span className="footer-dodi-inu-sub-1"> DODI </span><span> INU </span>
+						<span className="green-color"> DODI </span><span> INU </span>
 					</p>
 				</div>
 				<div className="footer-div-buttons">

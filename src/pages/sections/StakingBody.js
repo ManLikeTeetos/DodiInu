@@ -27,7 +27,7 @@ export default function StakingBody(){
 									Total Locked
 								</div>
 								<div className="stk-lok-text">
-									<span className="stk-green-color">DIODI</span><span>3,069,702</span>
+									<span className="stk-green-color">$DODI</span><span>3,069,702</span>
 								</div>
 							</div>
 							<div className="stk-earn-frame">
@@ -36,7 +36,7 @@ export default function StakingBody(){
 										Total Earned
 									</div>
 									<div className="stk-lok-text">
-										<span className="stk-green-color">DIODI</span><span>3,069,702</span>
+										<span className="stk-green-color">$DODI</span><span>3,069,702</span>
 									</div>
 								</div>
 								<img

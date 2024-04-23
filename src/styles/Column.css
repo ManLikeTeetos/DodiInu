@@ -1,10 +1,10 @@
 .csection {
-	display:flex;
+	display: flex;
 	flex-direction: column;
 	height: 703px;
 	/* bigger screen */
-		max-width: 1440px;
-		margin: 0 auto;
+	max-width: 1440px;
+	margin: 0 auto;
 }
 
 .csection-title {
@@ -22,9 +22,11 @@
 	display: flex;
 	flex-direction: row;
 	align-self: center;
-	column-gap: 1.5rem;
+	/* column-gap: 1.5rem; */
 	width: fit-content;
 	box-sizing: border-box;
+	width: 1256px;
+	justify-content: space-between;
 }
 
 .csection-media-box {
@@ -112,8 +114,8 @@
 	border: 0.1rem solid #121614;
 	background: url('assets/images/TelegramPng.png'), linear-gradient(#121614, #121614);
 	width: 4rem;
-		height: 4rem;
-		background-position: center;
+	height: 4rem;
+	background-position: center;
 }
 
 .instagram-png {
@@ -121,8 +123,17 @@
 	border: 0.1rem solid #121614;
 	background: url('assets/images/Instagram.png'), linear-gradient(#121614, #121614);
 	width: 4rem;
-		height: 4rem;
-		background-position: center;
+	height: 4rem;
+	background-position: center;
+}
+
+.youtube-png {
+	border-radius: 624.9rem;
+	border: 0.1rem solid #121614;
+	background: url('assets/images/youtube.png'), linear-gradient(#121614, #121614);
+	width: 4rem;
+	height: 4rem;
+	background-position: center;
 }
 
 
@@ -220,24 +231,35 @@
 	font-weight: 400;
 }
 
+@media (min-width: 1440px) {
+	.csection-media {
+		column-gap: 1.5rem;
+		width: auto;
+	}
+
+}
+
 
 @media (max-width: 1024px) {
 
 	.csection {
-			height: auto;
-			max-width: 768px;
+		height: auto;
+		max-width: 768px;
 
-		}
+	}
 
-	.section{
+	.section {
 		height: auto;
 		padding: 0px 8px;
 	}
+
 	.csection-media {
 		flex-direction: column;
-		height: 373px;
+		height: auto;
+		width: auto;
 		gap: 12px;
 	}
+
 	.div-columns-4 {
 		flex-direction: column;
 		width: 100%;
@@ -251,9 +273,9 @@
 	}
 
 	.container-2-col {
-			/* flex-direction: column; */
-			margin: 0rem 0.5rem;
-			width: auto;
+		/* flex-direction: column; */
+		margin: 0rem 0.5rem;
+		width: auto;
 	}
 
 	.div-column-23 {
@@ -261,6 +283,7 @@
 		width: 50%;
 		margin-bottom: 50px;
 	}
+
 
 
 

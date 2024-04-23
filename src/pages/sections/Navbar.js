@@ -41,7 +41,7 @@ export default function Navbar(){
 								alt="Dodi Logo"
 							/>
 							<div className="div-4">
-								<span style={{ color: `rgba(${colorStyle.color.r}, ${colorStyle.color.g}, ${colorStyle.color.b}, ${colorStyle.color.a})` }}>DODI </span>INU
+								<span className="green-color">DODI </span>INU
 							</div>
 						</div>
 					</div>
@@ -88,8 +88,8 @@ export default function Navbar(){
 				{showMenu && (
 					<div className="nav-menu">
 						<div className='nav-wrapper'>
-							<Link className="nav-text" to="/">Home</Link>
-							<Link className="nav-text" to="/staking">Staking</Link>
+							<Link className={`nav-text ${getClassName('/')}`} to="/">Home</Link>
+							<Link className={`nav-text ${getClassName('/staking')}`} to="/staking">Staking</Link>
 							<div className="nav-text">White paper</div>
 							<div className="div-10">BUY $DODI</div>
 							<div className="div-11">Connect Wallet</div>

@@ -3,6 +3,7 @@ import "../../styles/AboutRem.css";
 import AboutDog from "../../styles/assets/images/AboutDog.png";
 import AboutDog2 from "../../styles/assets/images/about_dog2.png";
 import AboutDog3 from "../../styles/assets/images/about_dog3.png";
+import ProblemWidget from "../../styles/assets/images/problem_widget.png";
 
 export default function AboutSection(){
 	const [activeTab, setActiveTab] = useState('MISSION'); // State to track active tab
@@ -16,7 +17,7 @@ export default function AboutSection(){
 			  <div className="about">
 			<div className="about-title">
 				About
-				<span className="green-color">  $DODI</span>
+				<span className="green-color">  DODI</span>
 			</div>
 			<div className="about-segment">
 				<div
@@ -159,7 +160,7 @@ export default function AboutSection(){
 									<div className="about-image-column">
 										<img
 											loading="lazy"
-											src={AboutDog2}
+											src={ProblemWidget}
 											//className="img"
 											alt="about us"
 										/>

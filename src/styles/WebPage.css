@@ -16,6 +16,13 @@
 	padding: 1.125rem 0rem;
 }
 
+@media (min-width: 1440px) {
+	.header-desktop {
+		padding-left: 64px;
+		padding-right: 64px;
+	}
+}
+
 .header-mobile {
 	display: none;
 }
@@ -73,12 +80,12 @@
 	display: flex;
 	flex-grow: 1;
 	gap: 8px;
-	font-size: 22.4px;
-	color: var(--primary2-primary2-500, #00cd6a);
+	font-size: 43px;
+	color: white;
 	font-weight: 700;
 	line-height: 140%;
 	height: 58px;
-	padding-left:27px;
+	padding-left:64px;
 }
 
 @media (max-width: 1024px) {
@@ -211,8 +218,9 @@
 		display: flex;
 		gap: 10px;
 		align-items: center;
-		margin-bottom: 30px;
+		margin-bottom: auto;
 		justify-content: flex-end;
+		margin-right: 24px;
 	}
 }
 .div-10 {
@@ -297,5 +305,3 @@
 .green-color {
 	color: rgba(0, 205, 106, 1); /* Use the calculated RGB value here */
   }
-
-
