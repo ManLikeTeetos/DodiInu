@@ -17,6 +17,13 @@ const colorStyle = {
 };
 
 
+const customStyle = {
+	overlay: {
+		background: 'transparent'
+	}
+}
+
+
 
 export default function Navbar(){
 
@@ -128,6 +135,7 @@ export default function Navbar(){
 					onRequestClose={closeModal}
 					contentLabel="Example Modal"
 					className="modal"
+					style={customStyle}
 				>
 					<div className="modal-nav-body">
 						<div className="modal-nav-desc">
