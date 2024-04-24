@@ -4,6 +4,7 @@ import DodiLogo from '../../styles/assets/images/Dodilogo.svg';
 import NavIcon from '../../styles/assets/images/NavbarIcon.png';
 import Cancel from '../../styles/assets/images/modal_cancel.png';
 import Metamask from '../../styles/assets/images/metamask.png';
+import WalletConnect from '../../styles/assets/images/walletconnect.png'
 import TrustWallet from '../../styles/assets/images/trustwallet.png';
 import Modal from 'react-modal';
 const colorStyle = {
@@ -135,7 +136,7 @@ export default function Navbar(){
 									Connect wallet
 								</div>
 								<span className="modal-nav-text">
-									Please select a wallet and connect to this DApp.
+									Please select a wallet and connect to <span className="green-color"> DODI</span> DApp.
 								</span>
 							</div>
 							<div className="modal-nav-cancel">
@@ -161,20 +162,20 @@ export default function Navbar(){
 							</button>
 							<button className="modal-nav-box">
 								<div className="modal-nav-img">
-									<img src={Metamask} alt="Wallet Connect" className="modal-nav-inner-img" />
+									<img src={WalletConnect} alt="Wallet Connect" className="modal-nav-inner-img" />
 								</div>
 								<span className="modal-nav-opttxt">
 									Wallet Connect
 								</span>
 							</button>
 						</div>
-						<div className="modal-nav-cert">
+						{/* <div className="modal-nav-cert">
 
 								<input type="checkbox" name="certify" id="certify" className="modal-nav-check"/>
 								<div className="modal-nav-content">
 								I certify that i have read and accept the Terms of Use and Privacy Notice.
 								</div>
-						</div>
+						</div> */}
 					</div>
 
 				</Modal>
