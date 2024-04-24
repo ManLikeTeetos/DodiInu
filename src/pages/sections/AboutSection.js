@@ -4,6 +4,10 @@ import AboutDog from "../../styles/assets/images/AboutDog.png";
 import AboutDog2 from "../../styles/assets/images/about_dog2.png";
 import AboutDog3 from "../../styles/assets/images/about_dog3.png";
 import ProblemWidget from "../../styles/assets/images/problem_widget.png";
+import Solution2 from "../../styles/assets/images/solution2.png";
+import Solution3 from "../../styles/assets/images/solution3.png";
+
+
 
 export default function AboutSection(){
 	const [activeTab, setActiveTab] = useState('MISSION'); // State to track active tab
@@ -239,7 +243,7 @@ export default function AboutSection(){
 									<div className="about-image-column">
 										<img
 											loading="lazy"
-											src={AboutDog2}
+											src={Solution2}
 											//className="img"
 											alt="about us"
 										/>
@@ -261,7 +265,7 @@ export default function AboutSection(){
 									<div className="about-image-column">
 										<img
 											loading="lazy"
-											src={AboutDog3}
+											src={Solution3}
 											//className="img"
 											alt="about us"
 										/>
