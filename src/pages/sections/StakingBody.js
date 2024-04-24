@@ -1,11 +1,33 @@
-import "../../styles/StakingBody.css"
+import { useState } from "react"
 import Trophy from "../../styles/assets/images/trophy.png"
 import Twitter from "../../styles/assets/images/twitter_stake.png"
 import Telegram from "../../styles/assets/images/telegram_stake.png"
 import Wallet from "../../styles/assets/images/wallet.png"
+import Modal from 'react-modal';
+import ModalCheck from "../../styles/assets/images/modal_correct.png"
+import "../../styles/StakingBody.css"
+
 
 
 export default function StakingBody(){
+//Modal functons
+	let subtitle;
+	const [modalIsOpen, setIsOpen] = useState(false);
+
+	function openModal() {
+		setIsOpen(true);
+	}
+
+	function afterOpenModal() {
+		// references are now sync'd and can be accessed.
+		//subtitle.style.color = '#f00';
+	}
+
+	function closeModal() {
+		setIsOpen(false);
+	}
+
+
 	return(
 		<div className="stkbody">
 			<div className="stkshadow">
@@ -108,9 +130,47 @@ export default function StakingBody(){
 											</div>
 										</div>
 										<div className="stake-btn">
-											<span className="stake-btn-txt">
+											<span className="stake-btn-txt" onClick={openModal}>
 												STAKE
 											</span>
+											<Modal
+												isOpen={modalIsOpen}
+												onAfterOpen={afterOpenModal}
+												onRequestClose={closeModal}
+												contentLabel="Example Modal"
+												className="modal"
+											>
+												<div className="modal-body">
+													<div className="modal-inner">
+														<div className="modal-check">
+															<img
+																className="modal-image"
+																src={ModalCheck}
+																alt="Congratulations"
+															/>
+														</div>
+														<div className="modal-header">
+															Congratulations!
+														</div>
+														<span className="modal-text">
+															Your staking on DIODI INU have been set.
+														</span>
+													</div>
+													<div className="modal-option">
+														<div className="modal-btn-green">
+															<span className="modal-btn-txt" onClick={closeModal}>
+																Continue
+															</span>
+														</div>
+														<div className="modal-btn">
+															<span className="modal-btn-txt">
+																See Record
+															</span>
+														</div>
+													</div>
+												</div>
+
+											</Modal>
 										</div>
 									</div>
 								</div>

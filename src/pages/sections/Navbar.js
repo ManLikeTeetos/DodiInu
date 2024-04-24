@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import DodiLogo from '../../styles/assets/images/Dodilogo.svg';
 import NavIcon from '../../styles/assets/images/NavbarIcon.png';
+import Cancel from '../../styles/assets/images/modal_cancel.png';
+import Metamask from '../../styles/assets/images/metamask.png';
+import TrustWallet from '../../styles/assets/images/trustwallet.png';
+import Modal from 'react-modal';
 const colorStyle = {
 	color: {
 		r: 230,
@@ -27,6 +31,25 @@ export default function Navbar(){
 	const getClassName = (path) => {
 		return location.pathname === path ? 'active' : '';
 	};
+
+
+	//Modal
+	let subtitle;
+	const [modalIsOpen, setIsOpen] = useState(false);
+
+	function openModal() {
+		setIsOpen(true);
+	}
+
+	function afterOpenModal() {
+		// references are now sync'd and can be accessed.
+		//subtitle.style.color = '#f00';
+	}
+
+	function closeModal() {
+		setIsOpen(false);
+	}
+
 
 	return(
 		<>
@@ -55,7 +78,9 @@ export default function Navbar(){
 					<div className="column-3">
 						<div className="div-9">
 							<div className="div-10">BUY $DODI</div>
-							<div className="div-11">Connect Wallet</div>
+							<div className="div-11">
+								<span onClick={openModal}> Connect Wallet</span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -89,10 +114,69 @@ export default function Navbar(){
 							<Link className={`nav-text ${getClassName('/staking')}`} to="/staking">Staking</Link>
 							<div className="nav-text">White paper</div>
 							<div className="div-10">BUY $DODI</div>
-							<div className="div-11">Connect Wallet</div>
+							<div className="div-11">
+								<span onClick={openModal}> Connect Wallet</span>
+							</div>
 						</div>
 					</div>
 				)}
+				<Modal
+					isOpen={modalIsOpen}
+					onAfterOpen={afterOpenModal}
+					onRequestClose={closeModal}
+					contentLabel="Example Modal"
+					className="modal"
+				>
+					<div className="modal-nav-body">
+						<div className="modal-nav-desc">
+							<div className="modal-nav-inner-desc">
+								<div className="modal-nav-header">
+									Connect wallet
+								</div>
+								<span className="modal-nav-text">
+									Please select a wallet and connect to this DApp.
+								</span>
+							</div>
+							<div className="modal-nav-cancel">
+								<img src={Cancel} alt="Cancel" onClick={closeModal} />
+							</div>
+						</div>
+						<div className="modal-nav-option">
+							<button className="modal-nav-box">
+								<div className="modal-nav-img">
+									<img src={Metamask} alt="Metamask" className="modal-nav-inner-img" />
+								</div>
+								<span className="modal-nav-opttxt">
+									Metamask
+								</span>
+							</button>
+							<button className="modal-nav-box">
+								<div className="modal-nav-img">
+									<img src={TrustWallet} alt="TrustWallet" className="modal-nav-inner-img" />
+								</div>
+								<span className="modal-nav-opttxt">
+									Trust Wallet
+								</span>
+							</button>
+							<button className="modal-nav-box">
+								<div className="modal-nav-img">
+									<img src={Metamask} alt="Wallet Connect" className="modal-nav-inner-img" />
+								</div>
+								<span className="modal-nav-opttxt">
+									Wallet Connect
+								</span>
+							</button>
+						</div>
+						<div className="modal-nav-cert">
+
+								<input type="checkbox" name="certify" id="certify" className="modal-nav-check"/>
+								<div className="modal-nav-content">
+								I certify that i have read and accept the Terms of Use and Privacy Notice.
+								</div>
+						</div>
+					</div>
+
+				</Modal>
 			</div>
 		</>
 	)
