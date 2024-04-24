@@ -19,11 +19,11 @@ const colorStyle = {
 
 export default function Navbar(){
 
-		const [showMenu, setShowMenu] = useState(false); // State to track if the menu is open
+	const [showMenu, setShowMenu] = useState(false); // State to track if the menu is open
 
-		const handleMenuClick = () => {
-			setShowMenu(!showMenu); // Toggle the menu visibility on click
-		};
+	const handleMenuClick = () => {
+		setShowMenu(!showMenu); // Toggle the menu visibility on click
+	};
 
 	const location = useLocation();
 
@@ -38,6 +38,7 @@ export default function Navbar(){
 	const [modalIsOpen, setIsOpen] = useState(false);
 
 	function openModal() {
+		setShowMenu(false);
 		setIsOpen(true);
 	}
 
