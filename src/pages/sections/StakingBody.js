@@ -6,6 +6,7 @@ import Wallet from "../../styles/assets/images/wallet.png"
 import Modal from 'react-modal';
 import ModalCheck from "../../styles/assets/images/modal_correct.png"
 import "../../styles/StakingBody.css"
+import Records from "./RecordSection.js"
 
 
 
@@ -364,9 +365,7 @@ export default function StakingBody(){
 				)}
 
 				{activeTab === 'records' && (
-					<div>
-
-					</div>
+					<Records/>
 				)}
 
 
