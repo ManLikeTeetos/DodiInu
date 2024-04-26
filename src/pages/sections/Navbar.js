@@ -165,7 +165,7 @@ export default function Navbar(){
 
 								<div className="connected">
 									<div className="eth">
-										{data.Balance}ETH
+										<span className="eth-amt">{data.Balance}</span>ETH
 									</div>
 									<div className="connect-add">
 										<div className="add-text">
