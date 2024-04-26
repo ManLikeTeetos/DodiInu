@@ -105,7 +105,7 @@ export default function Navbar(){
 						address: address
 				});
 
-				alert("Wallet connect successfully!!")
+				alert("Wallet connected successfully!!")
 
 				setIsOpen(false);
 			});
