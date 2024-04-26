@@ -517,6 +517,7 @@
 		font-weight: 700;
 		font-size: 13px;
 		color: #FFFFFF;
+		display: flex;
  }
 
  .eth-amt {
