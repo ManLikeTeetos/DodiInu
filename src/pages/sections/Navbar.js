@@ -104,6 +104,10 @@ export default function Navbar(){
 						ethers.utils.formatEther(balance),
 						address: address
 				});
+
+				alert("Wallet connect successfully!!")
+
+				setIsOpen(false);
 			});
 	};
 
