@@ -517,11 +517,13 @@
 		font-weight: 700;
 		font-size: 13px;
 		color: #FFFFFF;
-		width: 50px;
-		overflow: hidden;
-			white-space: nowrap;
-			text-overflow: ellipsis;
+ }
 
+ .eth-amt {
+	width: 50px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
  }
 
  .connect-add {
