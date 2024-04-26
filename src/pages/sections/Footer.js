@@ -1,3 +1,4 @@
+import React from "react";
 import "../../styles/Footer.css";
 import DodiLogo from '../../styles/assets/images/Dodilogo.svg';
 import Twitter from '../../styles/assets/images/footer_twitter.png';

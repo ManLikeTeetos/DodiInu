@@ -7,6 +7,11 @@ import Metamask from '../../styles/assets/images/metamask.png';
 import WalletConnect from '../../styles/assets/images/walletconnect.png'
 import TrustWallet from '../../styles/assets/images/trustwallet.png';
 import Modal from 'react-modal';
+import { ethers } from "ethers";
+
+
+
+
 const colorStyle = {
 	color: {
 		r: 230,
@@ -60,6 +65,63 @@ export default function Navbar(){
 	}
 
 
+
+	///Metamask connect
+	const [data, setdata] = useState({
+		address: "",
+		Balance: 0.0,
+	});
+
+	// Button handler button for handling a
+	// request event for metamask
+	const btnhandler = () => {
+		// Asking if metamask is already present or not
+		if (window.ethereum) {
+			// res[0] for fetching a first wallet
+			window.ethereum
+				.request({ method: "eth_requestAccounts" })
+				.then((res) =>
+					accountChangeHandler(res[0])
+				);
+		} else {
+			alert("install metamask extension!!");
+		}
+	};
+
+	// getbalance function for getting a balance in
+	// a right format with help of ethers
+	const getbalance = (address) => {
+		// Requesting balance method
+		window.ethereum
+			.request({
+				method: "eth_getBalance",
+				params: [address, "latest"],
+			})
+			.then((balance) => {
+				// Setting balance
+				setdata({
+					Balance:
+						ethers.utils.formatEther(balance),
+						address: address
+				});
+			});
+	};
+
+	// Function for getting handling all events
+	const accountChangeHandler = (account) => {
+		// Setting an address data
+		setdata({
+			address: account,
+		});
+
+		// Setting a balance
+		getbalance(account);
+	};
+
+	 console.log(3, data);
+	// alert(data.address);
+
+
 	return(
 		<>
 			<div className="header-desktop">
@@ -87,9 +149,30 @@ export default function Navbar(){
 					<div className="column-3">
 						<div className="div-9">
 							<div className="div-10">BUY $DODI</div>
-							<div className="div-11">
-								<span onClick={openModal}> Connect Wallet</span>
-							</div>
+							{data.address === "" && (
+								<div className="div-11">
+									<span onClick={openModal}> Connect Wallet</span>
+								</div>
+							)}
+							{data.address !== "" && (
+								// <div className="div-11">
+								// 	<span>{data.address}</span>
+								// </div>
+
+								<div className="connected">
+									<div className="eth">
+										{data.Balance}ETH
+									</div>
+									<div className="connect-add">
+										<div className="add-text">
+											{data.address}
+										</div>
+										<div className="eth-logo">
+										</div>
+									</div>
+								</div>
+							)}
+
 						</div>
 					</div>
 				</div>
@@ -123,9 +206,30 @@ export default function Navbar(){
 							<Link className={`nav-text ${getClassName('/staking')}`} to="/staking">Staking</Link>
 							<div className="nav-text">White paper</div>
 							<div className="div-10">BUY $DODI</div>
-							<div className="div-11">
-								<span onClick={openModal}> Connect Wallet</span>
-							</div>
+							{data.address === "" && (
+								<div className="div-11">
+									<span onClick={openModal}> Connect Wallet</span>
+								</div>
+							)}
+							{data.address !== "" && (
+								// <div className="div-11">
+								// 	<span>{data.address}</span>
+								// </div>
+
+								<div className="connected">
+									<div className="eth">
+										{data.Balance}ETH
+									</div>
+									<div className="connect-add">
+										<div className="add-text">
+											{data.address}
+										</div>
+										<div className="eth-logo">
+										</div>
+									</div>
+								</div>
+							)}
+
 						</div>
 					</div>
 				)}
@@ -152,7 +256,7 @@ export default function Navbar(){
 							</div>
 						</div>
 						<div className="modal-nav-option">
-							<button className="modal-nav-box">
+							<button className="modal-nav-box" onClick={btnhandler}>
 								<div className="modal-nav-img">
 									<img src={Metamask} alt="Metamask" className="modal-nav-inner-img" />
 								</div>
