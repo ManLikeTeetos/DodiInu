@@ -17,11 +17,11 @@ export default function Road(){
 			<div className="inner-road">
 				<div className="road-content">
 					<span className="roadtitle"> Road Map </span>
-					<span className="road-subtitle">
+					{/* <span className="road-subtitle">
 						Lorem ipsum dolor sit amet consectetur. Nullam in diam cursus purus vitae lectus a.
 						Egestas arcu convallis morbi leo quis velit.
 						Dis ut faucibus senectus enim quam ac bibendum porttitor. Mattis eget.
-					</span>
+					</span> */}
 				</div>
 				<div className="road-graph-desktop">
 					<div className="frame-118">

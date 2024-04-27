@@ -22,6 +22,8 @@ import SliderNew6 from "../../styles/assets/images/slidernew6.jpg";
 
 import SliderNew7 from "../../styles/assets/images/dodimusic.png";
 import SliderNew8 from "../../styles/assets/images/dodicard.png";
+import SliderNew9 from "../../styles/assets/images/slider9.png";
+import SliderNew10 from "../../styles/assets/images/slider10.png";
 
 
 
@@ -66,6 +68,8 @@ export default function PopularSection() {
 	};
 
 	const images = [
+		SliderNew9,
+		SliderNew10,
 		SliderNew7,
 		SliderNew8,
 		Slider1,

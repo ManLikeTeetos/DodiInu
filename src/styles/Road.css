@@ -3,7 +3,7 @@
 	height: 516px;
 	color: rgba(255, 255, 255, 0.92);
 	max-width: 100vw;
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat;
 	/* background-position: center;
 	position: relative; */
@@ -22,14 +22,14 @@
 .road-content {
 	display: flex;
 	flex-direction: column;
-	height: 127px;
-	margin-bottom: 89px;
+	height: auto;
+	margin-bottom: 98px;
 }
 
 .roadtitle {
 	font: 700 33px/140% Inter, -apple-system, Roboto, Helvetica,
 			sans-serif;
-	margin-bottom: 1.5rem;
+
 }
 
 
