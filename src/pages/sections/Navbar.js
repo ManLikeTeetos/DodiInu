@@ -8,6 +8,7 @@ import WalletConnect from '../../styles/assets/images/walletconnect.png'
 import TrustWallet from '../../styles/assets/images/trustwallet.png';
 import Modal from 'react-modal';
 import { ethers } from "ethers";
+import MetaMaskSDK from "@metamask/sdk";
 
 
 
@@ -67,6 +68,15 @@ export default function Navbar(){
 
 
 	///Metamask connect
+
+     ///Metamask mobile
+	new MetaMaskSDK({
+		useDeeplink: false,
+		communicationLayerPreference: "socket",
+	});
+
+
+
 	const [userdata, setUserdata] = useState({
 		address: "",
 		Balance: 0.0,
