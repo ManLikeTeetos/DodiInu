@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import DodiLogo from '../../styles/assets/images/Dodilogo.svg';
 import NavIcon from '../../styles/assets/images/NavbarIcon.png';
@@ -67,10 +67,24 @@ export default function Navbar(){
 
 
 	///Metamask connect
-	const [data, setdata] = useState({
+	const [userdata, setUserdata] = useState({
 		address: "",
 		Balance: 0.0,
 	});
+
+	useEffect(() => {
+
+		const userinfo = JSON.parse(localStorage.getItem('userdata'));
+
+		if (userinfo) {
+			setUserdata({
+				Balance: userinfo.Balance,
+				address: userinfo.address
+			});
+
+		}
+	}, []); // Run this effect only once, on component mount
+
 
 	// Button handler button for handling a
 	// request event for metamask
@@ -99,13 +113,17 @@ export default function Navbar(){
 			})
 			.then((balance) => {
 				// Setting balance
-				setdata({
+				setUserdata({
 					Balance:
 						ethers.utils.formatEther(balance),
 						address: address
 				});
 
 				alert("Wallet connected successfully!!")
+				if (userdata.address !== "") {
+					localStorage.setItem('userdata', JSON.stringify(userdata));
+				}
+
 
 				setIsOpen(false);
 			});
@@ -114,7 +132,7 @@ export default function Navbar(){
 	// Function for getting handling all events
 	const accountChangeHandler = (account) => {
 		// Setting an address data
-		setdata({
+		setUserdata({
 			address: account,
 		});
 
@@ -122,9 +140,8 @@ export default function Navbar(){
 		getbalance(account);
 	};
 
-	 console.log(3, data);
+	 console.log(3, userdata);
 	// alert(data.address);
-
 
 	return(
 		<>
@@ -153,23 +170,23 @@ export default function Navbar(){
 					<div className="column-3">
 						<div className="div-9">
 							<div className="div-10">BUY $DODI</div>
-							{data.address === "" && (
+							{userdata.address === "" && (
 								<div className="div-11">
 									<span onClick={openModal}> Connect Wallet</span>
 								</div>
 							)}
-							{data.address !== "" && (
+							{userdata.address !== "" && (
 								// <div className="div-11">
 								// 	<span>{data.address}</span>
 								// </div>
 
 								<div className="connected">
 									<div className="eth">
-										<span className="eth-amt">{data.Balance}</span>ETH
+										<span className="eth-amt">{userdata.Balance}</span>ETH
 									</div>
 									<div className="connect-add">
 										<div className="add-text">
-											{data.address}
+											{userdata.address}
 										</div>
 										<div className="eth-logo">
 										</div>
@@ -210,23 +227,23 @@ export default function Navbar(){
 							<Link className={`nav-text ${getClassName('/staking')}`} to="/staking">Staking</Link>
 							<div className="nav-text">White paper</div>
 							<div className="div-10">BUY $DODI</div>
-							{data.address === "" && (
+							{userdata.address === "" && (
 								<div className="div-11">
 									<span onClick={openModal}> Connect Wallet</span>
 								</div>
 							)}
-							{data.address !== "" && (
+							{userdata.address !== "" && (
 								// <div className="div-11">
 								// 	<span>{data.address}</span>
 								// </div>
 
 								<div className="connected">
 									<div className="eth">
-										<span className="eth-amt">{data.Balance}</span>ETH
+										<span className="eth-amt">{userdata.Balance}</span>ETH
 									</div>
 									<div className="connect-add">
 										<div className="add-text">
-											{data.address}
+											{userdata.address}
 										</div>
 										<div className="eth-logo">
 										</div>
@@ -249,7 +266,7 @@ export default function Navbar(){
 						<div className="modal-nav-desc">
 							<div className="modal-nav-inner-desc">
 								<div className="modal-nav-header">
-									Connect wallet
+									Connect Wallet
 								</div>
 								<span className="modal-nav-text">
 									Please select a wallet and connect to <span className="green-color"> DODI</span> DApp.
