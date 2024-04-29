@@ -4,6 +4,9 @@ import logo from './logo.svg';
 import './App.css';
 import Routing from "./components/Routes";
 import { ethers } from "ethers";
+import { Web3ReactProvider } from '@web3-react/core';
+import { Web3Provider } from '@ethersproject/providers';
+
 
 
 
@@ -11,11 +14,21 @@ import { ethers } from "ethers";
 
 
 function App() {
+
+	const getLibrary = (provider) => {
+		const library = new Web3Provider(provider, 'any');
+		library.pollingInterval = 15000;
+		return library;
+	}
+
+
 	return (
 		<BrowserRouter>
-			<div>
-				<Routing/>
-			</div>
+			<Web3ReactProvider getLibrary={getLibrary}>
+				<div>
+					<Routing />
+				</div>
+			</Web3ReactProvider>
 		</BrowserRouter>
 	);
 }

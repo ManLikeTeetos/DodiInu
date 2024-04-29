@@ -1,15 +1,19 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import DodiLogo from '../../styles/assets/images/Dodilogo.svg';
 import NavIcon from '../../styles/assets/images/NavbarIcon.png';
 import Cancel from '../../styles/assets/images/modal_cancel.png';
 import Metamask from '../../styles/assets/images/metamask.png';
-import WalletConnect from '../../styles/assets/images/walletconnect.png'
+import WalletConnectImg from '../../styles/assets/images/walletconnect.png'
 import TrustWallet from '../../styles/assets/images/trustwallet.png';
 import Modal from 'react-modal';
 import { ethers } from "ethers";
 import MetaMaskSDK from "@metamask/sdk";
-
+import { useWeb3React } from '@web3-react/core';
+import { injected, walletconnect, resetWalletConnector, walletlink } from '../../Helpers/connectors';
+import { Web3Provider } from '@ethersproject/providers';
+import Web3 from 'web3';
+import { WalletConnectConnector } from "@web3-react/walletconnect-connector";
 
 
 
@@ -32,6 +36,9 @@ const customStyle = {
 
 
 export default function Navbar(){
+
+	const mounted = useRef(false); // Define the mounted ref
+
 
 	const [showMenu, setShowMenu] = useState(false); // State to track if the menu is open
 
@@ -69,7 +76,7 @@ export default function Navbar(){
 
 	///Metamask connect
 
-     ///Metamask mobile
+    // //  ///Metamask mobile
 	new MetaMaskSDK({
 		useDeeplink: false,
 		communicationLayerPreference: "socket",
@@ -82,38 +89,47 @@ export default function Navbar(){
 		Balance: 0.0,
 	});
 
-	useEffect(() => {
 
-		const userinfo = JSON.parse(localStorage.getItem('userdata'));
-
-		if (userinfo) {
-			setUserdata({
-				Balance: userinfo.Balance,
-				address: userinfo.address
-			});
-
-		}
-	}, []); // Run this effect only once, on component mount
 
 
 	// Button handler button for handling a
 	// request event for metamask
-	const btnhandler = () => {
-		// Asking if metamask is already present or not
-		if (window.ethereum) {
-			// res[0] for fetching a first wallet
-			window.ethereum
-				.request({ method: "eth_requestAccounts" })
-				.then((res) =>
-					accountChangeHandler(res[0])
-				);
-		} else {
-			alert("install metamask extension!!");
-		}
-	};
+	// const btnhandler = () => {
+	// 	// Asking if metamask is already present or not
+	// 	if (window.ethereum) {
+	// 		// res[0] for fetching a first wallet
+	// 		window.ethereum
+	// 			.request({ method: "eth_requestAccounts" })
+	// 			.then((res) =>
+	// 				accountChangeHandler(res[0])
+	// 			);
+	// 	} else {
+	// 		alert("install metamask extension!!");
+	// 	}
+	// };
 
-	// getbalance function for getting a balance in
-	// a right format with help of ethers
+	// // getbalance function for getting a balance in
+	// // a right format with help of ethers
+
+	// // Function for getting handling all events
+	// const accountChangeHandler = (account) => {
+	// 	// Setting an address data
+	// 	setUserdata({
+	// 		address: account,
+	// 	});
+
+	// 	// Setting a balance
+	// 	getbalance(account);
+	// };
+
+	//console.log(3, userdata);
+	// alert(data.address);
+
+	const { account, library, activate }= useWeb3React();
+
+
+
+
 	const getbalance = (address) => {
 		// Requesting balance method
 		window.ethereum
@@ -124,17 +140,9 @@ export default function Navbar(){
 			.then((balance) => {
 				// Setting balance
 				setUserdata({
-					Balance:
-						ethers.utils.formatEther(balance),
-						address: address
+					Balance:ethers.formatEther(balance),
+					address: address
 				});
-
-				alert("Wallet connected successfully!!")
-				if (userdata.address !== "") {
-					localStorage.setItem('userdata', JSON.stringify(userdata));
-				}
-
-
 				setIsOpen(false);
 			});
 	};
@@ -150,8 +158,50 @@ export default function Navbar(){
 		getbalance(account);
 	};
 
-	 console.log(3, userdata);
-	// alert(data.address);
+	//web3react metamask
+	const connectMetamaskSimple = async () => {
+		try {
+			await activate(injected);
+		} catch (ex) {
+			console.log(ex);
+		}
+
+	};
+
+
+	const WalletConnect = new WalletConnectConnector({
+		rpcUrl: "https://mainnet.infura.io/v3/c6b3393bb7db40f5b35952f0bb021f3b",
+		bridge: "https://bridge.walletconnect.org",
+		qrcode: true,
+	});
+
+	useEffect(() => {
+		// Check if account is not empty
+		if (account && !mounted.current) {
+			mounted.current = true; // Set mounted to true
+			accountChangeHandler(account);
+		}
+
+	}, [account]);
+
+
+
+	useEffect(() => {
+		// Check if userdata is present in localStorage
+		const userinfo = JSON.parse(localStorage.getItem('userdata'));
+		if (userinfo) {
+			// If userdata is present, don't show alert and don't run accountChangeHandler
+			return;
+		}
+
+		// If userdata is not present, check if userdata.address and userdata.Balance are both truthy
+		if (userdata.address && userdata.Balance) {
+			localStorage.setItem('userdata', JSON.stringify(userdata));
+			alert("Wallet connected successfully!!");
+		}
+	}, [userdata]);
+
+
 
 	return(
 		<>
@@ -287,7 +337,7 @@ export default function Navbar(){
 							</div>
 						</div>
 						<div className="modal-nav-option">
-							<button className="modal-nav-box" onClick={btnhandler}>
+							<button className="modal-nav-box"  onClick={connectMetamaskSimple}>
 								<div className="modal-nav-img">
 									<img src={Metamask} alt="Metamask" className="modal-nav-inner-img" />
 								</div>
@@ -303,9 +353,9 @@ export default function Navbar(){
 									Trust Wallet
 								</span>
 							</button>
-							<button className="modal-nav-box">
+							<button className="modal-nav-box" onClick={() => { activate(WalletConnect) }}>
 								<div className="modal-nav-img">
-									<img src={WalletConnect} alt="Wallet Connect" className="modal-nav-inner-img" />
+									<img src={WalletConnectImg} alt="Wallet Connect" className="modal-nav-inner-img" />
 								</div>
 								<span className="modal-nav-opttxt">
 									Wallet Connect
