@@ -3,7 +3,8 @@ import "../../styles/Footer.css";
 import DodiLogo from '../../styles/assets/images/Dodilogo.svg';
 import Twitter from '../../styles/assets/images/footer_twitter.png';
 import Telegram from '../../styles/assets/images/footer-telegram.png';
-import Discord from '../../styles/assets/images/footer_discord.png';
+import Instagram from '../../styles/assets/images/instagram_footer.png';
+import YouTube from '../../styles/assets/images/youtube_footer.png';
 
 
 export default function Footer(){
@@ -24,7 +25,10 @@ export default function Footer(){
 						<img className="footer-icon" src={Telegram} alt="Telegram" />
 					</div>
 					<div className="footer-linkmargin">
-						<img className="footer-icon" src={Discord} alt="Discord" />
+						<img className="footer-icon" src={Instagram} alt="Discord" />
+					</div>
+					<div className="footer-linkmargin">
+						<img className="footer-icon" src={YouTube} alt="Youtube" />
 					</div>
 				</div>
 				<div className="footer-p">
@@ -77,12 +81,7 @@ export default function Footer(){
 						</div>
 						<div className="footer-item">
 							<span className="footer-link-defi-llama">
-								Defi Llama
-							</span>
-						</div>
-						<div className="footer-item">
-							<span className="footer-link-yield-yak-analytics">
-								DODI Analytics
+								Bird Eye
 							</span>
 						</div>
 					</div>
@@ -90,23 +89,28 @@ export default function Footer(){
 				<div className="footer-div-column-15">
 					<div className="footer-psubtitle-6">
 						<span className="footer-developers">
-							Developers
+							Brand Assets
 						</span>
 					</div>
 					<div className="footer-list-2">
 						<div className="footer-item">
 							<span className="footer-link-docs">
-								Docs
+								<span className="green-color">DODI</span> Shop
 							</span>
 						</div>
 						<div className="footer-item">
-							<span className="footer-link-brand-assets">
-								Brand Assets
+							<span className="footer-link-docs">
+								<span className="green-color">DODI</span> Music
+							</span>
+						</div>
+						<div className="footer-item">
+							<span className="footer-link-docs">
+								 Youtube
 							</span>
 						</div>
 					</div>
 				</div>
-				<div className="footer-div-column-16">
+				{/* <div className="footer-div-column-16">
 					<div className="footer-psubtitle-7">
 						<span className="footer-beginners">
 							Beginners
@@ -129,7 +133,7 @@ export default function Footer(){
 							</span>
 						</div>
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</div>
 	)
