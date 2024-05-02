@@ -167,11 +167,10 @@
           background-color: #00cd6a;
           flex-grow: 1;
           color: #fff;
-          text-align: center;
-          /* width: 100%; */
-          padding: 25px 44px;
-          font: 700 16px/140% Inter, -apple-system, Roboto, Helvetica,
-            sans-serif;
+		  text-align: center;
+			padding: 30px 44px;
+			font: 700 16px/140% Inter, -apple-system, Roboto, Helvetica,
+				sans-serif;
         }
         @media (max-width: 1024px) {
           .hero-9 {

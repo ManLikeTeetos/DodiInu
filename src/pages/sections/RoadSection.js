@@ -16,7 +16,7 @@ export default function Road(){
 		<div className="roadmap">
 			<div className="inner-road">
 				<div className="road-content">
-					<span className="roadtitle"> Road Map </span>
+					<span className="roadtitle"> <span className="green-color">Road</span> Map </span>
 					{/* <span className="road-subtitle">
 						Lorem ipsum dolor sit amet consectetur. Nullam in diam cursus purus vitae lectus a.
 						Egestas arcu convallis morbi leo quis velit.

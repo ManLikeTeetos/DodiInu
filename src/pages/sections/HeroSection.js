@@ -36,7 +36,7 @@ export default function HeroSection(){
 												<div className="hero-9">BUY $DODI</div>
 											</div>
 											<div className="column-hero-4">
-												<div className="hero-10">STAKE $DODI</div>
+												<div className="hero-10">SELL $DODI</div>
 											</div>
 										</div>
 									</div>
@@ -55,13 +55,13 @@ export default function HeroSection(){
 						<div className="hero-16">
 							<div className="hero-17">TOTAL DODI</div>
 							<div className="hero-18">
-								2,565,990,000.00{" "}
+								4,565,990,000.00{" "}
 								<span style={{ color: `rgba(${colorStyleHero.r}, ${colorStyleHero.g}, ${colorStyleHero.b}, ${colorStyleHero.a})` }}>DODI</span>
 							</div>
 						</div>
 						<div className="hero-19">
 							<div className="hero-20">DODI INU Staked</div>
-							<div className="hero-21">62%</div>
+							<div className="hero-21">42%</div>
 						</div>
 					</div>
 				</div>
