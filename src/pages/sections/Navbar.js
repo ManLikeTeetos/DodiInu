@@ -1,11 +1,17 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+
+///Assets
 import DodiLogo from '../../styles/assets/images/Dodilogo.svg';
 import NavIcon from '../../styles/assets/images/NavbarIcon.png';
 import Cancel from '../../styles/assets/images/modal_cancel.png';
 import Metamask from '../../styles/assets/images/metamask.png';
 import WalletConnectImg from '../../styles/assets/images/walletconnect.png'
 import TrustWallet from '../../styles/assets/images/trustwallet.png';
+import Disconnect from '../../styles/assets/images/disconnect.svg';
+
+
+///Web3
 import Modal from 'react-modal';
 import { ethers } from "ethers";
 import MetaMaskSDK from "@metamask/sdk";
@@ -76,18 +82,29 @@ export default function Navbar(){
 
 	///Metamask connect
 
-    // //  ///Metamask mobile
+    ///Metamask mobile
 	new MetaMaskSDK({
 		useDeeplink: false,
 		communicationLayerPreference: "socket",
 	});
 
+	let storedData = localStorage.getItem('userdata');
+	let initialState;
+	if (storedData) {
+		initialState = JSON.parse(storedData);
+	} else {
+		initialState = {
+			address: "",
+			Balance: 0.0,
+		};
+	}
+
+	const [userdata, setUserdata] = useState(initialState);
 
 
-	const [userdata, setUserdata] = useState({
-		address: "",
-		Balance: 0.0,
-	});
+
+
+
 
 
 
@@ -190,6 +207,7 @@ export default function Navbar(){
 		// Check if userdata is present in localStorage
 		const userinfo = JSON.parse(localStorage.getItem('userdata'));
 		if (userinfo) {
+			//alert("connected");
 			// If userdata is present, don't show alert and don't run accountChangeHandler
 			return;
 		}
@@ -203,12 +221,14 @@ export default function Navbar(){
 
 
 
+
+
 	return(
 		<>
 			<div className="header-desktop">
 				<div className="div-2">
 					<div className="column">
-						<div className="div-3">
+						<Link className="div-3" to="/">
 							<img
 								loading="lazy"
 								src={DodiLogo}
@@ -218,7 +238,7 @@ export default function Navbar(){
 							<div className="div-4">
 								<span className="green-color">DODI </span>INU
 							</div>
-						</div>
+						</Link>
 					</div>
 					<div className="column-2">
 						<div className="div-5">
@@ -242,7 +262,7 @@ export default function Navbar(){
 
 								<div className="connected">
 									<div className="eth">
-										<span className="eth-amt">{userdata.Balance}</span>ETH
+										<img src={Disconnect} alt="Disconnect" />
 									</div>
 									<div className="connect-add">
 										<div className="add-text">
@@ -261,12 +281,12 @@ export default function Navbar(){
 			<div className="header-mobile">
 				<div className="div-2">
 					<div className="column">
-						<div className="div-3">
+						<Link className="div-3" to="/">
 							<img loading="lazy" src={DodiLogo} className="img" alt="Dodi Logo" />
 							<div className="div-4">
 								<span className="green-color">DODI </span>INU
 							</div>
-						</div>
+						</Link>
 					</div>
 					<div className="column-2">
 						{/* Hamburger menu icon (positioned to the right) */}
@@ -299,7 +319,7 @@ export default function Navbar(){
 
 								<div className="connected">
 									<div className="eth">
-										<span className="eth-amt">{userdata.Balance}</span>ETH
+										<img src={Disconnect} alt="Disconnect" />
 									</div>
 									<div className="connect-add">
 										<div className="add-text">

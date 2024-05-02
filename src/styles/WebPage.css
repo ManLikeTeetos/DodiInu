@@ -88,6 +88,7 @@
 	line-height: 140%;
 	height: 58px;
 	padding-left:64px;
+	text-decoration: none;
 }
 
 @media (max-width: 1024px) {
