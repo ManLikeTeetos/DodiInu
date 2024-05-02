@@ -1,5 +1,5 @@
 import "../../styles/Column.css";
-import BirdEye from "../../styles/assets/images/birdeye.png"
+import BirdEyeLogo from "../../styles/assets/images/birdeye_logo.png"
 
 import CMC from "../../styles/assets/images/cmc.png.png"
 import CG from "../../styles/assets/images/coingeko.png"
@@ -105,7 +105,7 @@ export default function Column(){
 					<div className="container-8-col">
 						<div className="div-column-23">
 							<div className="frame-101">
-								<img className="clip-path-group" src={BirdEye} alt="Dextools" />
+								<img className="clip-path-group" src={BirdEyeLogo} alt="Birdeye" />
 							</div>
 							<div className="coin-name">
 								Bird<span className="coin-name-light">eye</span>
