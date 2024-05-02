@@ -105,7 +105,7 @@ export default function StakingBody(){
 									<div className="stake-inner">
 										<div className="stake-bio">
 											<span className="stake-bio-text">
-												Stake any amount of DODI get daily staking rewards.
+												Stake any amount of <span className="green-color">$DODI</span> get daily staking rewards.
 											</span>
 										</div>
 										<div className="stake-card">
@@ -139,16 +139,14 @@ export default function StakingBody(){
 													</div>
 												</div>
 												<div className="stake-date">
-													<div className="stake-days">
-														<span className="stake-days-txt">
-															10 Days
+
+														<span className="stake-days-lockup">
+															Lock up Period
 														</span>
-													</div>
-													<div className="stake-days">
 														<span className="stake-days-txt">
-															50 Days
+														<span className="green-color">50 Days</span>
 														</span>
-													</div>
+
 												</div>
 											</div>
 											<div className="stake-btn">
@@ -176,7 +174,7 @@ export default function StakingBody(){
 																Congratulations!
 															</div>
 															<span className="modal-text">
-																Your staking on DIODI INU have been set.
+																Your staking on <span className="green-color">$DODI</span> have been set.
 															</span>
 														</div>
 														<div className="modal-option">
@@ -288,17 +286,10 @@ export default function StakingBody(){
 													</div>
 												</div>
 											</div>
-											<div className="stake-acc-btn-div">
-												<div className="stake-acc-btn">
-													<span className="stake-btn-txt">
-														RESTAKE
-													</span>
-												</div>
-												<div className="stake-acc-btn">
-													<span className="stake-btn-txt">
-														CLAIM
-													</span>
-												</div>
+											<div className="stake-btn">
+												<span className="stake-btn-txt" >
+													CLAIM
+												</span>
 											</div>
 										</div>
 									</div>
