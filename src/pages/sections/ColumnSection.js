@@ -1,5 +1,6 @@
 import "../../styles/Column.css";
 import BirdEye from "../../styles/assets/images/birdeye.png"
+
 import CMC from "../../styles/assets/images/cmc.png.png"
 import CG from "../../styles/assets/images/coingeko.png"
 import Pancake from "../../styles/assets/images/pancakeswap.png"
