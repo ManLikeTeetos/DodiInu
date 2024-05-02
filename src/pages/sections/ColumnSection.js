@@ -1,5 +1,5 @@
 import "../../styles/Column.css";
-import Dextools from "../../styles/assets/images/Dextools.png"
+import BirdEye from "../../styles/assets/images/birdeye.png"
 import CMC from "../../styles/assets/images/cmc.png.png"
 import CG from "../../styles/assets/images/coingeko.png"
 import Pancake from "../../styles/assets/images/pancakeswap.png"
@@ -26,11 +26,11 @@ export default function Column(){
 									twitter
 								</span>
 							</div>
-							<div className="media-subtitle">
+							{/* <div className="media-subtitle">
 								<span className="followers">
 									25,000+ followers
 								</span>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</div>
@@ -46,11 +46,11 @@ export default function Column(){
 									telegram
 								</span>
 							</div>
-							<div className="media-subtitle">
+							{/* <div className="media-subtitle">
 								<span className="followers">
 									3,000+ members
 								</span>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</div>
@@ -66,11 +66,11 @@ export default function Column(){
 									instagram
 								</span>
 							</div>
-							<div className="media-subtitle">
+							{/* <div className="media-subtitle">
 								<span className="followers">
 									COMING SOON
 								</span>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</div>
@@ -86,11 +86,11 @@ export default function Column(){
 									Youtube
 								</span>
 							</div>
-							<div className="media-subtitle">
+							{/* <div className="media-subtitle">
 								<span className="followers">
 									COMING SOON
 								</span>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</div>
@@ -104,10 +104,10 @@ export default function Column(){
 					<div className="container-8-col">
 						<div className="div-column-23">
 							<div className="frame-101">
-								<img className="clip-path-group" src={Dextools} alt="Dextools" />
+								<img className="clip-path-group" src={BirdEye} alt="Dextools" />
 							</div>
 							<div className="coin-name">
-								Dex<span className="coin-name-light">Tools</span>
+								Bird<span className="coin-name-light">eye</span>
 							</div>
 						</div>
 						<div className="div-column-23">
