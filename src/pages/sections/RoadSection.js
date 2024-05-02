@@ -1,9 +1,11 @@
 import "../../styles/Road.css";
 // import RoadBg from "../../styles/assets/images/roadmap.png";
-import Vector42 from "../../styles/assets/vectors/Vector 4.png";
-import Vector1 from "../../styles/assets/vectors/Vector 1.png";
-import Vector2 from "../../styles/assets/vectors/Vector 2.png";
-import Vector3 from "../../styles/assets/vectors/Vector 3.png";
+import Pilot from "../../styles/assets/images/pilot.png";
+import Jet from "../../styles/assets/images/jet.png";
+import Plane from "../../styles/assets/images/plane.png";
+import Earth from "../../styles/assets/images/earth.png";
+import Rocket from "../../styles/assets/images/rocket.png";
+import Astro from "../../styles/assets/images/astro.png";
 
 //mobile
 import Vector7 from "../../styles/assets/vectors/Vector 7.png";
@@ -25,22 +27,12 @@ export default function Road(){
 				</div>
 				<div className="road-graph-desktop">
 					<div className="frame-118">
-						<div className="frame-129">
-							<img className="vector-4" src={Vector42} alt="Vector"/>
-						</div>
-						<div className="road-map-content">
-							<div className="road-date">
-								Jan 20th 2024
-							</div>
-							<span className="road-map-title">
-								Lorem ipsum dolor sit amet consectetur.
-							</span>
-						</div>
+
 						<div className="frame-116">
 						</div>
 						<div className="container-8">
 							<div className="frame-126">
-								<img className="vector-1" src={Vector1} alt="Vector" />
+								<img className="road-graph-img" src={Pilot} alt="Pilot" />
 								<div className="road-map-content-down">
 									<div className="road-date">
 										Jan 20th 2024
@@ -50,8 +42,8 @@ export default function Road(){
 									</span>
 								</div>
 							</div>
-							<div className="frame-127">
-								<img className="vector-3" src={Vector3} alt="Vector" />
+							<div className="frame-126">
+								<img className="road-graph-img" src={Jet} alt="Pilot" />
 								<div className="road-map-content-down">
 									<div className="road-date">
 										Jan 20th 2024
@@ -60,105 +52,130 @@ export default function Road(){
 										Lorem ipsum dolor sit amet consectetur.
 									</span>
 								</div>
-
-
 							</div>
-						</div>
-						<div className="ellipse-9">
-						</div>
-						<div className="ellipse-17">
-						</div>
-						<div className="ellipse-12">
-						</div>
-						<div className="ellipse-14">
-						</div>
-						<div className="ellipse-15">
-						</div>
-						<div className="ellipse-16">
-						</div>
-						<div className="frame-128">
-							<div className="frame-122">
-								<div className="road-date">
-									Jan 20th 2024
+							<div className="frame-126">
+								<img className="road-graph-img" src={Plane} alt="Pilot" />
+								<div className="road-map-content-down">
+									<div className="road-date">
+										Jan 20th 2024
+									</div>
+									<span className="road-map-title">
+										Lorem ipsum dolor sit amet consectetur.
+									</span>
 								</div>
-								<span className="road-map-title">
-									Lorem ipsum dolor sit amet consectetur.
-								</span>
 							</div>
-							<img className="vector-2" src={Vector2} alt="Vector" />
+							<div className="frame-126">
+								<img className="road-graph-img" src={Earth} alt="Pilot" />
+								<div className="road-map-content-down">
+									<div className="road-date">
+										Jan 20th 2024
+									</div>
+									<span className="road-map-title">
+										Lorem ipsum dolor sit amet consectetur.
+									</span>
+								</div>
+							</div>
+							<div className="frame-126">
+								<img className="road-graph-img" src={Rocket} alt="Pilot" />
+								<div className="road-map-content-down">
+									<div className="road-date">
+										Jan 20th 2024
+									</div>
+									<span className="road-map-title">
+										Lorem ipsum dolor sit amet consectetur.
+									</span>
+								</div>
+							</div>
+							<div className="frame-126">
+								<img className="road-graph-img" src={Astro} alt="Pilot" />
+								<div className="road-map-content-down">
+									<div className="road-date">
+										Jan 20th 2024
+									</div>
+									<span className="road-map-title">
+										Lorem ipsum dolor sit amet consectetur.
+									</span>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 
 				<div className="road-graph-mobile">
-					<div className="container-12">
-						<div className="frame-142">
-							<div className="frame-1281">
-								<div className="road-date">
-									Jan 20th 2024
-								</div>
-								<span className="road-map-title">
-									Lorem ipsum dolor sit amet consectetur.
-								</span>
-							</div>
-							<div>
-								<img src={Vector7_2} alt="Vector" />
-							</div>
-						</div>
-						<div className="frame-141">
-							<div className="frame-128-mobile">
-								<div className="road-date">
-									Jan 20th 2024
-								</div>
-								<span className="road-map-title">
-									Lorem ipsum dolor sit amet consectetur.
-								</span>
-							</div>
-							<div>
-								<img src={Vector6} alt="Vector" />
-							</div>
-						</div>
-					</div>
+
 					<div className="frame-118">
 						<div className="frame-116">
 						</div>
-						<div className="ellipse-9">
+					</div>
+					<div className="container-8">
+						<div className="frame-126">
+							<img className="road-graph-img" src={Pilot} alt="Pilot" />
+							<div className="road-map-content-down">
+								<div className="road-date">
+									Jan 20th 2024
+								</div>
+								<span className="road-map-title">
+									Lorem ipsum dolor sit amet consectetur.
+								</span>
+							</div>
 						</div>
-						<div className="ellipse-17">
+						<div className="frame-126">
+							<img className="road-graph-img" src={Jet} alt="Pilot" />
+							<div className="road-map-content-down">
+								<div className="road-date">
+									Jan 20th 2024
+								</div>
+								<span className="road-map-title">
+									Lorem ipsum dolor sit amet consectetur.
+								</span>
+							</div>
 						</div>
-						<div className="ellipse-12">
+						<div className="frame-126">
+							<img className="road-graph-img" src={Plane} alt="Pilot" />
+							<div className="road-map-content-down">
+								<div className="road-date">
+									Jan 20th 2024
+								</div>
+								<span className="road-map-title">
+									Lorem ipsum dolor sit amet consectetur.
+								</span>
+							</div>
 						</div>
-						<div className="ellipse-14">
+						<div className="frame-126">
+							<img className="road-graph-img" src={Earth} alt="Pilot" />
+							<div className="road-map-content-down">
+								<div className="road-date">
+									Jan 20th 2024
+								</div>
+								<span className="road-map-title">
+									Lorem ipsum dolor sit amet consectetur.
+								</span>
+							</div>
 						</div>
-						<div className="ellipse-15">
+						<div className="frame-126">
+							<img className="road-graph-img" src={Rocket} alt="Pilot" />
+							<div className="road-map-content-down">
+								<div className="road-date">
+									Jan 20th 2024
+								</div>
+								<span className="road-map-title">
+									Lorem ipsum dolor sit amet consectetur.
+								</span>
+							</div>
 						</div>
-						<div className="ellipse-16">
+						<div className="frame-126">
+							<img className="road-graph-img" src={Astro} alt="Pilot" />
+							<div className="road-map-content-down">
+								<div className="road-date">
+									Jan 20th 2024
+								</div>
+								<span className="road-map-title">
+									Lorem ipsum dolor sit amet consectetur.
+								</span>
+							</div>
 						</div>
 					</div>
-					<div className="container-16">
-						<div className="frame-139">
-							<div className="road-date">
-								Jan 20th 2024
-							</div>
-							<div className="container-1">
-								<img className="vector-7" src={Vector7} alt="Vector" />
-								<div className="road-map-title">
-									Lorem ipsum dolor sit amet consectetur.
-								</div>
-							</div>
-						</div>
-						<div className="frame-140">
-							<div className="road-date">
-								Jan 20th 2024
-							</div>
-							<div className="container-2">
-								<img className="vector-71" src={Vector7_4} alt="Vector" />
-								<div className="road-map-title">
-									Lorem ipsum dolor sit amet consectetur.
-								</div>
-							</div>
-						</div>
-					</div>
+
 				</div>
 
 			</div>

@@ -41,7 +41,7 @@ export default function HeroSection(){
 										</div>
 									</div>
 									<div className="hero-11">
-										CA: D6NewxS3SPkeEEbvGQax2E4MiCjuvjAhTUkboXZLwKM1
+										CA: 0x5211674146FCaD8F4C34dE6bcb60f8C5940D2182
 									</div>
 								</div>
 							</div>

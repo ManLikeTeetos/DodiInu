@@ -23,7 +23,7 @@
 	display: flex;
 	flex-direction: column;
 	height: auto;
-	margin-bottom: 98px;
+	margin-bottom: 147px;
 }
 
 .roadtitle {
@@ -52,6 +52,8 @@
 	justify-content: center;
 	padding-bottom: 9px;
 	box-sizing: border-box;
+	height: 191px;
+	padding-top: 87px;
 }
 
 .road-graph-mobile{
@@ -108,6 +110,12 @@
 	text-align: center;
 }
 
+
+.road-graph-img {
+	width: 54px;
+	height: 54px;
+}
+
 .road-map-content-down{
 	position: relative;
 	display: flex;
@@ -140,23 +148,24 @@
 }
 
 .container-8 {
-	margin: 0 11px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-self: flex-start;
-	width: 780px;
+	width: 100%;
 	box-sizing: border-box;
 }
 
 .frame-126 {
-	margin: 30px 0 3.5px 0;
+	/* margin: 30px 0 3.5px 0; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	width: 130px;
-	height: 59px;
+	height: 49px;
 	box-sizing: border-box;
+	align-items: center;
+	z-index: 1;
 }
 
 .vector-1 {
@@ -290,7 +299,7 @@
 @media (max-width: 1024px) {
 	.roadmap {
 		background-image: url('assets/images/roadmapmobile.png');
-		height: 1484px;
+		height: auto;
 		color: rgba(255, 255, 255, 0.92);
 		background-size: co;
 		background-repeat: no-repeat;
@@ -309,7 +318,7 @@
 		display: flex;
 		flex-direction: column;
 		height: 127px;
-		margin-bottom: 6.125rem
+		margin-bottom: 64px;
 	}
 
 	.roadtitle {
@@ -339,6 +348,7 @@
 		flex-direction: row;
 		max-width: 414px;
 		margin: auto;
+		margin-bottom: 97px;
 	}
 
 		.container-12 {
@@ -350,6 +360,31 @@
 			flex-basis: 156px;
 			box-sizing: border-box;
 		}
+
+				.container-8 {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					align-self: flex-start;
+					width: 100%;
+					height: 1028px;
+					box-sizing: border-box;
+					align-items: center;
+
+				}
+
+				.frame-126 {
+					left: 45%;
+						right: 0px;
+						bottom: 462px;
+						width: 35px;
+						height: 35px;
+						align-items: center;
+				}
+
+				.road-graph-img {
+					margin-left: -100px;
+				}
 
 		.frame-142 {
 			margin-bottom: 238px;
@@ -419,9 +454,9 @@
 			margin-right: 18px;
 			display: flex;
 			flex-direction: row;
-			justify-content: center;
+			justify-content: space-between;
 			padding: 0 15px 0 16px;
-			height: 1225px;
+			height: 1028px;
 			flex-grow: 1;
 			flex-basis: 35px;
 			box-sizing: border-box;
@@ -432,7 +467,7 @@
 			background: var(--primary-2-primary-2100, #B0F0D1);
 			position: relative;
 			width: 4px;
-			height: 1225px;
+			height: 1028px;
 		}
 
 				.ellipse-9 {
