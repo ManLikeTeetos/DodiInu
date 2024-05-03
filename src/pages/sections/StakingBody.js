@@ -174,7 +174,7 @@ export default function StakingBody(){
 																Congratulations!
 															</div>
 															<span className="modal-text">
-																Your staking on <span className="green-color">$DODI</span> have been set.
+																Your <span className="green-color">$DODI</span> is staked.
 															</span>
 														</div>
 														<div className="modal-option">

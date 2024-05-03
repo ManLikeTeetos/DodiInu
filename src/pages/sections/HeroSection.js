@@ -60,7 +60,7 @@ export default function HeroSection(){
 							</div>
 						</div>
 						<div className="hero-19">
-							<div className="hero-20">DODI INU Staked</div>
+							<div className="hero-20">$DODI Staked</div>
 							<div className="hero-21">42%</div>
 						</div>
 					</div>

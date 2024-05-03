@@ -3,11 +3,11 @@
 	height: 516px;
 	color: rgba(255, 255, 255, 0.92);
 	max-width: 100vw;
-	background-size: cover;
+	background-size: contain;
 	background-repeat: no-repeat;
 	/* background-position: center;
 	position: relative; */
-	padding: 3.125rem 4.563rem 3.125rem 2.688rem;
+	/* padding: 3.125rem 4.563rem 3.125rem 2.688rem; */
 }
 
 .inner-road {
@@ -24,6 +24,8 @@
 	flex-direction: column;
 	height: auto;
 	margin-bottom: 147px;
+	margin-left: 73px;
+	margin-top: 50px;
 }
 
 .roadtitle {
@@ -34,25 +36,18 @@
 
 
 
-.road-subtitle {
-	overflow-wrap: break-word;
-	font-family: 'Rubik';
-	font-weight: 400;
-	font-size: 17px;
-	line-height: 1.25;
-	color: rgba(255, 255, 255, 0.72);
-	width: 657px;
-	height: 57px;
-}
+
 
 .road-graph-desktop{
-	margin-left: 1px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	padding-bottom: 9px;
+	margin-left: auto;
+	margin-right: auto;
 	box-sizing: border-box;
 	height: 191px;
+	width: 1322px;
+
 	padding-top: 87px;
 }
 
@@ -77,8 +72,10 @@
 	position: relative;
 	margin-bottom: 6.5px;
 	/* max-width: 1264px; */
-	width: 100%;
+	width: 953px;
 	height: 4px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .vector-4 {
@@ -152,8 +149,11 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-self: flex-start;
-	width: 100%;
+	width: 1070px;
 	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -10px;
 }
 
 .frame-126 {
@@ -301,7 +301,7 @@
 		background-image: url('assets/images/roadmapmobile.png');
 		height: auto;
 		color: rgba(255, 255, 255, 0.92);
-		background-size: co;
+		background-size: cover;
 		background-repeat: no-repeat;
 		/* background-position: center;
 		position: relative; */
@@ -312,6 +312,7 @@
 		justify-self: start;
 		margin: auto;
 		max-width: 768px;
+		/* margin-left: 40px; */
 	}
 
 	.road-content {
@@ -319,6 +320,7 @@
 		flex-direction: column;
 		height: 127px;
 		margin-bottom: 64px;
+		margin-left: 11px;
 	}
 
 	.roadtitle {
@@ -455,7 +457,7 @@
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
-			padding: 0 15px 0 16px;
+			padding: 0 15px 0 35px;
 			height: 1028px;
 			flex-grow: 1;
 			flex-basis: 35px;
