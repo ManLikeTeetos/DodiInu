@@ -53,7 +53,7 @@ export default function HeroSection(){
 							<div className="hero-15">$0.0000137</div>
 						</div>
 						<div className="hero-16">
-							<div className="hero-17">TOTAL DODI</div>
+							<div className="hero-17">CIRCULATING DODI</div>
 							<div className="hero-18">
 								4,565,990,000.00{" "}
 								<span style={{ color: `rgba(${colorStyleHero.r}, ${colorStyleHero.g}, ${colorStyleHero.b}, ${colorStyleHero.a})` }}>DODI</span>

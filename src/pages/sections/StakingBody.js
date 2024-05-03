@@ -331,7 +331,7 @@ export default function StakingBody(){
 								</span>
 							</div>
 							<div className="stk-contract">
-								CA: D6NewxS3SPkeEEbvGQax2E4MiCjuvjAhTUkboXZLwKM1
+								CA: 0x5211674146FCaD8F4C34dE6bcb60f8C5940D2182
 							</div>
 							<div className="stk-social-div">
 								<div className="stk-social-inner">
