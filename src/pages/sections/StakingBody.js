@@ -10,6 +10,15 @@ import Records from "./RecordSection.js"
 
 
 
+
+
+///Web3 imports
+import { getERC20Contract, getStakingContract} from "../../Helpers/contract.js"
+
+
+
+
+
 const customStyle = {
 	overlay: {
 		background: 'transparent'
@@ -125,9 +134,7 @@ export default function StakingBody(){
 														<div className="stake-bal-label">
 															Staking Amount
 														</div>
-														<span className="stake-bal-amt">
-															--
-														</span>
+														<input className="stake-bal-amt" placeholder="--" />
 													</div>
 													<div className="stake-tax-field">
 														<div className="stake-bal-label">
@@ -149,7 +156,7 @@ export default function StakingBody(){
 
 												</div>
 											</div>
-											<div className="stake-btn">
+											<button className="stake-btn">
 												<span className="stake-btn-txt" onClick={openModal}>
 													STAKE
 												</span>
@@ -192,7 +199,7 @@ export default function StakingBody(){
 													</div>
 
 												</Modal>
-											</div>
+											</button>
 										</div>
 									</div>
 								</div>
@@ -286,11 +293,11 @@ export default function StakingBody(){
 													</div>
 												</div>
 											</div>
-											<div className="stake-btn">
+											<button className="stake-btn">
 												<span className="stake-btn-txt" >
 													CLAIM
 												</span>
-											</div>
+											</button>
 										</div>
 									</div>
 								</div>

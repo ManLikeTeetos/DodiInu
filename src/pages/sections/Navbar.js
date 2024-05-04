@@ -82,7 +82,7 @@ export default function Navbar(){
 
 	///Metamask connect
 
-    ///Metamask mobile
+    //Metamask mobile
 	new MetaMaskSDK({
 		useDeeplink: false,
 		communicationLayerPreference: "socket",
@@ -94,85 +94,46 @@ export default function Navbar(){
 		initialState = JSON.parse(storedData);
 	} else {
 		initialState = {
-			address: "",
-			Balance: 0.0,
+			address: ""
+			// Balance: 0.0,
 		};
 	}
 
 	const [userdata, setUserdata] = useState(initialState);
 
 
-
-
-
-
-
-
-
-	// Button handler button for handling a
-	// request event for metamask
-	// const btnhandler = () => {
-	// 	// Asking if metamask is already present or not
-	// 	if (window.ethereum) {
-	// 		// res[0] for fetching a first wallet
-	// 		window.ethereum
-	// 			.request({ method: "eth_requestAccounts" })
-	// 			.then((res) =>
-	// 				accountChangeHandler(res[0])
-	// 			);
-	// 	} else {
-	// 		alert("install metamask extension!!");
-	// 	}
-	// };
-
-	// // getbalance function for getting a balance in
-	// // a right format with help of ethers
-
-	// // Function for getting handling all events
-	// const accountChangeHandler = (account) => {
-	// 	// Setting an address data
-	// 	setUserdata({
-	// 		address: account,
-	// 	});
-
-	// 	// Setting a balance
-	// 	getbalance(account);
-	// };
-
-	//console.log(3, userdata);
-	// alert(data.address);
-
 	const { account, library, activate }= useWeb3React();
 
 
 
-
-	const getbalance = (address) => {
-		// Requesting balance method
-		window.ethereum
-			.request({
-				method: "eth_getBalance",
-				params: [address, "latest"],
-			})
-			.then((balance) => {
-				// Setting balance
-				setUserdata({
-					Balance:ethers.formatEther(balance),
-					address: address
-				});
-				setIsOpen(false);
-			});
-	};
+    // // get balance ethereum
+	// const getbalance = (address) => {
+	// 	// Requesting balance method
+	// 	window.ethereum
+	// 		.request({
+	// 			method: "eth_getBalance",
+	// 			params: [address, "latest"],
+	// 		})
+	// 		.then((balance) => {
+	// 			// Setting balance
+	// 			setUserdata({
+	// 				Balance:ethers.formatEther(balance),
+	// 				address: address
+	// 			});
+	// 			setIsOpen(false);
+	// 		});
+	// };
 
 	// Function for getting handling all events
 	const accountChangeHandler = (account) => {
 		// Setting an address data
+
 		setUserdata({
-			address: account,
+			address: account
 		});
 
 		// Setting a balance
-		getbalance(account);
+		//getbalance(account);
 	};
 
 	//web3react metamask
@@ -212,12 +173,16 @@ export default function Navbar(){
 			return;
 		}
 
+
+
 		// If userdata is not present, check if userdata.address and userdata.Balance are both truthy
-		if (userdata.address && userdata.Balance) {
+		if (userdata.address !== "") {
 			localStorage.setItem('userdata', JSON.stringify(userdata));
 			alert("Wallet connected successfully!!");
 		}
 	}, [userdata]);
+
+
 
 
 
