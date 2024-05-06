@@ -112,7 +112,7 @@ export const useContract = () => {
           return records.map((record, i) => {
             return {
               id: i,
-              amount: fromBigNumber(stake[0]),
+              amount: fromBigNumber(record[0]),
               createdAt: record[1].toString(),
             };
           });
