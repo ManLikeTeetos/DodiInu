@@ -239,7 +239,7 @@ export default function StakingBody() {
                               Locked Staking
                             </div>
                             <span className="stake-bal-amt">
-                              {latest_amount}
+                              {latest_balance}
                             </span>
                           </div>
                         </div>
