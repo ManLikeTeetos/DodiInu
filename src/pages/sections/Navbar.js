@@ -95,7 +95,7 @@ export default function Navbar() {
 
   const [userdata, setUserdata] = useState(initialState);
 
-  const { account, library, activate } = useWeb3React();
+  const { account, library, activate, deactivate } = useWeb3React();
 
   // // get balance ethereum
   // const getbalance = (address) => {
@@ -162,9 +162,15 @@ export default function Navbar() {
     // If userdata is not present, check if userdata.address and userdata.Balance are both truthy
     if (userdata.address !== "") {
       localStorage.setItem("userdata", JSON.stringify(userdata));
-      alert("Wallet connected successfully!!");
+      // alert("Wallet connected successfully!!");
     }
   }, [userdata]);
+
+  async function handleDisconnect() {
+    await deactivate();
+    localStorage.removeItem("provider");
+    localStorage.removeItem("userdata");
+  }
 
   return (
     <>
@@ -211,7 +217,7 @@ export default function Navbar() {
                 // </div>
 
                 <div className="connected">
-                  <div className="eth">
+                  <div className="eth" onClick={handleDisconnect}>
                     <img src={Disconnect} alt="Disconnect" />
                   </div>
                   <div className="connect-add">
@@ -272,7 +278,7 @@ export default function Navbar() {
                 // </div>
 
                 <div className="connected">
-                  <div className="eth">
+                  <div className="eth" onClick={handleDisconnect}>
                     <img src={Disconnect} alt="Disconnect" />
                   </div>
                   <div className="connect-add">

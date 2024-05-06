@@ -24,7 +24,7 @@ export default function StakingBody() {
 
   const [modalIsOpen, setIsOpen] = useState(false);
   const [amount, setAmount] = useState("");
-  const { balance, stake, latestStakes, claim} = useContract();
+  const { balance, stake, latestStakes, claim, records } = useContract();
   const { hasAllowance, allowance } = useAllowance();
   const { approve } = useApprove();
 
@@ -255,7 +255,7 @@ export default function StakingBody() {
                               Redeemable Balance
                             </div>
                             <span className="stake-bal-amt">
-                              {latest_amount}
+                              {latest_balance}
                             </span>
                           </div>
                         </div>
@@ -283,6 +283,8 @@ export default function StakingBody() {
                       <span className="stake-record-txt">No Record</span>
                     </div>
                   </div>
+
+                  {/* TODO POPULATE REWARDS RECORDS */}
                 </div>
               </div>
             </div>

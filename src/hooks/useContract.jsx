@@ -1,12 +1,13 @@
 import { useWeb3React } from "@web3-react/core";
-import { getStakingContract } from "../Helpers/contract";
-import { CONTRACT_ADDRESS } from "../Helpers/constants";
+import { getStakingContract, getERC20Contract } from "../Helpers/contract";
+import { CONTRACT_ADDRESS, TOKEN_ADDRESS } from "../Helpers/constants";
 import { fromBigNumber, toBigNumber } from "../Helpers";
 import { useEffect, useState } from "react";
 
 export const useContract = () => {
   const { chainId, library, account } = useWeb3React();
   const contract = getStakingContract(CONTRACT_ADDRESS, chainId, library);
+  const tokenContract = getERC20Contract(TOKEN_ADDRESS, chainId, library);
   const [balance, setBalance] = useState(0);
   const [transactionHash, setTransactionHash] = useState("");
   const [latestStakes, setLatestStakes] = useState({
@@ -17,13 +18,15 @@ export const useContract = () => {
     balance: "--",
   });
   const [stakes, setStakes] = useState([]);
+  const [records, setRecords] = useState([]);
 
   const stake = async (value) => {
     try {
       const amount = toBigNumber(value);
       const signer = contract.connect(library?.getSigner());
       const tx = await signer.stake(amount);
-      await listenForTransactionMine(tx, library);
+      const transaction = await tx.wait();
+      setTransactionHash(transaction.transactionHash);
     } catch (err) {
       console.log({ err });
       alert("Opps, Something went wrong");
@@ -55,7 +58,7 @@ export const useContract = () => {
     const getBalance = async () => {
       try {
         if (!account) return;
-        const balance = await contract.totalStaked(account);
+        const balance = await tokenContract.balanceOf(account);
         setBalance(fromBigNumber(balance.toString()));
       } catch (err) {
         console.log(err);
@@ -64,7 +67,7 @@ export const useContract = () => {
     };
 
     getBalance();
-  }, [transactionHash, account, contract]);
+  }, [transactionHash, account]);
 
   useEffect(() => {
     const getStakes = async () => {
@@ -78,9 +81,9 @@ export const useContract = () => {
           setLatestStakes({
             id: stake[0],
             amount: fromBigNumber(stake[1]),
-            balance: stake[1],
-            staked_time: stake[2].toString(),
-            deadline: stake[3].toString(),
+            balance: fromBigNumber(stake[2]),
+            staked_time: stake[3].toString(),
+            deadline: stake[4].toString(),
           });
         }
 
@@ -89,20 +92,39 @@ export const useContract = () => {
             return {
               id: stake[0],
               amount: fromBigNumber(stake[1]),
-              balance: stake[1],
-              staked_time: stake[2].toString(),
-              deadline: stake[3].toString(),
+              balance: fromBigNumber(stake[2]),
+              staked_time: stake[3].toString(),
+              deadline: stake[4].toString(),
             };
           });
         });
       } catch (err) {
-        console.log(err);
+        alert("Opps, Something went wrong when retrieving data");
+      }
+    };
+
+    const getRecords = async () => {
+      try {
+        if (!account) return;
+        const records = await contract.getUserRecords(account);
+
+        setRecords(() => {
+          return records.map((record, i) => {
+            return {
+              id: i,
+              amount: fromBigNumber(stake[0]),
+              createdAt: record[1].toString(),
+            };
+          });
+        });
+      } catch (err) {
         alert("Opps, Something went wrong when retrieving data");
       }
     };
 
     getStakes();
-  }, [account]);
+    getRecords();
+  }, [account, transactionHash]);
 
-  return { contract, stake, claim, balance, latestStakes, stakes };
+  return { contract, stake, claim, balance, latestStakes, stakes, records };
 };

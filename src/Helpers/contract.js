@@ -1,10 +1,8 @@
-import { Contract, JsonRpcProvider } from "ethers";
+import { Contract, providers } from "ethers";
 import stakingAbi from "../Helpers/stakingAbi.json";
 import erc20Abi from "../Helpers/erc20Abi.json";
 
-let contract_address = "";
-
-export const readOnlyProvider = (rpc) => new JsonRpcProvider(rpc);
+export const readOnlyProvider = (rpc) => new providers.JsonRpcProvider(rpc);
 
 export const defaultRPCs = {
   1: `https://rpc.ankr.com/eth`,
@@ -13,7 +11,7 @@ export const defaultRPCs = {
 };
 // https://rpc.ankr.com/optimism_sepolia
 
-export function select_rpc_url(chain: Blockchain) {
+export function select_rpc_url(chain) {
   return defaultRPCs[chain];
 }
 

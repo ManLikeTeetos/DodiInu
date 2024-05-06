@@ -17,7 +17,7 @@ export const useApprove = () => {
       const value = toBigNumber(amount);
       const signer = contract.connect(library?.getSigner());
       const tx = await signer.approve(CONTRACT_ADDRESS, value);
-      await listenForTransactionMine(tx, library);
+      await tx.wait()
       refetch();
       alert("Token Approved");
     } catch (err) {

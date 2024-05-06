@@ -16,6 +16,7 @@ export const useAllowance = () => {
       const contract = getERC20Contract(TOKEN_ADDRESS, chainId, library);
 
       const allowance = await contract.allowance(account, CONTRACT_ADDRESS);
+      console.log({ allowance: allowance.toString() });
 
       setAllowance(fromBigNumber(allowance.toString()));
     };
