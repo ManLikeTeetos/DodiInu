@@ -172,10 +172,10 @@ export default function StakingBody() {
                         onClick={handleStake}
                         className="stake-btn"
                       >
-                        {hasAllowance(amount) ? (
-                          <span className="stake-btn-txt">Stake</span>
+                        {allowance >= amount ? (
+                          <span className="stake-btn-txt">STAKE</span>
                         ) : (
-                          <span className="stake-btn-txt">Approve</span>
+                          <span className="stake-btn-txt">APPROVE</span>
                         )}
                       </button>
 
