@@ -70,7 +70,7 @@ export default function StakingBody() {
   ///External links
 	const calcLink = "https://www.thecalculatorsite.com/finance/calculators/daily-compound-interest.php";
 	const TelegramLink = "https://t.me/DodiinuCoin";
-	const TwitterLink = "https://x.com/Dodi_Inu?s=09"
+	const TwitterLink = "https://x.com/Dodi_Inu?s=09";
 
   return (
     <div className="stkbody">

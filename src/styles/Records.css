@@ -103,6 +103,7 @@
 		flex-direction: row;
 		padding: 8px 19.9px 8px 23px;
 		box-sizing: border-box;
+		width: 255px;
 }
 
 .record-cal-div {
@@ -118,37 +119,39 @@
 .record-cal-icon {
 	width: 20px;
 		height: 20px;
+		align-self: center;
 
 }
 
 .record-cal-text {
 	overflow-wrap: break-word;
-		font-family: 'Inter';
-		font-weight: 400;
-		font-size: 13px;
-		line-height: 1.4;
-		color: #FFFFFF;
+	font-family: 'Inter';
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #FFFFFF;
 }
 
 .record-cal-filter {
 	border-radius: 8px;
-		border: 1px solid #00CD6A;
-		display: flex;
-		flex-direction: row;
-		padding: 8px 20px 8px 20px;
-		width: 108px;
-		box-sizing: border-box;
+	border: 1px solid #00CD6A;
+	display: flex;
+	flex-direction: row;
+	padding: 8px 20px 8px 20px;
+	width: 108px;
+	box-sizing: border-box;
 }
 
 .filter-div {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 13.3px;
+	height: 8.3px;
+	box-sizing: border-box;
+	margin-right: 10px;
+	align-self: center;
 
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		width: 13.3px;
-		height: 8.3px;
-		box-sizing: border-box;
-		margin-right: 10px;
 }
 
 
@@ -294,7 +297,131 @@
 }
 
 @media (max-width: 1024px){
-	.record-body {
-		display: none;
+
+	.record {
+		margin-top: 41px;
+		width: 100%;
 	}
+
+	.record-header {
+		margin: 0 0px 0px 20px;
+		display: inline-block;
+		align-self: flex-start;
+		overflow-wrap: break-word;
+		font-family: 'Inter';
+		font-weight: 700;
+		font-size: 19px;
+		line-height: 1.4;
+		color: #FFFFFF;
+	}
+
+	.record-subheader {
+		margin-left: 20px;
+		font-size: 12px;
+	}
+
+
+	.record-body {
+		display: flex;
+		width: 100%;
+		margin: 0px 0px;
+	}
+		.record-filter {
+			background: transparent;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding: 0px 0px;
+			gap: 20px;
+			width: 100%;
+			height: fit-content;
+			box-sizing: border-box;
+			margin-bottom: 63px;
+		}
+
+		.record-search {
+			border-radius: 8px;
+			border: 1px solid #00CD6A;
+			display: flex;
+			flex-direction: row;
+			padding: 12px 0 12px 20.3px;
+			width: 350px;
+			margin: auto;
+			box-sizing: border-box;
+		}
+
+		.record-cal {
+			margin: auto;
+			width: 350px;
+			display: flex;
+			flex-direction: row;
+			box-sizing: border-box;
+			justify-content: space-between;
+		}
+
+		.record-innercal {
+			border-radius: 8px;
+			border: 1px solid #00CD6A;
+			/* margin-right: 20px; */
+			display: flex;
+			flex-direction: row;
+			padding: 8px 16px 8px 16px;
+			box-sizing: border-box;
+			width: 230px;
+		}
+
+		.record-cal-text {
+			overflow-wrap: break-word;
+			font-family: 'Inter';
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 1.4;
+			color: #FFFFFF;
+		}
+
+		.record-cal-filter {
+			border-radius: 8px;
+			border: 1px solid #00CD6A;
+			display: flex;
+			flex-direction: row;
+			padding: 8px 20px 8px 20px;
+			width: 95px;
+			box-sizing: border-box;
+		}
+
+		.record-cal-icon {
+			width: 20px;
+			height: 20px;
+			align-self: center;
+		}
+
+		.filter-div {
+			align-self: center;
+		}
+
+		.tab-checkbox {
+			width: 13.3px;
+			height: 13.3px;
+			margin: auto;
+			display: flex;
+			justify-content: center;
+		}
+
+		.record-tab-body {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			height: auto;
+			overflow-x: scroll;
+		}
+
+		.record-tab-header {
+			width: 1281px;
+		}
+
+		.record-tab-content{
+			width: 1281px;
+		}
+
+
 }
