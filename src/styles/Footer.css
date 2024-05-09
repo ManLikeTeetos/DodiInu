@@ -16,6 +16,10 @@
 			margin: 0 auto;
 }
 
+a {
+	text-decoration: none;
+}
+
 
 
 .footer-div-columnmargin-4 {
@@ -152,6 +156,7 @@
 	flex-direction: row;
 	justify-content: start;
 	box-sizing: border-box;
+	text-decoration: none;
 }
 
 .footer-link-telegram {

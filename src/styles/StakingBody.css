@@ -252,7 +252,6 @@ margin-bottom: 8px;
 		width: 100%;
 		padding: 0;
 		margin: 0;
-
 }
 
 .stake-amount-field {
@@ -338,7 +337,13 @@ margin-bottom: 8px;
 		height: 60px;
 		appearance: none;
 		background-color: transparent;
+		color: var(--secondarysecondary-200, #8A8A8A);
 
+}
+
+.stake-btn.active {
+	background-color: #00CD6A;
+	color: white;
 }
 
 .stake-btn-txt {
@@ -347,7 +352,7 @@ margin-bottom: 8px;
 		font-weight: var(--title-4-bold-font-weight, 700);
 		font-size: var(--title-4-bold-font-size, 16px);
 		line-height: var(--title-4-bold-line-height, 1.4);
-		color: var(--secondarysecondary-200, #8A8A8A);
+
 }
 
 .stake-acc-btn-div {

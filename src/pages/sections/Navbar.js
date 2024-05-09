@@ -162,7 +162,8 @@ export default function Navbar() {
     // If userdata is not present, check if userdata.address and userdata.Balance are both truthy
     if (userdata.address !== "") {
       localStorage.setItem("userdata", JSON.stringify(userdata));
-      // alert("Wallet connected successfully!!");
+		// alert("Wallet connected successfully!!");
+		setIsOpen(false);
     }
   }, [userdata]);
 

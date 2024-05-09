@@ -176,7 +176,7 @@ export default function StakingBody() {
                       <button
                         disabled={amount === ""}
                         onClick={handleStake}
-                        className="stake-btn"
+						className={`stake-btn ${amount === "" ? "" : "active"}`}
                       >
                         {allowance >= amount ? (
                           <span className="stake-btn-txt">STAKE</span>
@@ -296,7 +296,7 @@ export default function StakingBody() {
             </div>
             <div className="stkcalc">
               <div className="earning">
-							  <a className="calculate-earnings" href={calcLink} target="_blank" rel="noreferrer" >Calculate Earnings</a>
+					<a className="calculate-earnings" href={calcLink} target="_blank" rel="noreferrer" >Calculate Earnings</a>
               </div>
               <div className="stk-contract">
                 CA: 0x5211674146FCaD8F4C34dE6bcb60f8C5940D2182

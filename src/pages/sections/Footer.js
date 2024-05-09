@@ -7,6 +7,11 @@ import Instagram from '../../styles/assets/images/instagram_footer.png';
 import YouTube from '../../styles/assets/images/youtube_footer.png';
 
 
+///External links
+const TelegramLink = "https://t.me/DodiinuCoin";
+const TwitterLink = "https://x.com/Dodi_Inu?s=09";
+
+
 export default function Footer(){
 	return(
 		<div className="footer-footer">
@@ -18,12 +23,12 @@ export default function Footer(){
 					</p>
 				</div>
 				<div className="footer-div-buttons">
-					<div className="footer-linkmargin">
+					<a className="footer-linkmargin" href={TwitterLink} target="_blank" rel="noreferrer">
 						<img className="footer-icon" src={Twitter} alt="Twitter" />
-					</div>
-					<div className="footer-linkmargin">
+					</a>
+					<a className="footer-linkmargin" href={TelegramLink} target="_blank" rel="noreferrer">
 						<img className="footer-icon" src={Telegram} alt="Telegram" />
-					</div>
+					</a>
 					<div className="footer-linkmargin">
 						<img className="footer-icon" src={Instagram} alt="Discord" />
 					</div>
@@ -46,14 +51,14 @@ export default function Footer(){
 					</div>
 					<div className="footer-list">
 						<div className="footer-item">
-							<span className="footer-link-xtwitter">
+							<a className="footer-link-xtwitter" href={TwitterLink} target="_blank" rel="noreferrer">
 								X (Twitter)
-							</span>
+							</a>
 						</div>
 						<div className="footer-item">
-							<span className="footer-link-telegram">
+							<a className="footer-link-telegram" href={TelegramLink} target="_blank" rel="noreferrer">
 								Telegram
-							</span>
+							</a>
 						</div>
 						<div className="footer-item">
 							<span className="footer-link-discord">
