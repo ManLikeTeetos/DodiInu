@@ -134,7 +134,7 @@ margin-bottom: 8px;
 
 .stkconnect-col {
 	border-radius: 20px;
-		background: var(--secondarysecondary-400, #333333);
+		background: var(--secondarysecondary-400, #111a2d);
 		display: flex;
 		flex-direction: column;
 		padding: 20px 20px 24px 20px;
@@ -222,7 +222,7 @@ margin-bottom: 8px;
 		background: #545454;
 		display: flex;
 		flex-direction: column;
-		padding: 6px 0 6px 10px;
+		padding: 6px 10px 6px 10px;
 		box-sizing: border-box;
 }
 
@@ -245,7 +245,7 @@ margin-bottom: 8px;
 		font-weight: var(--title-3-bold-font-weight, 700);
 		font-size: var(--title-3-bold-font-size, 19px);
 		line-height: var(--title-3-bold-line-height, 1.4);
-		color: #B0B0B0;
+		color: white;
 		appearance: none;
 		border: none;
 		background-color: transparent;
@@ -258,11 +258,11 @@ margin-bottom: 8px;
 .stake-amount-field {
 	border-radius: 12px;
 		background: #545454;
-		margin-right: 27px;
+		/* margin-right: 27px; */
 		display: flex;
 		flex-direction: column;
-		padding: 6px 0 6px 10px;
-		width: 127px;
+		padding: 6px 10px 6px 10px;
+		/* width: 127px; */
 		box-sizing: border-box;
 }
 
@@ -280,7 +280,7 @@ margin-bottom: 8px;
 		display: flex;
 		flex-direction: column;
 		padding: 6px 0 6px 10px;
-		width: 127px;
+		/* width: 127px; */
 		box-sizing: border-box;
 }
 
@@ -570,6 +570,7 @@ margin: 0 3.6px 0 3px;
 		display: flex;
 		flex-direction: row;
 		box-sizing: border-box;
+		text-decoration: none;
 }
 
 .stk-image-div {

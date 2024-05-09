@@ -66,6 +66,12 @@ export default function StakingBody() {
     setActiveTab(tab);
   };
 
+
+  ///External links
+	const calcLink = "https://www.thecalculatorsite.com/finance/calculators/daily-compound-interest.php";
+	const TelegramLink = "https://t.me/DodiinuCoin";
+	const TwitterLink = "https://x.com/Dodi_Inu?s=09"
+
   return (
     <div className="stkbody">
       <div className="stkshadow">
@@ -153,10 +159,10 @@ export default function StakingBody() {
                               placeholder="--"
                             />
                           </div>
-                          <div className="stake-tax-field">
+                          {/* <div className="stake-tax-field">
                             <div className="stake-bal-label">Tax</div>
                             <span className="stake-bal-amt">3%</span>
-                          </div>
+                          </div> */}
                         </div>
                         <div className="stake-date">
                           <span className="stake-days-lockup">
@@ -290,24 +296,24 @@ export default function StakingBody() {
             </div>
             <div className="stkcalc">
               <div className="earning">
-                <span className="calculate-earnings">Calculate Earnings</span>
+							  <a className="calculate-earnings" href={calcLink} target="_blank" rel="noreferrer" >Calculate Earnings</a>
               </div>
               <div className="stk-contract">
                 CA: 0x5211674146FCaD8F4C34dE6bcb60f8C5940D2182
               </div>
               <div className="stk-social-div">
-                <div className="stk-social-inner">
+				<a className="stk-social-inner" href={TwitterLink} target="_blank" rel="noreferrer" >
                   <div className="stk-image-div">
                     <img src={Twitter} alt="Twitter" />
                   </div>
                   <div className="stk-social-name">Twitter</div>
-                </div>
-                <div className="stk-social-inner">
+                </a>
+				<a className="stk-social-inner" href={TelegramLink} target="_blank" rel="noreferrer" >
                   <div className="stk-image-div">
                     <img src={Telegram} alt="Telegram" />
                   </div>
                   <div className="stk-social-name">Telegram</div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
