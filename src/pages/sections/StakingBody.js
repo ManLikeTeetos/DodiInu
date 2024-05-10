@@ -107,7 +107,7 @@ export default function StakingBody() {
                 <div className="stk-tot-frame">
                   <div className="stk-lok-heading">Total Locked</div>
                   <div className="stk-lok-text">
-                    <span> {totalSupply} </span>
+                    <span> {Number(totalSupply).toFixed(4)} </span>
                     <span className="stk-green-color">DODI</span>
                   </div>
                 </div>
@@ -142,7 +142,7 @@ export default function StakingBody() {
                           <div className="stake-bal-field">
                             <div className="stake-bal-label">Balance</div>
                             <span className="stake-bal-amt">
-                              {balance || "--"}
+                              {Number(balance).toFixed(4) || "--"}
                             </span>
                           </div>
                         </div>

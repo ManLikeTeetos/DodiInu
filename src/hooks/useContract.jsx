@@ -133,7 +133,7 @@ export const useContract = () => {
 
     const getTotalSupply = async () => {
       try {
-        const totalSupply = await contract.totalSupply(account);
+        const totalSupply = await contract.totalSupply();
         setTotalSupply(fromBigNumber(totalSupply));
       } catch (err) {
         alert("Opps, Something went wrong when retrieving data");
