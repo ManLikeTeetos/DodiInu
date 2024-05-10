@@ -84,6 +84,9 @@ export default function StakingBody() {
 
 	const formattedBalance = parseFloat(balance).toFixed(10);
 
+	//console.log('check_duration', duration);
+	//console.log('check_bal', latest_balance);
+
   return (
     <div className="stkbody">
       <div className="stkshadow">
@@ -277,7 +280,11 @@ export default function StakingBody() {
                           </div>
                         </div>
                       </div>
-                      <button onClick={() => claim(id)} className="stake-btn">
+                      <button
+					 	disabled={latest_balance === "" }
+  						onClick={() => claim(id)}
+  						className={`stake-btn ${latest_balance !== "" ? "active" : ""}`}
+ 					 >
                         <span className="stake-btn-txt">CLAIM</span>
                       </button>
                     </div>
