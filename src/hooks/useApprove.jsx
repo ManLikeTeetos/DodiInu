@@ -19,7 +19,7 @@ export const useApprove = () => {
       const tx = await signer.approve(CONTRACT_ADDRESS, value);
       await tx.wait();
       refetch();
-      window.location.reload();
+      // window.location.reload();
     } catch (err) {
       if (err === undefined) return;
       alert("Opps, something went wrong!");

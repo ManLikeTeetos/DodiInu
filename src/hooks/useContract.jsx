@@ -142,6 +142,7 @@ export const useContract = () => {
 
     getStakes();
     getRecords();
+    getTotalSupply();
   }, [account, transactionHash]);
 
   return {
