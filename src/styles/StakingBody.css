@@ -726,6 +726,7 @@ margin: 0 3.6px 0 3px;
 		max-width: 768px;
 		margin: 0 auto;
 		flex-direction: column;
+		justify-content: center;
 	}
 
 		.stknav {
@@ -756,7 +757,7 @@ margin: 0 3.6px 0 3px;
 	}
 
 	.stk-tot-lock {
-		margin: 0 20px;
+		margin: auto;
 		box-sizing: border-box;
 		display: flex;
 		flex-direction: column;
