@@ -12,6 +12,7 @@ import { useContract } from "../../hooks/useContract.jsx";
 import StakingSection from "./StakingSection.js";
 import { useApprove } from "../../hooks/useApprove.jsx";
 import CountDown from "../../components/CountDown.js";
+import CustomModal from "../../components/CustomModal.js";
 
 const customStyle = {
   overlay: {
@@ -33,6 +34,7 @@ export default function StakingBody() {
     records,
     totalSupply,
     totalEarned,
+    error,
   } = useContract();
   const { approve } = useApprove();
 
@@ -79,6 +81,11 @@ export default function StakingBody() {
     "https://www.thecalculatorsite.com/finance/calculators/daily-compound-interest.php";
   const TelegramLink = "https://t.me/DodiinuCoin";
   const TwitterLink = "https://x.com/Dodi_Inu?s=09";
+
+  const formattedBalance = parseFloat(balance).toFixed(10);
+
+  //console.log('check_duration', duration);
+  //console.log('check_bal', latest_balance);
 
   return (
     <div className="stkbody">
@@ -142,7 +149,7 @@ export default function StakingBody() {
                           <div className="stake-bal-field">
                             <div className="stake-bal-label">Balance</div>
                             <span className="stake-bal-amt">
-                              {Number(balance).toFixed(4) || "--"}
+                              {formattedBalance || "--"}
                             </span>
                           </div>
                         </div>
@@ -273,7 +280,13 @@ export default function StakingBody() {
                           </div>
                         </div>
                       </div>
-                      <button onClick={() => claim(id)} className="stake-btn">
+                      <button
+                        disabled={latest_balance === "--"}
+                        onClick={() => claim(id)}
+                        className={`stake-btn ${
+                          latest_balance !== "--" ? "active" : ""
+                        }`}
+                      >
                         <span className="stake-btn-txt">CLAIM</span>
                       </button>
                     </div>
@@ -340,6 +353,11 @@ export default function StakingBody() {
                 </a>
               </div>
             </div>
+            <CustomModal
+              error={error}
+              modalIsOpen={modalIsOpen}
+              closeModal={closeModal}
+            />
           </div>
         )}
 
