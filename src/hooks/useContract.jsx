@@ -9,6 +9,8 @@ export const useContract = () => {
   const contract = getStakingContract(CONTRACT_ADDRESS, chainId, library);
   const tokenContract = getERC20Contract(TOKEN_ADDRESS, chainId, library);
   const [balance, setBalance] = useState(0);
+  const [totalSupply, setTotalSupply] = useState(0);
+  const [totalEarned, setTotalEarned] = useState(0);
   const [transactionHash, setTransactionHash] = useState("");
   const [latestStakes, setLatestStakes] = useState({
     id: "",
@@ -17,6 +19,7 @@ export const useContract = () => {
     staked_time: 0,
     balance: "--",
   });
+
   const [stakes, setStakes] = useState([]);
   const [records, setRecords] = useState([]);
 
@@ -117,6 +120,21 @@ export const useContract = () => {
             };
           });
         });
+
+        setTotalEarned(() => {
+          return records.reduce((acc, curr) => {
+            return fromBigNumber(curr[0]) + acc;
+          }, 0);
+        });
+      } catch (err) {
+        alert("Opps, Something went wrong when retrieving data");
+      }
+    };
+
+    const getTotalSupply = async () => {
+      try {
+        const totalSupply = await contract.totalSupply(account);
+        setTotalSupply(fromBigNumber(totalSupply));
       } catch (err) {
         alert("Opps, Something went wrong when retrieving data");
       }
@@ -126,5 +144,15 @@ export const useContract = () => {
     getRecords();
   }, [account, transactionHash]);
 
-  return { contract, stake, claim, balance, latestStakes, stakes, records };
+  return {
+    contract,
+    stake,
+    claim,
+    balance,
+    latestStakes,
+    stakes,
+    records,
+    totalSupply,
+    totalEarned,
+  };
 };

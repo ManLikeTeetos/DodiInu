@@ -25,7 +25,15 @@ export default function StakingBody() {
   const [modalIsOpen, setIsOpen] = useState(false);
   const [amount, setAmount] = useState("");
   const { hasAllowance, allowance } = useAllowance();
-  const { balance, stake, latestStakes, claim, records } = useContract();
+  const {
+    balance,
+    stake,
+    latestStakes,
+    claim,
+    records,
+    totalSupply,
+    totalEarned,
+  } = useContract();
   const { approve } = useApprove();
 
   const {
@@ -99,7 +107,7 @@ export default function StakingBody() {
                 <div className="stk-tot-frame">
                   <div className="stk-lok-heading">Total Locked</div>
                   <div className="stk-lok-text">
-                    <span>2,358,800,529 </span>
+                    <span> {totalSupply} </span>
                     <span className="stk-green-color">DODI</span>
                   </div>
                 </div>
@@ -107,7 +115,7 @@ export default function StakingBody() {
                   <div className="stkearn-num">
                     <div className="stk-lok-heading">Total Earned</div>
                     <div className="stk-lok-text">
-                      <span>70,450,845 </span>
+                      <span>{totalEarned} </span>
                       <span className="stk-green-color">DODI</span>
                     </div>
                   </div>
