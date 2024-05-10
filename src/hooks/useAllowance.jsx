@@ -12,12 +12,17 @@ export const useAllowance = () => {
 
   const getAllowance = async () => {
     if (!account) return;
-    setLoading(true);
-    const contract = getERC20Contract(TOKEN_ADDRESS, chainId, library);
-    const value = await contract.allowance(account, CONTRACT_ADDRESS);
-    const newVal = fromBigNumber(value.toString());
-    setLoading(false);
-    setAllowance(newVal);
+    try {
+      setLoading(true);
+      const contract = getERC20Contract(TOKEN_ADDRESS, chainId, library);
+      const value = await contract.allowance(account, CONTRACT_ADDRESS);
+      const newVal = fromBigNumber(value.toString());
+      setLoading(false);
+      setAllowance(newVal);
+    } catch (err) {
+      alert("Error");
+      console.log({ err, msg: "error" });
+    }
   };
 
   useEffect(() => {
