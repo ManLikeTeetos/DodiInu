@@ -281,7 +281,7 @@ export default function StakingBody() {
                         </div>
                       </div>
                       <button
-					 	disabled={latest_balance === "" }
+					 	disabled={latest_balance === "--" }
   						onClick={() => claim(id)}
   						className={`stake-btn ${latest_balance !== "--" ? "active" : ""}`}
  					 >
