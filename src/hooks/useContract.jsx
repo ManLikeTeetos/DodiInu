@@ -4,6 +4,11 @@ import { CONTRACT_ADDRESS, TOKEN_ADDRESS } from "../Helpers/constants";
 import { fromBigNumber, toBigNumber } from "../Helpers";
 import { useEffect, useState } from "react";
 
+import CustomModal from "../components/CustomModal";
+
+
+
+
 export const useContract = () => {
   const { chainId, library, account } = useWeb3React();
   const contract = getStakingContract(CONTRACT_ADDRESS, chainId, library);
@@ -23,6 +28,17 @@ export const useContract = () => {
   const [stakes, setStakes] = useState([]);
   const [records, setRecords] = useState([]);
 
+
+	// //modal const
+	// Modal state and functions
+	const [modalIsOpen, setModalIsOpen] = useState(false);
+	const [error, setError] = useState("");
+
+	const closeModal = () => {
+		setModalIsOpen(false);
+		setError("");
+	};
+
   const stake = async (value) => {
     try {
       const amount = toBigNumber(value);
@@ -32,7 +48,9 @@ export const useContract = () => {
       setTransactionHash(transaction.transactionHash);
     } catch (err) {
       console.log({ err });
-      alert("Opps, Something went wrong");
+     // alert("Opps, Something went wrong");
+		setError("Oops, something went wrong");
+		setModalIsOpen(true);
     }
   };
 
@@ -42,7 +60,9 @@ export const useContract = () => {
       const tx = await signer.claim(id);
       await listenForTransactionMine(tx, library);
     } catch (err) {
-      alert("Opps, Something went wrong");
+      //alert("Opps, Something went wrong");
+		setError("Oops, something went wrong");
+		setModalIsOpen(true);
     }
   };
 
@@ -65,7 +85,8 @@ export const useContract = () => {
         setBalance(fromBigNumber(balance.toString()));
       } catch (err) {
         console.log(err);
-        alert("Opps, Something went wrong");
+       setError("Oops, something went wrong");
+		setModalIsOpen(true);
       }
     };
 
@@ -102,7 +123,9 @@ export const useContract = () => {
           });
         });
       } catch (err) {
-        alert("Opps, Something went wrong when retrieving data");
+       // alert("Opps, Something went wrong when retrieving data");
+		  setError("Opps, Something went wrong when retrieving data");
+		  setModalIsOpen(true);
       }
     };
 
@@ -127,7 +150,9 @@ export const useContract = () => {
           }, 0);
         });
       } catch (err) {
-        alert("Opps, Something went wrong when retrieving data");
+		  //alert("Opps, Something went wrong when retrieving data");
+		   setError("Opps, Something went wrong when retrieving data");
+		  setModalIsOpen(true);
       }
     };
 
@@ -136,7 +161,9 @@ export const useContract = () => {
         const totalSupply = await contract.totalSupply(account);
         setTotalSupply(fromBigNumber(totalSupply));
       } catch (err) {
-        alert("Opps, Something went wrong when retrieving data");
+       // alert("Opps, Something went wrong when retrieving data");
+		  setError("Opps, Something went wrong when retrieving data");
+		  setModalIsOpen(true);
       }
     };
 
@@ -154,5 +181,8 @@ export const useContract = () => {
     records,
     totalSupply,
     totalEarned,
+	  modalIsOpen,
+	  error,
+	  closeModal,
   };
 };
