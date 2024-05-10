@@ -283,7 +283,7 @@ export default function StakingBody() {
                       <button
 					 	disabled={latest_balance === "" }
   						onClick={() => claim(id)}
-  						className={`stake-btn ${latest_balance !== "" ? "active" : ""}`}
+  						className={`stake-btn ${latest_balance !== "--" ? "active" : ""}`}
  					 >
                         <span className="stake-btn-txt">CLAIM</span>
                       </button>
