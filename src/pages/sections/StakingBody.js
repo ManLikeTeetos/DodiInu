@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Trophy from "../../styles/assets/images/trophy.png";
 import Twitter from "../../styles/assets/images/twitter_stake.png";
 import Telegram from "../../styles/assets/images/telegram_stake.png";
@@ -24,8 +24,8 @@ export default function StakingBody() {
 
   const [modalIsOpen, setIsOpen] = useState(false);
   const [amount, setAmount] = useState("");
-  const { balance, stake, latestStakes, claim, records } = useContract();
   const { hasAllowance, allowance } = useAllowance();
+  const { balance, stake, latestStakes, claim, records } = useContract();
   const { approve } = useApprove();
 
   const {
@@ -66,11 +66,11 @@ export default function StakingBody() {
     setActiveTab(tab);
   };
 
-
   ///External links
-	const calcLink = "https://www.thecalculatorsite.com/finance/calculators/daily-compound-interest.php";
-	const TelegramLink = "https://t.me/DodiinuCoin";
-	const TwitterLink = "https://x.com/Dodi_Inu?s=09";
+  const calcLink =
+    "https://www.thecalculatorsite.com/finance/calculators/daily-compound-interest.php";
+  const TelegramLink = "https://t.me/DodiinuCoin";
+  const TwitterLink = "https://x.com/Dodi_Inu?s=09";
 
   return (
     <div className="stkbody">
@@ -176,7 +176,7 @@ export default function StakingBody() {
                       <button
                         disabled={amount === ""}
                         onClick={handleStake}
-						className={`stake-btn ${amount === "" ? "" : "active"}`}
+                        className={`stake-btn ${amount === "" ? "" : "active"}`}
                       >
                         {allowance >= amount ? (
                           <span className="stake-btn-txt">STAKE</span>
@@ -184,7 +184,6 @@ export default function StakingBody() {
                           <span className="stake-btn-txt">APPROVE</span>
                         )}
                       </button>
-
                       <Modal
                         isOpen={modalIsOpen}
                         onAfterOpen={afterOpenModal}
@@ -296,19 +295,36 @@ export default function StakingBody() {
             </div>
             <div className="stkcalc">
               <div className="earning">
-					<a className="calculate-earnings" href={calcLink} target="_blank" rel="noreferrer" >Calculate Earnings</a>
+                <a
+                  className="calculate-earnings"
+                  href={calcLink}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Calculate Earnings
+                </a>
               </div>
               <div className="stk-contract">
                 CA: 0x5211674146FCaD8F4C34dE6bcb60f8C5940D2182
               </div>
               <div className="stk-social-div">
-				<a className="stk-social-inner" href={TwitterLink} target="_blank" rel="noreferrer" >
+                <a
+                  className="stk-social-inner"
+                  href={TwitterLink}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <div className="stk-image-div">
                     <img src={Twitter} alt="Twitter" />
                   </div>
                   <div className="stk-social-name">Twitter</div>
                 </a>
-				<a className="stk-social-inner" href={TelegramLink} target="_blank" rel="noreferrer" >
+                <a
+                  className="stk-social-inner"
+                  href={TelegramLink}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <div className="stk-image-div">
                     <img src={Telegram} alt="Telegram" />
                   </div>

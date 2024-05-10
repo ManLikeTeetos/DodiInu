@@ -91,10 +91,10 @@ export const useContract = () => {
           return stakes.map((stake) => {
             return {
               id: stake[0],
-              amount: fromBigNumber(stake[1]),
-              balance: fromBigNumber(stake[2]),
-              staked_time: stake[3].toString(),
-              deadline: stake[4].toString(),
+              amount: fromBigNumber(stake[1]), // Balance
+              balance: fromBigNumber(stake[2]), // Balance
+              staked_time: stake[3].toString(), // Start time
+              deadline: stake[4].toString(), // End time
             };
           });
         });

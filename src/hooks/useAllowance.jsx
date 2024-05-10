@@ -7,19 +7,20 @@ import { CONTRACT_ADDRESS, TOKEN_ADDRESS } from "../Helpers/constants";
 export const useAllowance = () => {
   const [loading, setLoading] = useState(false);
   const { account, chainId, library } = useWeb3React();
-  const [allowance, setAllowance] = useState("");
+  const [allowance, setAllowance] = useState(0);
   const [toggle, setRefetch] = useState(false);
+
+  const getAllowance = async () => {
+    if (!account) return;
+    setLoading(true);
+    const contract = getERC20Contract(TOKEN_ADDRESS, chainId, library);
+    const value = await contract.allowance(account, CONTRACT_ADDRESS);
+    const newVal = fromBigNumber(value.toString());
+    setLoading(false);
+    setAllowance(newVal);
+  };
+
   useEffect(() => {
-    const getAllowance = async () => {
-      if (!account) return;
-      setLoading(true);
-      const contract = getERC20Contract(TOKEN_ADDRESS, chainId, library);
-
-      const allowance = await contract.allowance(account, CONTRACT_ADDRESS);
-      console.log({ allowance: allowance.toString() });
-
-      setAllowance(fromBigNumber(allowance.toString()));
-    };
     getAllowance();
   }, [account, toggle, chainId]);
 
@@ -34,5 +35,5 @@ export const useAllowance = () => {
     setRefetch((prev) => !prev);
   };
 
-  return { allowance, hasAllowance, loading, refetch };
+  return { allowance, hasAllowance, loading, refetch, setAllowance };
 };

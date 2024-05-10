@@ -17,9 +17,9 @@ export const useApprove = () => {
       const value = toBigNumber(amount);
       const signer = contract.connect(library?.getSigner());
       const tx = await signer.approve(CONTRACT_ADDRESS, value);
-      await tx.wait()
+      await tx.wait();
       refetch();
-      alert("Token Approved");
+      window.location.reload();
     } catch (err) {
       if (err === undefined) return;
       alert("Opps, something went wrong!");
@@ -27,17 +27,6 @@ export const useApprove = () => {
       setLoading(false);
     }
   };
-
-  function listenForTransactionMine(transactionResponse, provider) {
-    console.log(`Mining ${transactionResponse.hash}...`);
-    // create a listener for the blockchain
-    return new Promise((resolve, reject) => {
-      provider.once(transactionResponse.hash, async (transactionReceipt) => {
-        await transactionResponse.wait(1);
-        resolve();
-      });
-    });
-  }
 
   return {
     approve,
