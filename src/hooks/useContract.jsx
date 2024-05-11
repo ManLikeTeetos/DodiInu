@@ -68,6 +68,18 @@ export const useContract = () => {
     }
   };
 
+  const claimAll = async () => {
+    try {
+      const signer = contract.connect(library?.getSigner());
+      const tx = await signer.claimAll();
+      await listenForTransactionMine(tx, library);
+    } catch (err) {
+      //alert("Opps, Something went wrong");
+      setError("Oops, something went wrong");
+      setModalIsOpen(true);
+    }
+  };
+
   function listenForTransactionMine(transactionResponse, provider) {
     // create a listener for the blockchain
     return new Promise((resolve, reject) => {
@@ -198,5 +210,6 @@ export const useContract = () => {
     error,
     closeModal,
     redeemable,
+    claimAll,
   };
 };

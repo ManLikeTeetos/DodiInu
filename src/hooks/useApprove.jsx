@@ -18,8 +18,8 @@ export const useApprove = () => {
       const signer = contract.connect(library?.getSigner());
       const tx = await signer.approve(CONTRACT_ADDRESS, value);
       await tx.wait();
-      refetch();
       window.location.reload();
+      refetch();
     } catch (err) {
       if (err === undefined) return;
       alert("Opps, something went wrong!");

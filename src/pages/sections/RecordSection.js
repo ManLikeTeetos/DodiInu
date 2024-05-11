@@ -6,9 +6,10 @@ import Edit from "../../styles/assets/vectors/edit.svg";
 import Delete from "../../styles/assets/vectors/delete.svg";
 import { useContract } from "../../hooks/useContract";
 import CountDown from "../../components/CountDown";
+import { currentSeconds } from "../../Helpers";
 
 export default function Records() {
-  const { stakes } = useContract();
+  const { stakes, claim } = useContract();
   return (
     <div className="record">
       <div className="record-header">Trade Records</div>
@@ -69,7 +70,19 @@ export default function Records() {
               <CountDown time={stake.deadline} />
               <div className="tab-time"> 19:22:23 </div>
               <div className="tab-action-cont">
-                <div>Claim</div>
+                <button
+                  disabled={
+                    +stake.deadline > currentSeconds || stake.balance == 0
+                  }
+                  onClick={() => claim(stake.id)}
+                  className={`stake-btn ${
+                    +stake.deadline > currentSeconds || stake.balance == 0
+                      ? ""
+                      : "active"
+                  }`}
+                >
+                  <span className="stake-btn-txt">CLAIM</span>
+                </button>
                 {/* <div className="action-div">
                   <img className="action-icon" src={Edit} alt="edit" />
                 </div>

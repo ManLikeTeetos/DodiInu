@@ -37,6 +37,7 @@ export default function StakingBody() {
     totalEarned,
     error,
     redeemable,
+    claimAll,
   } = useContract();
   const { approve } = useApprove();
 
@@ -281,14 +282,10 @@ export default function StakingBody() {
                         </div>
                       </div>
                       <button
-                        disabled={
-                          latest_balance === "--" ||
-                          +latest_deadline > currentSeconds
-                        }
-                        onClick={() => claim(id)}
+                        disabled={latest_balance === "--" || +redeemable > 0}
+                        onClick={() => claimAll()}
                         className={`stake-btn ${
-                          latest_balance === "--" ||
-                          +latest_deadline > currentSeconds
+                          latest_balance === "--" || +redeemable > 0
                             ? ""
                             : "active"
                         }`}
