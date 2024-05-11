@@ -13,6 +13,7 @@ import StakingSection from "./StakingSection.js";
 import { useApprove } from "../../hooks/useApprove.jsx";
 import CountDown from "../../components/CountDown.js";
 import CustomModal from "../../components/CustomModal.js";
+import { currentSeconds } from "../../Helpers";
 
 const customStyle = {
   overlay: {
@@ -35,6 +36,7 @@ export default function StakingBody() {
     totalSupply,
     totalEarned,
     error,
+    redeemable,
   } = useContract();
   const { approve } = useApprove();
 
@@ -53,7 +55,7 @@ export default function StakingBody() {
   }
 
   function handleStake() {
-    if (hasAllowance(amount)) {
+    if (hasAllowance(+amount)) {
       stake(amount);
     } else {
       approve(amount);
@@ -193,7 +195,7 @@ export default function StakingBody() {
                         onClick={handleStake}
                         className={`stake-btn ${amount === "" ? "" : "active"}`}
                       >
-                        {allowance >= amount ? (
+                        {+allowance >= amount ? (
                           <span className="stake-btn-txt">STAKE</span>
                         ) : (
                           <span className="stake-btn-txt">APPROVE</span>
@@ -274,17 +276,21 @@ export default function StakingBody() {
                             <div className="stake-bal-label">
                               Redeemable Balance
                             </div>
-                            <span className="stake-bal-amt">
-                              {latest_balance}
-                            </span>
+                            <span className="stake-bal-amt">{redeemable}</span>
                           </div>
                         </div>
                       </div>
                       <button
-                        disabled={latest_balance === "--"}
+                        disabled={
+                          latest_balance === "--" ||
+                          +latest_deadline > currentSeconds
+                        }
                         onClick={() => claim(id)}
                         className={`stake-btn ${
-                          latest_balance !== "--" ? "active" : ""
+                          latest_balance === "--" ||
+                          +latest_deadline > currentSeconds
+                            ? ""
+                            : "active"
                         }`}
                       >
                         <span className="stake-btn-txt">CLAIM</span>

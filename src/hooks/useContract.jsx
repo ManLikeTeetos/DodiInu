@@ -1,13 +1,15 @@
 import { useWeb3React } from "@web3-react/core";
 import { getStakingContract, getERC20Contract } from "../Helpers/contract";
 import { CONTRACT_ADDRESS, TOKEN_ADDRESS } from "../Helpers/constants";
-import { fromBigNumber, toBigNumber } from "../Helpers";
+import {
+  currentSeconds,
+  fromBigNumber,
+  getCurrentSeconds,
+  toBigNumber,
+} from "../Helpers";
 import { useEffect, useState } from "react";
 
 import CustomModal from "../components/CustomModal";
-
-
-
 
 export const useContract = () => {
   const { chainId, library, account } = useWeb3React();
@@ -16,6 +18,7 @@ export const useContract = () => {
   const [balance, setBalance] = useState(0);
   const [totalSupply, setTotalSupply] = useState(0);
   const [totalEarned, setTotalEarned] = useState(0);
+  const [redeemable, setRedeemable] = useState(0);
   const [transactionHash, setTransactionHash] = useState("");
   const [latestStakes, setLatestStakes] = useState({
     id: "",
@@ -28,16 +31,15 @@ export const useContract = () => {
   const [stakes, setStakes] = useState([]);
   const [records, setRecords] = useState([]);
 
+  // //modal const
+  // Modal state and functions
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [error, setError] = useState("");
 
-	// //modal const
-	// Modal state and functions
-	const [modalIsOpen, setModalIsOpen] = useState(false);
-	const [error, setError] = useState("");
-
-	const closeModal = () => {
-		setModalIsOpen(false);
-		setError("");
-	};
+  const closeModal = () => {
+    setModalIsOpen(false);
+    setError("");
+  };
 
   const stake = async (value) => {
     try {
@@ -48,9 +50,9 @@ export const useContract = () => {
       setTransactionHash(transaction.transactionHash);
     } catch (err) {
       console.log({ err });
-     // alert("Opps, Something went wrong");
-		setError("Oops, something went wrong");
-		setModalIsOpen(true);
+      // alert("Opps, Something went wrong");
+      setError("Oops, something went wrong");
+      setModalIsOpen(true);
     }
   };
 
@@ -61,8 +63,8 @@ export const useContract = () => {
       await listenForTransactionMine(tx, library);
     } catch (err) {
       //alert("Opps, Something went wrong");
-		setError("Oops, something went wrong");
-		setModalIsOpen(true);
+      setError("Oops, something went wrong");
+      setModalIsOpen(true);
     }
   };
 
@@ -85,8 +87,8 @@ export const useContract = () => {
         setBalance(fromBigNumber(balance.toString()));
       } catch (err) {
         console.log(err);
-       setError("Oops, something went wrong");
-		setModalIsOpen(true);
+        setError("Oops, something went wrong");
+        setModalIsOpen(true);
       }
     };
 
@@ -111,6 +113,16 @@ export const useContract = () => {
           });
         }
 
+        setRedeemable(() => {
+          return stakes.reduce((acc, curr) => {
+            if (+curr[4] <= currentSeconds) {
+              return +(+fromBigNumber(curr[2]) + acc);
+            } else {
+              return 0 + acc;
+            }
+          }, 0);
+        });
+
         setStakes(() => {
           return stakes.map((stake) => {
             return {
@@ -123,9 +135,9 @@ export const useContract = () => {
           });
         });
       } catch (err) {
-       // alert("Opps, Something went wrong when retrieving data");
-		  setError("Opps, Something went wrong when retrieving data");
-		  setModalIsOpen(true);
+        // alert("Opps, Something went wrong when retrieving data");
+        setError("Opps, Something went wrong when retrieving data");
+        setModalIsOpen(true);
       }
     };
 
@@ -150,9 +162,9 @@ export const useContract = () => {
           }, 0);
         });
       } catch (err) {
-		  //alert("Opps, Something went wrong when retrieving data");
-		   setError("Opps, Something went wrong when retrieving data");
-		  setModalIsOpen(true);
+        //alert("Opps, Something went wrong when retrieving data");
+        setError("Opps, Something went wrong when retrieving data");
+        setModalIsOpen(true);
       }
     };
 
@@ -161,9 +173,9 @@ export const useContract = () => {
         const totalSupply = await contract.totalSupply();
         setTotalSupply(fromBigNumber(totalSupply));
       } catch (err) {
-       // alert("Opps, Something went wrong when retrieving data");
-		  setError("Opps, Something went wrong when retrieving data");
-		  setModalIsOpen(true);
+        // alert("Opps, Something went wrong when retrieving data");
+        setError("Opps, Something went wrong when retrieving data");
+        setModalIsOpen(true);
       }
     };
 
@@ -182,8 +194,9 @@ export const useContract = () => {
     records,
     totalSupply,
     totalEarned,
-	  modalIsOpen,
-	  error,
-	  closeModal,
+    modalIsOpen,
+    error,
+    closeModal,
+    redeemable,
   };
 };
