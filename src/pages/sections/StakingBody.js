@@ -285,7 +285,7 @@ export default function StakingBody() {
                         disabled={latest_balance === "--" || +redeemable == 0}
                         onClick={() => claimAll()}
                         className={`stake-btn ${
-                          latest_balance === "--" || +redeemable > 0
+                          latest_balance === "--" || +redeemable == 0
                             ? ""
                             : "active"
                         }`}
