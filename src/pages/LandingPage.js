@@ -1,7 +1,23 @@
 import '../styles/DodiWeb.css'
 import { ReactComponent as Logo } from '../../src/styles/assets/vectors/LogoDiodiInu317_x2.svg';
+import { useContract } from "../../hooks/useContract.jsx";
 
 function LandingPage() {
+
+	const {
+		balance,
+		stake,
+		latestStakes,
+		claim,
+		records,
+		totalSupply,
+		totalEarned,
+		error,
+	} = useContract();
+
+	const percentageStaked = (totalSupply / 7280000000.00) * 100;
+
+
   return (
 	  <div className="diodi-web-page">
 		  <div className="scroll">
@@ -70,7 +86,7 @@ function LandingPage() {
 						  </div>
 						  <div className="ptitle-3">
 							  <span className="container-1">
-								  62%
+								  {percentageStaked}%
 							  </span>
 						  </div>
 					  </div>

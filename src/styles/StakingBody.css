@@ -217,6 +217,10 @@ margin-bottom: 8px;
 		height: 60px
 }
 
+button {
+	cursor: pointer;
+}
+
 .stake-bal-field {
 	border-radius: 12px;
 		background: #545454;

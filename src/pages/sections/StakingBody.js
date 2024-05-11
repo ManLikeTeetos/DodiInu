@@ -117,7 +117,7 @@ export default function StakingBody() {
                 <div className="stk-tot-frame">
                   <div className="stk-lok-heading">Total Locked</div>
                   <div className="stk-lok-text">
-                    <span> {Number(totalSupply).toFixed(4)} </span>
+						<span> {Number(totalSupply).toLocaleString('en-US', { maximumFractionDigits: 4})} </span>
                     <span className="stk-green-color">DODI</span>
                   </div>
                 </div>
@@ -125,7 +125,7 @@ export default function StakingBody() {
                   <div className="stkearn-num">
                     <div className="stk-lok-heading">Total Earned</div>
                     <div className="stk-lok-text">
-                      <span>{totalEarned} </span>
+						<span>{Number(totalEarned).toLocaleString('en-US', { maximumFractionDigits: 4 })} </span>
                       <span className="stk-green-color">DODI</span>
                     </div>
                   </div>

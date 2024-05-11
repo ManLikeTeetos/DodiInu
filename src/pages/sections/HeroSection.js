@@ -1,4 +1,5 @@
 import Hero from "../../styles/assets/images/Image31.png";
+import { useContract } from "../../hooks/useContract.jsx";
 
 const colorStyleHero = {
 	r: 0,
@@ -8,6 +9,21 @@ const colorStyleHero = {
 };
 
 export default function HeroSection(){
+
+	const {
+		balance,
+		stake,
+		latestStakes,
+		claim,
+		records,
+		totalSupply,
+		totalEarned,
+		error,
+	} = useContract();
+
+	const percentageStaked = (totalSupply / 7280000000.00) * 100;
+	const circulatingDodi = (7280000000.00 - totalSupply);
+
 	return(
 		<div className="hero">
 			<div className="hero-bg">
@@ -55,13 +71,13 @@ export default function HeroSection(){
 						<div className="hero-16">
 							<div className="hero-17">CIRCULATING DODI</div>
 							<div className="hero-18">
-								4,565,990,000.00{" "}
+								{Number(circulatingDodi).toLocaleString('en-US', { maximumFractionDigits: 2 })}
 								<span style={{ color: `rgba(${colorStyleHero.r}, ${colorStyleHero.g}, ${colorStyleHero.b}, ${colorStyleHero.a})` }}>DODI</span>
 							</div>
 						</div>
 						<div className="hero-19">
 							<div className="hero-20">$DODI Staked</div>
-							<div className="hero-21">42%</div>
+							<div className="hero-21">{Number(percentageStaked).toFixed(6)}%</div>
 						</div>
 					</div>
 				</div>
