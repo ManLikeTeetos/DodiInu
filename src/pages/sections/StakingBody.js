@@ -38,6 +38,8 @@ export default function StakingBody() {
     error,
     redeemable,
     claimAll,
+    totalLocked,
+    loading,
   } = useContract();
   const { approve } = useApprove();
 
@@ -55,9 +57,10 @@ export default function StakingBody() {
     setIsOpen(true);
   }
 
-  function handleStake() {
+  async function handleStake() {
     if (hasAllowance(+amount)) {
-      stake(amount);
+      await stake(amount);
+      setAmount("");
     } else {
       approve(amount);
     }
@@ -191,6 +194,9 @@ export default function StakingBody() {
                           </span>
                         </div>
                       </div>
+                      {loading && (
+                        <div style={{ color: "#fff" }}>loading...</div>
+                      )}
                       <button
                         disabled={amount === ""}
                         onClick={handleStake}
@@ -261,9 +267,7 @@ export default function StakingBody() {
                             <div className="stake-bal-label">
                               Locked Staking
                             </div>
-                            <span className="stake-bal-amt">
-                              {latest_balance}
-                            </span>
+                            <span className="stake-bal-amt">{totalLocked}</span>
                           </div>
                         </div>
                         <div className="stake-time-div">

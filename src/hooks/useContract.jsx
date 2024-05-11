@@ -17,7 +17,9 @@ export const useContract = () => {
   const tokenContract = getERC20Contract(TOKEN_ADDRESS, chainId, library);
   const [balance, setBalance] = useState(0);
   const [totalSupply, setTotalSupply] = useState(0);
+  const [loading, setLoading] = useState(false);
   const [totalEarned, setTotalEarned] = useState(0);
+  const [totalLocked, setTotalLocked] = useState(0);
   const [redeemable, setRedeemable] = useState(0);
   const [transactionHash, setTransactionHash] = useState("");
   const [latestStakes, setLatestStakes] = useState({
@@ -43,13 +45,16 @@ export const useContract = () => {
 
   const stake = async (value) => {
     try {
+      setLoading(true);
       const amount = toBigNumber(value);
       const signer = contract.connect(library?.getSigner());
       const tx = await signer.stake(amount);
       const transaction = await tx.wait();
       setTransactionHash(transaction.transactionHash);
+      setLoading(false);
     } catch (err) {
       console.log({ err });
+      setLoading(false);
       // alert("Opps, Something went wrong");
       setError("Oops, something went wrong");
       setModalIsOpen(true);
@@ -58,10 +63,13 @@ export const useContract = () => {
 
   const claim = async (id) => {
     try {
+      setLoading(true);
       const signer = contract.connect(library?.getSigner());
       const tx = await signer.claim(id);
       await listenForTransactionMine(tx, library);
+      setLoading(false);
     } catch (err) {
+      setLoading(false);
       //alert("Opps, Something went wrong");
       setError("Oops, something went wrong");
       setModalIsOpen(true);
@@ -70,13 +78,16 @@ export const useContract = () => {
 
   const claimAll = async () => {
     try {
+      setLoading(true);
       const signer = contract.connect(library?.getSigner());
       const tx = await signer.claimAll();
       await listenForTransactionMine(tx, library);
+      setLoading(false);
     } catch (err) {
       //alert("Opps, Something went wrong");
       setError("Oops, something went wrong");
       setModalIsOpen(true);
+      setLoading(false);
     }
   };
 
@@ -128,6 +139,16 @@ export const useContract = () => {
         setRedeemable(() => {
           return stakes.reduce((acc, curr) => {
             if (+curr[4] <= currentSeconds) {
+              return +(+fromBigNumber(curr[2]) + acc);
+            } else {
+              return 0 + acc;
+            }
+          }, 0);
+        });
+
+        setTotalLocked(() => {
+          return stakes.reduce((acc, curr) => {
+            if (+curr[4] > currentSeconds) {
               return +(+fromBigNumber(curr[2]) + acc);
             } else {
               return 0 + acc;
@@ -194,7 +215,7 @@ export const useContract = () => {
     getStakes();
     getRecords();
     getTotalSupply();
-  }, [account, transactionHash]);
+  }, [transactionHash, account]);
 
   return {
     contract,
@@ -210,6 +231,8 @@ export const useContract = () => {
     error,
     closeModal,
     redeemable,
+    totalLocked,
     claimAll,
+    loading,
   };
 };
