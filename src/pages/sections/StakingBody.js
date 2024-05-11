@@ -282,7 +282,7 @@ export default function StakingBody() {
                         </div>
                       </div>
                       <button
-                        disabled={latest_balance === "--" || +redeemable > 0}
+                        disabled={latest_balance === "--" || +redeemable == 0}
                         onClick={() => claimAll()}
                         className={`stake-btn ${
                           latest_balance === "--" || +redeemable > 0
