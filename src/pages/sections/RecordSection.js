@@ -67,7 +67,7 @@ export default function Records() {
               <div className="tab-transtype-content">Staking </div>
               <div className="tab-amount">{stake.amount}</div>
               <div className="tab-staketype-content"> 50 Days </div>
-              <CountDown time={stake.deadline} />
+              <CountDown duration={Math.floor(stake.deadline - currentSeconds)} />
               <div className="tab-time"> 19:22:23 </div>
               <div className="tab-action-cont">
                 <button
