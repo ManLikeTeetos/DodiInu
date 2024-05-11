@@ -49,9 +49,15 @@ export default function StakingBody() {
     deadline: latest_deadline,
     balance: latest_balance,
     staked_time: latest_staked_time,
+	duration: check_duration,
   } = latestStakes;
 
-  const duration = latest_deadline;
+	//const duration = latest_deadline - latest_staked_time;
+	//const check_duration = latest_deadline - currentSeconds;
+
+	console.log(23, check_duration);
+
+
 
   function openModal() {
     setIsOpen(true);
@@ -274,7 +280,7 @@ export default function StakingBody() {
                           <div className="stake-time">
                             <span className="timer">Timer</span>
                           </div>
-                          <CountDown duration={duration} />
+                          <CountDown duration={check_duration} />
                         </div>
                         <div className="stake-red-balance">
                           <div className="stake-bal-field">
@@ -286,10 +292,10 @@ export default function StakingBody() {
                         </div>
                       </div>
                       <button
-                        disabled={latest_balance === "--" || +redeemable == 0}
+                        disabled={latest_balance === "--" || +redeemable == 0 || check_duration > 0}
                         onClick={() => claimAll()}
                         className={`stake-btn ${
-                          latest_balance === "--" || +redeemable == 0
+                          latest_balance === "--" || +redeemable == 0 || check_duration > 0
                             ? ""
                             : "active"
                         }`}

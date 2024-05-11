@@ -28,6 +28,7 @@ export const useContract = () => {
     deadline: 0,
     staked_time: 0,
     balance: "--",
+	duration: 0,
   });
 
   const [stakes, setStakes] = useState([]);
@@ -133,6 +134,7 @@ export const useContract = () => {
             balance: fromBigNumber(stake[2]),
             staked_time: stake[3].toString(),
             deadline: stake[4].toString(),
+			duration: Math.floor(stake[4].toString() - currentSeconds),
           });
         }
 
@@ -164,6 +166,7 @@ export const useContract = () => {
               balance: fromBigNumber(stake[2]), // Balance
               staked_time: stake[3].toString(), // Start time
               deadline: stake[4].toString(), // End time
+			  duration: Math.floor(stake[4].toString() - currentSeconds),
             };
           });
         });
