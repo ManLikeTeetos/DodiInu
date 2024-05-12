@@ -10,24 +10,20 @@ export const useAllowance = () => {
   const [allowance, setAllowance] = useState(0);
   const [toggle, setRefetch] = useState(false);
 
-  const getAllowance = async () => {
+  const getAllowances = async () => {
     if (!account) return;
     try {
       setLoading(true);
-      const contract = getERC20Contract(TOKEN_ADDRESS, chainId, library);
+      const contract = await getERC20Contract(TOKEN_ADDRESS, chainId, library);
       const value = await contract.allowance(account, CONTRACT_ADDRESS);
       const newVal = fromBigNumber(value.toString());
-      setLoading(false);
       setAllowance(+newVal);
+      setLoading(false);
     } catch (err) {
       alert("Error");
       console.log({ err, msg: "error" });
     }
   };
-
-  useEffect(() => {
-    getAllowance();
-  }, [account, toggle, chainId]);
 
   const hasAllowance = (amount) => {
     if (allowance >= amount) {
@@ -39,6 +35,10 @@ export const useAllowance = () => {
   const refetch = () => {
     setRefetch((prev) => !prev);
   };
+
+  useEffect(() => {
+    getAllowances();
+  }, [account, toggle, chainId]);
 
   return { allowance, hasAllowance, loading, refetch, setAllowance };
 };
