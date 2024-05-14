@@ -116,6 +116,45 @@ export default function StakingBody() {
 		}
 	},[check_duration]);
 
+
+	function convertClaimsSecondsToDateTime(timestamp) {
+		// Convert timestamp to milliseconds
+		const milliseconds = timestamp * 1000;
+		// Create a new Date object
+		const dateObject = new Date(milliseconds);
+
+		// Define month names
+		const monthNames = [
+			"January", "February", "March", "April", "May", "June", "July",
+			"August", "September", "October", "November", "December"
+		];
+
+		// Extract date components
+		const month = monthNames[dateObject.getMonth()];
+		const day = dateObject.getDate();
+		const year = dateObject.getFullYear();
+
+		// Format date as "Month DD, YYYY"
+		const formattedDate = `${month} ${day}, ${year}`;
+
+		// Extract time components
+		let hours = dateObject.getHours();
+		const minutes = dateObject.getMinutes();
+		const ampm = hours >= 12 ? 'PM' : 'AM';
+
+		// Convert hours from 24-hour format to 12-hour format
+		hours = hours % 12;
+		hours = hours ? hours : 12; // Handle midnight (0 hours)
+
+		// Format time as "HH:MM AM/PM"
+		const formattedTime = `${hours}:${minutes < 10 ? '0' : ''}${minutes} ${ampm}`;
+
+		return { claim_date: formattedDate, claim_timestamp: formattedTime };
+	}
+
+	const dollarValue = 0.0000137;
+
+
   return (
     <div className="stkbody">
       <div className="stkshadow">
@@ -334,10 +373,43 @@ export default function StakingBody() {
                         your rewards
                       </span>
                     </div>
-                    <div className="stake-records">Records</div>
-                    <div className="stake-records-div">
-                      <span className="stake-record-txt">No Record</span>
-                    </div>
+					{Object.keys(records).length === 0 && (
+						<>
+							<div className="stake-records">Records</div>
+								<div className="stake-records-div">
+								<span className="stake-record-txt">No Record</span>
+							</div>
+					  	</>
+					)}
+
+				 {Object.keys(records).length !== 0 && (
+
+					<div className="stake-record-pop">
+						{records.map((claims, i) => {
+							const { claim_date, claim_timestamp } = convertClaimsSecondsToDateTime(claims.createdAt);
+
+							return(
+								<div key={i} className="stake-rec-popdiv">
+									<div className="stake-rec-popdate">
+										<span>{claim_timestamp}</span>
+										<span>{claim_date}</span>
+
+									</div>
+									<div className="stake-rec-popamt">
+										<div className="stake-rec-amt">
+											<span className="green-color">DODI </span>
+											<span>{Number(claims.amount).toLocaleString('en-US', { maximumFractionDigits: 5 })}</span>
+										</div>
+										<div className="stake-rec-dollar">
+											<span className="green-color">${claims.amount * dollarValue}</span>
+										</div>
+									</div>
+								</div>
+							);
+						})}
+
+					</div>
+				 )}
                   </div>
 
                   {/* TODO POPULATE REWARDS RECORDS */}
