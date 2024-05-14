@@ -59,6 +59,7 @@ export const useContract = () => {
       // alert("Opps, Something went wrong");
       setError("Oops, something went wrong");
       setModalIsOpen(true);
+	 window.location.reload();
     }
   };
 

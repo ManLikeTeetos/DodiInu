@@ -25,6 +25,7 @@ export const useApprove = () => {
       alert("Opps, something went wrong!");
     } finally {
       setLoading(false);
+	  window.location.reload();
     }
   };
 

@@ -296,6 +296,27 @@
 	align-items: center;
 }
 
+.record-btn {
+	border-radius: 12px;
+	border: 1px solid #00CD6A;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 9px 0.5px 9px 0;
+	width: 281px;
+	box-sizing: border-box;
+	height: 40px;
+	appearance: none;
+	background-color: transparent;
+	color: var(--secondarysecondary-200, #8A8A8A);
+
+}
+
+.record-btn.active {
+	background-color: #00CD6A;
+	color: white;
+}
+
 @media (max-width: 1024px){
 
 	.record {

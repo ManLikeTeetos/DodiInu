@@ -19,6 +19,11 @@ const CountDown = ({ duration }) => {
 				setTimeRemaining(prevTime => prevTime - 1);
 			}, 1000);
 
+			if (timeRemaining === 1) {
+				// Refresh the page when countdown reaches zero
+				window.location.reload();
+			}
+
 			return () => clearInterval(intervalId);
 		}
 	}, [timeRemaining]);

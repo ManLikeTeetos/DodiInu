@@ -13,11 +13,7 @@ import StakingSection from "./StakingSection.js";
 import { useApprove } from "../../hooks/useApprove.jsx";
 import CountDown from "../../components/CountDown.js";
 import CustomModal from "../../components/CustomModal.js";
-import { useWeb3React } from "@web3-react/core";
 import { currentSeconds } from "../../Helpers";
-import { CONTRACT_ADDRESS, TOKEN_ADDRESS } from "../../Helpers/constants";
-import { fromBigNumber } from "../../Helpers";
-import { getERC20Contract } from "../../Helpers/contract";
 
 const customStyle = {
   overlay: {
@@ -28,12 +24,10 @@ const customStyle = {
 export default function StakingBody() {
   //Modal functons
 
-  const [modalIsOpen, setIsOpen] = useState(false);
+  const [IsOpen, setIsOpen] = useState(false);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
   const [amount, setAmount] = useState("");
-  const { account, chainId, library } = useWeb3React();
-  const [allowance, setAllowances] = useState(0);
-  const [al, setAl] = useState(false);
-
+  const { hasAllowance, allowance } = useAllowance();
   const {
     balance,
     stake,
@@ -56,13 +50,18 @@ export default function StakingBody() {
     deadline: latest_deadline,
     balance: latest_balance,
     staked_time: latest_staked_time,
-    duration: check_duration,
+	duration: check_duration,
   } = latestStakes;
 
-  //const duration = latest_deadline - latest_staked_time;
-  //const check_duration = latest_deadline - currentSeconds;
+	//const duration = latest_deadline - latest_staked_time;
+	//const check_duration = latest_deadline - currentSeconds;
 
-  console.log(23, check_duration);
+	//console.log(23, check_duration);
+
+	//console.log("error_message",error);
+	//if(error !== "") setModalIsOpen(true);
+
+
 
   function openModal() {
     setIsOpen(true);
@@ -72,10 +71,8 @@ export default function StakingBody() {
     if (hasAllowance(+amount)) {
       await stake(amount);
       setAmount("");
-      await getAllowances();
     } else {
-      await approve(amount);
-      await getAllowances();
+      approve(amount);
     }
   }
 
@@ -87,6 +84,8 @@ export default function StakingBody() {
   function closeModal() {
     setIsOpen(false);
   }
+
+
 
   //staking and records tab
   const [activeTab, setActiveTab] = useState("stake");
@@ -103,31 +102,19 @@ export default function StakingBody() {
 
   const formattedBalance = parseFloat(balance).toFixed(10);
 
-  const getAllowances = async () => {
-    if (!account) return;
-    try {
-      const contract = getERC20Contract(TOKEN_ADDRESS, chainId, library);
-      const value = await contract.allowance(account, CONTRACT_ADDRESS);
-      const newVal = fromBigNumber(value.toString());
-      setAllowances(+newVal);
-    } catch (err) {
-      console.log({ err, msg: "error" });
-    }
-  };
-
-  const hasAllowance = (amount) => {
-    if (allowance >= amount) {
-      return true;
-    }
-    return false;
-  };
-
-  useEffect(() => {
-    getAllowances();
-  }, []);
-
-  //console.log('check_duration', duration);
+  console.log('check_duration', check_duration);
   //console.log('check_bal', latest_balance);
+
+	useEffect(() => {
+		if (check_duration === 1) {
+			// Refresh the page when countdown reaches zero
+			window.location.reload();
+		}
+
+		if(check_duration > 180){
+			check_duration = 180;
+		}
+	},[check_duration]);
 
   return (
     <div className="stkbody">
@@ -156,12 +143,7 @@ export default function StakingBody() {
                 <div className="stk-tot-frame">
                   <div className="stk-lok-heading">Total Locked</div>
                   <div className="stk-lok-text">
-                    <span>
-                      {" "}
-                      {Number(totalSupply).toLocaleString("en-US", {
-                        maximumFractionDigits: 4,
-                      })}{" "}
-                    </span>
+						<span> {Number(totalSupply).toLocaleString('en-US', { maximumFractionDigits: 4})} </span>
                     <span className="stk-green-color">DODI</span>
                   </div>
                 </div>
@@ -169,11 +151,7 @@ export default function StakingBody() {
                   <div className="stkearn-num">
                     <div className="stk-lok-heading">Total Earned</div>
                     <div className="stk-lok-text">
-                      <span>
-                        {Number(totalEarned).toLocaleString("en-US", {
-                          maximumFractionDigits: 4,
-                        })}{" "}
-                      </span>
+						<span>{Number(totalEarned).toLocaleString('en-US', { maximumFractionDigits: 4 })} </span>
                       <span className="stk-green-color">DODI</span>
                     </div>
                   </div>
@@ -242,7 +220,6 @@ export default function StakingBody() {
                       {loading && (
                         <div style={{ color: "#fff" }}>loading...</div>
                       )}
-
                       <button
                         disabled={amount === ""}
                         onClick={handleStake}
@@ -255,7 +232,7 @@ export default function StakingBody() {
                         )}
                       </button>
                       <Modal
-                        isOpen={modalIsOpen}
+                        isOpen={IsOpen}
                         onAfterOpen={afterOpenModal}
                         onRequestClose={closeModal}
                         contentLabel="Example Modal"
@@ -332,16 +309,10 @@ export default function StakingBody() {
                         </div>
                       </div>
                       <button
-                        disabled={
-                          latest_balance === "--" ||
-                          +redeemable == 0 ||
-                          check_duration > 0
-                        }
+                        disabled={latest_balance === "--" || +redeemable == 0 || check_duration > 0}
                         onClick={() => claimAll()}
                         className={`stake-btn ${
-                          latest_balance === "--" ||
-                          +redeemable == 0 ||
-                          check_duration > 0
+                          latest_balance === "--" || +redeemable == 0 || check_duration > 0
                             ? ""
                             : "active"
                         }`}
@@ -412,11 +383,11 @@ export default function StakingBody() {
                 </a>
               </div>
             </div>
-            <CustomModal
+            {/* <CustomModal
               error={error}
               modalIsOpen={modalIsOpen}
               closeModal={closeModal}
-            />
+            /> */}
           </div>
         )}
 
