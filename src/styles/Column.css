@@ -7,6 +7,10 @@
 	margin: 0 auto;
 }
 
+
+a{
+	text-decoration: none;
+}
 .csection-title {
 	margin: 3rem 3.25rem 2.25rem 3.25rem;
 	font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;

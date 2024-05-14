@@ -7,6 +7,10 @@ import Pancake from "../../styles/assets/images/pancakeswap.png"
 import Dexscreener from "../../styles/assets/images/dex-screener.png"
 import Binance from "../../styles/assets/images/Binance.png"
 
+///External links
+const TelegramLink = "https://t.me/DodiinuCoin";
+const TwitterLink = "https://x.com/Dodi_Inu?s=09";
+
 
 export default function Column(){
 	return(
@@ -15,46 +19,52 @@ export default function Column(){
 				<span className="green-color"> DODI </span> Community
 			</div>
 			<div className="csection-media">
-				<div className="csection-media-box">
-					<div className="csection-media-card">
-						<div className="media-img">
-							<div className="twitter-png">
+				<a href={TwitterLink} target="_blank" rel="noreferrer" >
+					<div className="csection-media-box">
+						<div className="csection-media-card">
+							<div className="media-img">
+								<div className="twitter-png">
+								</div>
 							</div>
-						</div>
-						<div className="media-content">
-							<div className="media-title">
-								<span className="media-name">
-									twitter
-								</span>
+							<div className="media-content">
+								<div className="media-title">
+									<span className="media-name">
+										twitter
+									</span>
+								</div>
+								{/* <div className="media-subtitle">
+									<span className="followers">
+										25,000+ followers
+									</span>
+								</div> */}
 							</div>
-							{/* <div className="media-subtitle">
-								<span className="followers">
-									25,000+ followers
-								</span>
-							</div> */}
 						</div>
 					</div>
-				</div>
-				<div className="csection-media-box">
-					<div className="csection-media-card">
-						<div className="media-img">
-							<div className="telegram-png">
+				</a>
+
+				<a href={TelegramLink} target="_blank" rel="noreferrer" >
+					<div className="csection-media-box">
+						<div className="csection-media-card">
+							<div className="media-img">
+								<div className="telegram-png">
+								</div>
 							</div>
-						</div>
-						<div className="media-content">
-							<div className="media-title">
-								<span className="media-name">
-									telegram
-								</span>
-							</div>
-							{/* <div className="media-subtitle">
+							<div className="media-content">
+								<div className="media-title">
+									<span className="media-name">
+										telegram
+									</span>
+								</div>
+								{/* <div className="media-subtitle">
 								<span className="followers">
 									3,000+ members
 								</span>
 							</div> */}
+							</div>
 						</div>
 					</div>
-				</div>
+				</a>
+
 				<div className="csection-media-box">
 					<div className="csection-media-card">
 						<div className="media-img">
