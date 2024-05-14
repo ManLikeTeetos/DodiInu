@@ -155,6 +155,7 @@ export default function StakingBody() {
 	const dollarValue = 0.0000137;
 
 
+
   return (
     <div className="stkbody">
       <div className="stkshadow">

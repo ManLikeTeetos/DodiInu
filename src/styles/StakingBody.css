@@ -734,7 +734,7 @@ margin: 0 3.6px 0 3px;
 }
 
 .stake-rec-popdiv {
-	width: 282px;
+	width: 281px;
 	height: 84px;
 	margin-top: 20px;
 	margin-bottom: 30px;
@@ -745,7 +745,7 @@ margin: 0 3.6px 0 3px;
 }
 
 .stake-rec-popdate {
-	width: 282px;
+	width: 281px;
 	height: 14px;
 	display: flex;
 	flex-direction: row;
@@ -758,11 +758,10 @@ margin: 0 3.6px 0 3px;
 }
 
 .stake-rec-popamt {
-   width: 100%;
+   width: 281px;
    height: 60px;
    border-radius: 12px;
    background: #545454;
-   padding-left:10.5px;
    display: flex;
    flex-direction: column;
 }
@@ -777,6 +776,7 @@ margin: 0 3.6px 0 3px;
 	color: white;
 	margin-top: 17px;
 	text-overflow: ellipsis;
+	margin-left: 10.5px;
 }
 
 .stake-rec-dollar {
@@ -803,7 +803,7 @@ margin: 0 3.6px 0 3px;
 
 /* Thin scrollbar */
 .stake-record-pop::-webkit-scrollbar {
-	width: 6px;
+	width: 2px;
 	/* Adjust thickness as needed */
 }
 
