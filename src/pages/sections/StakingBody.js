@@ -100,7 +100,7 @@ export default function StakingBody() {
   const TelegramLink = "https://t.me/DodiinuCoin";
   const TwitterLink = "https://x.com/Dodi_Inu?s=09";
 
-  const formattedBalance = parseFloat(balance).toFixed(10);
+	const formattedBalance = Number(balance).toLocaleString('en-US', { maximumFractionDigits: 5 });
 
   console.log('check_duration', check_duration);
   //console.log('check_bal', latest_balance);
@@ -183,7 +183,7 @@ export default function StakingBody() {
                 <div className="stk-tot-frame">
                   <div className="stk-lok-heading">Total Locked</div>
                   <div className="stk-lok-text">
-						<span> {Number(totalSupply).toLocaleString('en-US', { maximumFractionDigits: 4})} </span>
+						<span> {Number(totalSupply).toLocaleString('en-US', { maximumFractionDigits: 2})} </span>
                     <span className="stk-green-color">DODI</span>
                   </div>
                 </div>
@@ -191,7 +191,7 @@ export default function StakingBody() {
                   <div className="stkearn-num">
                     <div className="stk-lok-heading">Total Earned</div>
                     <div className="stk-lok-text">
-						<span>{Number(totalEarned).toLocaleString('en-US', { maximumFractionDigits: 4 })} </span>
+						<span>{Number(totalEarned).toLocaleString('en-US', { maximumFractionDigits: 2 })} </span>
                       <span className="stk-green-color">DODI</span>
                     </div>
                   </div>
@@ -390,27 +390,27 @@ export default function StakingBody() {
 							const { claim_date, claim_timestamp } = convertClaimsSecondsToDateTime(claims.createdAt);
 
 							return(
-								<div key={i} className="stake-rec-popdiv">
+								<div className="stake-rec-popdiv">
 									<div className="stake-rec-popdate">
 										<span>{claim_timestamp}</span>
 										<span>{claim_date}</span>
-
 									</div>
 									<div className="stake-rec-popamt">
 										<div className="stake-rec-amt">
 											<span className="green-color">DODI </span>
-											<span>{Number(claims.amount).toLocaleString('en-US', { maximumFractionDigits: 5 })}</span>
+											<span>{Number(claim.amount).toLocaleString('en-US', { maximumFractionDigits: 5 })}</span>
 										</div>
 										<div className="stake-rec-dollar">
-											<span className="green-color">${claims.amount * dollarValue}</span>
+											<span className="green-color">${Number(claim.amount * dollarValue ).toLocaleString('en-US', { maximumFractionDigits: 5 })}</span>
 										</div>
 									</div>
 								</div>
-							);
+
+							 );
 						})}
 
 					</div>
-				 )}
+				  )}
                   </div>
 
                   {/* TODO POPULATE REWARDS RECORDS */}
