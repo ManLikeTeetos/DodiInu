@@ -120,6 +120,8 @@ export default function Records() {
 						onChange={handleCalendarFilter}
 						startDate={startDate}
 						endDate={endDate}
+						showMonthDropdown
+						showYearDropdown
 						selectsRange
 						inline
 					/>
