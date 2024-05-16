@@ -100,7 +100,7 @@ export default function StakingBody() {
   const TelegramLink = "https://t.me/DodiinuCoin";
   const TwitterLink = "https://x.com/Dodi_Inu?s=09";
 
-	const formattedBalance = Number(balance).toLocaleString('en-US', { maximumFractionDigits: 5 });
+	const formattedBalance = Number(balance).toLocaleString('en-US', { minimumFractionDigits: 5 });
 
   console.log('check_duration', check_duration);
   //console.log('check_bal', latest_balance);
@@ -183,7 +183,7 @@ export default function StakingBody() {
                 <div className="stk-tot-frame">
                   <div className="stk-lok-heading">Total Locked</div>
                   <div className="stk-lok-text">
-						<span> {Number(totalSupply).toLocaleString('en-US', { maximumFractionDigits: 2})} </span>
+						<span> {Number(totalSupply).toLocaleString('en-US', { minimumFractionDigits: 2})} </span>
                     <span className="stk-green-color">DODI</span>
                   </div>
                 </div>
@@ -191,7 +191,7 @@ export default function StakingBody() {
                   <div className="stkearn-num">
                     <div className="stk-lok-heading">Total Earned</div>
                     <div className="stk-lok-text">
-						<span>{Number(totalEarned).toLocaleString('en-US', { maximumFractionDigits: 2 })} </span>
+						<span>{Number(totalEarned).toLocaleString('en-US', { minimumFractionDigits: 2 })} </span>
                       <span className="stk-green-color">DODI</span>
                     </div>
                   </div>
@@ -228,10 +228,14 @@ export default function StakingBody() {
                               Staking Amount
                             </div>
                             <input
-                              onChange={(e) => setAmount(e.target.value)}
+								onChange={(e) => {
+									const value = e.target.value.replace(/,/g, ''); // Remove existing commas
+									const formattedValue = Number(value).toLocaleString(); // Format with commas
+									setAmount(formattedValue);
+								}}
                               className="stake-bal-amt"
-                              value={amount}
-                              type="number"
+							  value={amount}
+                              type="text"
                               step={0.1}
                               inputMode="decimal"
                               autoComplete="off"
@@ -330,7 +334,7 @@ export default function StakingBody() {
                             <div className="stake-bal-label">
                               Locked Staking
                             </div>
-                            <span className="stake-bal-amt">{totalLocked}</span>
+								<span className="stake-bal-amt">{Number(totalLocked).toLocaleString('en-US', { minimumFractionDigits: 5 })}</span>
                           </div>
                         </div>
                         <div className="stake-time-div">
@@ -344,8 +348,8 @@ export default function StakingBody() {
                             <div className="stake-bal-label">
                               Redeemable Balance
                             </div>
-                            <span className="stake-bal-amt">{redeemable}</span>
-                          </div>
+								<span className="stake-bal-amt">{Number(redeemable).toLocaleString('en-US', { minimumFractionDigits: 5 })}</span>
+                          	</div>
                         </div>
                       </div>
                       <button
@@ -397,11 +401,11 @@ export default function StakingBody() {
 									</div>
 									<div className="stake-rec-popamt">
 										<div className="stake-rec-amt">
-											<span className="green-color">DODI </span>
-											<span>{Number(claim.amount).toLocaleString('en-US', { maximumFractionDigits: 5 })}</span>
+											{/* <span className="green-color">DODI </span> */}
+											<span>{Number(claim.amount).toLocaleString('en-US', { minimumFractionDigits: 5 })}</span>
 										</div>
 										<div className="stake-rec-dollar">
-											<span className="green-color">${Number(claim.amount * dollarValue ).toLocaleString('en-US', { maximumFractionDigits: 5 })}</span>
+											<span className="green-color">${Number(claim.amount * dollarValue ).toLocaleString('en-US', { minimumFractionDigits: 5 })}</span>
 										</div>
 									</div>
 								</div>
