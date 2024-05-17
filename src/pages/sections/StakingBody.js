@@ -33,7 +33,7 @@ export default function StakingBody() {
     stake,
     latestStakes,
     claim,
-    records,
+	records,
     totalSupply,
     totalEarned,
     error,
@@ -402,10 +402,10 @@ export default function StakingBody() {
 									<div className="stake-rec-popamt">
 										<div className="stake-rec-amt">
 											{/* <span className="green-color">DODI </span> */}
-											<span>{Number(claim.amount).toLocaleString('en-US', { minimumFractionDigits: 5 })}</span>
+											<span>{Number(claims.amount).toLocaleString('en-US', { minimumFractionDigits: 5 })}</span>
 										</div>
 										<div className="stake-rec-dollar">
-											<span className="green-color">${Number(claim.amount * dollarValue ).toLocaleString('en-US', { minimumFractionDigits: 5 })}</span>
+											<span className="green-color">${Number(claims.amount * dollarValue ).toLocaleString('en-US', { minimumFractionDigits: 5 })}</span>
 										</div>
 									</div>
 								</div>

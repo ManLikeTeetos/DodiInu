@@ -738,7 +738,8 @@ margin: 0 3.6px 0 3px;
 	height: 60px;
 	border-radius: 12px;
 	background: #545454;
-	margin-top: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	margin-right: 5px;
 	display: flex;
 	flex-direction: column;
@@ -756,8 +757,8 @@ margin: 0 3.6px 0 3px;
 	flex-direction: row;
 	justify-content: space-between;
 	font-family: 'Inter';
-	font-weight: 400;
-	font-size: 12px;
+	font-weight: 700;
+	font-size: 11px;
 	line-height: 1.4;
 	color:#B0B0B0;
 }
@@ -804,7 +805,7 @@ margin: 0 3.6px 0 3px;
 
 /* Define scrollbar thumb */
 .stake-record-pop::-webkit-scrollbar-thumb {
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: black;
 	/* Adjust color as needed */
 	border-radius: 10px;
 	/* Adjust radius as needed */
