@@ -33,7 +33,7 @@ export default function StakingBody() {
     stake,
     latestStakes,
     claim,
-	 
+	  records,
     totalSupply,
     totalEarned,
     error,
@@ -62,10 +62,10 @@ export default function StakingBody() {
 	//if(error !== "") setModalIsOpen(true);
 
 
-  const records = [
-    createdAt => 1234554434,
-    amount => 12.3445,
-  ]
+  // const records = [
+  //   createdAt => 1234554434,
+  //   amount => 12.3445,
+  // ]
 
 
 
@@ -106,7 +106,7 @@ export default function StakingBody() {
   const TelegramLink = "https://t.me/DodiinuCoin";
   const TwitterLink = "https://x.com/Dodi_Inu?s=09";
 
-	const formattedBalance = Number(balance).toLocaleString('en-US', { minimumFractionDigits: 5 });
+	
 
   console.log('check_duration', check_duration);
   //console.log('check_bal', latest_balance);
@@ -160,6 +160,14 @@ export default function StakingBody() {
 
 	const dollarValue = 0.0000137;
 
+  ///fornat balances
+  const formattedBalance = Number(balance).toFixed(5).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+  const formattotalLocked = Number(totalLocked).toFixed(5).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+  const formatredeemable = Number(redeemable).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+
+  const formattotalEarned = Number(totalEarned).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+  const formattotalSupply = Number(totalSupply).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+
 
 
   return (
@@ -189,7 +197,7 @@ export default function StakingBody() {
                 <div className="stk-tot-frame">
                   <div className="stk-lok-heading">Total Locked</div>
                   <div className="stk-lok-text">
-						<span> {Number(totalSupply).toLocaleString('en-US', { minimumFractionDigits: 2})} </span>
+						<span> {formattotalSupply} </span>
                     <span className="stk-green-color">DODI</span>
                   </div>
                 </div>
@@ -197,7 +205,7 @@ export default function StakingBody() {
                   <div className="stkearn-num">
                     <div className="stk-lok-heading">Total Earned</div>
                     <div className="stk-lok-text">
-						<span>{Number(totalEarned).toLocaleString('en-US', { minimumFractionDigits: 2 })} </span>
+						<span>{formattotalEarned} </span>
                       <span className="stk-green-color">DODI</span>
                     </div>
                   </div>
@@ -340,7 +348,7 @@ export default function StakingBody() {
                             <div className="stake-bal-label">
                               Locked Staking
                             </div>
-								<span className="stake-bal-amt">{Number(totalLocked).toLocaleString('en-US', { minimumFractionDigits: 5 })}</span>
+								<span className="stake-bal-amt">{formattotalLocked}</span>
                           </div>
                         </div>
                         <div className="stake-time-div">
@@ -354,7 +362,7 @@ export default function StakingBody() {
                             <div className="stake-bal-label">
                               Redeemable Balance
                             </div>
-								<span className="stake-bal-amt">{Number(redeemable).toLocaleString('en-US', { minimumFractionDigits: 5 })}</span>
+								<span className="stake-bal-amt">{formatredeemable}</span>
                           	</div>
                         </div>
                       </div>
