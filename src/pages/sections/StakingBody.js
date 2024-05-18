@@ -33,7 +33,7 @@ export default function StakingBody() {
     stake,
     latestStakes,
     claim,
-	records,
+	 
     totalSupply,
     totalEarned,
     error,
@@ -60,6 +60,12 @@ export default function StakingBody() {
 
 	//console.log("error_message",error);
 	//if(error !== "") setModalIsOpen(true);
+
+
+  const records = [
+    createdAt => 1234554434,
+    amount => 12.3445,
+  ]
 
 
 

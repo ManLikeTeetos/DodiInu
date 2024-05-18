@@ -10,6 +10,8 @@ import YouTube from '../../styles/assets/images/youtube_footer.png';
 ///External links
 const TelegramLink = "https://t.me/DodiinuCoin";
 const TwitterLink = "https://x.com/Dodi_Inu?s=09";
+const YoutubeLink = " https://www.youtube.com/@DODIINUWORLD";
+const InstagramLink  = "https://www.instagram.com/dodi.inu/";
 
 
 export default function Footer(){
@@ -29,12 +31,12 @@ export default function Footer(){
 					<a className="footer-linkmargin" href={TelegramLink} target="_blank" rel="noreferrer">
 						<img className="footer-icon" src={Telegram} alt="Telegram" />
 					</a>
-					<div className="footer-linkmargin">
+					<a className="footer-linkmargin" href={InstagramLink} target="_blank" rel="noreferrer">
 						<img className="footer-icon" src={Instagram} alt="Discord" />
-					</div>
-					<div className="footer-linkmargin">
+					</a>
+					<a className="footer-linkmargin" href={YoutubeLink} target="_blank" rel="noreferrer">
 						<img className="footer-icon" src={YouTube} alt="Youtube" />
-					</div>
+					</a>
 				</div>
 				<div className="footer-p">
 					<span className="footer-content">
@@ -61,9 +63,9 @@ export default function Footer(){
 							</a>
 						</div>
 						<div className="footer-item">
-							<span className="footer-link-discord">
+						    <a className="footer-link-telegram" href={InstagramLink} target="_blank" rel="noreferrer">
 								Instagram
-							</span>
+							</a>
 						</div>
 					</div>
 				</div>
