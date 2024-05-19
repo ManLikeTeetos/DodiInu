@@ -33,6 +33,7 @@ export const useContract = () => {
 
   const [stakes, setStakes] = useState([]);
   const [records, setRecords] = useState([]);
+  const [transactions, setTransactions] = useState([]);
 
   // //modal const
   // Modal state and functions
@@ -59,7 +60,7 @@ export const useContract = () => {
       // alert("Opps, Something went wrong");
       setError("Oops, something went wrong");
       setModalIsOpen(true);
-	 window.location.reload();
+      window.location.reload();
     }
   };
 
@@ -178,6 +179,30 @@ export const useContract = () => {
       }
     };
 
+    const getTransactions = async () => {
+      try {
+        if (!account) return;
+        const transactions = await contract.getUserTransactions(account);
+
+        setTransactions(() => {
+          return transactions.map((transaction) => {
+            return {
+              id: transaction[0],
+              amount: fromBigNumber(transaction[1]), // Balance
+              staked_time: transaction[2].toString(), // Start time
+              deadline: transaction[3].toString(), // End time
+              duration: Math.floor(transaction[3].toString() - currentSeconds),
+              transaction_type: transaction[4],
+            };
+          });
+        });
+      } catch (err) {
+        // alert("Opps, Something went wrong when retrieving data");
+        setError("Opps, Something went wrong when retrieving data");
+        setModalIsOpen(true);
+      }
+    };
+
     const getRecords = async () => {
       try {
         if (!account) return;
@@ -219,6 +244,7 @@ export const useContract = () => {
     getStakes();
     getRecords();
     getTotalSupply();
+    getTransactions();
   }, [transactionHash, account]);
 
   return {
@@ -238,5 +264,6 @@ export const useContract = () => {
     totalLocked,
     claimAll,
     loading,
+    transactions
   };
 };
