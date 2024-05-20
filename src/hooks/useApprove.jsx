@@ -22,10 +22,10 @@ export const useApprove = () => {
       refetch();
     } catch (err) {
       if (err === undefined) return;
-      alert("Opps, something went wrong!");
+      alert(err.reason || err.message);
     } finally {
       setLoading(false);
-	  window.location.reload();
+      window.location.reload();
     }
   };
 

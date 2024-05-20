@@ -78,7 +78,7 @@ export default function StakingBody() {
       await stake(amount);
       setAmount("");
     } else {
-      approve(amount);
+      await approve(amount);
     }
   }
 
