@@ -27,6 +27,7 @@ export default function StakingBody() {
   const [IsOpen, setIsOpen] = useState(false);
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [amount, setAmount] = useState("");
+  const [formattedAmount, setFormattedAmount] = useState('');
   const { hasAllowance, allowance } = useAllowance();
   const {
     balance,
@@ -168,6 +169,18 @@ export default function StakingBody() {
   const formattotalEarned = Number(totalEarned).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
   const formattotalSupply = Number(totalSupply).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
 
+  const handleAmountChange = (e) => {
+    const value = e.target.value.replace(/,/g, ''); // Remove existing commas
+    if (!isNaN(value) && value !== '') {
+      setAmount(value); // Set the internal value without commas
+      const formattedValue = Number(value).toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 20 });
+      setFormattedAmount(formattedValue); // Set the formatted value with commas for display
+    } else {
+      setAmount('');
+      setFormattedAmount('');
+    }
+  };
+
 
 
   return (
@@ -242,13 +255,9 @@ export default function StakingBody() {
                               Staking Amount
                             </div>
                             <input
-								onChange={(e) => {
-									const value = e.target.value.replace(/,/g, ''); // Remove existing commas
-									const formattedValue = Number(value).toLocaleString(); // Format with commas
-									setAmount(formattedValue);
-								}}
+                              onChange={handleAmountChange}
                               className="stake-bal-amt"
-							  value={amount}
+                              value={formattedAmount}
                               type="text"
                               step={0.1}
                               inputMode="decimal"
