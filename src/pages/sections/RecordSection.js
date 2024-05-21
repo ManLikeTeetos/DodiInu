@@ -14,7 +14,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 export default function Records() {
-  const { transactions, claim } = useContract();
+  const { transactions, claim, stakes } = useContract();
 
   // const stakes = {
   // 	"1": { amount: 859499, balance: 23445454, staked_time: 1704067200, deadline: 1708699200, duration: 180 }, // First record
@@ -43,9 +43,7 @@ export default function Records() {
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
   const [showDatePicker, setShowDatePicker] = useState(false);
-  const [filteredStakes, setFilteredStakes] = useState(
-    Object.values(transactions)
-  );
+  const [filteredStakes, setFilteredStakes] = useState(Object.values(stakes));
 
   const handleCalendarFilter = (dates) => {
     const [start, end] = dates;
@@ -66,17 +64,17 @@ export default function Records() {
   useEffect(() => {
     if (!endDate) return; // Only filter stakes if endDate is selected
 
-    const newFilteredStakes = Object.values(transactions).filter((stake) => {
+    const newFilteredStakes = Object.values(stakes).filter((stake) => {
       if (!startDate) return true;
       const stakeDate = new Date(stake.staked_time * 1000);
       return stakeDate >= startDate && stakeDate <= endDate;
     });
     setFilteredStakes(newFilteredStakes);
-  }, [endDate, transactions, startDate]);
+  }, [endDate, stakes, startDate]);
 
   useEffect(() => {
-    setFilteredStakes(transactions);
-  }, [transactions]);
+    setFilteredStakes(stakes);
+  }, [stakes]);
 
   return (
     <div className="record">
@@ -151,7 +149,7 @@ export default function Records() {
                 <div className="tab-date"> {staked_date} </div>
                 <div className="tab-transtype-content">
                   {" "}
-                  {stake.transaction_type}{" "}
+                  {/* {stake.transaction_type}{" "} */}
                 </div>
                 <div className="tab-amount">{stake.amount}</div>
                 <div className="tab-staketype-content"> 50 Days </div>
