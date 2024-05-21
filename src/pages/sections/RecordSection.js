@@ -74,6 +74,10 @@ export default function Records() {
     setFilteredStakes(newFilteredStakes);
   }, [endDate, transactions, startDate]);
 
+  useEffect(() => {
+    setFilteredStakes(transactions);
+  }, [transactions]);
+
   return (
     <div className="record">
       <div className="record-header">Trade Records</div>

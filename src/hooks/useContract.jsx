@@ -264,6 +264,6 @@ export const useContract = () => {
     totalLocked,
     claimAll,
     loading,
-    transactions
+    transactions,
   };
 };
