@@ -13,9 +13,8 @@ import { currentSeconds } from "../../Helpers";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-export default function Records({showMore}) {
+export default function Records({ showMore }) {
   const { transactions, claim, stakes } = useContract();
-
 
   ///dummy data for test
 
@@ -114,11 +113,10 @@ export default function Records({showMore}) {
     setFilteredStakes(Object.values(transactions));
   }, [transactions]);
 
-
   useEffect(() => {
     if (showMore) {
       const claimTransactions = Object.values(transactions).filter(
-        (transaction) => transaction.transaction_type === "Reward" //take note to use the same alpha format for Reward
+        (transaction) => transaction.transaction_type === "reward" //take note to use the same alpha format for Reward
       );
       setFilteredStakes(claimTransactions);
     }
@@ -188,53 +186,59 @@ export default function Records({showMore}) {
 
             let transactionTypeClass = ""; // Default class
             switch (stake.transaction_type) {
-              case "Reward":
+              case "reward":
                 transactionTypeClass = "reward-type";
                 break;
-              case "Claim":
+              case "claim":
                 transactionTypeClass = "claim-type";
                 break;
-              case "Staking":
+              case "staking":
                 transactionTypeClass = "staking-type";
                 break;
               default:
                 break;
             }
 
-            const isStaking = stake.transaction_type === "Staking";
+            const isStaking = stake.transaction_type === "stake";
             const countdownClassName = isStaking ? "" : "grey-countdown";
-            const formatstakeamount = Number(stake.amount).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+            const formatstakeamount = Number(stake.amount)
+              .toFixed(2)
+              .replace(/(\d)(?=(\d{3})+\.)/g, "$1,");
             return (
               <div key={i} className="record-tab-content">
                 <div className="tab-date"> {staked_date} </div>
-                <div className={`tab-transtype-content ${transactionTypeClass}`}>
-                   {stake.transaction_type}
+                <div
+                  className={`tab-transtype-content ${transactionTypeClass}`}
+                >
+                  {stake.transaction_type}
                 </div>
-                <div className="tab-amount"><span className="green-color"> DODI&nbsp;</span>{formatstakeamount}</div>
+                <div className="tab-amount">
+                  <span className="green-color"> DODI&nbsp;</span>
+                  {formatstakeamount}
+                </div>
                 <CountDown
                   duration={Math.floor(stake.deadline - currentSeconds)}
                   className={countdownClassName}
                 />
                 <div className="tab-time"> {stake_timestamp} </div>
                 <div className="tab-action-cont">
-                {stake.transaction_type === "Staking" ? (
+                  {stake.transaction_type === "stake" ? (
                     <button
-                    disabled={
-                      +stake.deadline > currentSeconds || stake.balance == 0
-                    }
-                    onClick={() => claim(stake.id)}
-                    className={`record-btn ${
-                      +stake.deadline > currentSeconds || stake.balance == 0
-                        ? ""
-                        : "active"
-                    }`}
-                  >
-                    <span className="stake-btn-txt">CLAIM</span>
-                  </button>
+                      disabled={
+                        +stake.deadline > currentSeconds || stake.balance == 0
+                      }
+                      onClick={() => claim(stake.id)}
+                      className={`record-btn ${
+                        +stake.deadline > currentSeconds || stake.balance == 0
+                          ? ""
+                          : "active"
+                      }`}
+                    >
+                      <span className="stake-btn-txt">CLAIM</span>
+                    </button>
                   ) : (
                     "" // Render nothing if transaction type is not "staking"
                   )}
-                 
                 </div>
               </div>
             );
