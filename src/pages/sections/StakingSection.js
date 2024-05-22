@@ -6,10 +6,13 @@ import StakingDog3 from "../../styles/assets/images/staking3.png";
 
 
 export default function StakingSection(){
+
+	
 	const [activeTab, setActiveTab] = useState('HOW IT WORKS'); // State to track active tab
 
 	const handleTabClick = (tab) => {
 		setActiveTab(tab); // Update active tab when a tab is clicked
+		
 	};
 
 	return(
@@ -25,12 +28,12 @@ export default function StakingSection(){
 				>
 					HOW IT WORKS
 				</div>
-				<div
+				{/* <div
 					className={`staking-segment-header ${activeTab === 'REWARDS' ? 'active' : ''}`}
 					onClick={() => handleTabClick('REWARDS')}
 				>
 					REWARDS
-				</div>
+				</div> */}
 			</div>
 			<div className="staking-columns">
 				{activeTab === 'HOW IT WORKS' && (
@@ -112,7 +115,7 @@ export default function StakingSection(){
 					</>
 				)}
 
-				{activeTab === 'REWARDS' && (
+				{/* {activeTab === 'REWARDS' && (
 					<>
 						<div className="staking-content-container">
 							<div className="staking-content-box">
@@ -189,7 +192,7 @@ export default function StakingSection(){
 							<div className="staking-image-reward"></div>
 						</div>
 					</>
-				)}
+				)} */}
 
 
 			</div>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const CountDown = ({ duration }) => {
+const CountDown = ({ duration, className }) => {
 	let time = 0;
 	if(duration > 0){
 		time = duration;
@@ -34,25 +34,25 @@ const CountDown = ({ duration }) => {
 	const seconds = Math.floor(timeRemaining % 60);
 
 	return (
-		<div className="stake-count">
-			<div className="stake-count-in">
-				<span className="stake-count-txt">{timeRemaining <= 0 ? 0 : days}</span>
-				<span className="stake-count-title">Days</span>
+		<div className={`stake-count ${className}`}>
+			<div className={`stake-count-in ${className}`}>
+				<span className={`stake-count-txt ${className}`}>{timeRemaining <= 0 ? 0 : days}</span>
+				<span className={`stake-count-title ${className}`}>Days</span>
 			</div>
-			<div className="stake-count-divider">:</div>
+			<div className={`stake-count-divider ${className}`}>:</div>
 			<div className="stake-count-in">
-				<span className="stake-count-txt">{timeRemaining <= 0 ? 0 : hours}</span>
-				<span className="stake-count-title">Hours</span>
+				<span className={`stake-count-txt ${className}`}>{timeRemaining <= 0 ? 0 : hours}</span>
+				<span className={`stake-count-title ${className}`}>Hours</span>
 			</div>
-			<div className="stake-count-divider">:</div>
+			<div className={`stake-count-divider ${className}`}>:</div>
 			<div className="stake-count-in">
-				<span className="stake-count-txt">{timeRemaining <= 0 ? 0 : minutes}</span>
-				<span className="stake-count-title">Minutes</span>
+				<span className={`stake-count-txt ${className}`}>{timeRemaining <= 0 ? 0 : minutes}</span>
+				<span className={`stake-count-title ${className}`}>Minutes</span>
 			</div>
-			<div className="stake-count-divider">:</div>
+			<div className={`stake-count-divider ${className}`}>:</div>
 			<div className="stake-count-in">
-				<span className="stake-count-txt">{timeRemaining <= 0 ? 0 : seconds}</span>
-				<span className="stake-count-title">Seconds</span>
+				<span className={`stake-count-txt ${className}`}>{timeRemaining <= 0 ? 0 : seconds}</span>
+				<span className={`stake-count-title ${className}`}>Seconds</span>
 			</div>
 		</div>
 	);

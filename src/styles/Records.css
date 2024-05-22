@@ -216,6 +216,30 @@
 	color: #00CD6A
 }
 
+.tab-transtype-content.reward-type {
+	width: 14.69%;
+		margin: auto;
+		display: flex;
+		justify-content: center;
+	color: #00CD6A
+}
+
+.tab-transtype-content.claim-type {
+	width: 14.69%;
+		margin: auto;
+		display: flex;
+		justify-content: center;
+	color: #EF4C41;
+}
+
+.tab-transtype-content.staking-type {
+	width: 14.69%;
+		margin: auto;
+		display: flex;
+		justify-content: center;
+	color: white;
+}
+
 .tab-amount {
 	width: 14.69%;
 	margin: auto;

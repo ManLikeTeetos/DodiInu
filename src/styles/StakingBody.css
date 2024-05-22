@@ -420,7 +420,11 @@ button {
 	display: flex;
 		flex-direction: row;
 		box-sizing: border-box;
+		
 }
+
+
+
 
 .stake-count-in {
 	margin-right: 8.3px;
@@ -459,6 +463,23 @@ margin: 0 3.6px 0 3px;
 		line-height: 1.4;
 		color: #00CD6A;
 }
+
+.stake-count-in.grey-countdown {
+	color: #545454;
+}
+
+.stake-count-txt.grey-countdown {
+	color: #545454;
+}
+
+.stake-count-title.grey-countdown {
+	color: #545454;
+}
+
+.stake-count-divider.grey-countdown {
+	color: #545454;
+}
+
 
 .stake-reward {
 	display: flex;
@@ -728,7 +749,6 @@ margin: 0 3.6px 0 3px;
 	display: flex;
 	width: 297px;
 	height: 300px;
-	overflow-y : scroll;
 	flex-direction: column;
 	overflow-x : hidden;
 }

@@ -34,7 +34,7 @@ export default function StakingBody() {
     stake,
     latestStakes,
     claim,
-	  records,
+    records,
     totalSupply,
     totalEarned,
     error,
@@ -51,7 +51,7 @@ export default function StakingBody() {
     deadline: latest_deadline,
     balance: latest_balance,
     staked_time: latest_staked_time,
-	duration: check_duration,
+	  duration: check_duration,
   } = latestStakes;
 
 	//const duration = latest_deadline - latest_staked_time;
@@ -68,6 +68,16 @@ export default function StakingBody() {
   //   amount => 12.3445,
   // ]
 
+  //dummy data section
+  // const dummyRecords = [
+  //   { createdAt: 1627830000, amount: 5000 },
+  //   { createdAt: 1627833600, amount: 3000 },
+  //   { createdAt: 1627837200, amount: 7000 },
+  //   { createdAt: 1627840800, amount: 6000 },
+  //   { createdAt: 1627844400, amount: 8000 },
+  // ];
+
+  // const [ records, setRecords] = useState(dummyRecords);
 
 
   function openModal() {
@@ -96,9 +106,11 @@ export default function StakingBody() {
 
   //staking and records tab
   const [activeTab, setActiveTab] = useState("stake");
+  const [showMore, setShowMore] = useState(false);
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
+    setShowMore(false);
   };
 
   ///External links
@@ -180,6 +192,15 @@ export default function StakingBody() {
       setFormattedAmount('');
     }
   };
+
+
+  ///show more for records
+const [showAllRecords, setShowAllRecords] = useState(false);
+const handleShowMore = () => {
+  setActiveTab("records");
+  setShowMore(true);
+};
+const recordsToShow = showAllRecords ? records : records.slice(0, 3);
 
 
 
@@ -413,7 +434,7 @@ export default function StakingBody() {
 				 {Object.keys(records).length !== 0 && (
 
 					<div className="stake-record-pop">
-						{records.map((claims, i) => {
+						{recordsToShow.map((claims, i) => {
 							const { claim_date, claim_timestamp } = convertClaimsSecondsToDateTime(claims.createdAt);
 
 							return(
@@ -435,6 +456,11 @@ export default function StakingBody() {
 
 							 );
 						})}
+             {records.length > 3 && !showAllRecords && (
+                <button onClick={handleShowMore} className="stake-btn active">
+                    <span className="stake-btn-txt">SEE ALL</span>
+                </button>
+             )}
 
 					</div>
 				  )}
@@ -491,7 +517,7 @@ export default function StakingBody() {
           </div>
         )}
 
-        {activeTab === "records" && <Records />}
+        {activeTab === "records" && <Records showMore={showMore} />}
       </div>
     </div>
   );
