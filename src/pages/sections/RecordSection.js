@@ -43,7 +43,9 @@ export default function Records() {
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
   const [showDatePicker, setShowDatePicker] = useState(false);
-  const [filteredStakes, setFilteredStakes] = useState(Object.values(stakes));
+  const [filteredStakes, setFilteredStakes] = useState(
+    Object.values(transactions)
+  );
 
   const handleCalendarFilter = (dates) => {
     const [start, end] = dates;
@@ -64,17 +66,17 @@ export default function Records() {
   useEffect(() => {
     if (!endDate) return; // Only filter stakes if endDate is selected
 
-    const newFilteredStakes = Object.values(stakes).filter((stake) => {
+    const newFilteredStakes = Object.values(transactions).filter((stake) => {
       if (!startDate) return true;
       const stakeDate = new Date(stake.staked_time * 1000);
       return stakeDate >= startDate && stakeDate <= endDate;
     });
     setFilteredStakes(newFilteredStakes);
-  }, [endDate, stakes, startDate]);
+  }, [endDate, transactions, startDate]);
 
   useEffect(() => {
-    setFilteredStakes(stakes);
-  }, [stakes]);
+    setFilteredStakes(transactions);
+  }, [transactions]);
 
   return (
     <div className="record">
