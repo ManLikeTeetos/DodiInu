@@ -35,10 +35,12 @@ export default function Road(){
 								<img className="road-graph-img" src={Pilot} alt="Pilot" />
 								<div className="road-map-content-down">
 									<div className="road-date">
-										Jan 20th 2024
+										HOME BOY <br/>
+										(DEGEN)
 									</div>
 									<span className="road-map-title">
-										Lorem ipsum dolor sit amet consectetur.
+										<span className="green-color"> DODI </span> Community <br/>
+										3,000
 									</span>
 								</div>
 							</div>
@@ -46,10 +48,12 @@ export default function Road(){
 								<img className="road-graph-img" src={Jet} alt="Pilot" />
 								<div className="road-map-content-down">
 									<div className="road-date">
-										Jan 20th 2024
+										HUSTLER(CRYPTO)  <br/>
+										<span className="green-color">DODI </span> SHOP
 									</div>
 									<span className="road-map-title">
-										Lorem ipsum dolor sit amet consectetur.
+									<span className="green-color"> DODI </span> Community <br/>
+										10,000
 									</span>
 								</div>
 							</div>
@@ -57,10 +61,12 @@ export default function Road(){
 								<img className="road-graph-img" src={Plane} alt="Pilot" />
 								<div className="road-map-content-down">
 									<div className="road-date">
-										Jan 20th 2024
+										GEE(G)  <br/>
+										<span className="green-color">DODI </span> Season 1 & 2
 									</div>
 									<span className="road-map-title">
-										Lorem ipsum dolor sit amet consectetur.
+										<span className="green-color"> DODI </span> Community <br/>
+										50,000
 									</span>
 								</div>
 							</div>
@@ -68,10 +74,12 @@ export default function Road(){
 								<img className="road-graph-img" src={Earth} alt="Pilot" />
 								<div className="road-map-content-down">
 									<div className="road-date">
-										Jan 20th 2024
+										OLD GEE(O.G)  <br/>
+										<span className="green-color">DODI </span> MUSIC
 									</div>
 									<span className="road-map-title">
-										Lorem ipsum dolor sit amet consectetur.
+										<span className="green-color"> DODI </span> Community <br/>
+										100,000
 									</span>
 								</div>
 							</div>
@@ -79,10 +87,12 @@ export default function Road(){
 								<img className="road-graph-img" src={Rocket} alt="Pilot" />
 								<div className="road-map-content-down">
 									<div className="road-date">
-										Jan 20th 2024
+										DOUBLE OLD GEE(D.O.G)  <br/>
+										<span className="green-color">DODI </span> World Payments
 									</div>
 									<span className="road-map-title">
-										Lorem ipsum dolor sit amet consectetur.
+										<span className="green-color"> DODI </span> Community <br/>
+										500,000
 									</span>
 								</div>
 							</div>
@@ -90,10 +100,12 @@ export default function Road(){
 								<img className="road-graph-img" src={Astro} alt="Pilot" />
 								<div className="road-map-content-down">
 									<div className="road-date">
-										Jan 20th 2024
+										BOSS (<span className="green-color"> DODI </span>)  <br/>
+										Elon Bezoz
 									</div>
 									<span className="road-map-title">
-										Lorem ipsum dolor sit amet consectetur.
+										<span className="green-color"> DODI </span> Community <br/>
+										1,000,000
 									</span>
 								</div>
 							</div>
