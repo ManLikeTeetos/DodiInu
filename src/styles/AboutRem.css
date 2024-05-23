@@ -84,7 +84,7 @@
 .about-columns {
 	position: relative;
 	margin-bottom: 3.9625rem;
-	height: 41.1625rem;
+	/* height: 41.1625rem; */
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
