@@ -52,11 +52,12 @@ export default function StakingSection(){
 									<div className="staking-content-column">
 										<div className="staking-content-subcolumn">
 											<div className="staking-content-title">
-												How it Works
+												BUY $DODI:
 											</div>
 											<div className="staking-content-text">
-												Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
-												lorem urna luctus amet leo at. Commodo mattis nisl.<br />
+												Connect your wallet on Metamask, 
+												click on the Buy $DODI and get to Birdeye. 
+												Ensure your wallet is connected, then swap USDT for $DODI
 											</div>
 										</div>
 									</div>
@@ -75,11 +76,14 @@ export default function StakingSection(){
 									<div className="staking-content-column">
 										<div className="staking-content-subcolumn">
 											<div className="staking-content-title">
-												How it Works
+												STAKE $DODI:
 											</div>
 											<div className="staking-content-text">
-												Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
-												lorem urna luctus amet leo at. Commodo mattis nisl.<br />
+												Staking $DODI helps keep $DODI scarce, 
+												thereby increasing its value for holders. 
+												Stake $DODI, your tokens are locked for 50 days, 
+												while you earn $DODI daily.
+
 											</div>
 										</div>
 									</div>
@@ -97,11 +101,13 @@ export default function StakingSection(){
 										<div className="staking-content-column">
 											<div className="staking-content-subcolumn">
 												<div className="staking-content-title">
-													How it Works
+													RELAX & EARN $DODI:
 												</div>
 												<div className="staking-content-text">
-													Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
-													lorem urna luctus amet leo at. Commodo mattis nisl.<br />
+													Earn $DODI daily from the transaction tax earned 
+													from buying or selling of $DODI. 100% of the tax 
+													is redistributed to holders who staked $DODI, 
+													great source of earning passive income.
 												</div>
 											</div>
 										</div>

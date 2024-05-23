@@ -40,7 +40,9 @@ export default function Footer(){
 				</div>
 				<div className="footer-p">
 					<span className="footer-content">
-						Lorem ipsum dolor sit amet consectetur. Sed ac quis euismod vivamus et vitae a cras. Velit pharetra bibendum magnis mauris in luctus viverra blandit mollis.
+						Decentralized Game for DOGS fed up with nonsense 
+						Shitcoins out there. This is for Fun and Entertainment purposes only. 
+						$DODI Token is Useless and only Valuable to the DOGS in Cryptoverse.
 					</span>
 				</div>
 			</div>

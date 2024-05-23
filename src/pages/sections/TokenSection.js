@@ -15,9 +15,9 @@ export default function TokenSection() {
 			<div className="token-div-2">
 				<div className="token-div-3">Tokenomics</div>
 				<div className="token-div-4">
-					Lorem ipsum dolor sit amet consectetur. Nullam in diam cursus purus
-					vitae lectus a. Egestas arcu convallis morbi leo quis velit. Dis ut
-					faucibus senectus enim quam ac bibendum porttitor. Mattis eget.
+					Fair Launch, No Presale, Token Distribution through DEX's 
+					and 2% Of Tokens Airdropped to Early Supporters. 
+					Liquidity and Project financed by Creator.
 				</div>
 				<div className="token-div-5">
 					<div className="token-div-6">Total Supply</div>
