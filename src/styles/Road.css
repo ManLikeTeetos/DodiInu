@@ -357,6 +357,12 @@
 		margin-bottom: 97px;
 	}
 
+	.road-map-content-down{
+		width: 200px;
+		margin-right: 300%;
+		align-self: center;
+	}
+
 		.container-12 {
 			margin: 450px 14px 383px 0;
 			display: flex;
