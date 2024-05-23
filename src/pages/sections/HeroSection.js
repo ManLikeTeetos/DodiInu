@@ -42,9 +42,8 @@ export default function HeroSection(){
 								<div className="hero-4">
 									<div className="hero-5">We all gonna make it</div>
 									<div className="hero-6">
-										Lorem ipsum dolor sit amet consectetur. Nullam in diam cursus
-										purus vitae lectus a. Egestas arcu convallis morbi leo quis
-										velit. Dis faucibus{" "}
+										Decentralized Platform For All Dogs In Crypto World To Make Stable Daily Money And Grow Richer. 
+										Buy <span className="green-color"> $DODI </span>Stake And Earn Passive Income Daily{" "}
 									</div>
 									<div className="hero-7">
 										<div className="hero-8">

@@ -70,11 +70,12 @@ export default function AboutSection(){
 									<div className="about-content-column">
 										<div className="about-content-subcolumn">
 											<div className="about-content-title">
-												Mission
+												I AM DODI:
 											</div>
 											<div className="about-content-text">
-												Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
-												lorem urna luctus amet leo at. Commodo mattis nisl.  <br />
+												DODI is a Billionaire big DOG we all aspire to be. 
+												DODI is the son of DOGE and SHIBA. Follow the story 
+												as he unites the DOGLANDS and bring prosperity to all dogs in the crypto world.<br />
 											</div>
 											</div>
 										</div>
@@ -93,11 +94,11 @@ export default function AboutSection(){
 									<div className="about-content-column">
 										<div className="about-content-subcolumn">
 											<div className="about-content-title">
-												Mission
+												ALL DOGS UNITED:
 											</div>
 											<div className="about-content-text">
-												Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
-												lorem urna luctus amet leo at. Commodo mattis nisl.  <br />
+												DODI and his crew, DROID, ELANA, and DOGA unite other great Dogs, FLOKI, BONK, AKITA, and MYRO, 
+												as they fight the Empire of ZANGA to free all DOGS from misfortunes.
 											</div>
 											</div>
 										</div>
@@ -115,11 +116,13 @@ export default function AboutSection(){
 									<div className="about-content-column">
 										<div className="about-content-subcolumn">
 											<div className="about-content-title">
-												Mission
+												THE DOGLANDS:
 											</div>
 											<div className="about-content-text">
-												Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
-												lorem urna luctus amet leo at. Commodo mattis nisl.  <br />
+												Join DODI on his mission as we explore the exciting stories 
+												of conquest and triumph as he saves the DOGLAND Cities of 
+												NEON, CANINE, SOLAN and DOGOPOLIS from the Cartels 
+												and Rug pullers while maintaining prosperity for all DOGS (Crypto Hustlers)
 											</div>
 											</div>
 										</div>
