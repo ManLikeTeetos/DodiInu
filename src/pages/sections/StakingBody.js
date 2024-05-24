@@ -68,9 +68,9 @@ export default function StakingBody() {
   //   amount => 12.3445,
   // ]
 
-  //dummy data section
+  ////dummy data section
   // const dummyRecords = [
-  //   { createdAt: 1627830000, amount: 5000 },
+  //   { createdAt: 1627830000, amount: 50000000 },
   //   { createdAt: 1627833600, amount: 3000 },
   //   { createdAt: 1627837200, amount: 7000 },
   //   { createdAt: 1627840800, amount: 6000 },
@@ -180,15 +180,9 @@ export default function StakingBody() {
   const dollarValue = 0.0000137;
 
   ///fornat balances
-  const formattedBalance = Number(balance)
-    .toFixed(5)
-    .replace(/(\d)(?=(\d{3})+\.)/g, "$1,");
-  const formattotalLocked = Number(totalLocked)
-    .toFixed(5)
-    .replace(/(\d)(?=(\d{3})+\.)/g, "$1,");
-  const formatredeemable = Number(redeemable)
-    .toFixed(2)
-    .replace(/(\d)(?=(\d{3})+\.)/g, "$1,");
+  const formattedBalance = Number(balance).toFixed(5).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+  const formattotalLocked = Number(totalLocked).toFixed(5).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+  const formatredeemable = Number(redeemable).toFixed(5).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
 
   const formattotalEarned = Number(totalEarned)
     .toFixed(2)

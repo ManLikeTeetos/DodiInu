@@ -84,11 +84,7 @@ a {
 
 .footer-content {
 	overflow-wrap: break-word;
-	font-family: Inter,
-		-apple-system,
-		Roboto,
-		Helvetica,
-		sans-serif;
+	font-family: "M PLUS Rounded 1c", sans-serif;
 	font-weight: 400;
 	font-size: 0.9rem;
 	line-height: 1.5;

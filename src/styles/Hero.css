@@ -118,8 +118,7 @@
         .hero-6 {
           color: rgba(255, 255, 255, 0.72);
           margin-top: 4px;
-          font: 400 23px/32px Inter, -apple-system, Roboto, Helvetica,
-            sans-serif;
+          font: 400 23px/32px "M PLUS Rounded 1c", sans-serif;
         }
         @media (max-width: 1024px) {
           .hero-6 {

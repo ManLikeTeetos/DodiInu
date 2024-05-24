@@ -281,7 +281,7 @@
 .staking-content-title {
 	color: rgba(255, 255, 255, 0.92);
 	font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
-	font-size: 1.1875rem;
+	font-size: 17px;
 	/* 19px converted to rem */
 	font-style: normal;
 	font-weight: 700;
@@ -290,8 +290,8 @@
 
 .staking-content-text {
 	color: rgba(255, 255, 255, 0.72);
-	font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
-	font-size: 1rem;
+	font-family: "M PLUS Rounded 1c", sans-serif;
+	font-size: 16px;
 	/* 16px converted to rem */
 	font-style: normal;
 	font-weight: 400;

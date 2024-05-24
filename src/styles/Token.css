@@ -68,8 +68,7 @@
 	max-width: 720px;
 	color: rgba(255, 255, 255, 0.token-72);
 	margin-top: 24px;
-	font: 400 15px/19px Rubik, -apple-system, Roboto, Helvetica,
-		sans-serif;
+	font: 400 15px/19px "M PLUS Rounded 1c", sans-serif;
 }
 
 @media (max-width: 1024px) {
