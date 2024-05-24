@@ -132,8 +132,9 @@ export const useContract = () => {
         const stake = stakes[stakes.length - 1];
 
         if (stakes.length) {
-          const staking_period =
-            Math.floor(stake[4].toString() - Math.floor(Date.now() / 1000));
+          const staking_period = Math.floor(
+            stake[4].toString() - Math.floor(Date.now() / 1000)
+          );
           setLatestStakes({
             id: stake[0],
             amount: fromBigNumber(stake[1]),
