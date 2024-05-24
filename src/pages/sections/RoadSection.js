@@ -7,11 +7,15 @@ import Earth from "../../styles/assets/images/earth.png";
 import Rocket from "../../styles/assets/images/rocket.png";
 import Astro from "../../styles/assets/images/astro.png";
 
-//mobile
-import Vector7 from "../../styles/assets/vectors/Vector 7.png";
-import Vector7_2 from "../../styles/assets/vectors/Vector 72.png";
-import Vector6 from "../../styles/assets/vectors/Vector 6.png";
-import Vector7_4 from "../../styles/assets/vectors/Vector 74.png";
+
+//SVGS
+import { ReactComponent as HomeBoy} from "../../styles/assets/vectors/Homeboy.svg";
+import { ReactComponent as Hustler} from "../../styles/assets/vectors/hustler.svg";
+import { ReactComponent as Gee} from "../../styles/assets/vectors/Gee.svg";
+import { ReactComponent as OldGee} from "../../styles/assets/vectors/oldgee.svg";
+import { ReactComponent as DOG} from "../../styles/assets/vectors/DOG.svg";
+import { ReactComponent as Boss} from "../../styles/assets/vectors/Boss.svg";
+
 
 export default function Road(){
 	return(
@@ -39,7 +43,7 @@ export default function Road(){
 										(DEGEN)
 									</div>
 									<span className="road-map-title">
-										<span className="green-color"> DODI </span> Community <br/>
+										<span className="green-color"> DODI </span> Community <HomeBoy /> <br/>
 										3,000
 									</span>
 								</div>
@@ -48,8 +52,9 @@ export default function Road(){
 								<img className="road-graph-img" src={Jet} alt="Pilot" />
 								<div className="road-map-content-down">
 									<div className="road-date">
-										HUSTLER(CRYPTO)  <br/>
-										<span className="green-color">DODI </span> SHOP
+										HUSTLER <br/>
+										(CRYPTO)  <br/>
+										<span className="green-color">DODI </span> SHOP <Hustler />
 									</div>
 									<span className="road-map-title">
 									<span className="green-color"> DODI </span> Community <br/>
@@ -61,8 +66,9 @@ export default function Road(){
 								<img className="road-graph-img" src={Plane} alt="Pilot" />
 								<div className="road-map-content-down">
 									<div className="road-date">
-										GEE(G)  <br/>
-										<span className="green-color">DODI </span> Season 1 & 2
+										GEE <br/>
+										(G) <br/>
+										<span className="green-color">DODI </span> Season 1 & 2 <Gee />
 									</div>
 									<span className="road-map-title">
 										<span className="green-color"> DODI </span> Community <br/>
@@ -74,8 +80,9 @@ export default function Road(){
 								<img className="road-graph-img" src={Earth} alt="Pilot" />
 								<div className="road-map-content-down">
 									<div className="road-date">
-										OLD GEE(O.G)  <br/>
-										<span className="green-color">DODI </span> MUSIC
+										OLD GEE <br/>
+										(O.G)  <br/>
+										<span className="green-color">DODI </span> MUSIC <OldGee/>
 									</div>
 									<span className="road-map-title">
 										<span className="green-color"> DODI </span> Community <br/>
@@ -87,8 +94,9 @@ export default function Road(){
 								<img className="road-graph-img" src={Rocket} alt="Pilot" />
 								<div className="road-map-content-down">
 									<div className="road-date">
-										DOUBLE OLD GEE(D.O.G)  <br/>
-										<span className="green-color">DODI </span> World Payments
+										DOUBLE OLD GEE <br/>
+										(D.O.G)  <br/>
+										<span className="green-color">DODI </span> World Payments <DOG/>
 									</div>
 									<span className="road-map-title">
 										<span className="green-color"> DODI </span> Community <br/>
@@ -100,8 +108,9 @@ export default function Road(){
 								<img className="road-graph-img" src={Astro} alt="Pilot" />
 								<div className="road-map-content-down">
 									<div className="road-date">
-										BOSS (<span className="green-color"> DODI </span>)  <br/>
-										Elon Bezoz
+										BOSS <br/>
+										(<span className="green-color"> DODI </span>)  <br/>
+										Elon Bezoz <Boss/>
 									</div>
 									<span className="road-map-title">
 										<span className="green-color"> DODI </span> Community <br/>
