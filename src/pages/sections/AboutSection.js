@@ -75,7 +75,8 @@ export default function AboutSection(){
 											<div className="about-content-text">
 												DODI is a Billionaire big DOG we all aspire to be. 
 												DODI is the son of DOGE and SHIBA. Follow the story 
-												as he unites the DOGLANDS and bring prosperity to all dogs in the crypto world.<br />
+												as he unites the DOGLANDS and bring prosperity 
+												to all DOGS in the Crypto World.<br />
 											</div>
 											</div>
 										</div>
@@ -207,7 +208,7 @@ export default function AboutSection(){
 											</div>
 											<div className="about-content-text">
 												The Crypto World is risky because all Animals, the DOGS, 
-												Cats, Frogs, Cows, etc. <span className="green-color"> We all in it to make it. </span>
+												Cats, Frogs, Cows, etc. <span className="green-color"> We All Gonna Make It. </span>
 												Yes, but without organization and collaboration, 
 												very few win and the rest are losing. 
 												DODI, the Great Son of DOGE & SHIBA is here with better solutions for all.
@@ -272,7 +273,8 @@ export default function AboutSection(){
 												maintains stability. Just as 20 people trying to leave a hall 
 												simultaneously would cause chaos, or a bank would crash 
 												if all customers withdrew funds at once, 
-												the SEP (Segmented Exit Protocol) manages exit times for DOGS staking $DODI. This prevents sudden price drops and ensures $DODI remains scarce, thus supporting its price.
+												the SEP (Segmented Exit Protocol) manages exit times for DOGS staking $DODI. 
+												This prevents sudden price drops and ensures $DODI remains scarce, thus supporting its price.
 											</div>
 											</div>
 										</div>
@@ -297,7 +299,7 @@ export default function AboutSection(){
 												100X and 1000X happens but with time. No need of jumping 
 												from one shitcoin to another, wanting overnight success, 
 												meanwhile losing money steady. Join DODI and lets get it right.
-												Buy $DODI, stake and earn daily. <span className="green-color"> We all gonna make it. </span>
+												Buy $DODI, stake and earn daily. <span className="green-color"> We All Gonna Make It. </span>
 											</div>
 											</div>
 										</div>
