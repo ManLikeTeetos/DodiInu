@@ -18,6 +18,7 @@ export const useContract = () => {
   const [balance, setBalance] = useState(0);
   const [totalSupply, setTotalSupply] = useState(0);
   const [loading, setLoading] = useState(false);
+  const [fetching, setFetching] = useState(false);
   const [totalEarned, setTotalEarned] = useState(0);
   const [totalLocked, setTotalLocked] = useState(0);
   const [redeemable, setRedeemable] = useState(0);
@@ -124,19 +125,22 @@ export const useContract = () => {
   useEffect(() => {
     const getStakes = async () => {
       try {
+        setFetching(true);
         if (!account) return;
         const stakes = await contract.getUserStakes(account);
 
         const stake = stakes[stakes.length - 1];
 
         if (stakes.length) {
+          const staking_period =
+            Math.floor(stake[4].toString() - Math.floor(Date.now() / 1000));
           setLatestStakes({
             id: stake[0],
             amount: fromBigNumber(stake[1]),
             balance: fromBigNumber(stake[2]),
             staked_time: stake[3].toString(),
             deadline: stake[4].toString(),
-            duration: Math.floor(stake[4].toString() - currentSeconds),
+            duration: staking_period,
           });
         }
 
@@ -172,7 +176,9 @@ export const useContract = () => {
             };
           });
         });
+        setFetching(false);
       } catch (err) {
+        setFetching(false);
         // alert("Opps, Something went wrong when retrieving data");
         setError("Opps, Something went wrong when retrieving data");
         setModalIsOpen(true);
@@ -265,5 +271,6 @@ export const useContract = () => {
     claimAll,
     loading,
     transactions,
+    fetching,
   };
 };

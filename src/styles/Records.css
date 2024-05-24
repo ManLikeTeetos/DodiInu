@@ -9,124 +9,124 @@
 
 .record-header {
 	margin: 0 60px 4px 60px;
-		display: inline-block;
-		align-self: flex-start;
-		overflow-wrap: break-word;
-		font-family: 'Inter';
-		font-weight: 700;
-		font-size: 28px;
-		line-height: 1.4;
-		color: #FFFFFF;
+	display: inline-block;
+	align-self: flex-start;
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 1.4;
+	color: #FFFFFF;
 }
 
 .record-subheader {
 	margin: 0 60px 24px 60px;
-		display: inline-block;
-		align-self: flex-start;
-		overflow-wrap: break-word;
-		font-family: 'Inter';
-		font-weight: 400;
-		font-size: 13px;
-		line-height: 1.4;
-		color: var(--secondarysecondary-300, #545454);
+	display: inline-block;
+	align-self: flex-start;
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 1.4;
+	color: var(--secondarysecondary-300, #545454);
 }
 
 .record-body {
 	position: relative;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		padding-bottom: 114px;
-		width: auto;
-		box-sizing: border-box;
-		margin: 0px 40px;
-		align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-bottom: 114px;
+	width: auto;
+	box-sizing: border-box;
+	margin: 0px 40px;
+	align-items: center;
 }
 
 .record-filter {
 	background: #000000;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		padding: 20px 40px;
-		width: 100%;
-		height: fit-content;
-		box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 20px 40px;
+	width: 100%;
+	height: fit-content;
+	box-sizing: border-box;
 }
 
 .record-search {
 	border-radius: 8px;
-		border: 1px solid #00CD6A;
-		display: flex;
-		flex-direction: row;
-		padding: 12px 0 12px 20.3px;
-		width: 291px;
-		box-sizing: border-box;
+	border: 1px solid #00CD6A;
+	display: flex;
+	flex-direction: row;
+	padding: 12px 0 12px 20.3px;
+	width: 291px;
+	box-sizing: border-box;
 }
 
 .record-innersearch {
 	margin: 0.2px 11.8px 0.8px 0;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		width: 16.9px;
-		height: 16.9px;
-		box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 16.9px;
+	height: 16.9px;
+	box-sizing: border-box;
 }
 
 .record-icon {
 	width: 16.9px;
-		height: 16.9px;
+	height: 16.9px;
 }
 
 .search-records {
 	overflow-wrap: break-word;
-		font-family: 'Inter';
-		font-weight: 400;
-		font-size: 13px;
-		line-height: 1.4;
-		color: var(--secondarysecondary-300, #545454);
+	font-family: 'Inter';
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 1.4;
+	color: var(--secondarysecondary-300, #545454);
 }
 
 .record-cal {
 	margin: 4px 0;
-		display: flex;
-		flex-direction: row;
-		box-sizing: border-box;
-		position: relative;
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+	position: relative;
 }
 
-		.react-datepicker {
-			position: absolute !important;
-			z-index: 9999;
-			/* Ensure it appears on top */
-		}
+.react-datepicker {
+	position: absolute !important;
+	z-index: 9999;
+	/* Ensure it appears on top */
+}
 
 .record-innercal {
 	border-radius: 8px;
-		border: 1px solid #00CD6A;
-		margin-right: 20px;
-		display: flex;
-		flex-direction: row;
-		padding: 8px 19.9px 8px 23px;
-		box-sizing: border-box;
-		width: auto;
+	border: 1px solid #00CD6A;
+	margin-right: 20px;
+	display: flex;
+	flex-direction: row;
+	padding: 8px 19.9px 8px 23px;
+	box-sizing: border-box;
+	width: auto;
 }
 
 .record-cal-div {
 	margin: 3px 14px 3.8px 0;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		width: 12px;
-		height: 11.2px;
-		box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 12px;
+	height: 11.2px;
+	box-sizing: border-box;
 }
 
 .record-cal-icon {
 	width: 20px;
-		height: 20px;
-		align-self: center;
+	height: 20px;
+	align-self: center;
 
 }
 
@@ -196,62 +196,63 @@
 .tab-date {
 	width: 14.69%;
 	margin: auto;
-		display: flex;
-		justify-content: center;
-		color:#FFFFFF
+	display: flex;
+	justify-content: center;
+	color: #FFFFFF
 }
 
 .tab-transtype {
 	width: 14.69%;
 	margin: auto;
-		display: flex;
-		justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .tab-transtype-content {
 	width: 14.69%;
-		margin: auto;
-		display: flex;
-		justify-content: center;
-	color: #00CD6A
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	color: #00CD6A;
+	text-transform: capitalize;
 }
 
 .tab-transtype-content.reward-type {
 	width: 14.69%;
-		margin: auto;
-		display: flex;
-		justify-content: center;
+	margin: auto;
+	display: flex;
+	justify-content: center;
 	color: #00CD6A
 }
 
 .tab-transtype-content.claim-type {
 	width: 14.69%;
-		margin: auto;
-		display: flex;
-		justify-content: center;
+	margin: auto;
+	display: flex;
+	justify-content: center;
 	color: #EF4C41;
 }
 
 .tab-transtype-content.staking-type {
 	width: 14.69%;
-		margin: auto;
-		display: flex;
-		justify-content: center;
+	margin: auto;
+	display: flex;
+	justify-content: center;
 	color: white;
 }
 
 .tab-amount {
 	width: 14.69%;
 	margin: auto;
-		display: flex;
-		justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .tab-staketype {
 	width: 14.69%;
 	margin: auto;
-		display: flex;
-		justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .tab-staketype-content {
@@ -260,60 +261,60 @@
 	display: flex;
 	justify-content: center;
 	font-weight: 700;
-		font-size: 18px;
-		line-height: 1.4;
+	font-size: 18px;
+	line-height: 1.4;
 }
 
 .tab-cntdown {
 	width: 14.75%;
 	margin: auto;
-		display: flex;
-		justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .tab-time {
 	width: 14.69%;
 	margin: auto;
-		display: flex;
-		justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .tab-action {
 	width: 8.66%;
 	margin: auto;
-		display: flex;
-		justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .tab-checkbox {
 	width: 13.3px;
 	height: 13.3px;
 	margin: auto;
-		display: flex;
-		justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 
 .record-tab-content {
 	display: flex;
-		flex-direction: row;
-		height: 44px;
-		background-color: #000;
-		overflow-wrap: break-word;
-			font-family: 'Inter';
-			font-weight: 400;
-			font-size: 18px;
-			line-height: 1.4;
-			color: rgba(255, 255, 255, 0.92);
+	flex-direction: row;
+	height: 44px;
+	background-color: #000;
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.4;
+	color: rgba(255, 255, 255, 0.92);
 }
 
 .tab-action-cont {
 	width: 8.66%;
-		margin: auto;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 
 }
 
@@ -348,7 +349,7 @@
 	color: white;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
 
 	.record {
 		margin-top: 41px;
@@ -378,109 +379,110 @@
 		width: 100%;
 		margin: 0px 0px;
 	}
-		.record-filter {
-			background: transparent;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			padding: 0px 0px;
-			gap: 20px;
-			width: 100%;
-			height: fit-content;
-			box-sizing: border-box;
-			margin-bottom: 63px;
-		}
 
-		.record-search {
-			border-radius: 8px;
-			border: 1px solid #00CD6A;
-			display: flex;
-			flex-direction: row;
-			padding: 12px 0 12px 20.3px;
-			width: 350px;
-			margin: auto;
-			box-sizing: border-box;
-		}
+	.record-filter {
+		background: transparent;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0px 0px;
+		gap: 20px;
+		width: 100%;
+		height: fit-content;
+		box-sizing: border-box;
+		margin-bottom: 63px;
+	}
 
-		.record-cal {
-			margin: auto;
-			width: 350px;
-			display: flex;
-			flex-direction: row;
-			box-sizing: border-box;
-			justify-content: space-between;
-			position: relative;
-		}
+	.record-search {
+		border-radius: 8px;
+		border: 1px solid #00CD6A;
+		display: flex;
+		flex-direction: row;
+		padding: 12px 0 12px 20.3px;
+		width: 350px;
+		margin: auto;
+		box-sizing: border-box;
+	}
 
-				.react-datepicker {
-					position: absolute;
-					z-index: 9999;
-					/* Ensure it appears on top */
-				}
+	.record-cal {
+		margin: auto;
+		width: 350px;
+		display: flex;
+		flex-direction: row;
+		box-sizing: border-box;
+		justify-content: space-between;
+		position: relative;
+	}
 
-		.record-innercal {
-			border-radius: 8px;
-			border: 1px solid #00CD6A;
-			/* margin-right: 20px; */
-			display: flex;
-			flex-direction: row;
-			padding: 8px 16px 8px 16px;
-			box-sizing: border-box;
-			width: auto;
-		}
+	.react-datepicker {
+		position: absolute;
+		z-index: 9999;
+		/* Ensure it appears on top */
+	}
 
-		.record-cal-text {
-			overflow-wrap: break-word;
-			font-family: 'Inter';
-			font-weight: 400;
-			font-size: 12px;
-			line-height: 1.4;
-			color: #FFFFFF;
-		}
+	.record-innercal {
+		border-radius: 8px;
+		border: 1px solid #00CD6A;
+		/* margin-right: 20px; */
+		display: flex;
+		flex-direction: row;
+		padding: 8px 16px 8px 16px;
+		box-sizing: border-box;
+		width: auto;
+	}
 
-		.record-cal-filter {
-			border-radius: 8px;
-			border: 1px solid #00CD6A;
-			display: flex;
-			flex-direction: row;
-			padding: 8px 20px 8px 20px;
-			width: 95px;
-			box-sizing: border-box;
-		}
+	.record-cal-text {
+		overflow-wrap: break-word;
+		font-family: 'Inter';
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 1.4;
+		color: #FFFFFF;
+	}
 
-		.record-cal-icon {
-			width: 20px;
-			height: 20px;
-			align-self: center;
-		}
+	.record-cal-filter {
+		border-radius: 8px;
+		border: 1px solid #00CD6A;
+		display: flex;
+		flex-direction: row;
+		padding: 8px 20px 8px 20px;
+		width: 95px;
+		box-sizing: border-box;
+	}
 
-		.filter-div {
-			align-self: center;
-		}
+	.record-cal-icon {
+		width: 20px;
+		height: 20px;
+		align-self: center;
+	}
 
-		.tab-checkbox {
-			width: 13.3px;
-			height: 13.3px;
-			margin: auto;
-			display: flex;
-			justify-content: center;
-		}
+	.filter-div {
+		align-self: center;
+	}
 
-		.record-tab-body {
-			display: flex;
-			flex-direction: column;
-			width: 100%;
-			height: auto;
-			overflow-x: scroll;
-		}
+	.tab-checkbox {
+		width: 13.3px;
+		height: 13.3px;
+		margin: auto;
+		display: flex;
+		justify-content: center;
+	}
 
-		.record-tab-header {
-			width: 1281px;
-		}
+	.record-tab-body {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+		overflow-x: scroll;
+	}
 
-		.record-tab-content{
-			width: 1281px;
-		}
+	.record-tab-header {
+		width: 1281px;
+	}
+
+	.record-tab-content {
+		width: 1281px;
+	}
 
 
 }

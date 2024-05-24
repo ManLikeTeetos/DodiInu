@@ -192,7 +192,7 @@ export default function Records({ showMore }) {
               case "claim":
                 transactionTypeClass = "claim-type";
                 break;
-              case "staking":
+              case "stake":
                 transactionTypeClass = "staking-type";
                 break;
               default:

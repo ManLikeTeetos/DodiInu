@@ -27,7 +27,7 @@ export default function StakingBody() {
   const [IsOpen, setIsOpen] = useState(false);
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [amount, setAmount] = useState("");
-  const [formattedAmount, setFormattedAmount] = useState('');
+  const [formattedAmount, setFormattedAmount] = useState("");
   const { hasAllowance, allowance } = useAllowance();
   const {
     balance,
@@ -42,26 +42,26 @@ export default function StakingBody() {
     claimAll,
     totalLocked,
     loading,
+    fetching
   } = useContract();
   const { approve } = useApprove();
 
-  const {
+  let {
     id,
     amount: latest_amount,
     deadline: latest_deadline,
     balance: latest_balance,
     staked_time: latest_staked_time,
-	  duration: check_duration,
+    duration: check_duration,
   } = latestStakes;
 
-	//const duration = latest_deadline - latest_staked_time;
-	//const check_duration = latest_deadline - currentSeconds;
+  //const duration = latest_deadline - latest_staked_time;
+  //const check_duration = latest_deadline - currentSeconds;
 
-	//console.log(23, check_duration);
+  //console.log(23, check_duration);
 
-	//console.log("error_message",error);
-	//if(error !== "") setModalIsOpen(true);
-
+  //console.log("error_message",error);
+  //if(error !== "") setModalIsOpen(true);
 
   // const records = [
   //   createdAt => 1234554434,
@@ -78,7 +78,6 @@ export default function StakingBody() {
   // ];
 
   // const [ records, setRecords] = useState(dummyRecords);
-
 
   function openModal() {
     setIsOpen(true);
@@ -102,8 +101,6 @@ export default function StakingBody() {
     setIsOpen(false);
   }
 
-
-
   //staking and records tab
   const [activeTab, setActiveTab] = useState("stake");
   const [showMore, setShowMore] = useState(false);
@@ -119,90 +116,109 @@ export default function StakingBody() {
   const TelegramLink = "https://t.me/DodiinuCoin";
   const TwitterLink = "https://x.com/Dodi_Inu?s=09";
 
-	
-
-  console.log('check_duration', check_duration);
+  console.log("check_duration", check_duration);
   //console.log('check_bal', latest_balance);
 
-	useEffect(() => {
-		if (check_duration === 1) {
-			// Refresh the page when countdown reaches zero
-			window.location.reload();
-		}
+  useEffect(() => {
+    if (check_duration === 1) {
+      // Refresh the page when countdown reaches zero
+      window.location.reload();
+    }
 
-		if(check_duration > 180){
-			check_duration = 180;
-		}
-	},[check_duration]);
+    if (check_duration > 180) {
+      check_duration = 180;
+    }
+  }, [check_duration]);
 
+  function convertClaimsSecondsToDateTime(timestamp) {
+    // Convert timestamp to milliseconds
+    const milliseconds = timestamp * 1000;
+    // Create a new Date object
+    const dateObject = new Date(milliseconds);
 
-	function convertClaimsSecondsToDateTime(timestamp) {
-		// Convert timestamp to milliseconds
-		const milliseconds = timestamp * 1000;
-		// Create a new Date object
-		const dateObject = new Date(milliseconds);
+    // Define month names
+    const monthNames = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
 
-		// Define month names
-		const monthNames = [
-			"January", "February", "March", "April", "May", "June", "July",
-			"August", "September", "October", "November", "December"
-		];
+    // Extract date components
+    const month = monthNames[dateObject.getMonth()];
+    const day = dateObject.getDate();
+    const year = dateObject.getFullYear();
 
-		// Extract date components
-		const month = monthNames[dateObject.getMonth()];
-		const day = dateObject.getDate();
-		const year = dateObject.getFullYear();
+    // Format date as "Month DD, YYYY"
+    const formattedDate = `${month} ${day}, ${year}`;
 
-		// Format date as "Month DD, YYYY"
-		const formattedDate = `${month} ${day}, ${year}`;
+    // Extract time components
+    let hours = dateObject.getHours();
+    const minutes = dateObject.getMinutes();
+    const ampm = hours >= 12 ? "PM" : "AM";
 
-		// Extract time components
-		let hours = dateObject.getHours();
-		const minutes = dateObject.getMinutes();
-		const ampm = hours >= 12 ? 'PM' : 'AM';
+    // Convert hours from 24-hour format to 12-hour format
+    hours = hours % 12;
+    hours = hours ? hours : 12; // Handle midnight (0 hours)
 
-		// Convert hours from 24-hour format to 12-hour format
-		hours = hours % 12;
-		hours = hours ? hours : 12; // Handle midnight (0 hours)
+    // Format time as "HH:MM AM/PM"
+    const formattedTime = `${hours}:${
+      minutes < 10 ? "0" : ""
+    }${minutes} ${ampm}`;
 
-		// Format time as "HH:MM AM/PM"
-		const formattedTime = `${hours}:${minutes < 10 ? '0' : ''}${minutes} ${ampm}`;
+    return { claim_date: formattedDate, claim_timestamp: formattedTime };
+  }
 
-		return { claim_date: formattedDate, claim_timestamp: formattedTime };
-	}
-
-	const dollarValue = 0.0000137;
+  const dollarValue = 0.0000137;
 
   ///fornat balances
-  const formattedBalance = Number(balance).toFixed(5).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
-  const formattotalLocked = Number(totalLocked).toFixed(5).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
-  const formatredeemable = Number(redeemable).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+  const formattedBalance = Number(balance)
+    .toFixed(5)
+    .replace(/(\d)(?=(\d{3})+\.)/g, "$1,");
+  const formattotalLocked = Number(totalLocked)
+    .toFixed(5)
+    .replace(/(\d)(?=(\d{3})+\.)/g, "$1,");
+  const formatredeemable = Number(redeemable)
+    .toFixed(2)
+    .replace(/(\d)(?=(\d{3})+\.)/g, "$1,");
 
-  const formattotalEarned = Number(totalEarned).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
-  const formattotalSupply = Number(totalSupply).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+  const formattotalEarned = Number(totalEarned)
+    .toFixed(2)
+    .replace(/(\d)(?=(\d{3})+\.)/g, "$1,");
+  const formattotalSupply = Number(totalSupply)
+    .toFixed(2)
+    .replace(/(\d)(?=(\d{3})+\.)/g, "$1,");
 
   const handleAmountChange = (e) => {
-    const value = e.target.value.replace(/,/g, ''); // Remove existing commas
-    if (!isNaN(value) && value !== '') {
+    const value = e.target.value.replace(/,/g, ""); // Remove existing commas
+    if (!isNaN(value) && value !== "") {
       setAmount(value); // Set the internal value without commas
-      const formattedValue = Number(value).toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 20 });
+      const formattedValue = Number(value).toLocaleString("en-US", {
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 20,
+      });
       setFormattedAmount(formattedValue); // Set the formatted value with commas for display
     } else {
-      setAmount('');
-      setFormattedAmount('');
+      setAmount("");
+      setFormattedAmount("");
     }
   };
 
-
   ///show more for records
-const [showAllRecords, setShowAllRecords] = useState(false);
-const handleShowMore = () => {
-  setActiveTab("records");
-  setShowMore(true);
-};
-const recordsToShow = showAllRecords ? records : records.slice(0, 3);
-
-
+  const [showAllRecords, setShowAllRecords] = useState(false);
+  const handleShowMore = () => {
+    setActiveTab("records");
+    setShowMore(true);
+  };
+  const recordsToShow = showAllRecords ? records : records.slice(0, 3);
 
   return (
     <div className="stkbody">
@@ -231,7 +247,7 @@ const recordsToShow = showAllRecords ? records : records.slice(0, 3);
                 <div className="stk-tot-frame">
                   <div className="stk-lok-heading">Total Locked</div>
                   <div className="stk-lok-text">
-						<span> {formattotalSupply} </span>
+                    <span> {formattotalSupply} </span>
                     <span className="stk-green-color">DODI</span>
                   </div>
                 </div>
@@ -239,7 +255,7 @@ const recordsToShow = showAllRecords ? records : records.slice(0, 3);
                   <div className="stkearn-num">
                     <div className="stk-lok-heading">Total Earned</div>
                     <div className="stk-lok-text">
-						<span>{formattotalEarned} </span>
+                      <span>{formattotalEarned} </span>
                       <span className="stk-green-color">DODI</span>
                     </div>
                   </div>
@@ -378,29 +394,41 @@ const recordsToShow = showAllRecords ? records : records.slice(0, 3);
                             <div className="stake-bal-label">
                               Locked Staking
                             </div>
-								<span className="stake-bal-amt">{formattotalLocked}</span>
+                            <span className="stake-bal-amt">
+                              {formattotalLocked}
+                            </span>
                           </div>
                         </div>
                         <div className="stake-time-div">
                           <div className="stake-time">
-                            <span className="timer">Timer</span>
+                            <span className="timer">Timer </span>
                           </div>
-                          <CountDown duration={check_duration} />
+                          {
+                              fetching ?  <CountDown duration={0} /> :<CountDown duration={check_duration} />
+                          }
                         </div>
                         <div className="stake-red-balance">
                           <div className="stake-bal-field">
                             <div className="stake-bal-label">
                               Redeemable Balance
                             </div>
-								<span className="stake-bal-amt">{formatredeemable}</span>
-                          	</div>
+                            <span className="stake-bal-amt">
+                              {formatredeemable}
+                            </span>
+                          </div>
                         </div>
                       </div>
                       <button
-                        disabled={latest_balance === "--" || +redeemable == 0 || check_duration > 0}
+                        disabled={
+                          latest_balance === "--" ||
+                          +redeemable == 0 ||
+                          check_duration > 0
+                        }
                         onClick={() => claimAll()}
                         className={`stake-btn ${
-                          latest_balance === "--" || +redeemable == 0 || check_duration > 0
+                          latest_balance === "--" ||
+                          +redeemable == 0 ||
+                          check_duration > 0
                             ? ""
                             : "active"
                         }`}
@@ -422,48 +450,61 @@ const recordsToShow = showAllRecords ? records : records.slice(0, 3);
                         your rewards
                       </span>
                     </div>
-					{Object.keys(records).length === 0 && (
-						<>
-							<div className="stake-records">Records</div>
-								<div className="stake-records-div">
-								<span className="stake-record-txt">No Record</span>
-							</div>
-					  	</>
-					)}
+                    {Object.keys(records).length === 0 && (
+                      <>
+                        <div className="stake-records">Records</div>
+                        <div className="stake-records-div">
+                          <span className="stake-record-txt">No Record</span>
+                        </div>
+                      </>
+                    )}
 
-				 {Object.keys(records).length !== 0 && (
+                    {Object.keys(records).length !== 0 && (
+                      <div className="stake-record-pop">
+                        {recordsToShow.map((claims, i) => {
+                          const { claim_date, claim_timestamp } =
+                            convertClaimsSecondsToDateTime(claims.createdAt);
 
-					<div className="stake-record-pop">
-						{recordsToShow.map((claims, i) => {
-							const { claim_date, claim_timestamp } = convertClaimsSecondsToDateTime(claims.createdAt);
-
-							return(
-								<div className="stake-rec-popdiv">
-									<div className="stake-rec-popdate">
-										<span>{claim_timestamp}</span>
-										<span>{claim_date}</span>
-									</div>
-									<div className="stake-rec-popamt">
-										<div className="stake-rec-amt">
-											{/* <span className="green-color">DODI </span> */}
-											<span>{Number(claims.amount).toLocaleString('en-US', { minimumFractionDigits: 5 })}</span>
-										</div>
-										<div className="stake-rec-dollar">
-											<span className="green-color">${Number(claims.amount * dollarValue ).toLocaleString('en-US', { minimumFractionDigits: 5 })}</span>
-										</div>
-									</div>
-								</div>
-
-							 );
-						})}
-             {records.length > 3 && !showAllRecords && (
-                <button onClick={handleShowMore} className="stake-btn active">
-                    <span className="stake-btn-txt">SEE ALL</span>
-                </button>
-             )}
-
-					</div>
-				  )}
+                          return (
+                            <div className="stake-rec-popdiv">
+                              <div className="stake-rec-popdate">
+                                <span>{claim_timestamp}</span>
+                                <span>{claim_date}</span>
+                              </div>
+                              <div className="stake-rec-popamt">
+                                <div className="stake-rec-amt">
+                                  {/* <span className="green-color">DODI </span> */}
+                                  <span>
+                                    {Number(claims.amount).toLocaleString(
+                                      "en-US",
+                                      { minimumFractionDigits: 5 }
+                                    )}
+                                  </span>
+                                </div>
+                                <div className="stake-rec-dollar">
+                                  <span className="green-color">
+                                    $
+                                    {Number(
+                                      claims.amount * dollarValue
+                                    ).toLocaleString("en-US", {
+                                      minimumFractionDigits: 5,
+                                    })}
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          );
+                        })}
+                        {records.length > 3 && !showAllRecords && (
+                          <button
+                            onClick={handleShowMore}
+                            className="stake-btn active"
+                          >
+                            <span className="stake-btn-txt">SEE ALL</span>
+                          </button>
+                        )}
+                      </div>
+                    )}
                   </div>
 
                   {/* TODO POPULATE REWARDS RECORDS */}
