@@ -1,28 +1,15 @@
 import Hero from "../../styles/assets/images/Image31.png";
 import { useContract } from "../../hooks/useContract.jsx";
 
-const colorStyleHero = {
-	r: 0,
-	g: 205,
-	b: 106,
-	a: 1
-};
+
 
 export default function HeroSection(){
 
-	const {
-		balance,
-		stake,
-		latestStakes,
-		claim,
-		records,
-		totalSupply,
-		totalEarned,
-		error,
-	} = useContract();
+	const { totalSupply } = useContract();
 
 	const percentageStaked = (totalSupply / 7280000000.00) * 100;
 	const circulatingDodi = (7280000000.00 - totalSupply);
+	const formatcirculating = Number(circulatingDodi).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
 
 	return(
 		<div className="hero">
@@ -42,9 +29,8 @@ export default function HeroSection(){
 								<div className="hero-4">
 									<div className="hero-5">We all gonna make it</div>
 									<div className="hero-6">
-										Lorem ipsum dolor sit amet consectetur. Nullam in diam cursus
-										purus vitae lectus a. Egestas arcu convallis morbi leo quis
-										velit. Dis faucibus{" "}
+										Decentralized Platform For All Dogs In Crypto World To Make Stable Daily Money And Grow Richer. 
+										Buy <span className="green-color"> $DODI </span>Stake And Earn Passive Income{" "}
 									</div>
 									<div className="hero-7">
 										<div className="hero-8">
@@ -71,8 +57,8 @@ export default function HeroSection(){
 						<div className="hero-16">
 							<div className="hero-17">CIRCULATING DODI</div>
 							<div className="hero-18">
-								{Number(circulatingDodi).toLocaleString('en-US', { maximumFractionDigits: 2 })}
-								<span style={{ color: `rgba(${colorStyleHero.r}, ${colorStyleHero.g}, ${colorStyleHero.b}, ${colorStyleHero.a})` }}>DODI</span>
+								{formatcirculating}
+								<span className="green-color">DODI</span>
 							</div>
 						</div>
 						<div className="hero-19">

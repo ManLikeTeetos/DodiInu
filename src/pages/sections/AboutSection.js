@@ -70,11 +70,13 @@ export default function AboutSection(){
 									<div className="about-content-column">
 										<div className="about-content-subcolumn">
 											<div className="about-content-title">
-												Mission
+												I AM DODI:
 											</div>
 											<div className="about-content-text">
-												Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
-												lorem urna luctus amet leo at. Commodo mattis nisl.  <br />
+												DODI is a Billionaire big DOG we all aspire to be. 
+												DODI is the son of DOGE and SHIBA. Follow the story 
+												as he unites the DOGLANDS and bring prosperity 
+												to all DOGS in the Crypto World.<br />
 											</div>
 											</div>
 										</div>
@@ -93,11 +95,11 @@ export default function AboutSection(){
 									<div className="about-content-column">
 										<div className="about-content-subcolumn">
 											<div className="about-content-title">
-												Mission
+												ALL DOGS UNITED:
 											</div>
 											<div className="about-content-text">
-												Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
-												lorem urna luctus amet leo at. Commodo mattis nisl.  <br />
+												DODI and his crew, DROID, ELANA, and DOGA unite other great Dogs, FLOKI, BONK, AKITA, and MYRO, 
+												as they fight the Empire of ZANGA to free all DOGS from misfortunes.
 											</div>
 											</div>
 										</div>
@@ -115,11 +117,13 @@ export default function AboutSection(){
 									<div className="about-content-column">
 										<div className="about-content-subcolumn">
 											<div className="about-content-title">
-												Mission
+												THE DOGLANDS:
 											</div>
 											<div className="about-content-text">
-												Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
-												lorem urna luctus amet leo at. Commodo mattis nisl.  <br />
+												Join DODI on his mission as we explore the exciting stories 
+												of conquest and triumph as he saves the DOGLAND Cities of 
+												NEON, CANINE, SOLAN and DOGOPOLIS from the Cartels 
+												and Rug pullers while maintaining prosperity for all DOGS (Crypto Hustlers)
 											</div>
 											</div>
 										</div>
@@ -149,11 +153,14 @@ export default function AboutSection(){
 									<div className="about-content-column">
 										<div className="about-content-subcolumn">
 											<div className="about-content-title">
-												Problem
+												THE SYSTEM:
 											</div>
 											<div className="about-content-text">
-												Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
-												lorem urna luctus amet leo at. Commodo mattis nisl.  <br />
+												The Matrix is designed for all DOGS and other Animals
+												 in the Crypto World to keep competing against each other. 
+												 As we fight for profits, they collect fees. 
+												 Pump and dumps keep Rekting many DOGS, 
+												 while few pack other DOGS money, as they call it trading.
 											</div>
 											</div>
 										</div>
@@ -172,11 +179,14 @@ export default function AboutSection(){
 									<div className="about-content-column">
 										<div className="about-content-subcolumn">
 											<div className="about-content-title">
-												Problem
+												THE CARTELS:
 											</div>
 											<div className="about-content-text">
-												Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
-												lorem urna luctus amet leo at. Commodo mattis nisl.  <br />
+												The whole Crypto World is plagued with Criminals, 
+												Scammers, Rug pullers, Shitcoin Shillers. 
+												The DOGS have had enough. DODI is here to direct the fortunes 
+												of all in DOGLANDS by defeating the evil EMPIRE of ZANGA and 
+												its ruler, General GANDOZA.
 											</div>
 											</div>
 										</div>
@@ -194,11 +204,14 @@ export default function AboutSection(){
 									<div className="about-content-column">
 										<div className="about-content-subcolumn">
 											<div className="about-content-title">
-												Problem
+												Your GREED:
 											</div>
 											<div className="about-content-text">
-												Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
-												lorem urna luctus amet leo at. Commodo mattis nisl.  <br />
+												The Crypto World is risky because all Animals, the DOGS, 
+												Cats, Frogs, Cows, etc. <span className="green-color"> We All Gonna Make It. </span>
+												Yes, but without organization and collaboration, 
+												very few win and the rest are losing. 
+												DODI, the Great Son of DOGE & SHIBA is here with better solutions for all.
 											</div>
 											</div>
 										</div>
@@ -228,11 +241,13 @@ export default function AboutSection(){
 									<div className="about-content-column">
 										<div className="about-content-subcolumn">
 											<div className="about-content-title">
-												Solution
+												UNIFY & COLLABORATE:
 											</div>
 											<div className="about-content-text">
-												Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
-												lorem urna luctus amet leo at. Commodo mattis nisl.  <br />
+												It has become clear to DODI that all DOGS in 
+												the Crypto World are being used. They keep shilling nonsense shitcoins, 
+												pumps $$ dumps. Follow DODI as he unites all DOGLAND cities and get DOGS
+												 to collaborate and win together.
 											</div>
 											</div>
 										</div>
@@ -251,11 +266,15 @@ export default function AboutSection(){
 									<div className="about-content-column">
 										<div className="about-content-subcolumn">
 											<div className="about-content-title">
-												Solution
+												SEGMENTED EXIT PROTOCOL (SEP):
 											</div>
 											<div className="about-content-text">
-												Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
-												lorem urna luctus amet leo at. Commodo mattis nisl.  <br />
+												$DODI's efficient exit management prevents chaos and 
+												maintains stability. Just as 20 people trying to leave a hall 
+												simultaneously would cause chaos, or a bank would crash 
+												if all customers withdrew funds at once, 
+												the SEP (Segmented Exit Protocol) manages exit times for DOGS staking $DODI. 
+												This prevents sudden price drops and ensures $DODI remains scarce, thus supporting its price.
 											</div>
 											</div>
 										</div>
@@ -273,11 +292,14 @@ export default function AboutSection(){
 									<div className="about-content-column">
 										<div className="about-content-subcolumn">
 											<div className="about-content-title">
-												Solution
+												TIME LEVERAGING:
 											</div>
 											<div className="about-content-text">
-												Lorem ipsum dolor sit amet consectetur. Egestas tempus vitae
-												lorem urna luctus amet leo at. Commodo mattis nisl.  <br />
+												Everything happens in time. Get rich quick doesn't work. 
+												100X and 1000X happens but with time. No need of jumping 
+												from one shitcoin to another, wanting overnight success, 
+												meanwhile losing money steady. Join DODI and lets get it right.
+												Buy $DODI, stake and earn daily. <span className="green-color"> We All Gonna Make It. </span>
 											</div>
 											</div>
 										</div>
