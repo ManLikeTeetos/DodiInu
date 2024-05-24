@@ -139,26 +139,38 @@
 	color: #FFFFFF;
 }
 
-.record-filter-text {
-	appearance: none;
-	border: 0px;
-	overflow-wrap: break-word;
-	font-family: 'Inter';
-	font-weight: 400;
-	font-size: 13px;
-	line-height: 1.4;
-	color: #FFFFFF;
-	background: black
+.custom-dropdown-selected {
+	color: white;
 }
 
-.record-filter-text select:focus,
-.record-filter-text select:active {
+.custom-dropdown-options {
+	position: absolute;
+    top: 50px;
+	border: 1px solid #00CD6A;
+    width: 108px;
+    right: -1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    background: black;
+    text-align: center;
+	color: white;
+	gap: 8px;
+}
+
+.custom-dropdown-option {
+	height: 44px;
+}
+
+/* select:focus,
+select:active {
   background : black;
   width: 108px;
   height: 148px;
   border-radius: 8px;
   font-size: 13px;
-}
+} */
 
 .record-cal-filter {
 	border-radius: 8px;
@@ -469,6 +481,10 @@
 		padding: 8px 20px 8px 20px;
 		width: 95px;
 		box-sizing: border-box;
+	}
+
+	.custom-dropdown-options {
+		width: 95px;
 	}
 
 	.record-cal-icon {
