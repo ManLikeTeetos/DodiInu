@@ -139,6 +139,27 @@
 	color: #FFFFFF;
 }
 
+.record-filter-text {
+	appearance: none;
+	border: 0px;
+	overflow-wrap: break-word;
+	font-family: 'Inter';
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #FFFFFF;
+	background: black
+}
+
+.record-filter-text select:focus,
+.record-filter-text select:active {
+  background : black;
+  width: 108px;
+  height: 148px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
 .record-cal-filter {
 	border-radius: 8px;
 	border: 1px solid #00CD6A;

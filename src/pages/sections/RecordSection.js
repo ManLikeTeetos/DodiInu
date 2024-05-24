@@ -26,7 +26,7 @@ export default function Records({ showMore }) {
   //     staked_time: 1704067200,
   //     deadline: 1708699200,
   //     duration: 180,
-  //     transaction_type: "Reward"
+  //     transaction_type: "reward"
   //   },
   //   "2": {
   //     id: 2,
@@ -35,7 +35,7 @@ export default function Records({ showMore }) {
   //     staked_time: 1704153600,
   //     deadline: 1708780800,
   //     duration: 120,
-  //     transaction_type: "Claim"
+  //     transaction_type: "claim"
   //   },
   //   "3": {
   //     id: 3,
@@ -44,11 +44,11 @@ export default function Records({ showMore }) {
   //     staked_time: 1704988800,
   //     deadline: 1715683200,
   //     duration: 300,
-  //     transaction_type: "Staking"
+  //     transaction_type: "stake"
   //   }
   // };
 
-  // const [transactions, setTransactions] = useState(dummyTransactions);
+  //  const [transactions, setTransactions] = useState(dummyTransactions);
   // const stakes = {
   // 	"1": { amount: 859499, balance: 23445454, staked_time: 1704067200, deadline: 1708699200, duration: 180 }, // First record
   // 	"2": { amount: 123456, balance: 987654, staked_time: 1704153600, deadline: 1708780800, duration: 120 }, // Second record
@@ -76,6 +76,7 @@ export default function Records({ showMore }) {
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
   const [showDatePicker, setShowDatePicker] = useState(false);
+  const [filterType, setFilterType] = useState("All");
   const [filteredStakes, setFilteredStakes] = useState(
     Object.values(transactions)
   );
@@ -101,11 +102,15 @@ export default function Records({ showMore }) {
   useEffect(() => {
     if (!endDate) return; // Only filter stakes if endDate is selected
 
-    const newFilteredStakes = Object.values(transactions).filter((stake) => {
+    let newFilteredStakes = Object.values(transactions).filter((stake) => {
       if (!startDate) return true;
       const stakeDate = new Date(stake.staked_time * 1000);
       return stakeDate >= startDate && stakeDate <= endDate;
     });
+
+    // if (filterType !== "All") {
+    //   newFilteredStakes = newFilteredStakes.filter(stake => stake.transaction_type === filterType);
+    // }
     setFilteredStakes(newFilteredStakes);
   }, [endDate, transactions, startDate]);
 
@@ -154,7 +159,26 @@ export default function Records({ showMore }) {
               <div className="filter-div">
                 <img className="record-cal-icon" src={Filter} alt="filter" />
               </div>
-              <span className="record-cal-text">Filters</span>
+              <select
+                className="record-filter-text"
+                value={filterType}
+                onChange={(e) => {
+                  setFilterType(e.target.value); // Update filter type immediately
+                  // Apply filter immediately
+                  let newFilteredStakes = Object.values(transactions);
+                  if (e.target.value !== "All") {
+                    newFilteredStakes = newFilteredStakes.filter(
+                      (stake) => stake.transaction_type === e.target.value
+                    );
+                  }
+                  setFilteredStakes(newFilteredStakes);
+                }}
+              >
+                <option value="All">All</option>
+                <option value="claim">Claim</option>
+                <option value="stake">Staking</option>
+                <option value="reward">Reward</option>
+              </select>
             </div>
           </div>
         </div>
