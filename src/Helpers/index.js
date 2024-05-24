@@ -1,6 +1,6 @@
 import { utils } from "ethers";
 
-const DECIMAL = 18;
+const DECIMAL = 10;
 
 export const toBigNumber = (value) =>
   utils.parseUnits(value.toString(), DECIMAL);
