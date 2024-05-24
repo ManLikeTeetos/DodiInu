@@ -14,7 +14,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 export default function Records({ showMore }) {
-  const { transactions, claim, stakes } = useContract();
+  const {  transactions, claim, stakes } = useContract();
 
   ///dummy data for test
 
@@ -26,7 +26,7 @@ export default function Records({ showMore }) {
   //     staked_time: 1704067200,
   //     deadline: 1708699200,
   //     duration: 180,
-  //     transaction_type: "Reward"
+  //     transaction_type: "reward"
   //   },
   //   "2": {
   //     id: 2,
@@ -35,7 +35,7 @@ export default function Records({ showMore }) {
   //     staked_time: 1704153600,
   //     deadline: 1708780800,
   //     duration: 120,
-  //     transaction_type: "Claim"
+  //     transaction_type: "claim"
   //   },
   //   "3": {
   //     id: 3,
@@ -44,11 +44,11 @@ export default function Records({ showMore }) {
   //     staked_time: 1704988800,
   //     deadline: 1715683200,
   //     duration: 300,
-  //     transaction_type: "Staking"
+  //     transaction_type: "stake"
   //   }
   // };
 
-  // const [transactions, setTransactions] = useState(dummyTransactions);
+  //  const [transactions, setTransactions] = useState(dummyTransactions);
   // const stakes = {
   // 	"1": { amount: 859499, balance: 23445454, staked_time: 1704067200, deadline: 1708699200, duration: 180 }, // First record
   // 	"2": { amount: 123456, balance: 987654, staked_time: 1704153600, deadline: 1708780800, duration: 120 }, // Second record
@@ -76,6 +76,23 @@ export default function Records({ showMore }) {
   const [startDate, setStartDate] = useState(null);
   const [endDate, setEndDate] = useState(null);
   const [showDatePicker, setShowDatePicker] = useState(false);
+
+  //dropdown
+  const [filterType, setFilterType] = useState("All");
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const options = [
+    { value: "All", displayText: "All" },
+    { value: "claim", displayText: "Claim", color: "red" },
+    { value: "stake", displayText: "Staking", color: "white" },
+    { value: "reward", displayText: "Reward", color: "green" }
+  ];
+
+  
+
+
+
+
   const [filteredStakes, setFilteredStakes] = useState(
     Object.values(transactions)
   );
@@ -101,11 +118,15 @@ export default function Records({ showMore }) {
   useEffect(() => {
     if (!endDate) return; // Only filter stakes if endDate is selected
 
-    const newFilteredStakes = Object.values(transactions).filter((stake) => {
+    let newFilteredStakes = Object.values(transactions).filter((stake) => {
       if (!startDate) return true;
       const stakeDate = new Date(stake.staked_time * 1000);
       return stakeDate >= startDate && stakeDate <= endDate;
     });
+
+    // if (filterType !== "All") {
+    //   newFilteredStakes = newFilteredStakes.filter(stake => stake.transaction_type === filterType);
+    // }
     setFilteredStakes(newFilteredStakes);
   }, [endDate, transactions, startDate]);
 
@@ -154,7 +175,41 @@ export default function Records({ showMore }) {
               <div className="filter-div">
                 <img className="record-cal-icon" src={Filter} alt="filter" />
               </div>
-              <span className="record-cal-text">Filters</span>
+              <div className="custom-dropdown">
+                <div
+                  className="custom-dropdown-selected"
+                  onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                >
+                
+                  {options.find(options => options.value === filterType).displayText}
+                 
+                </div>
+                {isDropdownOpen && (
+                  <div className="custom-dropdown-options">
+                    {options.map((option, index) => (
+                      <div
+                        key={index}
+                        className="custom-dropdown-option"
+                        style={{ color: option.color }}
+                        onClick={() => {
+                          setFilterType(option.value); // Update filter type immediately
+                          // Apply filter immediately
+                          let newFilteredStakes = Object.values(transactions);
+                          if (option.value !== "All") {
+                            newFilteredStakes = newFilteredStakes.filter(
+                              (stake) => stake.transaction_type === option.value
+                            );
+                          }
+                          setFilteredStakes(newFilteredStakes);
+                          setIsDropdownOpen(false);
+                        }}
+                      >
+                        {option.displayText}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>

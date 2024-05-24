@@ -10,7 +10,7 @@ import Binance from "../../styles/assets/images/Binance.png"
 ///External links
 const TelegramLink = "https://t.me/DodiinuCoin";
 const TwitterLink = "https://x.com/Dodi_Inu?s=09";
-const YoutubeLink = " https://www.youtube.com/@DODIINUWORLD";
+const YoutubeLink = "https://www.youtube.com/@DODIINUWORLD";
 const InstagramLink  = "https://www.instagram.com/dodi.inu/";
 
 
@@ -89,6 +89,7 @@ export default function Column(){
 						</div>
 					</div>
 				</a>
+
 				<a href={YoutubeLink} target="_blank" rel="noreferrer" >
 					<div className="csection-media-box">
 						<div className="csection-media-card">
@@ -112,8 +113,6 @@ export default function Column(){
 					</div>
 				</a>
 
-				
-				
 			</div>
 
 			<div className="section">

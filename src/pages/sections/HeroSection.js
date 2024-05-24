@@ -29,7 +29,7 @@ export default function HeroSection(){
 								<div className="hero-4">
 									<div className="hero-5">We all gonna make it</div>
 									<div className="hero-6">
-										Decentralized Platform For All Dogs In Crypto World To Make Stable Daily Money And Grow Richer. 
+										Decentralized Platform For All DOGS In Crypto World To Make Stable Daily Money And Grow Richer. 
 										Buy <span className="green-color"> $DODI </span>Stake And Earn Passive Income{" "}
 									</div>
 									<div className="hero-7">
@@ -58,7 +58,7 @@ export default function HeroSection(){
 							<div className="hero-17">CIRCULATING DODI</div>
 							<div className="hero-18">
 								{formatcirculating}
-								<span className="green-color">DODI</span>
+								<span className="green-color"> DODI</span>
 							</div>
 						</div>
 						<div className="hero-19">

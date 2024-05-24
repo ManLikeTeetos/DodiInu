@@ -797,18 +797,20 @@ margin: 0 3.6px 0 3px;
 
 .stake-rec-amt {
 	height: 27px;
-	width: 147px;
+	width: 180px;
 	font-family: 'Inter';
 	font-weight: 700;
 	font-size: 19px;
 	line-height: 1.4;
 	color: white;
-	text-overflow: ellipsis;
 	margin-left: 10.5px;
+	overflow-x: scroll;
+	overflow-y: hidden;
 }
 
 .stake-rec-dollar {
    /* text-align: right; */
+    width: 60px;
     height: 27px;
     font-family: 'Inter';
 	font-weight: 700;
@@ -816,15 +818,17 @@ margin: 0 3.6px 0 3px;
 	line-height: 1.4;
 	margin-right: 8.5px;
 	align-content: center;
+	overflow-x: scroll;
+	overflow-y: hidden;
 }
 
 /* Hide the scrollbar track */
-.stake-record-pop::-webkit-scrollbar-track {
+.stake-rec-amt::-webkit-scrollbar-track {
 	background: white;
 }
 
 /* Define scrollbar thumb */
-.stake-record-pop::-webkit-scrollbar-thumb {
+.stake-rec-amt::-webkit-scrollbar-thumb {
 	background-color: black;
 	/* Adjust color as needed */
 	border-radius: 10px;
@@ -832,13 +836,42 @@ margin: 0 3.6px 0 3px;
 }
 
 /* Thin scrollbar */
-.stake-record-pop::-webkit-scrollbar {
+.stake-rec-amt::-webkit-scrollbar {
 	width: 2px;
+	height: 2px;
+	display: none;
 	/* Adjust thickness as needed */
 }
 
 /* Make scrollbar thumb hover effect */
-.stake-record-pop::-webkit-scrollbar-thumb:hover {
+.stake-rec-amt::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(0, 0, 0, 0.4);
+	/* Adjust color as needed */
+}
+
+
+.stake-rec-dollar::-webkit-scrollbar-track {
+	background: white;
+}
+
+/* Define scrollbar thumb */
+.stake-rec-dollar::-webkit-scrollbar-thumb {
+	background-color: black;
+	/* Adjust color as needed */
+	border-radius: 10px;
+	/* Adjust radius as needed */
+}
+
+/* Thin scrollbar */
+.stake-rec-dollar::-webkit-scrollbar {
+	width: 2px;
+	height: 2px;
+	display: none;
+	/* Adjust thickness as needed */
+}
+
+/* Make scrollbar thumb hover effect */
+.stake-rec-dollar::-webkit-scrollbar-thumb:hover {
 	background-color: rgba(0, 0, 0, 0.4);
 	/* Adjust color as needed */
 }

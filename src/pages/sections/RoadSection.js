@@ -40,10 +40,11 @@ export default function Road(){
 								<div className="road-map-content-down">
 									<div className="road-date">
 										HOME BOY <br/>
-										(DEGEN)
+										(DEGEN) <br/>
+										<span className="green-color">DODI </span> LAUNCH  <HomeBoy />
 									</div>
 									<span className="road-map-title">
-										<span className="green-color"> DODI </span> Community <HomeBoy /> <br/>
+										<span className="green-color"> DODI </span> Community <br/>
 										3,000
 									</span>
 								</div>
@@ -133,11 +134,12 @@ export default function Road(){
 							<img className="road-graph-img" src={Pilot} alt="Pilot" />
 							<div className="road-map-content-down">
 								<div className="road-date">
-										HOME BOY <br/>
-										(DEGEN)
+								        HOME BOY <br/>
+										(DEGEN) <br/>
+										<span className="green-color">DODI </span> LAUNCH  <HomeBoy />
 								</div>
 								<span className="road-map-title">
-										<span className="green-color"> DODI </span> Community <HomeBoy /> <br/>
+										<span className="green-color"> DODI </span> Community  <br/>
 										3,000
 								</span>
 							</div>
