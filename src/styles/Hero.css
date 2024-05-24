@@ -248,8 +248,9 @@
         }
         @media (max-width: 1024px) {
           .hero-12 {
-			display: flex;
-			flex-direction: column;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
             max-width: 100%;
             flex-wrap: wrap;
             margin-top: 40px;
@@ -290,11 +291,13 @@
         }
 	       @media (max-width: 1024px) {
 	       	.hero-16 {
+            width: 335px;
 	       		display: flex;
 	       		flex-direction: column;
 	       		text-align: center;
 	       		padding: 0.75rem;
 	       		margin-right: 0rem;
+            word-wrap: break-word;
 	       	}
 	       }
         .hero-17 {
