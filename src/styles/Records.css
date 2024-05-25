@@ -279,6 +279,7 @@ select:active {
 	margin: auto;
 	display: flex;
 	justify-content: center;
+	text-overflow: ellipsis;
 }
 
 .tab-staketype {

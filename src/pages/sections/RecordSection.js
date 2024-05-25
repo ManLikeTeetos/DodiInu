@@ -257,7 +257,7 @@ export default function Records({ showMore }) {
             const isStaking = stake.transaction_type === "stake";
             const countdownClassName = isStaking ? "" : "grey-countdown";
             const formatstakeamount = Number(stake.amount)
-              .toFixed(2)
+              .toFixed(3)
               .replace(/(\d)(?=(\d{3})+\.)/g, "$1,");
             return (
               <div key={i} className="record-tab-content">
@@ -268,7 +268,6 @@ export default function Records({ showMore }) {
                   {stake.transaction_type}
                 </div>
                 <div className="tab-amount">
-                  <span className="green-color"> DODI&nbsp;</span>
                   {formatstakeamount}
                 </div>
                 <CountDown
