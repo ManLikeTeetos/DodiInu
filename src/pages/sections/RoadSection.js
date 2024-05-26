@@ -117,7 +117,7 @@ export default function Road(){
 									<div className="road-date">
 										BOSS <br/>
 										(<span className="green-color"> DODI </span>)  <br/>
-										ELON BEZOZ <Money/><Heart/>
+										ELON BEZOS <Money/><Heart/>
 									</div>
 									<span className="road-map-title">
 										<span className="green-color"> DODI </span> Community <br/>
@@ -213,7 +213,7 @@ export default function Road(){
 								<div className="road-date">
 										BOSS <br/>
 										(<span className="green-color"> DODI </span>)  <br/>
-									    ELON BEZOZ <Money/><Heart/>
+									    ELON BEZOS <Money/><Heart/>
 								</div>
 								<span className="road-map-title">
 										<span className="green-color"> DODI </span> Community <br/>
