@@ -55,6 +55,8 @@ export default function StakingBody() {
     duration: check_duration,
   } = latestStakes;
 
+ // const balance = 24.715046;
+
   //const duration = latest_deadline - latest_staked_time;
   //const check_duration = latest_deadline - currentSeconds;
 
@@ -180,16 +182,13 @@ export default function StakingBody() {
   const dollarValue = 0.0000137;
 
   ///fornat balances
-  const formattedBalance = Number(balance).toFixed(5).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
-  const formattotalLocked = Number(totalLocked).toFixed(5).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
-  const formatredeemable = Number(redeemable).toFixed(5).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+ 
+  const formattedBalance = Number(Math.floor(balance * 100000) / 100000).toFixed(5).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+  const formattotalLocked = Number(Math.floor(totalLocked  * 100000) / 100000).toFixed(5).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+  const formatredeemable = Number(Math.floor(redeemable  * 100000) / 100000 ).toFixed(5).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
 
-  const formattotalEarned = Number(totalEarned)
-    .toFixed(2)
-    .replace(/(\d)(?=(\d{3})+\.)/g, "$1,");
-  const formattotalSupply = Number(totalSupply)
-    .toFixed(2)
-    .replace(/(\d)(?=(\d{3})+\.)/g, "$1,");
+  const formattotalEarned = Number(Math.floor(totalEarned * 100) / 100).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,");
+  const formattotalSupply = Number(Math.floor(totalSupply  * 100) / 100) .toFixed(2) .replace(/(\d)(?=(\d{3})+\.)/g, "$1,");
 
   const handleAmountChange = (e) => {
     const value = e.target.value.replace(/,/g, ""); // Remove existing commas
