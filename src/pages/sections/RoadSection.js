@@ -59,8 +59,8 @@ export default function Road(){
 								<img className="road-graph-img" src={Jet} alt="Pilot" />
 								<div className="road-map-content-down">
 									<div className="road-date">
-										HUSTLER <br/>
-										(CRYPTO)  <br/>
+										CRYPTO <br/>
+										(HUSTLER)  <br/>
 										<BlueDress /><span className="green-color">DODI </span> SHOP <PinkDress />
 									</div>
 									<span className="road-map-title">
@@ -154,8 +154,8 @@ export default function Road(){
 							<img className="road-graph-img" src={Jet} alt="Pilot" />
 							<div className="road-map-content-down">
 								<div className="road-date">
-										HUSTLER <br/>
-										(CRYPTO)  <br/>
+										CRYPTO <br/>
+										(HUSTLER)  <br/>
 										<BlueDress /><span className="green-color">DODI </span> SHOP <PinkDress />
 								</div>
 								<span className="road-map-title">
