@@ -80,6 +80,9 @@
 }
 
 .search-records {
+	appearance: none;
+	border: 0px;
+	background: transparent;
 	overflow-wrap: break-word;
 	font-family: 'Inter';
 	font-weight: 400;
@@ -483,6 +486,11 @@ select:active {
 		width: 95px;
 		box-sizing: border-box;
 	}
+
+	.custom-dropdown {
+		font-size: 12px;
+	}
+
 
 	.custom-dropdown-options {
 		width: 95px;

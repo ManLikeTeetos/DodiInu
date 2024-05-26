@@ -289,7 +289,7 @@
 
 
 .road-date {
-	margin: 10px 1.9px 5px 17.5px;
+	margin: 10px 0px 5px 0px;
 	display: inline-block;
 	overflow-wrap: break-word;
 	font-family: 'Inter';
@@ -588,7 +588,6 @@
 				}
 
 				.road-date {
-					margin: 10px 19.4px 5px 19.4px;
 					display: inline-block;
 					overflow-wrap: break-word;
 					font-family: 'Inter';

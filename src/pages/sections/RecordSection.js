@@ -14,41 +14,41 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 export default function Records({ showMore }) {
-  const {  transactions, claim, stakes } = useContract();
+  const {   claim, stakes } = useContract();
 
   ///dummy data for test
 
-  // const dummyTransactions = {
-  //   "1": {
-  //     id: 1,
-  //     amount: 859499,
-  //     balance: 23445454,
-  //     staked_time: 1704067200,
-  //     deadline: 1708699200,
-  //     duration: 180,
-  //     transaction_type: "reward"
-  //   },
-  //   "2": {
-  //     id: 2,
-  //     amount: 123456,
-  //     balance: 987654,
-  //     staked_time: 1704153600,
-  //     deadline: 1708780800,
-  //     duration: 120,
-  //     transaction_type: "claim"
-  //   },
-  //   "3": {
-  //     id: 3,
-  //     amount: 567890,
-  //     balance: 123456,
-  //     staked_time: 1704988800,
-  //     deadline: 1715683200,
-  //     duration: 300,
-  //     transaction_type: "stake"
-  //   }
-  // };
+  const dummyTransactions = {
+    "1": {
+      id: 1,
+      amount: 859499,
+      balance: 23445454,
+      staked_time: 1704067200,
+      deadline: 1708699200,
+      duration: 180,
+      transaction_type: "reward"
+    },
+    "2": {
+      id: 2,
+      amount: 123456,
+      balance: 987654,
+      staked_time: 1704153600,
+      deadline: 1708780800,
+      duration: 120,
+      transaction_type: "claim"
+    },
+    "3": {
+      id: 3,
+      amount: 567890,
+      balance: 123456,
+      staked_time: 1704988800,
+      deadline: 1715683200,
+      duration: 300,
+      transaction_type: "stake"
+    }
+  };
 
-  //  const [transactions, setTransactions] = useState(dummyTransactions);
+   const [transactions, setTransactions] = useState(dummyTransactions);
   // const stakes = {
   // 	"1": { amount: 859499, balance: 23445454, staked_time: 1704067200, deadline: 1708699200, duration: 180 }, // First record
   // 	"2": { amount: 123456, balance: 987654, staked_time: 1704153600, deadline: 1708780800, duration: 120 }, // Second record
@@ -80,6 +80,7 @@ export default function Records({ showMore }) {
   //dropdown
   const [filterType, setFilterType] = useState("All");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
 
   const options = [
     { value: "All", displayText: "All" },
@@ -143,6 +144,21 @@ export default function Records({ showMore }) {
     }
   }, [showMore]);
 
+  useEffect(() => {
+    let newFilteredStakes = Object.values(transactions);
+
+    if (searchTerm) {
+      newFilteredStakes = newFilteredStakes.filter(
+        (stake) =>
+          stake.transaction_type
+            .toLowerCase()
+            .includes(searchTerm.toLowerCase())
+      );
+    }
+
+    setFilteredStakes(newFilteredStakes);
+  }, [searchTerm, transactions]);
+
   return (
     <div className="record">
       <div className="record-header">Trade Records</div>
@@ -155,7 +171,14 @@ export default function Records({ showMore }) {
             <div className="record-innersearch">
               <img className="record-icon" src={Search} alt="search" />
             </div>
-            <span className="search-records">Search Records</span>
+           
+            <input
+                className="search-records"
+                type="text"
+                placeholder="Search Records"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
           </div>
           <div className="record-cal">
             <div className="record-innercal">
