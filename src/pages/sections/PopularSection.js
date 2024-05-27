@@ -25,11 +25,16 @@ import SliderNew8 from "../../styles/assets/images/dodicard.png";
 import SliderNew9 from "../../styles/assets/images/slider9.png";
 import SliderNew10 from "../../styles/assets/images/slider10.png";
 
+import SliderNew11 from "../../styles/assets/images/slider11.png";
+import SliderNew12 from "../../styles/assets/images/slider12.png";
+import SliderNew13 from "../../styles/assets/images/slider13.png";
+import SliderNew14 from "../../styles/assets/images/slider14.png";
+
 
 
 export default function PopularSection() {
 	const [currentSlide, setCurrentSlide] = useState(0);
-	const totalSlides = 14;
+	const totalSlides = 18;
 
 	const goToNextSlide = () => {
 		setCurrentSlide((currentSlide + 1) % totalSlides);
@@ -68,6 +73,10 @@ export default function PopularSection() {
 	};
 
 	const images = [
+		SliderNew11,
+		SliderNew12,
+		SliderNew13,
+		SliderNew14,
 		SliderNew9,
 		SliderNew10,
 		SliderNew7,

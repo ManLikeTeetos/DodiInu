@@ -47,7 +47,7 @@ export default function Road(){
 									<div className="road-date">
 										HOME BOY <br/>
 										(DEGEN) <br/>
-										<span className="green-color">DODI </span> LAUNCH  <RocketEmoji /><Graph />
+										<RocketEmoji /><span className="green-color">DODI </span> LAUNCH <Graph />
 									</div>
 									<span className="road-map-title">
 										<span className="green-color"> DODI </span> Community <br/>
@@ -61,7 +61,7 @@ export default function Road(){
 									<div className="road-date">
 										CRYPTO <br/>
 										(HUSTLER)  <br/>
-										<span className="green-color">DODI </span> SHOP <BlueDress /><PinkDress />
+										<BlueDress /><span className="green-color">DODI </span> SHOP <PinkDress />
 									</div>
 									<span className="road-map-title">
 									<span className="green-color"> DODI </span> Community <br/>
@@ -75,7 +75,7 @@ export default function Road(){
 									<div className="road-date">
 										GEE <br/>
 										(G) <br/>
-										 <span className="green-color">DODI </span> Season 1 & 2  <Video /><Tele/>
+										<Video /><span className="green-color">DODI </span> Season 1 & 2 <Tele/>
 									</div>
 									<span className="road-map-title">
 										<span className="green-color"> DODI </span> Community <br/>
@@ -89,7 +89,7 @@ export default function Road(){
 									<div className="road-date">
 										OLD GEE <br/>
 										(O.G)  <br/>
-										<span className="green-color">DODI </span> MUSIC <HeadPhones/><Guitar/>
+										<HeadPhones/><span className="green-color">DODI </span> MUSIC <Guitar/>
 									</div>
 									<span className="road-map-title">
 										<span className="green-color"> DODI </span> Community <br/>
@@ -103,7 +103,7 @@ export default function Road(){
 									<div className="road-date">
 										DOUBLE OLD GEE <br/>
 										(D.O.G)  <br/>
-										<span className="green-color">DODI </span> World Payments <EarthEmoji/><Phone/>
+										<EarthEmoji/><span className="green-color">DODI </span> World Payments <Phone/>
 									</div>
 									<span className="road-map-title">
 										<span className="green-color"> DODI </span> Community <br/>
@@ -117,7 +117,7 @@ export default function Road(){
 									<div className="road-date">
 										BOSS <br/>
 										(<span className="green-color"> DODI </span>)  <br/>
-										ELON BEZOS <Money/><Heart/>
+										<Money/>ELON BEZOS<Heart/>
 									</div>
 									<span className="road-map-title">
 										<span className="green-color"> DODI </span> Community <br/>
@@ -142,7 +142,7 @@ export default function Road(){
 								<div className="road-date">
 								        HOME BOY <br/>
 										(DEGEN) <br/>
-										<span className="green-color">DODI </span> LAUNCH <RocketEmoji /> <Graph />
+										<RocketEmoji /> <span className="green-color">DODI </span> LAUNCH <Graph />
 								</div>
 								<span className="road-map-title">
 										<span className="green-color"> DODI </span> Community  <br/>
@@ -156,7 +156,7 @@ export default function Road(){
 								<div className="road-date">
 										CRYPTO <br/>
 										(HUSTLER)  <br/>
-										<span className="green-color">DODI </span> SHOP <BlueDress /><PinkDress />
+										<BlueDress /><span className="green-color">DODI </span> SHOP<PinkDress />
 								</div>
 								<span className="road-map-title">
 									<span className="green-color"> DODI </span> Community <br/>
@@ -171,7 +171,7 @@ export default function Road(){
 								<div className="road-date">
 										GEE <br/>
 										(G)  <br/>
-										<span className="green-color">DODI </span> Season 1 & 2 <Video /> <Tele/>
+										<Video /> <span className="green-color">DODI </span> Season 1 & 2 <Tele/>
 								</div>
 								<span className="road-map-title">
 										<span className="green-color"> DODI </span> Community <br/>
@@ -185,7 +185,7 @@ export default function Road(){
 								<div className="road-date">
 										OLD GEE <br/>
 										(O.G)  <br/>
-										<span className="green-color">DODI </span> MUSIC <HeadPhones/><Guitar/>
+										<HeadPhones/><span className="green-color">DODI </span> MUSIC <Guitar/>
 								</div>
 								<span className="road-map-title">
 									<span className="green-color"> DODI </span> Community <br/>
@@ -199,7 +199,7 @@ export default function Road(){
 								<div className="road-date">
 										DOUBLE OLD GEE <br/>
 										(D.O.G)  <br/>
-										<span className="green-color">DODI </span> World Payments <EarthEmoji/><Phone/>
+										<EarthEmoji/><span className="green-color">DODI </span> World Payments <Phone/>
 								</div>
 								<span className="road-map-title">
 									<span className="green-color"> DODI </span> Community <br/>
@@ -213,7 +213,7 @@ export default function Road(){
 								<div className="road-date">
 										BOSS <br/>
 										(<span className="green-color"> DODI </span>)  <br/>
-									    ELON BEZOS <Money/><Heart/>
+										<Money/> ELON BEZOS <Heart/>
 								</div>
 								<span className="road-map-title">
 										<span className="green-color"> DODI </span> Community <br/>
