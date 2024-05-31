@@ -61,7 +61,7 @@ export default function Records({ showMore }) {
 
     const day = dateObject.getDate();
     const month = dateObject.getMonth() + 1;
-    const year = dateObject.getFullYear();git
+    const year = dateObject.getFullYear();
     const formattedDate = `${day}/${month}/${year}`;
 
     const hours = dateObject.getHours();
