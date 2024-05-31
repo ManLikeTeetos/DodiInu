@@ -14,14 +14,14 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 export default function Records({ showMore }) {
-  const {transactions, claim, stakes } = useContract();
+  const { transactions, claim, stakes } = useContract();
 
   ///dummy data for test
 
   // const dummyTransactions = {
   //   "1": {
   //     id: 1,
-  //     amount: 859499,
+  //     amount: 8594998457.234567,
   //     balance: 23445454,
   //     staked_time: 1704067200,
   //     deadline: 1708699200,
@@ -61,7 +61,7 @@ export default function Records({ showMore }) {
 
     const day = dateObject.getDate();
     const month = dateObject.getMonth() + 1;
-    const year = dateObject.getFullYear();
+    const year = dateObject.getFullYear();git
     const formattedDate = `${day}/${month}/${year}`;
 
     const hours = dateObject.getHours();
@@ -279,8 +279,8 @@ export default function Records({ showMore }) {
 
             const isStaking = stake.transaction_type === "stake";
             const countdownClassName = isStaking ? "" : "grey-countdown";
-            const formatstakeamount = Number(stake.amount)
-              .toFixed(3)
+            const formatstakeamount = Number(Math.floor(stake.amount * 100000)/ 100000)
+              .toFixed(5)
               .replace(/(\d)(?=(\d{3})+\.)/g, "$1,");
             return (
               <div key={i} className="record-tab-content">
