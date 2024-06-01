@@ -16,6 +16,9 @@ import "react-datepicker/dist/react-datepicker.css";
 export default function Records({ showMore }) {
   const { transactions, claim, stakes } = useContract();
 
+  const getBalance = (id) =>
+    stakes.find((stake) => stake.id.toString() == id.toString())?.balance;
+
   ///dummy data for test
 
   // const dummyTransactions = {
@@ -86,13 +89,8 @@ export default function Records({ showMore }) {
     { value: "All", displayText: "All" },
     { value: "claim", displayText: "Claim", color: "red" },
     { value: "stake", displayText: "Staking", color: "white" },
-    { value: "reward", displayText: "Reward", color: "green" }
+    { value: "reward", displayText: "Reward", color: "green" },
   ];
-
-  
-
-
-
 
   const [filteredStakes, setFilteredStakes] = useState(
     Object.values(transactions)
@@ -148,11 +146,8 @@ export default function Records({ showMore }) {
     let newFilteredStakes = Object.values(transactions);
 
     if (searchTerm) {
-      newFilteredStakes = newFilteredStakes.filter(
-        (stake) =>
-          stake.transaction_type
-            .toLowerCase()
-            .includes(searchTerm.toLowerCase())
+      newFilteredStakes = newFilteredStakes.filter((stake) =>
+        stake.transaction_type.toLowerCase().includes(searchTerm.toLowerCase())
       );
     }
 
@@ -171,14 +166,14 @@ export default function Records({ showMore }) {
             <div className="record-innersearch">
               <img className="record-icon" src={Search} alt="search" />
             </div>
-           
+
             <input
-                className="search-records"
-                type="text"
-                placeholder="Search Records"
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-              />
+              className="search-records"
+              type="text"
+              placeholder="Search Records"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
           </div>
           <div className="record-cal">
             <div className="record-innercal">
@@ -203,9 +198,10 @@ export default function Records({ showMore }) {
                   className="custom-dropdown-selected"
                   onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                 >
-                
-                  {options.find(options => options.value === filterType).displayText}
-                 
+                  {
+                    options.find((options) => options.value === filterType)
+                      .displayText
+                  }
                 </div>
                 {isDropdownOpen && (
                   <div className="custom-dropdown-options">
@@ -257,13 +253,13 @@ export default function Records({ showMore }) {
             <div className="tab-time"> Time </div>
             <div className="tab-action"> Action </div>
           </div>
-          {filteredStakes.map((stake, i) => {
+          {filteredStakes.map((trans, i) => {
             const { staked_date, stake_timestamp } = convertSecondsToDateTime(
-              stake.staked_time
+              trans.staked_time
             );
 
             let transactionTypeClass = ""; // Default class
-            switch (stake.transaction_type) {
+            switch (trans.transaction_type) {
               case "reward":
                 transactionTypeClass = "reward-type";
                 break;
@@ -277,9 +273,11 @@ export default function Records({ showMore }) {
                 break;
             }
 
-            const isStaking = stake.transaction_type === "stake";
+            const isStaking = trans.transaction_type === "stake";
             const countdownClassName = isStaking ? "" : "grey-countdown";
-            const formatstakeamount = Number(Math.floor(stake.amount * 100000)/ 100000)
+            const formatstakeamount = Number(
+              Math.floor(trans.amount * 100000) / 100000
+            )
               .toFixed(5)
               .replace(/(\d)(?=(\d{3})+\.)/g, "$1,");
             return (
@@ -288,25 +286,27 @@ export default function Records({ showMore }) {
                 <div
                   className={`tab-transtype-content ${transactionTypeClass}`}
                 >
-                  {stake.transaction_type}
+                  {trans.transaction_type}
                 </div>
-                <div className="tab-amount">
-                  {formatstakeamount}
-                </div>
+                <div className="tab-amount">{formatstakeamount}</div>
                 <CountDown
-                  duration={Math.floor(stake.deadline - currentSeconds)}
+                  duration={Math.floor(
+                    trans.deadline - Math.floor(Date.now() / 1000)
+                  )}
                   className={countdownClassName}
                 />
                 <div className="tab-time"> {stake_timestamp} </div>
                 <div className="tab-action-cont">
-                  {stake.transaction_type === "stake" ? (
+                  {trans.transaction_type === "stake" ? (
                     <button
                       disabled={
-                        +stake.deadline > currentSeconds || stake.balance == 0
+                        +trans.deadline > currentSeconds ||
+                        getBalance(trans.id) == 0
                       }
-                      onClick={() => claim(stake.id)}
+                      onClick={() => claim(trans.id)}
                       className={`record-btn ${
-                        +stake.deadline > currentSeconds || stake.balance == 0
+                        +trans.deadline > currentSeconds ||
+                        getBalance(trans.id) == 0
                           ? ""
                           : "active"
                       }`}

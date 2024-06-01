@@ -273,5 +273,6 @@ export const useContract = () => {
     loading,
     transactions,
     fetching,
+    setTransactionHash,
   };
 };

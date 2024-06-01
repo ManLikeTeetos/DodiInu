@@ -42,7 +42,8 @@ export default function StakingBody() {
     claimAll,
     totalLocked,
     loading,
-    fetching
+    fetching,
+    setTransactionHash
   } = useContract();
   const { approve } = useApprove();
 
@@ -109,6 +110,7 @@ export default function StakingBody() {
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
+    setTransactionHash(tab + 'random_hash_simulator')
     setShowMore(false);
   };
 
