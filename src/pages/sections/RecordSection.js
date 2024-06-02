@@ -67,10 +67,10 @@ export default function Records({ showMore }) {
     const year = dateObject.getFullYear();
     const formattedDate = `${day}/${month}/${year}`;
 
-    const hours = dateObject.getHours();
-    const minutes = dateObject.getMinutes();
-    const seconds = dateObject.getSeconds();
-
+    const hours = String(dateObject.getHours()).padStart(2, '0');
+    const minutes = String(dateObject.getMinutes()).padStart(2, '0');
+    const seconds = String(dateObject.getSeconds()).padStart(2, '0');
+    
     const formattedTime = `${hours}:${minutes}:${seconds}`;
 
     return { staked_date: formattedDate, stake_timestamp: formattedTime };
