@@ -275,11 +275,17 @@ export default function Records({ showMore }) {
 
             const isStaking = trans.transaction_type === "stake";
             const countdownClassName = isStaking ? "" : "grey-countdown";
+            let am = trans.amount;
+            if(trans.transaction_type === 'reward'){
+              am = am/((96.97/100) * am);
+            }
             const formatstakeamount = Number(
-              Math.floor(trans.amount * 100000) / 100000
+              Math.floor(am * 100000) / 100000
             )
               .toFixed(5)
               .replace(/(\d)(?=(\d{3})+\.)/g, "$1,");
+
+
             return (
               <div key={i} className="record-tab-content">
                 <div className="tab-date"> {staked_date} </div>

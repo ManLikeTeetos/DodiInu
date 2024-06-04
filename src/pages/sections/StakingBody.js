@@ -213,7 +213,7 @@ export default function StakingBody() {
     setActiveTab("records");
     setShowMore(true);
   };
-  const recordsToShow = showAllRecords ? records : records.slice(0, 3);
+  const recordsToShow = records.length < 3 ? records : records.slice(-3);
 
   return (
     <div className="stkbody">
@@ -398,9 +398,11 @@ export default function StakingBody() {
                           <div className="stake-time">
                             <span className="timer">Timer </span>
                           </div>
-                          {
-                              fetching ?  <CountDown duration={0} /> :<CountDown duration={check_duration} />
-                          }
+                          {fetching ? (
+                            <CountDown duration={0} />
+                          ) : (
+                            <CountDown duration={check_duration} />
+                          )}
                         </div>
                         <div className="stake-red-balance">
                           <div className="stake-bal-field">
@@ -472,7 +474,7 @@ export default function StakingBody() {
                                   <span>
                                     {Number(claims.amount).toLocaleString(
                                       "en-US",
-                                      { minimumFractionDigits: 5 }
+                                      { minimumFractionDigits: 2 }
                                     )}
                                   </span>
                                 </div>
@@ -482,7 +484,7 @@ export default function StakingBody() {
                                     {Number(
                                       claims.amount * dollarValue
                                     ).toLocaleString("en-US", {
-                                      minimumFractionDigits: 5,
+                                      minimumFractionDigits: 2,
                                     })}
                                   </span>
                                 </div>
@@ -490,14 +492,14 @@ export default function StakingBody() {
                             </div>
                           );
                         })}
-                        {records.length > 3 && !showAllRecords && (
+                        {/* {records.length > 3 && !showAllRecords && (
                           <button
                             onClick={handleShowMore}
                             className="stake-btn active"
                           >
                             <span className="stake-btn-txt">SEE ALL</span>
                           </button>
-                        )}
+                        )} */}
                       </div>
                     )}
                   </div>
