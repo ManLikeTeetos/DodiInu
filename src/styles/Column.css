@@ -8,9 +8,10 @@
 }
 
 
-a{
+a {
 	text-decoration: none;
 }
+
 .csection-title {
 	margin: 3rem 3.25rem 2.25rem 3.25rem;
 	font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
@@ -236,6 +237,14 @@ a{
 	font-weight: 400;
 }
 
+.grid-3-2 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 100px;
+	margin: 50px auto 0px auto;
+
+}
+
 @media (min-width: 1440px) {
 	.csection-media {
 		column-gap: 1.5rem;
@@ -246,6 +255,7 @@ a{
 
 
 @media (max-width: 1024px) {
+
 
 	.csection {
 		height: auto;
@@ -289,7 +299,9 @@ a{
 		margin-bottom: 50px;
 	}
 
-
-
+	.grid-3-2 {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+	}
 
 }
