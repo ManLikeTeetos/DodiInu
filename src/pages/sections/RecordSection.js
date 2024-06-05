@@ -67,10 +67,10 @@ export default function Records({ showMore }) {
     const year = dateObject.getFullYear();
     const formattedDate = `${day}/${month}/${year}`;
 
-    const hours = String(dateObject.getHours()).padStart(2, '0');
-    const minutes = String(dateObject.getMinutes()).padStart(2, '0');
-    const seconds = String(dateObject.getSeconds()).padStart(2, '0');
-    
+    const hours = String(dateObject.getHours()).padStart(2, "0");
+    const minutes = String(dateObject.getMinutes()).padStart(2, "0");
+    const seconds = String(dateObject.getSeconds()).padStart(2, "0");
+
     const formattedTime = `${hours}:${minutes}:${seconds}`;
 
     return { staked_date: formattedDate, stake_timestamp: formattedTime };
@@ -276,15 +276,12 @@ export default function Records({ showMore }) {
             const isStaking = trans.transaction_type === "stake";
             const countdownClassName = isStaking ? "" : "grey-countdown";
             let am = trans.amount;
-            if(trans.transaction_type === 'reward'){
-              am = am/((96.97/100) * am);
+            if (trans.transaction_type === "reward") {
+              am = (3.03 / 100) * +am + +am;
             }
-            const formatstakeamount = Number(
-              Math.floor(am * 100000) / 100000
-            )
+            const formatstakeamount = Number(Math.floor(am * 100000) / 100000)
               .toFixed(5)
               .replace(/(\d)(?=(\d{3})+\.)/g, "$1,");
-
 
             return (
               <div key={i} className="record-tab-content">
