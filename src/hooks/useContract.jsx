@@ -54,14 +54,16 @@ export const useContract = () => {
       const tx = await signer.stake(amount);
       const transaction = await tx.wait();
       setTransactionHash(transaction.transactionHash);
+     
       setLoading(false);
     } catch (err) {
+    
       console.log({ err });
       setLoading(false);
       // alert("Opps, Something went wrong");
       setError("Oops, something went wrong");
       setModalIsOpen(true);
-      window.location.reload();
+      // window.location.reload();
     }
   };
 
@@ -227,7 +229,7 @@ export const useContract = () => {
 
         setTotalEarned(() => {
           return records.reduce((acc, curr) => {
-            return fromBigNumber(curr[0]) + acc;
+            return +fromBigNumber(curr[0]) + acc;
           }, 0);
         });
       } catch (err) {

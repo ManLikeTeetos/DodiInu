@@ -195,7 +195,7 @@ export default function StakingBody() {
     .toFixed(5)
     .replace(/(\d)(?=(\d{3})+\.)/g, "$1,");
 
-  const formattotalEarned = Number(Math.floor(+totalEarned * 100) / 100)
+  const formattotalEarned = Number(Math.floor(totalEarned * 100) / 100)
     .toFixed(2)
     .replace(/(\d)(?=(\d{3})+\.)/g, "$1,");
   const formattotalSupply = Number(Math.floor(totalSupply * 100) / 100)

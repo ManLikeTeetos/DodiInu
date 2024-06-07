@@ -276,9 +276,9 @@ export default function Records({ showMore }) {
             const isStaking = trans.transaction_type === "stake";
             const countdownClassName = isStaking ? "" : "grey-countdown";
             let am = trans.amount;
-            if (trans.transaction_type === "reward") {
-              am = (3.03 / 100) * +am + +am;
-            }
+            // if (trans.transaction_type === "reward") {
+            //   am = (3.03 / 100) * +am + +am;
+            // }
             const formatstakeamount = Number(Math.floor(am * 100000) / 100000)
               .toFixed(5)
               .replace(/(\d)(?=(\d{3})+\.)/g, "$1,");
