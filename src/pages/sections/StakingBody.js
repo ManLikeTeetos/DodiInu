@@ -90,6 +90,7 @@ export default function StakingBody() {
     if (hasAllowance(+amount)) {
       await stake(amount);
       setAmount("");
+      setFormattedAmount("");
     } else {
       await approve(amount);
     }
