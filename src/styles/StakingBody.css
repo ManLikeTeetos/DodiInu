@@ -760,7 +760,7 @@ button {
 	border-radius: 12px;
 	background: #545454;
 	margin-top: 10px;
-	margin-bottom: 41px;
+	/* margin-bottom: 41px; */
 	margin-right: 5px;
 	display: flex;
 	flex-direction: column;

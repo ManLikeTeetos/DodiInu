@@ -65,7 +65,9 @@ export default function Records({ showMore }) {
     const day = dateObject.getDate();
     const month = dateObject.getMonth() + 1;
     const year = dateObject.getFullYear();
-    const formattedDate = `${day}/${month}/${year}`;
+    const formattedDate = `${String(day).padStart(2, "0")}/${
+      String(month).padStart(2, "0")
+    }/${year}`;
 
     const hours = String(dateObject.getHours()).padStart(2, "0");
     const minutes = String(dateObject.getMinutes()).padStart(2, "0");

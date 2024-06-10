@@ -162,8 +162,8 @@ export default function Navbar() {
     // If userdata is not present, check if userdata.address and userdata.Balance are both truthy
     if (userdata.address !== "") {
       localStorage.setItem("userdata", JSON.stringify(userdata));
-		// alert("Wallet connected successfully!!");
-		setIsOpen(false);
+      // alert("Wallet connected successfully!!");
+      setIsOpen(false);
     }
   }, [userdata]);
 
@@ -201,7 +201,16 @@ export default function Navbar() {
               >
                 Staking
               </Link>
-              <div className="div-8">White paper</div>
+              <div className="div-8">
+                <a
+                   style={{color:'#e6e6e6'}}
+                  href="/DODI-Whitepaper.pdf"
+                  download
+                  target="_blank"
+                >
+                  White paper
+                </a>
+              </div>
             </div>
           </div>
           <div className="column-3">
@@ -266,7 +275,16 @@ export default function Navbar() {
               >
                 Staking
               </Link>
-              <div className="nav-text">White paper</div>
+              <div className="nav-text">
+                <a
+                  style={{color:'#e6e6e6'}}
+                  href="/DODI-Whitepaper.pdf"
+                  download
+                  target="_blank"
+                >
+                  White paper
+                </a>
+              </div>
               <div className="div-10">BUY $DODI</div>
               {userdata.address === "" && (
                 <div className="div-11">
