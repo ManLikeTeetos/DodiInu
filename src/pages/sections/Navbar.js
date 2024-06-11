@@ -287,7 +287,7 @@ export default function Navbar() {
                   White paper
                 </a>
               </div>
-              <a target="_blank" href="https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0x5211674146FCaD8F4C34dE6bcb60f8C5940D2182">
+              <a style={{color:'#fff'}} target="_blank" href="https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0x5211674146FCaD8F4C34dE6bcb60f8C5940D2182">
                <div className="div-10">BUY $DODI</div>
               </a>
               {userdata.address === "" && (
