@@ -41,9 +41,14 @@ function LandingPage() {
 						  <div className="div-buttons">
 							  <div className="linkmargin">
 								  <div className="link">
+									 <a
+                          href="https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0x5211674146FCaD8F4C34dE6bcb60f8C5940D2182"
+                          target="_blank"
+                        >
 									  <span className="buy-now">
 										  BUY $DODI
 									  </span>
+									  </a>
 								  </div>
 							  </div>
 							  <div className="linkmargin-1">
@@ -203,9 +208,14 @@ function LandingPage() {
 					  </div>
 					  <div className="div-buttons-1">
 						  <div className="link-5">
+							 <a
+                          href="https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0x5211674146FCaD8F4C34dE6bcb60f8C5940D2182"
+                          target="_blank"
+                        >
 							  <span className="buy-dodi">
 								  BUY $DODI
 							  </span>
+							  </a>
 						  </div>
 					  </div>
 				  </div>
@@ -309,9 +319,14 @@ function LandingPage() {
 					  </div>
 					  <div className="div-buttons-2">
 						  <div className="link-8">
+							 <a
+                          href="https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0x5211674146FCaD8F4C34dE6bcb60f8C5940D2182"
+                          target="_blank"
+                        >
 							  <span className="buy-dodi-1">
 								  BUY $DODI
 							  </span>
+							  </a>
 						  </div>
 					  </div>
 				  </div>
@@ -778,9 +793,14 @@ function LandingPage() {
 			  </div>
 			  <div className="container-12">
 				  <div className="frame-951">
+					 <a
+                          href="https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0x5211674146FCaD8F4C34dE6bcb60f8C5940D2182"
+                          target="_blank"
+                        >
 					  <span className="buy-dodi-2">
 						  BUY $DODI
 					  </span>
+					  </a>
 				  </div>
 				  <div className="frame-2">
 					  <span className="connect-wallet">

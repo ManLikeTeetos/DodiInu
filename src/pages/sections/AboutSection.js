@@ -389,9 +389,14 @@ export default function AboutSection(){
 					</>
 				)} */}
 			</div>
+			 <a
+                          href="https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0x5211674146FCaD8F4C34dE6bcb60f8C5940D2182"
+                          target="_blank"
+                        >
 			<div className="about-buy-button">
 				BUY $DODI
 			</div>
+			</a>
 	   </div>
 
 	)

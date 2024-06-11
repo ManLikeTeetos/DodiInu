@@ -152,7 +152,7 @@
 	.staking-image-how {
 		max-width: 100%;
 		background: url('assets/images/howitworks_tab-m.png');
-		background-size: cover;
+		background-size: contain;
 		background-repeat: no-repeat;
 	}
 
