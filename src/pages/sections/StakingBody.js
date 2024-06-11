@@ -507,14 +507,14 @@ export default function StakingBody() {
                             </div>
                           );
                         })}
-                        {/* {records.length > 3 && !showAllRecords && (
+                        {records.length > 3 && !showAllRecords && (
                           <button
                             onClick={handleShowMore}
                             className="stake-btn active"
                           >
                             <span className="stake-btn-txt">SEE ALL</span>
                           </button>
-                        )} */}
+                        )}
                       </div>
                     )}
                   </div>
