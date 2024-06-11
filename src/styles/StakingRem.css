@@ -8,9 +8,10 @@
 	/* 8px converted to rem */
 	flex-direction: column;
 	/* bigger screen */
-		max-width: 1328px;
-		margin: 0 auto;
+	max-width: 1328px;
+	margin: 0 auto;
 }
+
 @media (max-width: 1024px) {
 
 	/* 1024px converted to rem */
@@ -56,6 +57,7 @@
 	white-space: nowrap;
 	line-height: 150%;
 }
+
 @media (max-width: 1024px) {
 
 	/* 1024px converted to rem */
@@ -76,6 +78,7 @@
 		white-space: initial;
 	}
 }
+
 .staking-segment-header.active {
 	border-bottom: 2px solid rgba(67, 183, 99, 1);
 }
@@ -118,6 +121,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 }
+
 @media (max-width: 1024px) {
 	.staking-columns {
 		display: flex;
@@ -141,11 +145,15 @@
 	height: 24.95rem;
 	/* 399.2px converted to rem */
 }
+
 @media (max-width: 1024px) {
 
 	/* 1024px converted to rem */
 	.staking-image-how {
 		max-width: 100%;
+		background: url('assets/images/howitworks_tab-m.png');
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 
 	.staking-image-reward {
@@ -161,6 +169,7 @@
 	padding-left: 3rem;
 	/* 48px converted to rem */
 }
+
 @media (max-width: 1024px) {
 
 	/* 1024px converted to rem */
@@ -213,6 +222,7 @@
 	/* 20px converted to rem */
 	display: flex;
 }
+
 @media (max-width: 1024px) {
 
 	/* 1024px converted to rem */
@@ -231,6 +241,7 @@
 	/* 12px converted to rem */
 	flex-direction: column;
 }
+
 @media (max-width: 1024px) {
 
 	/* 1024px converted to rem */
@@ -328,11 +339,11 @@
 
 	/* 1024px converted to rem */
 	.staking-image-container {
-			display: flex;
-			margin: auto;
-			padding-left: 0rem;
-			/* 24px converted to rem */
-		}
+		display: flex;
+		margin: auto;
+		padding-left: 0rem;
+		/* 24px converted to rem */
+	}
 
 	.staking-image {
 		margin-top: 1.5rem;

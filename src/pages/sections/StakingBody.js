@@ -485,7 +485,10 @@ export default function StakingBody() {
                                   <span>
                                     {Number(claims.amount).toLocaleString(
                                       "en-US",
-                                      { minimumFractionDigits: 2 }
+                                      {
+                                        minimumFractionDigits: 2,
+                                        maximumFractionDigits: 2,
+                                      }
                                     )}
                                   </span>
                                 </div>
@@ -496,6 +499,7 @@ export default function StakingBody() {
                                       claims.amount * dollarValue
                                     ).toLocaleString("en-US", {
                                       minimumFractionDigits: 2,
+                                      maximumFractionDigits: 2,
                                     })}
                                   </span>
                                 </div>
