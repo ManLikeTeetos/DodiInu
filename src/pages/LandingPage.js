@@ -71,7 +71,7 @@ function LandingPage() {
 						  </div>
 						  <div className="ptitle-1">
 							  <span className="container">
-								  $0.00000412
+								 $0.0000556
 							  </span>
 						  </div>
 					  </div>
