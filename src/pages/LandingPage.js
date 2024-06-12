@@ -579,12 +579,15 @@ function LandingPage() {
                 </div>
                 <div className="div-column-27">
                   <div className="idt-jyootra-1">
-					<a href="https://birdeye.so/token/0x5211674146FCaD8F4C34dE6bcb60f8C5940D2182/0x628aB3618c27Ef45D1273ac355aD20B3483Bb952?chain=bsc" target="_blank">
-                    <img
-                      className="fill-1"
-                      src="assets/vectors/Fill11_x2.svg"
-                    />
-					</a>
+                    <a
+                      href="https://birdeye.so/token/0x5211674146FCaD8F4C34dE6bcb60f8C5940D2182/0x628aB3618c27Ef45D1273ac355aD20B3483Bb952?chain=bsc"
+                      target="_blank"
+                    >
+                      <img
+                        className="fill-1"
+                        src="assets/vectors/Fill11_x2.svg"
+                      />
+                    </a>
                   </div>
                   <div className="birdeye">Birdeye</div>
                 </div>

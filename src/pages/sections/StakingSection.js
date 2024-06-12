@@ -3,6 +3,7 @@ import "../../styles/StakingRem.css";
 import StakingDog from "../../styles/assets/images/staking1.png";
 import StakingDog2 from "../../styles/assets/images/staking2.png";
 import StakingDog3 from "../../styles/assets/images/staking3.png";
+import { Link } from "react-router-dom";
 
 export default function StakingSection() {
   const [activeTab, setActiveTab] = useState("HOW IT WORKS"); // State to track active tab
@@ -193,7 +194,9 @@ export default function StakingSection() {
 					</>
 				)} */}
       </div>
-      <div className="staking-buy-button">STAKE $DODI</div>
+      <Link to="/staking" className="staking-buy-button">
+        STAKE $DODI
+      </Link>
     </div>
   );
 }

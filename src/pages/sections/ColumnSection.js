@@ -139,13 +139,13 @@ export default function Column() {
 
           {/* <div className="div-column-23">
             <img className=" " src={CMC} alt="CMC" />
-          </div>
+          </div> */}
           <div className="div-column-23">
             <img className="clip-path-group" src={CG} alt="CG" />
             <div className="coin-name">
               Coin<span className="coin-name-light">Gecko</span>
             </div>
-          </div> */}
+          </div>
 
           <div className="div-column-23">
             <img
