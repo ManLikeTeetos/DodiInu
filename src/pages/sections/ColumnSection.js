@@ -1,5 +1,6 @@
 import "../../styles/Column.css";
 import BirdEyeLogo from "../../styles/assets/images/birdeye_logo.png";
+import DexLogo from "../../styles/assets/images/dex.png";
 
 import CMC from "../../styles/assets/images/cmc.png.png";
 import CG from "../../styles/assets/images/coingeko.png";
@@ -105,7 +106,11 @@ export default function Column() {
         <div className="csection-title-uni">
           <span className="green-color"> DODI </span> Universe
         </div>
-        <div className="container-8-col grid-3-2">
+        <a
+          href="https://birdeye.so/token/0x5211674146FCaD8F4C34dE6bcb60f8C5940D2182/0x628aB3618c27Ef45D1273ac355aD20B3483Bb952?chain=bsc"
+          target="_blank"
+          className="container-8-col grid-3-2"
+        >
           <div className="div-column-23">
             <div className="frame-101">
               <img
@@ -118,6 +123,19 @@ export default function Column() {
               Bird<span className="coin-name-light">eye</span>
             </div>
           </div>
+
+          <a
+            href="https://www.dextools.io/app/en/bnb/pair-explorer/0x628ab3618c27ef45d1273ac355ad20b3483bb952?t=1718202201056"
+            className="div-column-23"
+            target="_blank"
+          >
+            <div className="frame-101">
+              <img className="clip-path-group" src={DexLogo} alt="Dextools" />
+            </div>
+            <div className="coin-name">
+              Dex<span className="coin-name-light">tools</span>
+            </div>
+          </a>
 
           <div className="div-column-23">
             <img className=" " src={CMC} alt="CMC" />
@@ -159,7 +177,7 @@ export default function Column() {
               <span className="coin-name-light">Smart Chain</span>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   );
