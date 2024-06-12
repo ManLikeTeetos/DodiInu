@@ -1,6 +1,6 @@
 import "../../styles/Column.css";
 import BirdEyeLogo from "../../styles/assets/images/birdeye_logo.png";
-import DexLogo from "../../styles/assets/images/dex.png";
+import DexLogo from "../../styles/assets/images/dex.jpeg";
 
 import CMC from "../../styles/assets/images/cmc.png.png";
 import CG from "../../styles/assets/images/coingeko.png";
@@ -137,7 +137,7 @@ export default function Column() {
             </div>
           </a>
 
-          <div className="div-column-23">
+          {/* <div className="div-column-23">
             <img className=" " src={CMC} alt="CMC" />
           </div>
           <div className="div-column-23">
@@ -145,7 +145,7 @@ export default function Column() {
             <div className="coin-name">
               Coin<span className="coin-name-light">Gecko</span>
             </div>
-          </div>
+          </div> */}
 
           <div className="div-column-23">
             <img

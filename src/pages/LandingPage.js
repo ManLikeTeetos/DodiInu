@@ -1,6 +1,7 @@
 import "../styles/DodiWeb.css";
 import { ReactComponent as Logo } from "../../src/styles/assets/vectors/LogoDiodiInu317_x2.svg";
 import { useContract } from "../../hooks/useContract.jsx";
+import { Link } from "react-router-dom";
 
 function LandingPage() {
   const {
@@ -48,9 +49,9 @@ function LandingPage() {
                   </div>
                 </div>
                 <div className="linkmargin-1">
-                  <div className="button">
+                  <Link className="button" to="/staking">
                     <span className="stake-now">STAKE $DODI</span>
-                  </div>
+                  </Link>
                 </div>
               </div>
               <span className="ca-d-6-newx-s-3-spke-eebv-gqax-2-e-4-mi-cjuvj-ah-tukbo-xzlw-km-1">
