@@ -63,7 +63,7 @@ export default function HeroSection() {
           <div className="hero-12">
             <div className="hero-13">
               <div className="hero-14">$DODI Price </div>
-              <div className="hero-15">$0.0000137</div>
+              <div className="hero-15">$0.0000556</div>
             </div>
             <div className="hero-16">
               <div className="hero-17">CIRCULATING DODI</div>
