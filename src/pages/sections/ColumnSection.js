@@ -142,14 +142,23 @@ export default function Column() {
           {/* <div className="div-column-23">
             <img className=" " src={CMC} alt="CMC" />
           </div> */}
-          <div className="div-column-23">
+          <div
+            href="https://www.dextools.io/app/en/bnb/pair-explorer/0x628ab3618c27ef45d1273ac355ad20b3483bb952?t=1718202201056"
+            target="_blank"
+            className="div-column-23"
+          >
             <img className="clip-path-group" src={CG} alt="CG" />
             <div className="coin-name">
               Coin<span className="coin-name-light">Gecko</span>
             </div>
           </div>
 
-          <div className="div-column-23">
+          <a
+            href="https://www.dextools.io/app/en/bnb/pair-explorer/0x628ab3618c27ef45d1273ac355ad20b3483bb952?t=1718202201056"
+            target="_blank"
+            className="div-column-23"
+            rel="noreferrer"
+          >
             <img
               className="clip-path-group"
               src={Dexscreener}
@@ -158,8 +167,13 @@ export default function Column() {
             <div className="coin-name">
               Dex<span className="coin-name-light">Screener</span>
             </div>
-          </div>
-          <div className="div-column-23">
+          </a>
+          <a
+            href="https://www.dextools.io/app/en/bnb/pair-explorer/0x628ab3618c27ef45d1273ac355ad20b3483bb952?t=1718202201056"
+            target="_blank"
+            className="div-column-23"
+            rel="noreferrer"
+          >
             <div className="idt-jyootra-1">
               <img
                 className="clip-path-group"
@@ -170,7 +184,7 @@ export default function Column() {
             <div className="coin-name">
               Pancake<span className="coin-name-light">Swap</span>
             </div>
-          </div>
+          </a>
 
           <a
             href="https://bscscan.com/token/0x5211674146FCaD8F4C34dE6bcb60f8C5940D2182"
