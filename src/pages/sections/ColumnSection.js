@@ -106,13 +106,13 @@ export default function Column() {
         <div className="csection-title-uni">
           <span className="green-color"> DODI </span> Universe
         </div>
-        <a
-          href="https://birdeye.so/token/0x5211674146FCaD8F4C34dE6bcb60f8C5940D2182/0x628aB3618c27Ef45D1273ac355aD20B3483Bb952?chain=bsc"
-          target="_blank"
-          className="container-8-col grid-3-2"
-          rel="noreferrer"
-        >
-          <div className="div-column-23">
+        <div className="container-8-col grid-3-2">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://birdeye.so/token/0x5211674146FCaD8F4C34dE6bcb60f8C5940D2182/0x628aB3618c27Ef45D1273ac355aD20B3483Bb952?chain=bsc"
+            className="div-column-23"
+          >
             <div className="frame-101">
               <img
                 className="clip-path-group"
@@ -123,70 +123,74 @@ export default function Column() {
             <div className="coin-name">
               Bird<span className="coin-name-light">eye</span>
             </div>
-          </div>
-        </a>
+          </a>
 
-        <a
-          href="https://www.dextools.io/app/en/bnb/pair-explorer/0x628ab3618c27ef45d1273ac355ad20b3483bb952?t=1718202201056"
-          className="div-column-23"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div className="frame-101">
-            <img className="clip-path-group" src={DexLogo} alt="Dextools" />
-          </div>
-          <div className="coin-name">
-            DEX<span className="coin-name-light">Tools</span>
-          </div>
-        </a>
+          <a
+            href="https://www.dextools.io/app/en/bnb/pair-explorer/0x628ab3618c27ef45d1273ac355ad20b3483bb952?t=1718202201056"
+            className="div-column-23"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="frame-101">
+              <img className="clip-path-group" src={DexLogo} alt="Dextools" />
+            </div>
+            <div className="coin-name">
+              DEX<span className="coin-name-light">Tools</span>
+            </div>
+          </a>
 
-        {/* <div className="div-column-23">
+          {/* <div className="div-column-23">
             <img className=" " src={CMC} alt="CMC" />
           </div> */}
-        <div className="div-column-23">
-          <img className="clip-path-group" src={CG} alt="CG" />
-          <div className="coin-name">
-            Coin<span className="coin-name-light">Gecko</span>
+          <div href="#" className="div-column-23">
+            <img className="clip-path-group" src={CG} alt="CG" />
+            <div className="coin-name">
+              Coin<span className="coin-name-light">Gecko</span>
+            </div>
           </div>
+
+          <a
+            href="https://dexscreener.com/bsc/0x628ab3618c27ef45d1273ac355ad20b3483bb952"
+            className="div-column-23"
+          >
+            <img
+              className="clip-path-group"
+              src={Dexscreener}
+              alt="Dexscreener"
+            />
+            <div className="coin-name">
+              Dex<span className="coin-name-light">Screener</span>
+            </div>
+          </a>
+          <a
+            href="https://pancakeswap.finance/swap?inputCurrency=0x5211674146FCaD8F4C34dE6bcb60f8C5940D2182&outputCurrency=0x55d398326f99059fF775485246999027B3197955"
+            className="div-column-23"
+          >
+            <div className="idt-jyootra-1">
+              <img
+                className="clip-path-group"
+                src={Pancake}
+                alt="PancakeSwap"
+              />
+            </div>
+            <div className="coin-name">
+              Pancake<span className="coin-name-light">Swap</span>
+            </div>
+          </a>
+
+          <a
+            href="https://bscscan.com/token/0x5211674146FCaD8F4C34dE6bcb60f8C5940D2182"
+            target="_blank"
+            className="div-column-23"
+            rel="noreferrer"
+          >
+            <img className="clip-path-group" src={Binance} alt="Binance" />
+            <div className="coin-name-binance">
+              <span>Binance </span>
+              <span className="coin-name-light">Smart Chain</span>
+            </div>
+          </a>
         </div>
-
-        <a
-          href="https://dexscreener.com/bsc/0x628ab3618c27ef45d1273ac355ad20b3483bb952"
-          className="div-column-23"
-        >
-          <img
-            className="clip-path-group"
-            src={Dexscreener}
-            alt="Dexscreener"
-          />
-          <div className="coin-name">
-            Dex<span className="coin-name-light">Screener</span>
-          </div>
-        </a>
-        <a
-          href="https://pancakeswap.finance/swap?inputCurrency=0x5211674146FCaD8F4C34dE6bcb60f8C5940D2182&outputCurrency=0x55d398326f99059fF775485246999027B3197955"
-          className="div-column-23"
-        >
-          <div className="idt-jyootra-1">
-            <img className="clip-path-group" src={Pancake} alt="PancakeSwap" />
-          </div>
-          <div className="coin-name">
-            Pancake<span className="coin-name-light">Swap</span>
-          </div>
-        </a>
-
-        <a
-          href="https://bscscan.com/token/0x5211674146FCaD8F4C34dE6bcb60f8C5940D2182"
-          target="_blank"
-          className="div-column-23"
-          rel="noreferrer"
-        >
-          <img className="clip-path-group" src={Binance} alt="Binance" />
-          <div className="coin-name-binance">
-            <span>Binance </span>
-            <span className="coin-name-light">Smart Chain</span>
-          </div>
-        </a>
       </div>
     </div>
   );
