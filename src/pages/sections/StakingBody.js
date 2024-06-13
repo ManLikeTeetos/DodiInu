@@ -449,7 +449,7 @@ export default function StakingBody() {
                 <div className="stkconnect-col">
                   <div className="stake-header">
                     <img src={Wallet} alt="Wallet" className="wallet" />
-                    <div className="stake-title">Reward</div>
+                    <div className="stake-title">Rewards</div>
                   </div>
                   <div className="stake-reward">
                     <div className="stake-reward-title">
