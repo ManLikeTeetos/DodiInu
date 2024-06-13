@@ -149,7 +149,10 @@ export default function Column() {
             </div>
           </div>
 
-          <a href="#" className="div-column-23">
+          <a
+            href="https://dexscreener.com/bsc/0x628ab3618c27ef45d1273ac355ad20b3483bb952"
+            className="div-column-23"
+          >
             <img
               className="clip-path-group"
               src={Dexscreener}
@@ -159,7 +162,10 @@ export default function Column() {
               Dex<span className="coin-name-light">Screener</span>
             </div>
           </a>
-          <a href="#" className="div-column-23">
+          <a
+            href="https://pancakeswap.finance/swap?inputCurrency=0x5211674146FCaD8F4C34dE6bcb60f8C5940D2182&outputCurrency=0x55d398326f99059fF775485246999027B3197955"
+            className="div-column-23"
+          >
             <div className="idt-jyootra-1">
               <img
                 className="clip-path-group"
