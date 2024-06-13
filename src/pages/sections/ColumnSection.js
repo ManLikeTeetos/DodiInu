@@ -135,7 +135,7 @@ export default function Column() {
               <img className="clip-path-group" src={DexLogo} alt="Dextools" />
             </div>
             <div className="coin-name">
-              DEX<span className="coin-name-light">tools</span>
+              DEX<span className="coin-name-light">Tools</span>
             </div>
           </a>
 
