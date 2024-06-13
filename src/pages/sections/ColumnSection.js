@@ -163,7 +163,8 @@ export default function Column() {
             </div>
           </a>
           <a
-            href="https://pancakeswap.finance/swap?inputCurrency=0x5211674146FCaD8F4C34dE6bcb60f8C5940D2182&outputCurrency=0x55d398326f99059fF775485246999027B3197955"
+            href="
+            https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0x5211674146FCaD8F4C34dE6bcb60f8C5940D2182"
             className="div-column-23"
           >
             <div className="idt-jyootra-1">
