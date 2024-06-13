@@ -110,6 +110,7 @@ export default function Column() {
           href="https://birdeye.so/token/0x5211674146FCaD8F4C34dE6bcb60f8C5940D2182/0x628aB3618c27Ef45D1273ac355aD20B3483Bb952?chain=bsc"
           target="_blank"
           className="container-8-col grid-3-2"
+          rel="noreferrer"
         >
           <div className="div-column-23">
             <div className="frame-101">
@@ -128,6 +129,7 @@ export default function Column() {
             href="https://www.dextools.io/app/en/bnb/pair-explorer/0x628ab3618c27ef45d1273ac355ad20b3483bb952?t=1718202201056"
             className="div-column-23"
             target="_blank"
+            rel="noreferrer"
           >
             <div className="frame-101">
               <img className="clip-path-group" src={DexLogo} alt="Dextools" />
@@ -170,13 +172,18 @@ export default function Column() {
             </div>
           </div>
 
-          <div className="div-column-23">
+          <a
+            href="https://bscscan.com/token/0x5211674146FCaD8F4C34dE6bcb60f8C5940D2182"
+            target="_blank"
+            className="div-column-23"
+            rel="noreferrer"
+          >
             <img className="clip-path-group" src={Binance} alt="Binance" />
             <div className="coin-name-binance">
               <span>Binance </span>
               <span className="coin-name-light">Smart Chain</span>
             </div>
-          </div>
+          </a>
         </a>
       </div>
     </div>

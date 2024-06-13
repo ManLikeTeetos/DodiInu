@@ -148,16 +148,16 @@
 
 .custom-dropdown-options {
 	position: absolute;
-    top: 50px;
+	top: 50px;
 	border: 1px solid #00CD6A;
-    width: 108px;
-    right: -1px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 8px;
-    background: black;
-    text-align: center;
+	width: 108px;
+	right: -1px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 8px;
+	background: black;
+	text-align: center;
 	color: white;
 	gap: 8px;
 }
@@ -202,7 +202,8 @@ select:active {
 	display: flex;
 	flex-direction: column;
 	width: 1281px;
-	height: auto;
+	height: 600px;
+	overflow-y: auto;
 
 }
 
